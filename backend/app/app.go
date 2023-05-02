@@ -96,9 +96,6 @@ func Run() {
 	// register API Routes
 	server.Register()
 
-	// generate Corteza token
-	go server.GenerateCortezaToken()
-
 	// run HTTP server
 	server.App.Listen(":5000")
 

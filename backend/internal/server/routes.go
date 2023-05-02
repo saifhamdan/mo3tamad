@@ -56,7 +56,6 @@ func (s *Server) Register() {
 	// Accounts
 	accountsRoutes := v1.Group("/accounts")
 	accountsRoutes.Get("/", s.Middleware.Authorization(authz.Admin), s.GetAllAccounts)
-	accountsRoutes.Get("/employees", s.Middleware.Authorization(authz.Admin), s.GetAccountsForEmployees)
 	accountsRoutes.Get("/me", s.GetMyProfile)
 	// this is an exeption because we need every account to be able to access it
 	accountsRoutes.Get("/policies/ui", s.GetAllPoliciesRoleUI)

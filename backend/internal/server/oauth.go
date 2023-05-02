@@ -10,6 +10,7 @@ import (
 
 	"github.com/go-redis/redis/v8"
 	"github.com/gofiber/fiber/v2"
+	"gorm.io/gorm"
 )
 
 const GRANT_TYPE_CLIENT_CREDENTIALS = "client_credentials"
@@ -25,7 +26,13 @@ func (s *Server) Login(c *fiber.Ctx) error {
 
 	// later on find the user if exists in db
 	user := &model.Account{}
-	s.DB.Preload("Role").First(user, &model.Account{Email: username})
+	err := s.DB.Preload("Role").First(user, &model.Account{Email: username}).Error
+	if err != nil {
+		if err == gorm.ErrRecordNotFound {
+			return s.App.HttpResponseUnauthorized(c, fmt.Errorf("incorrect password or email"))
+		}
+		return s.App.HttpResponseInternalServerErrorRequest(c, err)
+	}
 
 	// check password is correct
 	ok := oauth2.ComparePassword(user.Password, password)
@@ -40,7 +47,7 @@ func (s *Server) Login(c *fiber.Ctx) error {
 
 	// get Role
 	role := &model.Role{}
-	err := s.DB.First(role, user.RoleID).Error
+	err = s.DB.First(role, user.RoleID).Error
 	if err != nil {
 		return s.App.HttpResponseInternalServerErrorRequest(c, fmt.Errorf("something went wrong"))
 	}

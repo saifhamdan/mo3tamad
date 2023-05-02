@@ -13,27 +13,7 @@ func (s *Server) GetAllAccounts(c *fiber.Ctx) error {
 
 	accounts := []model.Account{}
 	err := s.DB.Model(&model.Account{}).
-		Preload("Organization").Preload("Role").
-		Omit("password").
-		Find(&accounts).Error
-	if err != nil {
-		return s.App.HttpResponseInternalServerErrorRequest(c, err)
-	}
-
-	return s.App.HttpResponseOK(c, accounts)
-}
-
-func (s *Server) GetAccountsForEmployees(c *fiber.Ctx) error {
-	// later on we need to check  only one account with this condition 'accounts.account_id = '%s''
-	// this case happens only when editing employee profile and we want to retieve his Account data
-	accountId := c.Query("account_id")
-	query := fmt.Sprintf("(NOT accounts.is_taken || accounts.account_id = '%s') && roles.desc != 'admin'", accountId)
-
-	accounts := []model.Account{}
-	err := s.DB.Model(&model.Account{}).
-		Preload("Organization").Preload("Role").
-		Joins("left join roles on roles.role_id = accounts.role_id").
-		Where(query).
+		Preload("Role").
 		Omit("password").
 		Find(&accounts).Error
 	if err != nil {
@@ -67,7 +47,7 @@ func (s *Server) GetMyProfile(c *fiber.Ctx) error {
 	user := c.Locals("client").(*oauth2.Config)
 
 	me := &model.Account{}
-	err := s.DB.Preload("Role").Preload("Organization").Omit("password").First(me, user.ClientId).Error
+	err := s.DB.Preload("Role").Omit("password").First(me, user.ClientId).Error
 	if err != nil {
 		return s.App.HttpResponseInternalServerErrorRequest(c, err)
 	}

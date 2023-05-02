@@ -9,7 +9,6 @@ type Account struct {
 	RoleID    int    `gorm:"column:role_id" json:"role_id,omitempty"`
 	Role      Role   `gorm:"foreignKey:RoleID" json:"role,omitempty"`
 	Active    bool   `gorm:"default:true;column:active" json:"active"`
-	IsTaken   bool   `gorm:"default:false;column:is_taken" json:"is_taken"`
 	Status    string `gorm:"column:status" json:"status,omitempty"`
 	Model
 }

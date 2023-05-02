@@ -8,3 +8,44 @@
 {"level":"info","ts":1683046298.4129026,"msg":"Connected to redis 0.0.0.0:6379"}
 {"level":"info","ts":1683046311.8450341,"msg":"Connected to redis 0.0.0.0:6379"}
 {"level":"dpanic","ts":1683046312.005385,"msg":"Post \"/auth/oauth2/token?grant_type=client_credentials&scope=api\": unsupported protocol scheme \"\""}
+{"level":"info","ts":1683049137.7659428,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1683049297.1640773,"msg":"127.0.0.1, user_session, /api/v1/auth/oauth/login, POST, {}"}
+{"level":"info","ts":1683049365.1189847,"msg":"127.0.0.1, user_session, /api/v1/auth/oauth/login, POST, {}"}
+{"level":"info","ts":1683049365.6797128,"msg":"127.0.0.1, user_session, /api/v1/auth/oauth/login, POST, {}"}
+{"level":"info","ts":1683049383.9594967,"msg":"127.0.0.1, user_session, /api/v1/auth/oauth/logout, DELETE, {}"}
+{"level":"error","ts":1683049383.9596016,"msg":"missing Authorization header"}
+{"level":"info","ts":1683049396.250378,"msg":"127.0.0.1, user_session, /api/v1/auth/oauth/login, POST, {}"}
+{"level":"info","ts":1683049396.6354125,"msg":"127.0.0.1, user_session, /api/v1/auth/oauth/login, POST, {}"}
+{"level":"info","ts":1683049402.0096629,"msg":"127.0.0.1, user_session, /api/v1/auth/oauth/login, POST, {}"}
+{"level":"info","ts":1683049402.7396245,"msg":"127.0.0.1, user_session, /api/v1/auth/oauth/login, POST, {}"}
+{"level":"info","ts":1683049413.7974434,"msg":"127.0.0.1, user_session, /api/v1/auth/oauth, POST, {}"}
+{"level":"error","ts":1683049413.7975647,"msg":"missing Authorization header"}
+{"level":"info","ts":1683049418.5163224,"msg":"127.0.0.1, user_session, /api/v1/auth/oauth/login, POST, {}"}
+{"level":"info","ts":1683049433.3334785,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1683049434.683282,"msg":"127.0.0.1, user_session, /api/v1/auth/oauth/login, POST, {}"}
+{"level":"info","ts":1683049435.5172682,"msg":"127.0.0.1, user_session, /api/v1/auth/oauth/login, POST, {}"}
+{"level":"info","ts":1683049459.4416845,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1683049461.6125028,"msg":"127.0.0.1, user_session, /api/v1/auth/oauth/login, POST, {}"}
+{"level":"info","ts":1683049475.8635862,"msg":"127.0.0.1, user_session, /api/v1/auth/oauth/login, POST, {}"}
+{"level":"info","ts":1683049493.4713805,"msg":"127.0.0.1, user_session, /auth/oauth/login, POST, {}"}
+{"level":"info","ts":1683049544.5204308,"msg":"127.0.0.1, user_session, /auth/oauth/login, POST, {}"}
+{"level":"info","ts":1683049551.3430183,"msg":"127.0.0.1, user_session, /api/v1/auth/oauth/logout/XSUnhyK8CcPhmWNSfEzauH, DELETE, {}"}
+{"level":"error","ts":1683049551.3431365,"msg":"missing Authorization header"}
+{"level":"info","ts":1683049556.9549773,"msg":"127.0.0.1, user_session, /api/v1/auth/oauth/logout/XSUnhyK8CcPhmWNSfEzauH, DELETE, {}"}
+{"level":"info","ts":1683049567.3188062,"msg":"127.0.0.1, user_session, /auth/oauth/logout/XSUnhyK8CcPhmWNSfEzauH, DELETE, {}"}
+{"level":"error","ts":1683049567.318907,"msg":"missing Authorization header"}
+{"level":"info","ts":1683049571.040118,"msg":"127.0.0.1, user_session, /auth/oauth/logout/XSUnhyK8CcPhmWNSfEzauH, DELETE, {}"}
+{"level":"info","ts":1683049606.4345675,"msg":"127.0.0.1, user_session, /api/v1/accounts, GET, {}"}
+{"level":"error","ts":1683049606.4346817,"msg":"missing Authorization header"}
+{"level":"info","ts":1683049609.8252609,"msg":"127.0.0.1, user_session, /api/v1/accounts, GET, {}"}
+{"level":"error","ts":1683049609.826528,"msg":"expired or invalid token"}
+{"level":"info","ts":1683049611.3781168,"msg":"127.0.0.1, user_session, /api/v1/accounts, GET, {}"}
+{"level":"error","ts":1683049611.3789504,"msg":"expired or invalid token"}
+{"level":"info","ts":1683049614.1298008,"msg":"127.0.0.1, user_session, /auth/oauth/login, POST, {}"}
+{"level":"info","ts":1683049615.8746784,"msg":"127.0.0.1, user_session, /api/v1/accounts, GET, {}"}
+{"level":"error","ts":1683049615.8780456,"msg":"Organization: unsupported relations for schema Account"}
+{"level":"info","ts":1683049673.3398032,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1683049683.7730422,"msg":"127.0.0.1, user_session, /api/v1/accounts/1, GET, {}"}
+{"level":"info","ts":1683049729.3554485,"msg":"127.0.0.1, user_session, /api/v1/accounts, DELETE, {}"}
+{"level":"info","ts":1683049766.302308,"msg":"127.0.0.1, user_session, /api/v1/accounts/me, GET, {}"}
+{"level":"info","ts":1683049919.5912507,"msg":"Connected to redis 0.0.0.0:6379"}
