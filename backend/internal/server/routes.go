@@ -64,4 +64,6 @@ func (s *Server) Register() {
 	accountsRoutes.Delete("/:id", s.Middleware.Authorization(authz.Admin), s.DeleteAccount)
 	accountsRoutes.Patch("/:id", s.Middleware.Authorization(authz.Admin), s.UpdateAccount)
 
+	// Companies
+
 }

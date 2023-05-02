@@ -56,6 +56,7 @@ func Migrate(cfg *config.Config) error {
 
 	// Business
 	db.DB.AutoMigrate(&model.Account{})
+	db.DB.AutoMigrate(&model.Company{})
 	// OAuth
 	db.DB.AutoMigrate(&model.Session{})
 	db.DB.AutoMigrate(&model.Token{})
