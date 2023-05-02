@@ -1,0 +1,12 @@
+[
+  {
+    "desc": "admin",
+    "type": "api",
+    "actions": [{ "desc": "all" }]
+  },
+  {
+    "desc": "user",
+    "type": "api",
+    "actions": [{ "desc": "all" }]
+  }
+]

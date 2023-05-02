@@ -1,0 +1,10 @@
+{"level":"panic","ts":1683046069.9199722,"msg":"Error connecting to MYSQL DB: driver: bad connection"}
+{"level":"info","ts":1683046104.6958437,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1683046140.6093,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"dpanic","ts":1683046140.7427585,"msg":"Post \"/auth/oauth2/token?grant_type=client_credentials&scope=api\": unsupported protocol scheme \"\""}
+{"level":"info","ts":1683046150.9246824,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1683046176.1429842,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"dpanic","ts":1683046176.6637876,"msg":"Post \"/auth/oauth2/token?grant_type=client_credentials&scope=api\": unsupported protocol scheme \"\""}
+{"level":"info","ts":1683046298.4129026,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1683046311.8450341,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"dpanic","ts":1683046312.005385,"msg":"Post \"/auth/oauth2/token?grant_type=client_credentials&scope=api\": unsupported protocol scheme \"\""}
