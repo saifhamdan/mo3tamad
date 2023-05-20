@@ -14,7 +14,7 @@ services:
       MYSQL_ROOT_PASSWORD: 'root'
       TZ: 'Asia/Amman'
     volumes:
-      - /home/saif/volumes/mo3tamad/mysql_data:/var/lib/mysql
+      - /home/haroun/volumes/mo3tamad/mysql_data:/var/lib/mysql
     networks:
       - mo3tamad
   redis:

@@ -49,3 +49,407 @@
 {"level":"info","ts":1683049729.3554485,"msg":"127.0.0.1, user_session, /api/v1/accounts, DELETE, {}"}
 {"level":"info","ts":1683049766.302308,"msg":"127.0.0.1, user_session, /api/v1/accounts/me, GET, {}"}
 {"level":"info","ts":1683049919.5912507,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"panic","ts":1683063005.7661753,"msg":"Error connecting to MYSQL DB: dial tcp: lookup mysql on 172.17.176.1:53: no such host"}
+{"level":"panic","ts":1683063076.7467752,"msg":"Error connecting to MYSQL DB: driver: bad connection"}
+{"level":"panic","ts":1683063367.2242813,"msg":"Error connecting to MYSQL DB: driver: bad connection"}
+{"level":"panic","ts":1683063388.7229533,"msg":"Error connecting to MYSQL DB: driver: bad connection"}
+{"level":"panic","ts":1683063461.6876059,"msg":"Error connecting to MYSQL DB: driver: bad connection"}
+{"level":"panic","ts":1683063757.5597732,"msg":"Error connecting to MYSQL DB: dial tcp 127.0.0.1:3306: connect: connection refused"}
+{"level":"info","ts":1683063784.9399905,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1683064250.0615895,"msg":"127.0.0.1, user_session, /api/v1/accounts, GET, {}"}
+{"level":"error","ts":1683064250.0616765,"msg":"missing Authorization header"}
+{"level":"info","ts":1683064283.780482,"msg":"127.0.0.1, user_session, /auth/oauth/login, POST, {}"}
+{"level":"error","ts":1683064283.783759,"msg":"incorrect password or email"}
+{"level":"info","ts":1683064814.362984,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1683064845.1602306,"msg":"127.0.0.1, user_session, /auth/oauth/login, POST, {}"}
+{"level":"info","ts":1683064855.6129937,"msg":"127.0.0.1, user_session, /api/v1/accounts, GET, {}"}
+{"level":"info","ts":1683064876.7419896,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1683064884.0930982,"msg":"127.0.0.1, user_session, /api/v1/accounts/1, GET, {}"}
+{"level":"panic","ts":1683374477.6794913,"msg":"Error connecting to MYSQL DB: dial tcp: lookup mysql on 172.17.176.1:53: no such host"}
+{"level":"panic","ts":1683547748.9595969,"msg":"Error connecting to MYSQL DB: dial tcp: lookup mysql on 172.17.176.1:53: no such host"}
+{"level":"panic","ts":1683548203.306373,"msg":"Error connecting to MYSQL DB: dial tcp: lookup mysql on 172.17.176.1:53: no such host"}
+{"level":"panic","ts":1683548398.7794435,"msg":"Error connecting to MYSQL DB: dial tcp: lookup mysql on 172.17.176.1:53: no such host"}
+{"level":"panic","ts":1683548661.5847123,"msg":"Error connecting to MYSQL DB: dial tcp: lookup mysql on 172.17.176.1:53: no such host"}
+{"level":"info","ts":1683548726.0997279,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1683548910.5725513,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1683548910.5726335,"msg":"missing Authorization header"}
+{"level":"info","ts":1683549064.1886752,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1683549064.188752,"msg":"missing Authorization header"}
+{"level":"info","ts":1683549077.1342797,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1683549077.1366448,"msg":"Error 1146 (42S02): Table 'mo3tamad.exams' doesn't exist"}
+{"level":"panic","ts":1683719312.640113,"msg":"Error connecting to MYSQL DB: dial tcp: lookup mysql on 172.17.176.1:53: no such host"}
+{"level":"panic","ts":1683719373.3792558,"msg":"Error connecting to MYSQL DB: dial tcp 127.0.0.1:3306: connect: connection refused"}
+{"level":"panic","ts":1683719404.107703,"msg":"Error connecting to MYSQL DB: dial tcp 127.0.0.1:3306: connect: connection refused"}
+{"level":"panic","ts":1683719451.9079719,"msg":"Error connecting to MYSQL DB: dial tcp 127.0.0.1:3306: connect: connection refused"}
+{"level":"info","ts":1683719469.384638,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1683720043.0887415,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1683720043.091182,"msg":"Error 1146 (42S02): Table 'mo3tamad.exams' doesn't exist"}
+{"level":"info","ts":1683720110.0205305,"msg":"127.0.0.1, user_session, /api/v1/exams/, PUT, {}"}
+{"level":"error","ts":1683720110.0206258,"msg":"missing Authorization header"}
+{"level":"info","ts":1683720120.8930502,"msg":"127.0.0.1, user_session, /api/v1/exams/, PUT, {}"}
+{"level":"info","ts":1683720173.6427503,"msg":"127.0.0.1, user_session, /api/v1/exams/, POST, {}"}
+{"level":"error","ts":1683720173.6436765,"msg":"Unprocessable Entity"}
+{"level":"info","ts":1683720201.0581615,"msg":"127.0.0.1, user_session, /api/v1/exams/, POST, {\"query\":\"nqueryIntrospectionQuery{n__schema{nnqueryType{name}nmutationType{name}nsubscriptionType{name}ntypes{n...FullTypen}ndirectives{nnamendescriptionnnlocationsnargs{n...InputValuen}n}n}n}nnfragmentFullTypeon__Type{nkindnnamendescriptionnnfields(includeDeprecated:true){nnamendescriptionnargs{n...InputValuen}ntype{n...TypeRefn}nisDeprecatedndeprecationReasonn}ninputFields{n...InputValuen}ninterfaces{n...TypeRefn}nenumValues(includeDeprecated:true){nnamendescriptionnisDeprecatedndeprecationReasonn}npossibleTypes{n...TypeRefn}n}nnfragmentInputValueon__InputValue{nnamendescriptionntype{...TypeRef}ndefaultValuennn}nnfragmentTypeRefon__Type{nkindnnamenofType{nkindnnamenofType{nkindnnamenofType{nkindnnamenofType{nkindnnamenofType{nkindnnamenofType{nkindnnamenofType{nkindnnamen}n}n}n}n}n}n}n}n\"}"}
+{"level":"error","ts":1683720201.0611567,"msg":"Error 1146 (42S02): Table 'mo3tamad.exams' doesn't exist"}
+{"level":"info","ts":1683720201.1457434,"msg":"127.0.0.1, user_session, /api/v1/exams/, POST, {\"query\":\"nqueryIntrospectionQuery{n__schema{nnqueryType{name}nmutationType{name}nsubscriptionType{name}ntypes{n...FullTypen}ndirectives{nnamendescriptionnnlocationsnargs{n...InputValuen}n}n}n}nnfragmentFullTypeon__Type{nkindnnamendescriptionnnfields(includeDeprecated:true){nnamendescriptionnargs{n...InputValuen}ntype{n...TypeRefn}nisDeprecatedndeprecationReasonn}ninputFields{n...InputValuen}ninterfaces{n...TypeRefn}nenumValues(includeDeprecated:true){nnamendescriptionnisDeprecatedndeprecationReasonn}npossibleTypes{n...TypeRefn}n}nnfragmentInputValueon__InputValue{nnamendescriptionntype{...TypeRef}ndefaultValuennn}nnfragmentTypeRefon__Type{nkindnnamenofType{nkindnnamenofType{nkindnnamenofType{nkindnnamenofType{nkindnnamenofType{nkindnnamenofType{nkindnnamenofType{nkindnnamen}n}n}n}n}n}n}n}n\"}"}
+{"level":"error","ts":1683720201.1489828,"msg":"Error 1146 (42S02): Table 'mo3tamad.exams' doesn't exist"}
+{"level":"info","ts":1683720242.4927073,"msg":"127.0.0.1, user_session, /api/v1/exams/, POST, {}"}
+{"level":"error","ts":1683720242.493519,"msg":"Unprocessable Entity"}
+{"level":"info","ts":1683720381.6615064,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1683720396.6142404,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1683720404.0481384,"msg":"127.0.0.1, user_session, /api/v1/exams/, POST, {}"}
+{"level":"error","ts":1683720404.0494907,"msg":"Unprocessable Entity"}
+{"level":"info","ts":1683720989.1017854,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1683720992.8985095,"msg":"127.0.0.1, user_session, /api/v1/exams/, POST, {}"}
+{"level":"error","ts":1683720992.8993828,"msg":"Unprocessable Entity"}
+{"level":"info","ts":1683721103.1852443,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1683721263.4258766,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1683721295.923294,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1683721348.5845475,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1683721361.8797624,"msg":"127.0.0.1, user_session, /api/v1/exams/, POST, {}"}
+{"level":"error","ts":1683721361.8806045,"msg":"Unprocessable Entity"}
+{"level":"info","ts":1683721802.8801441,"msg":"127.0.0.1, user_session, /api/v1/exams/, POST, {\"certification_url\":\"go.com\",\"company_id\":33,\"description\":\"csexam\",\"duration\":12,\"passing_score\":3,\"time\":23,\"title\":\"cs\"}"}
+{"level":"error","ts":1683721802.8812819,"msg":"Time.UnmarshalJSON: input is not a JSON string"}
+{"level":"info","ts":1683721903.9576135,"msg":"127.0.0.1, user_session, /api/v1/exams/, POST, {\"certification_url\":\"go.com\",\"company_id\":33,\"description\":\"csexam\",\"duration\":\"2018-09-22T12:42:31Z\",\"passing_score\":3,\"time\":\"2018-09-22T12:42:31Z\",\"title\":\"cs\"}"}
+{"level":"info","ts":1683721933.6504369,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1683722187.4551218,"msg":"127.0.0.1, user_session, /api/v1/exams/1, GET, {}"}
+{"level":"error","ts":1683722187.4552062,"msg":"missing Authorization header"}
+{"level":"info","ts":1683722197.1687891,"msg":"127.0.0.1, user_session, /api/v1/exams/1, GET, {}"}
+{"level":"error","ts":1683722197.1696498,"msg":"id param is required"}
+{"level":"error","ts":1683722197.1714406,"msg":"record not found"}
+{"level":"info","ts":1683722204.092672,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1683722215.4472103,"msg":"127.0.0.1, user_session, /api/v1/exams/1, GET, {}"}
+{"level":"error","ts":1683722215.4479487,"msg":"id param is required"}
+{"level":"error","ts":1683722215.4487903,"msg":"record not found"}
+{"level":"info","ts":1683722362.5974634,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1683722385.3960257,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1683722521.5060167,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1683722679.599748,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1683722931.2724829,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1683722981.557293,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1683723191.0686774,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1683723202.854444,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1683723263.8719416,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1683728275.7144704,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1683728335.3150659,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1683728497.9251282,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1683729478.1315036,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1683730443.14959,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"panic","ts":1683730558.2662036,"msg":"Error connecting to MYSQL DB: dial tcp: lookup mysql on 172.17.176.1:53: no such host"}
+{"level":"panic","ts":1683730604.6737597,"msg":"Error connecting to MYSQL DB: dial tcp: lookup mysql on 172.17.176.1:53: no such host"}
+{"level":"info","ts":1683730619.3762658,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1683730623.6884446,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1683730627.7008407,"msg":"127.0.0.1, user_session, /api/v1/exams/1, GET, {}"}
+{"level":"info","ts":1683730641.6073337,"msg":"127.0.0.1, user_session, /api/v1/exams/, POST, {\"certification_url\":\"go.com\",\"company_id\":33,\"description\":\"csfexam\",\"duration\":\"2018-09-22T12:42:31Z\",\"passing_score\":3,\"time\":\"2018-09-22T12:42:31Z\",\"title\":\"cs\"}"}
+{"level":"info","ts":1683730644.788502,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1683730671.293519,"msg":"127.0.0.1, user_session, /api/v1/exams/1, DELETE, {}"}
+{"level":"error","ts":1683730671.2935977,"msg":"missing Authorization header"}
+{"level":"info","ts":1683730678.7244625,"msg":"127.0.0.1, user_session, /api/v1/exams/1, DELETE, {}"}
+{"level":"info","ts":1683730687.0115254,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1683730721.794651,"msg":"127.0.0.1, user_session, /api/v1/exams/2, PATCH, {}"}
+{"level":"error","ts":1683730721.7947373,"msg":"missing Authorization header"}
+{"level":"info","ts":1683730726.3907988,"msg":"127.0.0.1, user_session, /api/v1/exams/2, PATCH, {}"}
+{"level":"error","ts":1683730726.392497,"msg":"Unprocessable Entity"}
+{"level":"info","ts":1683730746.9833813,"msg":"127.0.0.1, user_session, /api/v1/exams/2, PATCH, {\"certification_url\":\"go.com\",\"company_id\":33,\"description\":\"csfexam\",\"duration\":\"2018-09-22T12:42:31Z\",\"passing_score\":3,\"time\":\"2018-09-22T12:42:31Z\",\"title\":\"cssss\"}"}
+{"level":"info","ts":1683730750.8564763,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"panic","ts":1683826202.0347748,"msg":"Error connecting to MYSQL DB: dial tcp: lookup mysql on 172.17.176.1:53: no such host"}
+{"level":"panic","ts":1683826303.1012945,"msg":"Error connecting to MYSQL DB: dial tcp: lookup mysql on 172.17.176.1:53: no such host"}
+{"level":"info","ts":1683826327.9416249,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1683826332.2835183,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1683826344.9981396,"msg":"127.0.0.1, user_session, /api/v1/exams/2, PATCH, {\"certification_url\":\"go.com\",\"company_id\":33,\"description\":\"csfexam\",\"duration\":\"2018-09-22T12:42:31Z\",\"passing_score\":3,\"time\":\"2018-09-22T12:42:31Z\",\"title\":\"csffsfsss\"}"}
+{"level":"info","ts":1683826352.151482,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1683826813.2884564,"msg":"127.0.0.1, user_session, /api/v1/questions/2, POST, {\"options\":[{\"is_correct\":true,\"option_text\":\"fsfewfswe\"},{\"is_correct\":true,\"option_text\":\"fsfewfswe\"},{\"is_correct\":true,\"option_text\":\"fsfewfswe\"}],\"text\":\"csffsfsss\"}"}
+{"level":"error","ts":1683826813.2953382,"msg":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'exam_time' at row 1"}
+{"level":"info","ts":1683826872.0465918,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1683826875.3496695,"msg":"127.0.0.1, user_session, /api/v1/questions/2, POST, {\"options\":[{\"is_correct\":true,\"option_text\":\"fsfewfswe\"},{\"is_correct\":true,\"option_text\":\"fsfewfswe\"},{\"is_correct\":true,\"option_text\":\"fsfewfswe\"}],\"text\":\"csffsfsss\"}"}
+{"level":"error","ts":1683826875.3596458,"msg":"Error 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`mo3tamad`.`questions`, CONSTRAINT `fk_questions_exam` FOREIGN KEY (`exam_id`) REFERENCES `exams` (`exam_id`))"}
+{"level":"info","ts":1683827054.6393342,"msg":"127.0.0.1, user_session, /api/v1/questions/2, POST, {\"exam_id\":2,\"options\":[{\"is_correct\":true,\"option_text\":\"fsfewfswe\"},{\"is_correct\":true,\"option_text\":\"fsfewfswe\"},{\"is_correct\":true,\"option_text\":\"fsfewfswe\"}],\"text\":\"csffsfsss\"}"}
+{"level":"info","ts":1683827134.9995894,"msg":"127.0.0.1, user_session, /api/v1/questions/5, POST, {\"exam_id\":2,\"options\":[{\"is_correct\":true,\"option_text\":\"fsfewfswe\"},{\"is_correct\":true,\"option_text\":\"fsfewfswe\"},{\"is_correct\":true,\"option_text\":\"fsfewfswe\"}],\"text\":\"csffsfsss\"}"}
+{"level":"info","ts":1683827172.5462406,"msg":"127.0.0.1, user_session, /api/v1/exams/, POST, {\"certification_url\":\"go.com\",\"company_id\":33,\"description\":\"csfexam\",\"duration\":\"2018-09-22T12:42:31Z\",\"passing_score\":3,\"time\":\"2018-09-22T12:42:31Z\",\"title\":\"cs\"}"}
+{"level":"info","ts":1683827179.426,"msg":"127.0.0.1, user_session, /api/v1/questions/5, POST, {\"exam_id\":3,\"options\":[{\"is_correct\":true,\"option_text\":\"fsfewfswe\"},{\"is_correct\":true,\"option_text\":\"fsfewfswe\"},{\"is_correct\":true,\"option_text\":\"fsfewfswe\"}],\"text\":\"csffsfsss\"}"}
+{"level":"info","ts":1683827268.9397564,"msg":"127.0.0.1, user_session, /api/v1/questions/, GET, {}"}
+{"level":"error","ts":1683827268.9398415,"msg":"missing Authorization header"}
+{"level":"info","ts":1683827274.095653,"msg":"127.0.0.1, user_session, /api/v1/questions/, GET, {}"}
+{"level":"info","ts":1683827284.9531593,"msg":"127.0.0.1, user_session, /api/v1/questions/2, GET, {}"}
+{"level":"info","ts":1683827311.3021672,"msg":"127.0.0.1, user_session, /api/v1/questions/4, GET, {}"}
+{"level":"info","ts":1683827440.9170444,"msg":"127.0.0.1, user_session, /api/v1/questions/, GET, {}"}
+{"level":"info","ts":1683827450.09349,"msg":"127.0.0.1, user_session, /api/v1/questions/2, GET, {}"}
+{"level":"info","ts":1683827569.8580036,"msg":"127.0.0.1, user_session, /api/v1/questions/3, GET, {}"}
+{"level":"info","ts":1683827699.9671376,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1683827707.6223228,"msg":"127.0.0.1, user_session, /api/v1/questions/2, GET, {}"}
+{"level":"info","ts":1683827713.5168078,"msg":"127.0.0.1, user_session, /api/v1/questions/3, GET, {}"}
+{"level":"info","ts":1683827731.6563983,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1683827734.8694196,"msg":"127.0.0.1, user_session, /api/v1/questions/3, GET, {}"}
+{"level":"info","ts":1683827739.4505913,"msg":"127.0.0.1, user_session, /api/v1/questions/2, GET, {}"}
+{"level":"info","ts":1683827825.5231438,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1683827835.7490392,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/2, GET, {}"}
+{"level":"info","ts":1683827842.4123344,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/3, GET, {}"}
+{"level":"info","ts":1683827848.5240834,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/2, GET, {}"}
+{"level":"info","ts":1683828010.9542964,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1683828013.4244251,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/2, GET, {}"}
+{"level":"info","ts":1683828109.4338748,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1683828111.875932,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/2, GET, {}"}
+{"level":"info","ts":1683828118.0125313,"msg":"127.0.0.1, user_session, /api/v1/questions/, GET, {}"}
+{"level":"info","ts":1683828128.0188186,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/3, GET, {}"}
+{"level":"info","ts":1683828148.910575,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1683828152.7414505,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/3, GET, {}"}
+{"level":"info","ts":1683828159.013877,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/2, GET, {}"}
+{"level":"info","ts":1683919769.3713574,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1683919774.334493,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/2, GET, {}"}
+{"level":"info","ts":1683919786.1041381,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/3, GET, {}"}
+{"level":"info","ts":1683920033.3233693,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1683920038.4895492,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1683920057.4867773,"msg":"127.0.0.1, user_session, /api/v1/questions/, GET, {}"}
+{"level":"info","ts":1683920163.2184694,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1683920168.3358374,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/3, GET, {}"}
+{"level":"info","ts":1683920172.6440086,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/2, GET, {}"}
+{"level":"info","ts":1683921050.987454,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1683921054.4432526,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/2, GET, {}"}
+{"level":"info","ts":1683921095.9290478,"msg":"127.0.0.1, user_session, /api/v1/questions/, GET, {}"}
+{"level":"info","ts":1683921133.1945376,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1683921160.8336906,"msg":"127.0.0.1, user_session, /api/v1/questions/, GET, {}"}
+{"level":"info","ts":1683921238.9023972,"msg":"127.0.0.1, user_session, /api/v1/questions/, POST, {\"exam_id\":3,\"options\":[{\"is_correct\":true,\"option_text\":\"fsfewfswe\"},{\"is_correct\":true,\"option_text\":\"fsfewfswe\"},{\"is_correct\":true,\"option_text\":\"fsfewfswe\"}],\"text\":\"csffsfsss\"}"}
+{"level":"info","ts":1683921248.895094,"msg":"127.0.0.1, user_session, /api/v1/questions/4, GET, {}"}
+{"level":"info","ts":1683921328.3083844,"msg":"127.0.0.1, user_session, /api/v1/questions/4, DELETE, {}"}
+{"level":"error","ts":1683921328.3084657,"msg":"missing Authorization header"}
+{"level":"info","ts":1683921334.2699466,"msg":"127.0.0.1, user_session, /api/v1/questions/4, DELETE, {}"}
+{"level":"info","ts":1683922117.0979984,"msg":"127.0.0.1, user_session, /api/v1/questions/4, DELETE, {}"}
+{"level":"info","ts":1683923151.589655,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1683923157.222215,"msg":"127.0.0.1, user_session, /api/v1/questions/4, DELETE, {}"}
+{"level":"info","ts":1683923212.5670514,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1683923215.983333,"msg":"127.0.0.1, user_session, /api/v1/questions/4, DELETE, {}"}
+{"level":"info","ts":1683987239.0898051,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1683987506.6869109,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1683987539.2809064,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1683987552.7966182,"msg":"127.0.0.1, user_session, /api/v1/questions/4, GET, {}"}
+{"level":"info","ts":1683987567.0724764,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1683987570.369601,"msg":"127.0.0.1, user_session, /api/v1/questions/4, GET, {}"}
+{"level":"info","ts":1683987578.4454846,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1683987580.8606513,"msg":"127.0.0.1, user_session, /api/v1/questions/4, GET, {}"}
+{"level":"info","ts":1683987618.7323208,"msg":"127.0.0.1, user_session, /api/v1/questions/4, DELETE, {}"}
+{"level":"info","ts":1683987718.8867438,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1683987721.8647478,"msg":"127.0.0.1, user_session, /api/v1/questions/4, DELETE, {}"}
+{"level":"info","ts":1683987883.2391696,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1683987886.850948,"msg":"127.0.0.1, user_session, /api/v1/questions/4, DELETE, {}"}
+{"level":"info","ts":1683988035.281031,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1683988039.2237031,"msg":"127.0.0.1, user_session, /api/v1/questions/4, DELETE, {}"}
+{"level":"info","ts":1683988057.5558429,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1683988059.9359567,"msg":"127.0.0.1, user_session, /api/v1/questions/4, DELETE, {}"}
+{"level":"info","ts":1683988064.5488615,"msg":"127.0.0.1, user_session, /api/v1/questions/4, GET, {}"}
+{"level":"info","ts":1683988191.5556254,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1683988206.013184,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1683988212.7935264,"msg":"127.0.0.1, user_session, /api/v1/questions/4, GET, {}"}
+{"level":"info","ts":1683989086.509127,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1683989091.3188155,"msg":"127.0.0.1, user_session, /api/v1/questions/4, GET, {}"}
+{"level":"info","ts":1683989095.9638033,"msg":"127.0.0.1, user_session, /api/v1/questions/4, DELETE, {}"}
+{"level":"info","ts":1683990683.84247,"msg":"127.0.0.1, user_session, /api/v1/questions/4, DELETE, {}"}
+{"level":"info","ts":1683991410.0816286,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1683991413.246645,"msg":"127.0.0.1, user_session, /api/v1/questions/4, DELETE, {}"}
+{"level":"info","ts":1683991647.359813,"msg":"127.0.0.1, user_session, /api/v1/questions/, GET, {}"}
+{"level":"info","ts":1683991670.4505484,"msg":"127.0.0.1, user_session, /api/v1/questions/2, PATCH, {\"exam_id\":2,\"options\":[{\"is_correct\":false,\"option_text\":\"fsfewfswe\"},{\"is_correct\":true,\"option_text\":\"fsfewfswe\"},{\"is_correct\":true,\"option_text\":\"fsfewfswe\"}],\"text\":\"csffsfsss\"}"}
+{"level":"error","ts":1683991670.4506404,"msg":"missing Authorization header"}
+{"level":"info","ts":1683991674.5214684,"msg":"127.0.0.1, user_session, /api/v1/questions/2, PATCH, {\"exam_id\":2,\"options\":[{\"is_correct\":false,\"option_text\":\"fsfewfswe\"},{\"is_correct\":true,\"option_text\":\"fsfewfswe\"},{\"is_correct\":true,\"option_text\":\"fsfewfswe\"}],\"text\":\"csffsfsss\"}"}
+{"level":"info","ts":1683991749.7965627,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1683991763.231905,"msg":"127.0.0.1, user_session, /api/v1/questions/2, PATCH, {\"exam_id\":2,\"options\":[{\"is_correct\":false,\"option_text\":\"fsfewfshrgrdhergrwe\"},{\"is_correct\":true,\"option_text\":\"fsfewfswe\"},{\"is_correct\":true,\"option_text\":\"fsfewfswe\"}],\"text\":\"csffsfsss\"}"}
+{"level":"panic","ts":1684161534.0894408,"msg":"Error connecting to MYSQL DB: dial tcp: lookup mysql on 172.17.176.1:53: no such host"}
+{"level":"panic","ts":1684161546.4467607,"msg":"Error connecting to MYSQL DB: dial tcp: lookup mysql on 172.17.176.1:53: no such host"}
+{"level":"info","ts":1684161557.4867358,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1684161561.0698688,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1684161566.9525957,"msg":"127.0.0.1, user_session, /api/v1/accounts, GET, {}"}
+{"level":"info","ts":1684161678.0329256,"msg":"127.0.0.1, user_session, /api/v1registration/1/2, PUT, {\"end_time\":null,\"isCheated\":false,\"start_time\":null,\"status\":\"notyet\"}"}
+{"level":"error","ts":1684161678.033025,"msg":"missing Authorization header"}
+{"level":"info","ts":1684161687.857711,"msg":"127.0.0.1, user_session, /api/v1registration/1/2, PUT, {\"end_time\":null,\"isCheated\":false,\"start_time\":null,\"status\":\"notyet\"}"}
+{"level":"info","ts":1684161697.3539584,"msg":"127.0.0.1, user_session, /api/v1/registration/1/2, PUT, {\"end_time\":null,\"isCheated\":false,\"start_time\":null,\"status\":\"notyet\"}"}
+{"level":"info","ts":1684161711.0373473,"msg":"127.0.0.1, user_session, /api/v1/registration/1/2, POST, {\"end_time\":null,\"isCheated\":false,\"start_time\":null,\"status\":\"notyet\"}"}
+{"level":"error","ts":1684161711.0392406,"msg":"invalid field found for struct mo3tamad/model.Registration's field CheatedTime: define a valid foreign key for relations or implement the Valuer/Scanner interface"}
+{"level":"info","ts":1684161738.3672967,"msg":"127.0.0.1, user_session, /api/v1/registration/1/2, POST, {\"cheatedTime\":null,\"end_time\":null,\"isCheated\":false,\"start_time\":null,\"status\":\"notyet\"}"}
+{"level":"error","ts":1684161738.3685026,"msg":"invalid field found for struct mo3tamad/model.Registration's field CheatedTime: define a valid foreign key for relations or implement the Valuer/Scanner interface"}
+{"level":"info","ts":1684161755.6668189,"msg":"127.0.0.1, user_session, /api/v1/registration/1/2, POST, {\"cheated_time\":null,\"end_time\":null,\"isCheated\":false,\"start_time\":null,\"status\":\"notyet\"}"}
+{"level":"error","ts":1684161755.6687577,"msg":"invalid field found for struct mo3tamad/model.Registration's field CheatedTime: define a valid foreign key for relations or implement the Valuer/Scanner interface"}
+{"level":"info","ts":1684162431.334463,"msg":"127.0.0.1, user_session, /api/v1/registration/1/2, POST, {\"cheated_time\":null,\"end_time\":null,\"isCheated\":false,\"start_time\":null,\"status\":\"notyet\"}"}
+{"level":"error","ts":1684162431.3367808,"msg":"invalid field found for struct mo3tamad/model.Registration's field CheatedTime: define a valid foreign key for relations or implement the Valuer/Scanner interface"}
+{"level":"info","ts":1684162477.5581248,"msg":"127.0.0.1, user_session, /api/v1/registration/1/2, POST, {}"}
+{"level":"error","ts":1684162477.5582163,"msg":"missing Authorization header"}
+{"level":"info","ts":1684162482.3345165,"msg":"127.0.0.1, user_session, /api/v1/registration/1/2, POST, {}"}
+{"level":"error","ts":1684162482.3356192,"msg":"invalid field found for struct mo3tamad/model.Registration's field CheatedTime: define a valid foreign key for relations or implement the Valuer/Scanner interface"}
+{"level":"info","ts":1684163306.3425803,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1684163310.2166338,"msg":"127.0.0.1, user_session, /api/v1/registration/1/2, POST, {}"}
+{"level":"error","ts":1684163310.2179015,"msg":"invalid field found for struct mo3tamad/model.Registration's field CheatedTime: define a valid foreign key for relations or implement the Valuer/Scanner interface"}
+{"level":"info","ts":1684185584.3224208,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1684185589.2095242,"msg":"127.0.0.1, user_session, /api/v1/registration/1/2, POST, {\"end_time\":null,\"is_cheated\":false,\"start_time\":null,\"status\":\"onhold\"}"}
+{"level":"error","ts":1684185589.21095,"msg":"invalid field found for struct mo3tamad/model.Registration's field CheatedTime: define a valid foreign key for relations or implement the Valuer/Scanner interface"}
+{"level":"info","ts":1684185613.734812,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1684185690.4007897,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1684185736.9497585,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1684185746.110227,"msg":"127.0.0.1, user_session, /api/v1/registration/1/2, POST, {\"end_time\":null,\"is_cheated\":false,\"start_time\":null,\"status\":\"onhold\"}"}
+{"level":"error","ts":1684185746.1116362,"msg":"invalid field found for struct mo3tamad/model.Registration's field CheatedTime: define a valid foreign key for relations or implement the Valuer/Scanner interface"}
+{"level":"info","ts":1684185839.2392066,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1684185845.9851606,"msg":"127.0.0.1, user_session, /api/v1/registration/1/2, POST, {\"end_time\":null,\"is_cheated\":false,\"start_time\":null,\"status\":\"onhold\"}"}
+{"level":"error","ts":1684185845.9865403,"msg":"invalid field found for struct mo3tamad/model.Registration's field CheatedTime: define a valid foreign key for relations or implement the Valuer/Scanner interface"}
+{"level":"info","ts":1684185873.2768056,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1684185876.278244,"msg":"127.0.0.1, user_session, /api/v1/registration/1/2, POST, {\"end_time\":null,\"is_cheated\":false,\"start_time\":null,\"status\":\"onhold\"}"}
+{"level":"error","ts":1684185876.2797043,"msg":"invalid field found for struct mo3tamad/model.Registration's field CheatedTime: define a valid foreign key for relations or implement the Valuer/Scanner interface"}
+{"level":"info","ts":1684185995.4062784,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1684186000.3804076,"msg":"127.0.0.1, user_session, /api/v1/registration/1/2, POST, {\"end_time\":null,\"is_cheated\":false,\"start_time\":null,\"status\":\"onhold\"}"}
+{"level":"error","ts":1684186000.3818333,"msg":"invalid field found for struct mo3tamad/model.Registration's field CheatedTime: define a valid foreign key for relations or implement the Valuer/Scanner interface"}
+{"level":"info","ts":1684186020.3513222,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1684186027.4656203,"msg":"127.0.0.1, user_session, /api/v1/registration/1/2, POST, {\"end_time\":null,\"is_cheated\":false,\"start_time\":null,\"status\":\"onhold\"}"}
+{"level":"error","ts":1684186027.4673958,"msg":"invalid field found for struct mo3tamad/model.Registration's field CheatedTime: define a valid foreign key for relations or implement the Valuer/Scanner interface"}
+{"level":"info","ts":1684186068.4111373,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1684186073.4921448,"msg":"127.0.0.1, user_session, /api/v1/registration/1/2, POST, {\"end_time\":null,\"is_cheated\":false,\"start_time\":null,\"status\":\"onhold\"}"}
+{"level":"error","ts":1684186073.4940393,"msg":"invalid field found for struct mo3tamad/model.Registration's field CheatedTime: define a valid foreign key for relations or implement the Valuer/Scanner interface"}
+{"level":"info","ts":1684186275.7759645,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1684186278.4120684,"msg":"127.0.0.1, user_session, /api/v1/registration/1/2, POST, {\"end_time\":null,\"is_cheated\":false,\"start_time\":null,\"status\":\"onhold\"}"}
+{"level":"error","ts":1684186278.4136338,"msg":"errrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr%!(EXTRA *errors.errorString=invalid field found for struct mo3tamad/model.Registration's field CheatedTime: define a valid foreign key for relations or implement the Valuer/Scanner interface)"}
+{"level":"info","ts":1684186772.1469693,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1684186775.43403,"msg":"127.0.0.1, user_session, /api/v1/registration/1/2, POST, {\"end_time\":null,\"is_cheated\":false,\"start_time\":null,\"status\":\"onhold\"}"}
+{"level":"error","ts":1684186775.4354293,"msg":"invalid field found for struct mo3tamad/model.Registration's field CheatedTime: define a valid foreign key for relations or implement the Valuer/Scanner interface"}
+{"level":"info","ts":1684186906.0682774,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1684186909.0739713,"msg":"127.0.0.1, user_session, /api/v1/registration/1/2, POST, {\"end_time\":null,\"is_cheated\":false,\"start_time\":null,\"status\":\"onhold\"}"}
+{"level":"error","ts":1684186909.075414,"msg":"invalid field found for struct mo3tamad/model.Registration's field CheatedTime: define a valid foreign key for relations or implement the Valuer/Scanner interface"}
+{"level":"info","ts":1684186922.5396135,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1684186925.473234,"msg":"127.0.0.1, user_session, /api/v1/registration/1/2, POST, {\"end_time\":null,\"is_cheated\":false,\"start_time\":null,\"status\":\"onhold\"}"}
+{"level":"error","ts":1684186925.4747334,"msg":"invalid field found for struct mo3tamad/model.Registration's field CheatedTime: define a valid foreign key for relations or implement the Valuer/Scanner interface"}
+{"level":"info","ts":1684187769.8412073,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1684187773.3691542,"msg":"127.0.0.1, user_session, /api/v1/registration/1/2, POST, {\"end_time\":null,\"is_cheated\":false,\"start_time\":null,\"status\":\"onhold\"}"}
+{"level":"error","ts":1684187773.3705204,"msg":"unsupported data type: &[]: Table not set, please set it like: db.Model(&user) or db.Table(\"users\")"}
+{"level":"info","ts":1684187863.998347,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1684187866.9628289,"msg":"127.0.0.1, user_session, /api/v1/registration/1/2, POST, {\"end_time\":null,\"is_cheated\":false,\"start_time\":null,\"status\":\"onhold\"}"}
+{"level":"error","ts":1684187866.9642174,"msg":"unsupported data type: &[]: Table not set, please set it like: db.Model(&user) or db.Table(\"users\")"}
+{"level":"info","ts":1684187905.0141423,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1684187909.4222162,"msg":"127.0.0.1, user_session, /api/v1/registration/1/2, POST, {\"end_time\":null,\"is_cheated\":false,\"start_time\":null,\"status\":\"onhold\"}"}
+{"level":"error","ts":1684187909.4241512,"msg":"unsupported data type: &[]: Table not set, please set it like: db.Model(&user) or db.Table(\"users\")"}
+{"level":"info","ts":1684188109.13662,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1684188112.1613448,"msg":"127.0.0.1, user_session, /api/v1/registration/1/2, POST, {\"end_time\":null,\"is_cheated\":false,\"start_time\":null,\"status\":\"onhold\"}"}
+{"level":"error","ts":1684188112.1627474,"msg":"unsupported data type: &[]: Table not set, please set it like: db.Model(&user) or db.Table(\"users\")"}
+{"level":"info","ts":1684188189.7379143,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1684188192.749135,"msg":"127.0.0.1, user_session, /api/v1/registration/1/2, POST, {\"end_time\":null,\"is_cheated\":false,\"start_time\":null,\"status\":\"onhold\"}"}
+{"level":"error","ts":1684188192.7511477,"msg":"unsupported data type: &[]: Table not set, please set it like: db.Model(&user) or db.Table(\"users\")"}
+{"level":"info","ts":1684188282.1532793,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1684188286.1338663,"msg":"127.0.0.1, user_session, /api/v1/registration/1/2, POST, {\"end_time\":null,\"is_cheated\":false,\"start_time\":null,\"status\":\"onhold\"}"}
+{"level":"error","ts":1684188286.1351922,"msg":"unsupported data type: &[]: Table not set, please set it like: db.Model(&user) or db.Table(\"users\")"}
+{"level":"info","ts":1684188414.7329552,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1684188417.7655845,"msg":"127.0.0.1, user_session, /api/v1/registration/1/2, POST, {\"end_time\":null,\"is_cheated\":false,\"start_time\":null,\"status\":\"onhold\"}"}
+{"level":"error","ts":1684188417.7728477,"msg":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'start_time' at row 1"}
+{"level":"info","ts":1684188443.2371771,"msg":"127.0.0.1, user_session, /api/v1/registration/1/2, POST, {\"end_time\":\"nil\",\"is_cheated\":false,\"start_time\":\"nil\",\"status\":\"onhold\"}"}
+{"level":"error","ts":1684188443.2380898,"msg":"parsing time \"nil\" as \"2006-01-02T15:04:05Z07:00\": cannot parse \"nil\" as \"2006\""}
+{"level":"info","ts":1684188458.0061848,"msg":"127.0.0.1, user_session, /api/v1/registration/1/2, POST, {\"end_time\":\"2006-01-02T15:04:05Z07:00\",\"is_cheated\":false,\"start_time\":\"2006-01-02T15:04:05Z07:00\",\"status\":\"onhold\"}"}
+{"level":"error","ts":1684188458.0071979,"msg":"parsing time \"2006-01-02T15:04:05Z07:00\": extra text: \"07:00\""}
+{"level":"info","ts":1684188478.4225597,"msg":"127.0.0.1, user_session, /api/v1/registration/1/2, POST, {\"end_time\":\"2006-01-02T15:04:05Z\",\"is_cheated\":false,\"start_time\":\"2006-01-02T15:04:05Z\",\"status\":\"onhold\"}"}
+{"level":"info","ts":1684188666.6828408,"msg":"127.0.0.1, user_session, /api/v1/registration/1/2, POST, {\"cheated_time\":null,\"end_time\":null,\"isCheated\":false,\"start_time\":null,\"status\":\"notyet\"}"}
+{"level":"error","ts":1684188666.6844866,"msg":"User has already registerd for the exam"}
+{"level":"info","ts":1684188757.3267417,"msg":"127.0.0.1, user_session, /api/v1/registration/1/start, POST, {}"}
+{"level":"error","ts":1684188757.3275945,"msg":"Unprocessable Entity"}
+{"level":"info","ts":1684188815.1277595,"msg":"127.0.0.1, user_session, /api/v1/registration/1/start, PATCH, {}"}
+{"level":"info","ts":1684188827.9807236,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1684188831.734096,"msg":"127.0.0.1, user_session, /api/v1/registration/1/start, PATCH, {}"}
+{"level":"info","ts":1684188909.6694489,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1684188912.3651292,"msg":"127.0.0.1, user_session, /api/v1/registration/1/start, POST, {}"}
+{"level":"error","ts":1684188912.3730838,"msg":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'start_time' at row 1"}
+{"level":"info","ts":1684189294.7065794,"msg":"127.0.0.1, user_session, /api/v1/registration/1/start, POST, {}"}
+{"level":"error","ts":1684189294.7077348,"msg":"Unprocessable Entity"}
+{"level":"info","ts":1684189400.1238158,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1684189403.9170306,"msg":"127.0.0.1, user_session, /api/v1/registration/1/start, POST, {}"}
+{"level":"error","ts":1684189403.9188583,"msg":"Unprocessable Entity"}
+{"level":"info","ts":1684189429.9061995,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1684189432.8890207,"msg":"127.0.0.1, user_session, /api/v1/registration/1/start, POST, {}"}
+{"level":"error","ts":1684189432.8900003,"msg":"Unprocessable Entity"}
+{"level":"info","ts":1684189564.5934615,"msg":"127.0.0.1, user_session, /api/v1/registration/1/start, POST, {}"}
+{"level":"error","ts":1684189564.6003883,"msg":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'start_time' at row 1"}
+{"level":"info","ts":1684189771.5793145,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1684189774.6139934,"msg":"127.0.0.1, user_session, /api/v1/registration/1/start, POST, {}"}
+{"level":"error","ts":1684189774.6206682,"msg":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'start_time' at row 1"}
+{"level":"info","ts":1684189842.6918411,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1684189846.0473626,"msg":"127.0.0.1, user_session, /api/v1/registration/1/start, POST, {}"}
+{"level":"error","ts":1684189846.0531092,"msg":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'start_time' at row 1"}
+{"level":"info","ts":1684189892.559304,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1684189895.4236636,"msg":"127.0.0.1, user_session, /api/v1/registration/1/start, POST, {}"}
+{"level":"error","ts":1684189895.430446,"msg":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'start_time' at row 1"}
+{"level":"info","ts":1684189935.8006704,"msg":"127.0.0.1, user_session, /api/v1/registration/1/start, POST, {}"}
+{"level":"error","ts":1684189935.8059208,"msg":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'start_time' at row 1"}
+{"level":"info","ts":1684189944.2149317,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1684189946.9817247,"msg":"127.0.0.1, user_session, /api/v1/registration/1/start, POST, {}"}
+{"level":"error","ts":1684189946.9883146,"msg":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'start_time' at row 1"}
+{"level":"info","ts":1684190052.5399408,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1684190059.0007818,"msg":"127.0.0.1, user_session, /api/v1/registration/1/start, POST, {}"}
+{"level":"error","ts":1684190059.0017102,"msg":"Unprocessable Entity"}
+{"level":"info","ts":1684190066.2641387,"msg":"127.0.0.1, user_session, /api/v1/registration/1/start, POST, {}"}
+{"level":"error","ts":1684190066.2727435,"msg":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'start_time' at row 1"}
+{"level":"info","ts":1684190089.7138035,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1684190094.4452286,"msg":"127.0.0.1, user_session, /api/v1/registration/1/start, POST, {}"}
+{"level":"error","ts":1684190094.451861,"msg":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'start_time' at row 1"}
+{"level":"info","ts":1684190102.9858112,"msg":"127.0.0.1, user_session, /api/v1/registration/start/1, POST, {}"}
+{"level":"error","ts":1684190102.9868286,"msg":"Unprocessable Entity"}
+{"level":"info","ts":1684190106.6327257,"msg":"127.0.0.1, user_session, /api/v1/registration/start/1, POST, {}"}
+{"level":"error","ts":1684190106.6391203,"msg":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'start_time' at row 1"}
+{"level":"info","ts":1684190113.6276214,"msg":"127.0.0.1, user_session, /api/v1/registration/start/1, POST, {}"}
+{"level":"error","ts":1684190113.6346276,"msg":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'start_time' at row 1"}
+{"level":"info","ts":1684190166.5929997,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1684190169.7131703,"msg":"127.0.0.1, user_session, /api/v1/registration/start/1, PATCH, {}"}
+{"level":"info","ts":1684190270.2030568,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1684190273.1450496,"msg":"127.0.0.1, user_session, /api/v1/registration/start/1, PATCH, {}"}
+{"level":"info","ts":1684190309.1944842,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1684190312.585122,"msg":"127.0.0.1, user_session, /api/v1/registration/start/1, POST, {}"}
+{"level":"error","ts":1684190312.58626,"msg":"Unprocessable Entity"}
+{"level":"info","ts":1684190318.4202907,"msg":"127.0.0.1, user_session, /api/v1/registration/start/1, POST, {}"}
+{"level":"error","ts":1684190318.425998,"msg":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'start_time' at row 1"}
+{"level":"info","ts":1684190384.3201885,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1684190412.57332,"msg":"127.0.0.1, user_session, /api/v1/registration/finish/1, PATCH, {}"}
+{"level":"info","ts":1684190430.4813497,"msg":"127.0.0.1, user_session, /api/v1/registration/finish/1, PATCH, {}"}
+{"level":"info","ts":1684190446.7932444,"msg":"127.0.0.1, user_session, /api/v1/registration/finish/1, PATCH, {}"}
+{"level":"info","ts":1684190472.7254815,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1684190477.014745,"msg":"127.0.0.1, user_session, /api/v1/registration/finish/1, PATCH, {}"}
+{"level":"info","ts":1684190646.957563,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1684190652.417549,"msg":"127.0.0.1, user_session, /api/v1/registration/finish/1, POST, {}"}
+{"level":"error","ts":1684190652.4184797,"msg":"Unprocessable Entity"}
+{"level":"info","ts":1684190659.5377443,"msg":"127.0.0.1, user_session, /api/v1/registration/finish/1, POST, {}"}
+{"level":"error","ts":1684190659.547604,"msg":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'start_time' at row 1"}
+{"level":"info","ts":1684191186.5458367,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1684191189.733044,"msg":"127.0.0.1, user_session, /api/v1/registration/finish/1, POST, {}"}
+{"level":"error","ts":1684191189.7394142,"msg":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'start_time' at row 1"}
+{"level":"info","ts":1684191194.6281128,"msg":"127.0.0.1, user_session, /api/v1/registration/finish/1, POST, {}"}
+{"level":"error","ts":1684191194.6289322,"msg":"Unprocessable Entity"}
+{"level":"info","ts":1684191201.9404893,"msg":"127.0.0.1, user_session, /api/v1/registration/finish/1, POST, {}"}
+{"level":"error","ts":1684191201.9413123,"msg":"Unprocessable Entity"}
+{"level":"info","ts":1684191204.1333416,"msg":"127.0.0.1, user_session, /api/v1/registration/finish/1, POST, {}"}
+{"level":"error","ts":1684191204.1344485,"msg":"Unprocessable Entity"}
+{"level":"info","ts":1684191209.7405753,"msg":"127.0.0.1, user_session, /api/v1/registration/start/1, PATCH, {}"}
+{"level":"info","ts":1684191218.946548,"msg":"127.0.0.1, user_session, /api/v1/registration/finish/1, POST, {}"}
+{"level":"error","ts":1684191218.9473798,"msg":"Unprocessable Entity"}
+{"level":"info","ts":1684191223.1229253,"msg":"127.0.0.1, user_session, /api/v1/registration/finish/1, POST, {}"}
+{"level":"error","ts":1684191223.1239314,"msg":"Unprocessable Entity"}
+{"level":"info","ts":1684191291.1548548,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1684191297.142513,"msg":"127.0.0.1, user_session, /api/v1/registration/finish/1, PATCH, {}"}
+{"level":"info","ts":1684191327.4648147,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1684191340.42841,"msg":"127.0.0.1, user_session, /api/v1/registration/1/finish, PATCH, {}"}
+{"level":"info","ts":1684191362.0782425,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1684191378.9879322,"msg":"127.0.0.1, user_session, /api/v1/registration/1/start, PATCH, {}"}
+{"level":"info","ts":1684191452.9165447,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1684191461.0655124,"msg":"127.0.0.1, user_session, /api/v1/registration/1/cheat, PATCH, {}"}
+{"level":"info","ts":1684191482.0932953,"msg":"127.0.0.1, user_session, /api/v1/registration/1/finish, PATCH, {}"}
+{"level":"info","ts":1684191484.1592212,"msg":"127.0.0.1, user_session, /api/v1/registration/1/cheat, PATCH, {}"}
+{"level":"info","ts":1684191712.3184793,"msg":"127.0.0.1, user_session, /registration/byUser/1, GET, {}"}
+{"level":"info","ts":1684191725.1507988,"msg":"127.0.0.1, user_session, /registration/byExam/1, GET, {}"}
+{"level":"info","ts":1684191741.5767775,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1684191744.5339305,"msg":"127.0.0.1, user_session, /registration/byExam/1, GET, {}"}
+{"level":"info","ts":1684191788.902601,"msg":"127.0.0.1, user_session, /registration/byUser/1, GET, {}"}
+{"level":"info","ts":1684192147.1323562,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1684192150.1975284,"msg":"127.0.0.1, user_session, /registration/byUser/1, GET, {}"}
+{"level":"info","ts":1684192412.8920014,"msg":"127.0.0.1, user_session, /api/registration/byUser/1, GET, {}"}
+{"level":"info","ts":1684192425.6701603,"msg":"127.0.0.1, user_session, /api/v1/registration/byUser/1, GET, {}"}
+{"level":"info","ts":1684192432.9636812,"msg":"127.0.0.1, user_session, /api/v1/registration/byExam/1, GET, {}"}
+{"level":"info","ts":1684192436.8665264,"msg":"127.0.0.1, user_session, /api/v1/registration/byExam/2, GET, {}"}
+{"level":"info","ts":1684192937.0034363,"msg":"127.0.0.1, user_session, /api/v1/registration/1, DELETE, {}"}
+{"level":"info","ts":1684192955.5009131,"msg":"127.0.0.1, user_session, /api/v1/company, GET, {}"}
+{"level":"info","ts":1684192961.5574844,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1684192970.9856799,"msg":"127.0.0.1, user_session, /api/v1/company, GET, {}"}
+{"level":"info","ts":1684192977.434019,"msg":"127.0.0.1, user_session, /api/v1/company/1, GET, {}"}
+{"level":"error","ts":1684192977.4420595,"msg":"record not found"}
+{"level":"info","ts":1684192988.605656,"msg":"127.0.0.1, user_session, /api/v1/company, POST, {\"desc\":\"zainorg\",\"isVerified\":true,\"name\":\"zain\",\"phoneNumber\":\"123412\"}"}
+{"level":"info","ts":1684192998.1809323,"msg":"127.0.0.1, user_session, /api/v1/company, GET, {}"}
+{"level":"info","ts":1684193005.1534176,"msg":"127.0.0.1, user_session, /api/v1/company/1, PATCH, {\"name\":\"um\"}"}
+{"level":"info","ts":1684193016.161545,"msg":"127.0.0.1, user_session, /api/v1/company/1, DELETE, {}"}
+{"level":"info","ts":1684193019.9500048,"msg":"127.0.0.1, user_session, /api/v1/company, GET, {}"}
+{"level":"panic","ts":1684610512.4801497,"msg":"Error connecting to MYSQL DB: dial tcp: lookup mysql on 172.17.176.1:53: no such host"}
+{"level":"info","ts":1684610535.5539494,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1684610732.4350512,"msg":"Connected to redis 0.0.0.0:6379"}

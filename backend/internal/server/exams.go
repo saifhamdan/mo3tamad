@@ -1,0 +1,71 @@
+package server
+
+import (
+	"fmt"
+	"mo3tamad/model"
+
+	"github.com/gofiber/fiber/v2"
+	"gorm.io/gorm"
+)
+
+func (s *Server) GetAllExams(c *fiber.Ctx) error {
+	exams := []model.Exam{}
+	err := s.DB.Find(&exams).Error
+	if err != nil {
+		return s.App.HttpResponseInternalServerErrorRequest(c, err)
+	}
+	return s.App.HttpResponseOK(c, exams)
+}
+
+func (s *Server) GetExam(c *fiber.Ctx) error {
+	exam_id, err := c.ParamsInt("id")
+	if err != nil {
+		s.App.HttpResponseBadQueryParams(c, fmt.Errorf("id param is required"))
+	}
+	var Exam model.Exam
+	result := s.DB.First(&Exam, exam_id)
+	if err := result.Error; err != nil {
+		if err == gorm.ErrRecordNotFound {
+			return s.App.HttpResponseNotFound(c, err)
+		}
+		return s.App.HttpResponseInternalServerErrorRequest(c, err)
+	}
+	return s.App.HttpResponseOK(c, Exam)
+}
+
+func (s *Server) CreateExam(c *fiber.Ctx) error {
+	exam := &model.Exam{}
+	err := c.BodyParser(exam)
+	if err != nil {
+		return s.App.HttpResponseBadRequest(c, err)
+	}
+	err = s.DB.Create(exam).Error
+	if err != nil {
+		return s.App.HttpResponseBadRequest(c, err)
+	}
+	return s.App.HttpResponseCreated(c, exam)
+}
+
+func (s *Server) DeleteExam(c *fiber.Ctx) error {
+	exam_id, err := c.ParamsInt("id")
+	if err != nil {
+		s.App.HttpResponseBadQueryParams(c, fmt.Errorf("id param is required"))
+	}
+	s.DB.Delete(&model.Exam{}, exam_id)
+	return s.App.HttpResponseNoContent(c)
+}
+
+func (s *Server) UpdateExam(c *fiber.Ctx) error {
+	exam_id, err := c.ParamsInt("id")
+	if err != nil {
+		s.App.HttpResponseBadQueryParams(c, fmt.Errorf("id param is required"))
+	}
+	exam := &model.Exam{}
+	s.DB.First(exam, exam_id)
+	err = c.BodyParser(exam)
+	if err != nil {
+		return s.App.HttpResponseBadRequest(c, err)
+	}
+	s.DB.Save(exam)
+	return s.App.HttpResponseCreated(c, exam)
+}
