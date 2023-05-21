@@ -85,11 +85,11 @@ func Run() {
 	}
 
 	// Seed Business Data
-	// err = db.SeedData(DBSess.DB)
-	// if err != nil {
-	// 	fmt.Printf("Error seeding Business data: %v", err)
-	// 	panic(0)
-	// }
+	//  err = db.SeedData(DBSess.DB)
+	//  if err != nil {
+	//  	fmt.Printf("Error seeding Business data: %v", err)
+	//  	panic(0)
+	//  }
 
 	server := server.NewServer(log, cfg, DBSess.DB, cacheClient, validate, authzObj, oauth2)
 

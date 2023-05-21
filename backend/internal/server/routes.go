@@ -65,5 +65,36 @@ func (s *Server) Register() {
 	accountsRoutes.Patch("/:id", s.Middleware.Authorization(authz.Admin), s.UpdateAccount)
 
 	// Companies
+	//Exams
+	examsRoutes := v1.Group("/exams")
+	examsRoutes.Get("/", s.GetAllExams)
+	examsRoutes.Get("/:id", s.GetExam)
+	examsRoutes.Post("/", s.CreateExam)
+	examsRoutes.Delete("/:id", s.DeleteExam)
+	examsRoutes.Patch("/:id", s.UpdateExam)
+
+	questionRoutes := v1.Group("/questions")
+	questionRoutes.Get("/", s.GetAllQuestions)
+	questionRoutes.Get("/:id", s.GetQuestion)
+	questionRoutes.Get("/byId/:id", s.GetQuestionByExamId)
+	questionRoutes.Post("/", s.CreateQuestion)
+	questionRoutes.Delete("/:id", s.DeleteQuestion)
+	questionRoutes.Patch("/:id", s.UpdateQuestion)
+
+	registrationRoutes := v1.Group("/registration")
+	registrationRoutes.Post("/:account_id/:exam_id", s.CreateRegister)
+	registrationRoutes.Patch("/:id/start", s.StartedExam)
+	registrationRoutes.Patch("/:id/finish", s.FinishedExam)
+	registrationRoutes.Patch("/:id/cheat", s.UserCheated)
+	registrationRoutes.Get("/byUser/:id", s.GetRegByUserId)
+	registrationRoutes.Get("/byExam/:id", s.GetRegByExamId)
+	registrationRoutes.Delete("/:id", s.DeleteRegistration)
+
+	companyrouts := v1.Group("/company")
+	companyrouts.Get("/", s.GetAllCompanies)
+	companyrouts.Get("/:id", s.GetCompany)
+	companyrouts.Post("/", s.CreateCompany)
+	companyrouts.Delete("/:id", s.DeleteCompany)
+	companyrouts.Patch("/:id", s.UpdateCompany)
 
 }

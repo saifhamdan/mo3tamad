@@ -32,7 +32,8 @@ func NewMysqlDB(cfg *config.Config) (*MysqlDB, error) {
 	fmt.Println("DNS", dns)
 
 	db, err := gorm.Open(mysql.Open(dns), &gorm.Config{
-		PrepareStmt: true,
+		PrepareStmt:                              true,
+		DisableForeignKeyConstraintWhenMigrating: true,
 		// NamingStrategy: schema.NamingStrategy{
 		// 	TablePrefix:   "vfx",
 		// 	SingularTable: true,
@@ -64,7 +65,10 @@ func Migrate(cfg *config.Config) error {
 	db.DB.AutoMigrate(&model.Resource{})
 	db.DB.AutoMigrate(&model.Action{})
 	db.DB.AutoMigrate(&model.Role{})
-
+	db.DB.AutoMigrate(&model.Exam{})
+	db.DB.AutoMigrate(&model.Question{})
+	db.DB.AutoMigrate(&model.Option{})
+	db.DB.AutoMigrate(&model.Registration{})
 	return nil
 }
 
