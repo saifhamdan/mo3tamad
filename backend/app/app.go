@@ -62,7 +62,7 @@ func Run() {
 	validate := validator.New()
 
 	// Auto Migrate
-	if err := db.Migrate(cfg); err != nil {
+	if err := db.Migrate(DBSess.DB); err != nil {
 		fmt.Print(err)
 		panic(0)
 	}
@@ -83,13 +83,6 @@ func Run() {
 		fmt.Printf("Error loading resources: %v", err)
 		panic(0)
 	}
-
-	// Seed Business Data
-	//  err = db.SeedData(DBSess.DB)
-	//  if err != nil {
-	//  	fmt.Printf("Error seeding Business data: %v", err)
-	//  	panic(0)
-	//  }
 
 	server := server.NewServer(log, cfg, DBSess.DB, cacheClient, validate, authzObj, oauth2)
 

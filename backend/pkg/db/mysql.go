@@ -4,8 +4,6 @@ package db
 import (
 	"fmt"
 	"mo3tamad/config"
-	"mo3tamad/pkg/authz"
-	"mo3tamad/pkg/oauth2"
 
 	"mo3tamad/model"
 
@@ -49,59 +47,44 @@ func NewMysqlDB(cfg *config.Config) (*MysqlDB, error) {
 }
 
 // Migrate when you change your model, called from main only
-func Migrate(cfg *config.Config) error {
-	db, err := NewMysqlDB(cfg)
-	if err != nil {
-		fmt.Println(err)
-	}
+func Migrate(db *gorm.DB) error {
 
 	// Business
-	db.DB.AutoMigrate(&model.Account{})
-	db.DB.AutoMigrate(&model.Company{})
+	if err := db.AutoMigrate(&model.Account{}); err != nil {
+		return err
+	}
+	if err := db.AutoMigrate(&model.Company{}); err != nil {
+		return err
+	}
+	if err := db.AutoMigrate(&model.Exam{}); err != nil {
+		return err
+	}
+	if err := db.AutoMigrate(&model.Question{}); err != nil {
+		return err
+	}
+	if err := db.AutoMigrate(&model.Option{}); err != nil {
+		return err
+	}
+	if err := db.AutoMigrate(&model.Registration{}); err != nil {
+		return err
+	}
+
 	// OAuth
-	db.DB.AutoMigrate(&model.Session{})
-	db.DB.AutoMigrate(&model.Token{})
+	if err := db.AutoMigrate(&model.Session{}); err != nil {
+		return err
+	}
+	if err := db.AutoMigrate(&model.Token{}); err != nil {
+		return err
+	}
 	// Authz
-	db.DB.AutoMigrate(&model.Resource{})
-	db.DB.AutoMigrate(&model.Action{})
-	db.DB.AutoMigrate(&model.Role{})
-	db.DB.AutoMigrate(&model.Exam{})
-	db.DB.AutoMigrate(&model.Question{})
-	db.DB.AutoMigrate(&model.Option{})
-	db.DB.AutoMigrate(&model.Registration{})
-	return nil
-}
-
-func SeedData(db *gorm.DB) error {
-
-	tx := db.Begin()
-
-	// 2. Get Role "Admin"
-	roleAdmin := &model.Role{Desc: authz.Roles_Admin}
-	err := tx.First(roleAdmin).Error
-	if err != nil {
+	if err := db.AutoMigrate(&model.Resource{}); err != nil {
 		return err
 	}
-
-	password, err := oauth2.EncryptPassword("admin")
-	if err != nil {
+	if err := db.AutoMigrate(&model.Action{}); err != nil {
 		return err
 	}
-
-	adminAccount := &model.Account{
-		Name:     "admin",
-		Email:    "admin@company.com",
-		Mobile:   "060001",
-		Password: password,
-		RoleID:   roleAdmin.RoleId,
-		Active:   true,
-		Status:   "active",
-	}
-	err = tx.Create(adminAccount).Error
-	if err != nil {
+	if err := db.AutoMigrate(&model.Role{}); err != nil {
 		return err
 	}
-
-	tx.Commit()
 	return nil
 }

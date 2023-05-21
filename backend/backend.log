@@ -453,3 +453,5 @@
 {"level":"panic","ts":1684610512.4801497,"msg":"Error connecting to MYSQL DB: dial tcp: lookup mysql on 172.17.176.1:53: no such host"}
 {"level":"info","ts":1684610535.5539494,"msg":"Connected to redis 0.0.0.0:6379"}
 {"level":"info","ts":1684610732.4350512,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1684693742.6616235,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1684694198.6589985,"msg":"Connected to redis 0.0.0.0:6379"}
