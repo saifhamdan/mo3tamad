@@ -1,0 +1,15 @@
+export { default as EmailIcon } from '@mui/icons-material/Email';
+export { default as LockIcon } from '@mui/icons-material/Lock';
+export { default as AssessmentIcon } from '@mui/icons-material/Assessment';
+export { default as CloseIcon } from '@mui/icons-material/Close';
+export { default as OrgIcon } from '@mui/icons-material/CorporateFare';
+export { default as DashboardIcon } from '@mui/icons-material/Dashboard';
+export { default as GroupsIcon } from '@mui/icons-material/Groups';
+export { default as GroupIcon } from '@mui/icons-material/GroupWork';
+export { default as PersonIcon } from '@mui/icons-material/Person';
+export { default as PeopleIcon } from '@mui/icons-material/People';
+export { default as ManageUserIcon } from '@mui/icons-material/ManageAccounts';
+export { default as ViewIcon } from '@mui/icons-material/Visibility';
+export { default as MenuIcon } from '@mui/icons-material/Menu';
+export { default as HomeIcon } from '@mui/icons-material/Home';
+export { default as InfoIcon } from '@mui/icons-material/Info';
