@@ -458,3 +458,7 @@
 {"level":"info","ts":1684783393.4595952,"msg":"Connected to redis 0.0.0.0:6379"}
 {"level":"info","ts":1684783444.6604025,"msg":"127.0.0.1, user_session, /auth/oauth/login, POST, {}"}
 {"level":"error","ts":1684783444.6622043,"msg":"incorrect password or email"}
+{"level":"info","ts":1684785397.7609954,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1684785399.3096304,"msg":"127.0.0.1, user_session, /auth/oauth/login, POST, {}"}
+{"level":"info","ts":1684785663.90899,"msg":"127.0.0.1, user_session, /auth/oauth/login, POST, {}"}
+{"level":"error","ts":1684785663.9100428,"msg":"incorrect password or email"}

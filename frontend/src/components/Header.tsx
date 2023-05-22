@@ -11,6 +11,7 @@ import { PersonIcon, MenuIcon } from 'atoms/icons';
 import { AuthContext } from 'store/auth-context';
 import AccountMenu from './menus/AccountMenu';
 import logoPath from 'assets/img/mo3tamad_logo.png';
+import { Button } from '@mui/material';
 
 const pages = [
   // {
@@ -76,10 +77,7 @@ const Header = (props: Props) => {
             to='/'
             decorated={false}
             style={{
-              display: 'flex',
-              alignItems: 'center',
               width: '100%',
-              justifyContent: 'center',
             }}
           >
             <Box sx={{ display: { xs: 'flex', md: 'none' } }}>
@@ -87,6 +85,7 @@ const Header = (props: Props) => {
                 src={logoPath}
                 alt='mo3tamad'
                 style={{
+                  marginLeft: -10,
                   width: 200,
                   height: '100%',
                 }}
@@ -102,6 +101,21 @@ const Header = (props: Props) => {
               </Link>
             ))} */}
           </Box>
+
+          {!isAuth && (
+            <>
+              <Link to='/login' decorated={false}>
+                <Button sx={{ mr: 1 }} color='info' variant='contained'>
+                  login
+                </Button>
+              </Link>
+              <Link to='/signup' decorated={false}>
+                <Button color='info' variant='contained'>
+                  signup
+                </Button>
+              </Link>
+            </>
+          )}
 
           {isAuth && (
             <MenuWrapper>

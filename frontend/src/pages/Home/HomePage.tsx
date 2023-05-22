@@ -1,36 +1,80 @@
-import { Typography, Button, Grid } from '@mui/material';
-import { Link } from 'atoms';
-import { useContext } from 'react';
-import { AuthContext } from 'store/auth-context';
+import { Box, Paper, TextField, Typography } from '@mui/material';
+import { Container } from 'atoms';
+import { SearchIcon } from 'atoms/icons';
+import CourseCard from 'components/cards/CourseCard';
+import Pagination from 'components/common/pagination';
+import useFilter from 'hooks/use-filter';
+
+const initFilter = {
+  search: '',
+  major: '',
+  category: '',
+};
 
 const HomePage = () => {
-  const { policies } = useContext(AuthContext);
+  const {
+    filter,
+    page,
+    maxPages,
+    filterHandler,
+    pageHandler,
+    data: filteredExams,
+    count,
+    firstItem,
+    lastItem,
+  } = useFilter(initFilter, 'exams', [
+    { name: '1', desc: '1' },
+    { name: '1', desc: '1' },
+    { name: '1', desc: '1' },
+    { name: '1', desc: '1' },
+    { name: '1', desc: '1' },
+    { name: '1', desc: '1' },
+    { name: '1', desc: '1' },
+    { name: '1', desc: '1' },
+    { name: '1', desc: '1' },
+    { name: '1', desc: '1' },
+    { name: '1', desc: '1' },
+  ]);
+
   return (
-    <Grid
-      container
-      height={'80vh'}
-      textAlign='center'
-      flexDirection={'column'}
-      justifyContent={'center'}
-      alignItems={'center'}
-    >
-      <Typography variant='h3' mb={1}>
-        Home Page
-      </Typography>
-      <Grid justifyContent={'space-between'} gap={2}>
-        <Link to='/assessments/working' decorated={false}>
-          <Button>Assessments</Button>
-        </Link>
-        {policies?.adminAll && (
-          <Link to='/admin/dashboard' decorated={false}>
-            <Button>Admin</Button>
-          </Link>
-        )}
-        <Link to='/login' decorated={false}>
-          <Button>Login</Button>
-        </Link>
-      </Grid>
-    </Grid>
+    <Container size='medium'>
+      <Paper elevation={4} sx={{ p: 4, mb: 3 }}>
+        <Box maxWidth={'100%'} width={500} mb={1}>
+          <TextField
+            placeholder='Search'
+            fullWidth
+            value={filter.search}
+            onChange={(e: any) => filterHandler('search', e.target.value)}
+            // icon={<SearchIcon fontSize='inherit' />}
+            // width={isMobile ? '100%' : '28rem'}
+          />
+        </Box>
+        <Typography fontSize={20} mb={1}>
+          {firstItem} - {lastItem} from {count} results
+        </Typography>
+        <Box
+          display='grid'
+          sx={{
+            gridTemplateColumns: {
+              sm: 'repeat(2, minmax(0, 1fr))',
+              md: 'repeat(3, minmax(0, 1fr))',
+              xs: 'auto',
+            },
+            gap: '3rem',
+          }}
+        >
+          {filteredExams.map((course: any, index: number) => (
+            <CourseCard key={index} {...course} />
+          ))}
+        </Box>
+        <Pagination
+          count={count}
+          pageHandler={pageHandler}
+          page={page}
+          maxPages={maxPages}
+        />
+      </Paper>
+    </Container>
   );
 };
 

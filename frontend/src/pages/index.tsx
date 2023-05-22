@@ -12,6 +12,7 @@ import Breadcrumbs from 'components/common/Breadcrumbs';
 
 import { AuthContext } from 'store/auth-context';
 import DasboardPage from './admin/dashboard/DashboardPage';
+import SignupPage from './signup/SignupPage';
 
 const Index: React.FC<{}> = () => {
   const theme = useTheme();
@@ -96,6 +97,7 @@ const Index: React.FC<{}> = () => {
                   <Breadcrumbs />
                   <Routes>
                     <Route path='/' element={<HomePage />} />
+                    <Route path='/signup' element={<SignupPage />} />
                     <Route path='/login' element={<LoginPage />} />
                     <Route path='/admin/dashboard' element={<DasboardPage />} />
                   </Routes>

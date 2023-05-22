@@ -13,3 +13,7 @@ export { default as ViewIcon } from '@mui/icons-material/Visibility';
 export { default as MenuIcon } from '@mui/icons-material/Menu';
 export { default as HomeIcon } from '@mui/icons-material/Home';
 export { default as InfoIcon } from '@mui/icons-material/Info';
+export { default as BusinessIcon } from '@mui/icons-material/Business';
+export { default as ArrowBackIcon } from '@mui/icons-material/KeyboardArrowLeftRounded';
+export { default as ArrowForwardIcon } from '@mui/icons-material/KeyboardArrowRightRounded';
+export { default as SearchIcon } from '@mui/icons-material/SearchRounded';

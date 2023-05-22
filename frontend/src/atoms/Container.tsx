@@ -3,9 +3,10 @@ import styled from '@emotion/styled';
 const sizes = {
   large: '1340px',
   medium: '1170px',
+  small: '720px',
 };
 interface Props extends React.ComponentPropsWithoutRef<'div'> {
-  size?: 'medium' | 'large';
+  size?: 'medium' | 'large' | 'small';
 }
 
 const Container = styled.div<Props>`

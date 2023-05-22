@@ -1,0 +1,67 @@
+import styled from '@emotion/styled';
+import { Grid, Box, Button, Typography } from '@mui/material';
+
+import { Link } from 'atoms';
+
+const CoursePaper = styled.a`
+  max-width: 100%;
+  padding: 0rem;
+  display: block;
+  box-shadow: 0px 2px 4px 2px #5555;
+  transition: all 0.3s;
+  cursor: pointer;
+  &:hover,
+  &:active {
+    box-shadow: 0px 2px 4px 5px #5555;
+    transform: scale(1.02);
+  }
+`;
+
+const CourseCard: React.FC<any> = (props) => {
+  return (
+    <Link to={`/courses-center/${props.slug}`}>
+      <CoursePaper>
+        <Grid
+          display='inline-flex'
+          height='100%'
+          container
+          flexDirection='column'
+        >
+          <span
+            className='course-card-a'
+            style={{
+              borderBottom: '1px solid var(--border-color)',
+            }}
+          >
+            <img
+              src={'https://picsum.photos/200/300'}
+              alt={`${props.name} thumbnail`}
+              draggable={false}
+              height={200}
+              placeholder='blur'
+              // blurDataURL='/blur/course-blur.webp'
+              loading='eager'
+              style={{
+                width: '100%',
+                borderTopLeftRadius: 'var(--border-radius)',
+                borderTopRightRadius: 'var(--border-radius)',
+              }}
+            />
+          </span>
+          <Box p={1.5}>
+            <Box mb={3} flexGrow={1}>
+              <Typography fontSize={22}>java certifcation exam</Typography>
+              <Typography color='gray'>
+                java certifcation exam blabla{' '}
+              </Typography>
+            </Box>
+            <Box>
+              <Button variant='contained'>Get Certifcate</Button>
+            </Box>
+          </Box>
+        </Grid>
+      </CoursePaper>
+    </Link>
+  );
+};
+export default CourseCard;
