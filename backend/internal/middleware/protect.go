@@ -26,6 +26,7 @@ func (m *Middleware) Protect(c *fiber.Ctx) error {
 
 		// store client's session in the request
 		c.Locals("client", cfg)
+		c.Locals("accountId", cfg.ClientId)
 		c.Locals("token", token)
 
 		return c.Next()

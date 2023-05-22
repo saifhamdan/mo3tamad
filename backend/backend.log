@@ -455,3 +455,6 @@
 {"level":"info","ts":1684610732.4350512,"msg":"Connected to redis 0.0.0.0:6379"}
 {"level":"info","ts":1684693742.6616235,"msg":"Connected to redis 0.0.0.0:6379"}
 {"level":"info","ts":1684694198.6589985,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1684783393.4595952,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1684783444.6604025,"msg":"127.0.0.1, user_session, /auth/oauth/login, POST, {}"}
+{"level":"error","ts":1684783444.6622043,"msg":"incorrect password or email"}
