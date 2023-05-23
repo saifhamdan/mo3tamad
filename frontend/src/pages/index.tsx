@@ -8,11 +8,23 @@ import Header from 'components/Header';
 import Sidebar from 'components/sidebar/Sidebar';
 import LoginPage from './login/LoginPage';
 import HomePage from './Home/HomePage';
-import Breadcrumbs from 'components/common/Breadcrumbs';
 
 import { AuthContext } from 'store/auth-context';
-import DasboardPage from './admin/dashboard/DashboardPage';
 import SignupPage from './signup/SignupPage';
+import ExamPage from './exams/ExamPage';
+import MyExamsPage from './my-exams/MyExamsPage';
+import CertificatePage from './certificate/CertificatePage';
+import ExamsProjectsPage from './company/exams-projects/ExamsProjectsPage';
+import UsersPage from './company/users/UsersPage';
+import EditUserPage from './company/users/EditUserPage';
+import NewUsersPage from './company/users/NewUserPage';
+import NewExamProjectPage from './company/exams-projects/NewExamProjectPage';
+import EditExamProjectPage from './company/exams-projects/EditExamProjectPage';
+import Breadcrumbs from 'components/common/Breadcrumbs';
+import ExamQuestionsPage from './company/exams-projects/ExamQuestionsPage';
+import ExamApplicantsPage from './company/exams-projects/ExamApplicantsPage';
+import NewExamQuestionPage from './company/exams-projects/NewExamQuestionPage';
+import EditExamQuestionPage from './company/exams-projects/EditExamQuestionPage';
 
 const Index: React.FC<{}> = () => {
   const theme = useTheme();
@@ -28,7 +40,7 @@ const Index: React.FC<{}> = () => {
 
   const clientSidebar = pathname?.startsWith('/assessments');
   const adminSidebar = pathname?.startsWith('/admin');
-  const sidebarFlag = clientSidebar || adminSidebar;
+  const sidebarFlag = true;
 
   // temp
   useEffect(() => {
@@ -37,7 +49,7 @@ const Index: React.FC<{}> = () => {
       pathname.startsWith('/admin') &&
       !policies?.adminAll
     ) {
-      navigate('/', { replace: true });
+      // navigate('/', { replace: true });
     }
   }, [policies?.adminAll, pathname]);
 
@@ -86,20 +98,64 @@ const Index: React.FC<{}> = () => {
               >
                 {sidebarFlag && (
                   <Sidebar
-                    admin={adminSidebar}
-                    client={clientSidebar}
                     isMobile={isMobile}
                     openMobileDrawer={openMobileDrawer}
                     toggleMobileDrawerHandler={toggleMobileDrawerHandler}
                   />
                 )}
-                <Box p={sidebarFlag ? 3 : 0}>
-                  <Breadcrumbs />
+                <Box>
+                  {pathname.startsWith('/company') && <Breadcrumbs />}
                   <Routes>
+                    {/* {public pages} */}
                     <Route path='/' element={<HomePage />} />
                     <Route path='/signup' element={<SignupPage />} />
                     <Route path='/login' element={<LoginPage />} />
-                    <Route path='/admin/dashboard' element={<DasboardPage />} />
+                    {/* {company's exams projects} */}
+                    <Route
+                      path='/company/exams-projects'
+                      element={<ExamsProjectsPage />}
+                    />
+                    <Route
+                      path='/company/exams-projects/new'
+                      element={<NewExamProjectPage />}
+                    />
+                    <Route
+                      path='/company/exams-projects/:examId/new'
+                      element={<EditExamProjectPage />}
+                    />
+                    <Route
+                      path='/company/exams-projects/:examId/questions'
+                      element={<ExamQuestionsPage />}
+                    />{' '}
+                    <Route
+                      path='/company/exams-projects/:examId/questions/new'
+                      element={<NewExamQuestionPage />}
+                    />
+                    <Route
+                      path='/company/exams-projects/:examId/questions/:questionId/edit'
+                      element={<EditExamQuestionPage />}
+                    />
+                    <Route
+                      path='/company/exams-projects/:examId/applicants'
+                      element={<ExamApplicantsPage />}
+                    />
+                    {/* {company's users pages} */}
+                    <Route path='/company/users' element={<UsersPage />} />
+                    <Route
+                      path='/company/users/new'
+                      element={<NewUsersPage />}
+                    />
+                    <Route
+                      path='/company/users/:userId/edit'
+                      element={<EditUserPage />}
+                    />
+                    {/* {student pages} */}
+                    <Route
+                      path='/certificate/:registerId'
+                      element={<CertificatePage />}
+                    />
+                    <Route path='/my-exams' element={<MyExamsPage />} />
+                    <Route path='/exams/:examId' element={<ExamPage />} />
                   </Routes>
                 </Box>
               </Grid>

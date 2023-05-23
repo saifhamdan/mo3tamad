@@ -17,3 +17,6 @@ export { default as BusinessIcon } from '@mui/icons-material/Business';
 export { default as ArrowBackIcon } from '@mui/icons-material/KeyboardArrowLeftRounded';
 export { default as ArrowForwardIcon } from '@mui/icons-material/KeyboardArrowRightRounded';
 export { default as SearchIcon } from '@mui/icons-material/SearchRounded';
+export { default as QuizIcon } from '@mui/icons-material/Quiz';
+export { default as TimeIcon } from '@mui/icons-material/QueryBuilder';
+export { default as DownloadIcon } from '@mui/icons-material/Download';

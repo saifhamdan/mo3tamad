@@ -7,6 +7,9 @@ import Index from 'pages';
 import AuthContextProvider from 'store/auth-context';
 
 const theme = createTheme({
+  typography: {
+    fontFamily: "'Open Sans', sans-serif",
+  },
   palette: {
     primary: {
       main: '#e77917',

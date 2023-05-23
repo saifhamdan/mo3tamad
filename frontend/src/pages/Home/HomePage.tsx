@@ -1,7 +1,6 @@
 import { Box, Paper, TextField, Typography } from '@mui/material';
 import { Container } from 'atoms';
-import { SearchIcon } from 'atoms/icons';
-import CourseCard from 'components/cards/CourseCard';
+import ExamCard from 'components/cards/ExamCard';
 import Pagination from 'components/common/pagination';
 import useFilter from 'hooks/use-filter';
 
@@ -38,7 +37,7 @@ const HomePage = () => {
 
   return (
     <Container size='medium'>
-      <Paper elevation={4} sx={{ p: 4, mb: 3 }}>
+      <Paper elevation={4} sx={{ p: 4, my: 3 }}>
         <Box maxWidth={'100%'} width={500} mb={1}>
           <TextField
             placeholder='Search'
@@ -60,11 +59,11 @@ const HomePage = () => {
               md: 'repeat(3, minmax(0, 1fr))',
               xs: 'auto',
             },
-            gap: '3rem',
+            gap: '25px',
           }}
         >
           {filteredExams.map((course: any, index: number) => (
-            <CourseCard key={index} {...course} />
+            <ExamCard key={index} {...course} />
           ))}
         </Box>
         <Pagination

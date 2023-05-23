@@ -6,7 +6,6 @@ import * as Yup from 'yup';
 import { Grid, TextField, Typography } from '@mui/material';
 import LoadingButton from '@mui/lab/LoadingButton';
 
-import SelectGroup from 'components/input/SelectGroup';
 import { headers, accountId } from 'services/auth';
 
 // interface

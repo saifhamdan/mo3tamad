@@ -106,7 +106,7 @@ const AuthContextProvider: React.FC<{ children: React.ReactNode }> = ({
     setAccessToken(null);
     setPolicies(null);
     setAuth(false);
-    navigate('/login');
+    // navigate('/login');
   };
 
   const sessionTimeout = () => {

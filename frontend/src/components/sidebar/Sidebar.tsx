@@ -24,101 +24,24 @@ import { AuthContext } from 'store/auth-context';
 const drawerWidth = 240;
 
 interface Props {
-  admin: boolean | undefined;
-  client: boolean | undefined;
   isMobile: boolean;
   openMobileDrawer: boolean;
   toggleMobileDrawerHandler: () => void;
 }
 
-const clientSidebar = [
-  {
-    nested: true,
-    label: 'My Assessments',
-    icon: <AssessmentIcon />,
-    path: '',
-    keepOpen: true,
-    nestedList: [
-      {
-        label: (
-          <span>
-            {/* <span style={{ fontWeight: 'bold' }}>(2)</span> */}
-            Working
-          </span>
-        ),
-        path: '/assessments/working',
-        icon: '',
-      },
-      {
-        label: (
-          <span>
-            {/* <span style={{ fontWeight: 'bold' }}>(1)</span> */}
-            Completed
-          </span>
-        ),
-        path: '/assessments/completed',
-        icon: '',
-      },
-    ],
-  },
-];
-
 const adminSidebar = [
   {
     nested: false,
-    label: 'Dashboard',
-    icon: <DashboardIcon />,
-    path: '/admin/dashboard',
-    nestedList: [],
-  },
-  {
-    nested: false,
-    label: 'Assessments',
+    label: 'Exams',
     icon: <AssessmentIcon />,
-    path: '/admin/assessments-projects',
+    path: '/company/exams-projects',
     nestedList: [],
-  },
-  {
-    nested: false,
-    label: 'Organization',
-    icon: <OrgIcon />,
-    path: '/admin/organization',
-    nestedList: [
-      {
-        nested: true,
-        label: 'Sectors',
-        icon: <GroupIcon />,
-        path: '/admin/organization/sectors',
-        nestedList: [],
-      },
-      {
-        nested: true,
-        label: 'Departments',
-        icon: <GroupsIcon />,
-        path: '/admin/organization/departments',
-        nestedList: [],
-      },
-      {
-        nested: true,
-        label: 'Sections',
-        icon: <PeopleIcon />,
-        path: '/admin/organization/sections',
-        nestedList: [],
-      },
-      {
-        nested: true,
-        label: 'Employees',
-        icon: <PersonIcon />,
-        path: '/admin/organization/employees',
-        nestedList: [],
-      },
-    ],
   },
   {
     nested: false,
     label: 'Users',
     icon: <ManageUserIcon />,
-    path: '/admin/users',
+    path: '/company/users',
     nestedList: [],
   },
 ];
@@ -139,22 +62,13 @@ const Sidebar = (props: Props) => {
           <ListItemText primary={user?.name} secondary={user?.org?.desc} />
         </MuiListItem>
         <Divider />
-        {props.client &&
-          clientSidebar.map((item, i) =>
-            item.nestedList && item.nestedList.length > 0 ? (
-              <NestedListItem key={i} {...item} />
-            ) : (
-              <ListItem key={i} {...item} />
-            )
-          )}
-        {props.admin &&
-          adminSidebar.map((item, i) =>
-            item.nestedList && item.nestedList.length > 0 ? (
-              <NestedListItem key={i} {...item} />
-            ) : (
-              <ListItem key={i} {...item} />
-            )
-          )}
+        {adminSidebar.map((item, i) =>
+          item.nestedList && item.nestedList.length > 0 ? (
+            <NestedListItem key={i} {...item} />
+          ) : (
+            <ListItem key={i} {...item} />
+          )
+        )}
       </List>
     </div>
   );

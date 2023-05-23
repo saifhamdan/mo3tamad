@@ -104,13 +104,44 @@ const Header = (props: Props) => {
 
           {!isAuth && (
             <>
+              <Link to='/my-exams' decorated={false}>
+                <Button
+                  sx={{
+                    mr: 1,
+                    width: 'max-content',
+                    backgroundColor: 'black',
+                    color: 'white',
+                  }}
+                  variant='contained'
+                  color='info'
+                >
+                  MY exams
+                </Button>
+              </Link>
               <Link to='/login' decorated={false}>
-                <Button sx={{ mr: 1 }} color='info' variant='contained'>
+                <Button
+                  sx={{
+                    mr: 1,
+                    width: 'max-content',
+                    backgroundColor: 'black',
+                    color: 'white',
+                  }}
+                  color='info'
+                  variant='contained'
+                >
                   login
                 </Button>
               </Link>
               <Link to='/signup' decorated={false}>
-                <Button color='info' variant='contained'>
+                <Button
+                  sx={{
+                    width: 'max-content',
+                    backgroundColor: 'black',
+                    color: 'white',
+                  }}
+                  color='info'
+                  variant='contained'
+                >
                   signup
                 </Button>
               </Link>

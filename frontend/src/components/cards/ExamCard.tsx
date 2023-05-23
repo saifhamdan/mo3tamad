@@ -3,7 +3,7 @@ import { Grid, Box, Button, Typography } from '@mui/material';
 
 import { Link } from 'atoms';
 
-const CoursePaper = styled.a`
+export const ExamPaper = styled.a`
   max-width: 100%;
   padding: 0rem;
   display: block;
@@ -17,10 +17,10 @@ const CoursePaper = styled.a`
   }
 `;
 
-const CourseCard: React.FC<any> = (props) => {
+const ExamCard: React.FC<any> = (props) => {
   return (
-    <Link to={`/courses-center/${props.slug}`}>
-      <CoursePaper>
+    <Link to={`/exams/${props.slug}`}>
+      <ExamPaper>
         <Grid
           display='inline-flex'
           height='100%'
@@ -60,8 +60,8 @@ const CourseCard: React.FC<any> = (props) => {
             </Box>
           </Box>
         </Grid>
-      </CoursePaper>
+      </ExamPaper>
     </Link>
   );
 };
-export default CourseCard;
+export default ExamCard;
