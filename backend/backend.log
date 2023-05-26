@@ -486,3 +486,13 @@
 {"level":"error","ts":1684922362.101132,"msg":"missing Authorization header"}
 {"level":"info","ts":1684922362.1067173,"msg":"127.0.0.1, user_session, /api/v1/accounts/1/assessments/projects, GET, {}"}
 {"level":"error","ts":1684922362.1069307,"msg":"missing Authorization header"}
+{"level":"info","ts":1685130617.476815,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1685130628.5118768,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"fatal","ts":1685130673.339454,"msg":"record not found"}
+{"level":"fatal","ts":1685130822.4905605,"msg":"invalid transaction"}
+{"level":"fatal","ts":1685130859.5182834,"msg":"sql: transaction has already been committed or rolled back"}
+{"level":"fatal","ts":1685130876.5292292,"msg":"sql: transaction has already been committed or rolled back"}
+{"level":"fatal","ts":1685130907.4994423,"msg":"invalid transaction"}
+{"level":"fatal","ts":1685130917.4346266,"msg":"invalid transaction"}
+{"level":"info","ts":1685130946.4070127,"msg":"data seeded successfully"}
+{"level":"info","ts":1685130951.3385277,"msg":"Connected to redis 0.0.0.0:6379"}

@@ -39,6 +39,18 @@ func main() {
 
 	tx := DBSess.DB.Begin()
 
+	authz, err := authz.NewAuthz(DBSess.DB)
+	if err != nil {
+		tx.Rollback()
+		log.Logger.Fatal(err)
+	}
+
+	err = authz.SeedAuthz(DBSess.DB)
+	if err != nil {
+		tx.Rollback()
+		log.Logger.Fatal(err)
+	}
+
 	err = seedAccount(tx)
 	if err != nil {
 		tx.Rollback()
