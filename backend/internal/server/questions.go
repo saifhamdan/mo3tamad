@@ -10,7 +10,8 @@ import (
 
 func (s *Server) GetAllQuestions(c *fiber.Ctx) error {
 	questions := []model.Question{}
-	err := s.DB.Find(&questions).Error
+
+	err := s.DB.Preload("Options").Find(&questions).Error
 	if err != nil {
 		return s.App.HttpResponseInternalServerErrorRequest(c, err)
 	}
@@ -23,7 +24,7 @@ func (s *Server) GetQuestion(c *fiber.Ctx) error {
 		s.App.HttpResponseBadQueryParams(c, fmt.Errorf("id param is required"))
 	}
 	var Question model.Question
-	result := s.DB.First(&Question, question_id)
+	result := s.DB.Preload("Options").First(&Question, question_id)
 	if err := result.Error; err != nil {
 		if err == gorm.ErrRecordNotFound {
 			return s.App.HttpResponseNotFound(c, err)
@@ -48,7 +49,7 @@ func (s *Server) GetQuestionByExamId(c *fiber.Ctx) error {
 	}
 	questions := []model.Question{}
 
-	err = s.DB.Where("exam_id=?", exam_id).Find(&questions).Error
+	err = s.DB.Preload("Options").Where("exam_id=?", exam_id).Find(&questions).Error
 	if err != nil {
 		return s.App.HttpResponseInternalServerErrorRequest(c, err)
 	}

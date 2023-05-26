@@ -90,11 +90,15 @@ func (s *Server) Register() {
 	registrationRoutes.Get("/byExam/:id", s.GetRegByExamId)
 	registrationRoutes.Delete("/:id", s.DeleteRegistration)
 
-	companyrouts := v1.Group("/company")
-	companyrouts.Get("/", s.GetAllCompanies)
-	companyrouts.Get("/:id", s.GetCompany)
-	companyrouts.Post("/", s.CreateCompany)
-	companyrouts.Delete("/:id", s.DeleteCompany)
-	companyrouts.Patch("/:id", s.UpdateCompany)
+	companyRoutes := v1.Group("/company")
+	companyRoutes.Get("/", s.GetAllCompanies)
+	companyRoutes.Get("/:id", s.GetCompany)
+	companyRoutes.Post("/", s.CreateCompany)
+	companyRoutes.Delete("/:id", s.DeleteCompany)
+	companyRoutes.Patch("/:id", s.UpdateCompany)
+
+	transRoutes := v1.Group("/trans")
+	transRoutes.Post("/:id/answer", s.UserAnswerd)
+	//transRoutes.Get("/:id",s.GetUserAnswers)
 
 }

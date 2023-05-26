@@ -5,9 +5,10 @@ import (
 )
 
 type Model struct {
-	CreatedAt time.Time `gorm:"column:created_at" json:"created_at,omitempty"`
-	UpdatedAt time.Time `gorm:"column:updated_at" json:"updated_at,omitempty"`
-	CreatedBy int64     `gorm:"column:created_by" json:"created_by,omitempty"`
-	UpdatedBy int64     `gorm:"column:updated_by" json:"updated_by,omitempty"`
+	CreatedAt time.Time `gorm:"column:created_at" json:"createdAt,omitempty"`
+	UpdatedAt time.Time `gorm:"column:updated_at" json:"updatedAt,omitempty"`
+	CreatedBy int64     `gorm:"column:created_by" json:"createdBy,omitempty"`
+	UpdatedBy int64     `gorm:"column:updated_by" json:"updatedBy,omitempty"`
+
 	//DeletedAt gorm.DeletedAt `gorm:"index" json:"deleted_at"`
 }

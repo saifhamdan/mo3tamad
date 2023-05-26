@@ -68,6 +68,9 @@ func Migrate(db *gorm.DB) error {
 	if err := db.AutoMigrate(&model.Registration{}); err != nil {
 		return err
 	}
+	if err := db.AutoMigrate(&model.Trans{}); err != nil {
+		return err
+	}
 
 	// OAuth
 	if err := db.AutoMigrate(&model.Session{}); err != nil {
@@ -86,5 +89,6 @@ func Migrate(db *gorm.DB) error {
 	if err := db.AutoMigrate(&model.Role{}); err != nil {
 		return err
 	}
+
 	return nil
 }

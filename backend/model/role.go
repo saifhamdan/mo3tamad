@@ -5,7 +5,7 @@ import (
 )
 
 type Role struct {
-	RoleId int    `gorm:"primaryKey;autoIncrement:true;column:role_id" json:"id,omitempty" example:"1"`
+	RoleId int    `gorm:"primaryKey;autoIncrement:true;column:id" json:"id,omitempty" example:"1"`
 	Desc   string `gorm:"column:desc" json:"desc,omitempty" validate:"required" example:"admin"`
 	Status string `gorm:"column:status" json:"status,omitempty" example:"status"`
 	Model

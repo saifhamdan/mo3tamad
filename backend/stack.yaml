@@ -1,0 +1,31 @@
+version: '3.8'
+services:
+  mysql:
+    image: mysql:8.0.19
+    container_name: mysql
+    command: '--default-authentication-plugin=mysql_native_password'
+    restart: always
+    ports:
+      - 3306:3306
+    environment:
+      MYSQL_DATABASE: mo3tamad
+      MYSQL_USER: mo3tamad
+      MYSQL_PASSWORD: root@12345
+      MYSQL_ROOT_PASSWORD: 'root'
+      TZ: 'Asia/Amman'
+    volumes:
+      - /home/haroun/volumes/mo3tamad/mysql_data:/var/lib/mysql
+    networks:
+      - mo3tamad
+  redis:
+    image: redis:6-alpine
+    restart: always
+    container_name: redis
+    networks:
+      - mo3tamad
+    ports:
+      - '6379:6379'
+networks:
+  mo3tamad:
+    name: mo3tamad
+    driver: bridge

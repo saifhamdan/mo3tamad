@@ -16,19 +16,40 @@ func (s *Server) CreateRegister(c *fiber.Ctx) error {
 	if err != nil {
 		return s.App.HttpResponseBadRequest(c, err)
 	}
-	fmt.Println("abdullah is someone's uncle")
+
 	if err := s.DB.Where("account_id = ? AND exam_id=?", accountId, examId).First(registration).Error; err == nil {
 		return s.App.HttpResponseBadRequest(c, fmt.Errorf("User has already registerd for the exam"))
 	}
 
 	registration.AccountId = accountId
 	registration.ExamId = examId
-
-	err = s.DB.Create(registration).Error
+	tx := s.DB.Begin()
+	err = tx.Create(registration).Error
 	if err != nil {
+		tx.Rollback()
 		return s.App.HttpResponseInternalServerErrorRequest(c, err)
 	}
+	exam := &model.Exam{}
 
+	if err = tx.Preload("Questions").First(exam, examId).Error; err != nil {
+		tx.Rollback()
+		return s.App.HttpResponseInternalServerErrorRequest(c, err)
+	}
+	trans := []model.Trans{}
+	for _, q := range exam.Questions {
+		trans = append(trans, model.Trans{
+			RegistrationId: registration.RegistrationId,
+			AccountId:      registration.AccountId,
+			QuestionId:     q.QuestionId,
+		})
+
+	}
+
+	if err = tx.Create(&trans).Error; err != nil {
+		tx.Rollback()
+		return s.App.HttpResponseInternalServerErrorRequest(c, err)
+	}
+	tx.Commit()
 	return s.App.HttpResponseCreated(c, registration)
 }
 

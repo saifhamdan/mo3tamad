@@ -7,10 +7,10 @@ import (
 )
 
 type Session struct {
-	SessionId string  `gorm:"primaryKey;column:session_id" json:"session_id,omitempty"`
-	AccountId int     `json:"account_id,omitempty"`
+	SessionId string  `gorm:"primaryKey;column:id" json:"id,omitempty"`
+	AccountId int     `json:"accountId,omitempty"`
 	Account   Account `gorm:"foreignKey:AccountId" json:"account,omitempty"`
-	IpAddress string  `gorm:"ip_address" json:"ip_address"`
+	IpAddress string  `gorm:"ip_address" json:"ipAddress"`
 	Model
 }
 

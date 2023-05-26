@@ -6,7 +6,7 @@ type Account struct {
 	Email     string `gorm:"unique;column:email" json:"email,omitempty"`
 	Mobile    string `gorm:"column:mobile" json:"mobile,omitempty"`
 	Password  string `gorm:"column:password" json:"password,omitempty"`
-	RoleID    int    `gorm:"column:role_id" json:"role_id,omitempty"`
+	RoleID    int    `gorm:"column:role_id" json:"roleId,omitempty"`
 	Role      Role   `gorm:"foreignKey:RoleID" json:"role,omitempty"`
 	Active    bool   `gorm:"default:true;column:active" json:"active"`
 	Status    string `gorm:"column:status" json:"status,omitempty"`

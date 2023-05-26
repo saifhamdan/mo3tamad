@@ -12,11 +12,11 @@ const ResourceTypePage = "page"
 const ResourceTypeScreen = "screen"
 
 type Resource struct {
-	ResourceId int      `gorm:"primaryKey;autoIncrement:true;column:resource_id;" json:"resource_id"`
+	ResourceId int      `gorm:"primaryKey;autoIncrement:true;column:id;" json:"id"`
 	Type       string   `gorm:"column:type" json:"type,omitempty" validate:"required"`
 	Desc       string   `gorm:"column:desc" json:"desc,omitempty" validate:"required"`
 	Status     string   `gorm:"column:status" json:"status,omitempty"`
-	Actions    []Action `gorm:"foreignKey:ResourceId;column:resource_id;constraint:OnDelete:CASCADE;" json:"actions,omitempty"`
+	Actions    []Action `gorm:"foreignKey:ResourceId;column:id;constraint:OnDelete:CASCADE;" json:"actions,omitempty"`
 	Model
 }
 

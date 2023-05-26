@@ -462,3 +462,27 @@
 {"level":"info","ts":1684785399.3096304,"msg":"127.0.0.1, user_session, /auth/oauth/login, POST, {}"}
 {"level":"info","ts":1684785663.90899,"msg":"127.0.0.1, user_session, /auth/oauth/login, POST, {}"}
 {"level":"error","ts":1684785663.9100428,"msg":"incorrect password or email"}
+{"level":"info","ts":1684874142.6641834,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1684874160.223253,"msg":"127.0.0.1, user_session, /api/v1/registration/1/1, POST, {\"end_time\":\"2006-01-02T15:04:05Z\",\"isCheated\":false,\"start_time\":\"2006-01-02T15:04:05Z\",\"status\":\"notyet\"}"}
+{"level":"error","ts":1684874160.2290065,"msg":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'start_time' at row 1"}
+{"level":"info","ts":1684874170.3126996,"msg":"127.0.0.1, user_session, /api/v1/registration/1/1, POST, {\"endTime\":\"2006-01-02T15:04:05Z\",\"isCheated\":false,\"startTime\":\"2006-01-02T15:04:05Z\",\"status\":\"notyet\"}"}
+{"level":"info","ts":1684874241.7421193,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1684874251.3343515,"msg":"127.0.0.1, user_session, /api/v1/registration/1/1, POST, {\"endTime\":\"2006-01-02T15:04:05Z\",\"isCheated\":false,\"startTime\":\"2006-01-02T15:04:05Z\",\"status\":\"notyet\"}"}
+{"level":"error","ts":1684874251.3368592,"msg":"User has already registerd for the exam"}
+{"level":"info","ts":1684921337.7592578,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1684921710.0415,"msg":"127.0.0.1, user_session, /api/v1/accounts/1/users, GET, {}"}
+{"level":"error","ts":1684921710.0417113,"msg":"missing Authorization header"}
+{"level":"info","ts":1684921710.0470874,"msg":"127.0.0.1, user_session, /api/v1/accounts/1/users, GET, {}"}
+{"level":"error","ts":1684921710.047251,"msg":"missing Authorization header"}
+{"level":"info","ts":1684921711.4854472,"msg":"127.0.0.1, user_session, /api/v1/accounts/1/users, GET, {}"}
+{"level":"error","ts":1684921711.4855754,"msg":"missing Authorization header"}
+{"level":"info","ts":1684921711.48865,"msg":"127.0.0.1, user_session, /api/v1/accounts/1/users, GET, {}"}
+{"level":"error","ts":1684921711.4887602,"msg":"missing Authorization header"}
+{"level":"info","ts":1684921851.11061,"msg":"127.0.0.1, user_session, /api/v1/accounts/1/users, GET, {}"}
+{"level":"error","ts":1684921851.11074,"msg":"missing Authorization header"}
+{"level":"info","ts":1684921851.1137319,"msg":"127.0.0.1, user_session, /api/v1/accounts/1/users, GET, {}"}
+{"level":"error","ts":1684921851.1138644,"msg":"missing Authorization header"}
+{"level":"info","ts":1684922362.1008897,"msg":"127.0.0.1, user_session, /api/v1/accounts/1/assessments/projects, GET, {}"}
+{"level":"error","ts":1684922362.101132,"msg":"missing Authorization header"}
+{"level":"info","ts":1684922362.1067173,"msg":"127.0.0.1, user_session, /api/v1/accounts/1/assessments/projects, GET, {}"}
+{"level":"error","ts":1684922362.1069307,"msg":"missing Authorization header"}
