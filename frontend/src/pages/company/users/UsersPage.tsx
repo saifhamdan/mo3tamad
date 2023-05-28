@@ -6,12 +6,12 @@ import useFetch from 'hooks/use-fetch';
 import LoadingSpinnerWrapper from 'utils/loading-spinner-wrapper';
 import DeleteForeverModal from 'components/modals/DeleteModal';
 import axios from 'axios';
-import { headers, accountId } from 'services/auth';
+import { headers } from 'services/auth';
 import { useAppDispatch } from 'store';
 import { uiActions } from 'store/ui-slice';
 import { usersBreadcrumbsPage } from 'components/common/breadcrumbsList';
 
-const url = `${process.env.REACT_APP_API_URL}/api/v1/accounts/${accountId}/users`;
+const url = `${process.env.REACT_APP_API_URL}/api/v1/accounts/`;
 
 const UsersPage = () => {
   const dispatch = useAppDispatch();
@@ -66,9 +66,6 @@ const UsersPage = () => {
                 Edit
               </Button>
             </Link>
-            {/* <Button variant='outlined' size='small' onClick={onClick}>
-            Edit
-          </Button>*/}
             <Button variant='outlined' size='small' onClick={onDelete}>
               Delete
             </Button>
@@ -105,7 +102,6 @@ const UsersPage = () => {
       </Grid>
       <DeleteForeverModal
         open={!!open}
-        item={data.find((d) => d.id === selected[0])}
         handleClose={() => setOpen(false)}
         deleteHandler={deleteHandler}
       />

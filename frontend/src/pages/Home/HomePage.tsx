@@ -2,7 +2,9 @@ import { Box, Paper, TextField, Typography } from '@mui/material';
 import { Container } from 'atoms';
 import ExamCard from 'components/cards/ExamCard';
 import Pagination from 'components/common/pagination';
+import useFetch from 'hooks/use-fetch';
 import useFilter from 'hooks/use-filter';
+import LoadingSpinnerWrapper from 'utils/loading-spinner-wrapper';
 
 const initFilter = {
   search: '',
@@ -11,6 +13,10 @@ const initFilter = {
 };
 
 const HomePage = () => {
+  const { data, error, loading } = useFetch<any[]>(
+    `${process.env.REACT_APP_API_URL}/api/v1/exams/`,
+    []
+  );
   const {
     filter,
     page,
@@ -21,19 +27,7 @@ const HomePage = () => {
     count,
     firstItem,
     lastItem,
-  } = useFilter(initFilter, 'exams', [
-    { name: '1', desc: '1' },
-    { name: '1', desc: '1' },
-    { name: '1', desc: '1' },
-    { name: '1', desc: '1' },
-    { name: '1', desc: '1' },
-    { name: '1', desc: '1' },
-    { name: '1', desc: '1' },
-    { name: '1', desc: '1' },
-    { name: '1', desc: '1' },
-    { name: '1', desc: '1' },
-    { name: '1', desc: '1' },
-  ]);
+  } = useFilter(initFilter, 'exams', data);
 
   return (
     <Container size='medium'>
@@ -62,9 +56,11 @@ const HomePage = () => {
             gap: '25px',
           }}
         >
-          {filteredExams.map((course: any, index: number) => (
-            <ExamCard key={index} {...course} />
-          ))}
+          <LoadingSpinnerWrapper loading={loading} error={error}>
+            {filteredExams.map((course: any, index: number) => (
+              <ExamCard key={index} {...course} />
+            ))}
+          </LoadingSpinnerWrapper>
         </Box>
         <Pagination
           count={count}

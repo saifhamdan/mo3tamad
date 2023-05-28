@@ -9,7 +9,10 @@ import (
 )
 
 func (s *Server) CreateRegister(c *fiber.Ctx) error {
-	registration := &model.Registration{}
+	registration := &model.Registration{
+		StartTime: time.Time{},
+		EndTime:   time.Time{},
+	}
 	accountId, _ := c.ParamsInt("account_id")
 	examId, _ := c.ParamsInt("exam_id")
 	err := c.BodyParser(registration)
@@ -59,7 +62,7 @@ func (s *Server) StartedExam(c *fiber.Ctx) error {
 	registrationId, _ := c.ParamsInt("id")
 
 	if err := s.DB.First(registration, registrationId).Error; err != nil {
-		return s.App.HttpResponseNotFound(c, fmt.Errorf("Registiration not found"))
+		return s.App.HttpResponseNotFound(c, fmt.Errorf("registiration not found"))
 	}
 
 	registration.Status = "progress"
@@ -86,7 +89,7 @@ func (s *Server) FinishedExam(c *fiber.Ctx) error {
 	registrationId, _ := c.ParamsInt("id")
 
 	if err := s.DB.Where("id=?", registrationId).First(registration).Error; err != nil {
-		return s.App.HttpResponseNotFound(c, fmt.Errorf("Registiration not found"))
+		return s.App.HttpResponseNotFound(c, fmt.Errorf("registiration not found"))
 	}
 	registration.Status = "finished"
 	registration.EndTime = time.Now()
@@ -99,7 +102,7 @@ func (s *Server) UserCheated(c *fiber.Ctx) error {
 	registrationId, _ := c.ParamsInt("id")
 
 	if err := s.DB.Where("id=?", registrationId).First(registration).Error; err != nil {
-		return s.App.HttpResponseNotFound(c, fmt.Errorf("Registiration not found"))
+		return s.App.HttpResponseNotFound(c, fmt.Errorf("registiration not found"))
 	}
 	registration.IsCheated = true
 	s.DB.Save(registration)
@@ -118,7 +121,7 @@ func (s *Server) GetRegByUserId(c *fiber.Ctx) error {
 func (s *Server) GetRegByExamId(c *fiber.Ctx) error {
 	examId, _ := c.ParamsInt("id")
 	registration := []model.Registration{}
-	if err := s.DB.Where("exam_id=?", examId).Find(&registration).Error; err != nil {
+	if err := s.DB.Preload("Exam").Preload("Account").Where("exam_id=?", examId).Find(&registration).Error; err != nil {
 		return s.App.HttpResponseInternalServerErrorRequest(c, err)
 	}
 	return s.App.HttpResponseOK(c, registration)

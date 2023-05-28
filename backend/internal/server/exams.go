@@ -10,7 +10,7 @@ import (
 
 func (s *Server) GetAllExams(c *fiber.Ctx) error {
 	exams := []model.Exam{}
-	err := s.DB.Find(&exams).Error
+	err := s.DB.Preload("Company").Find(&exams).Error
 	if err != nil {
 		return s.App.HttpResponseInternalServerErrorRequest(c, err)
 	}
@@ -18,19 +18,36 @@ func (s *Server) GetAllExams(c *fiber.Ctx) error {
 }
 
 func (s *Server) GetExam(c *fiber.Ctx) error {
+	type Res struct {
+		model.Exam
+		Registration *model.Registration `json:"registration,omitempty"`
+	}
+	res := &Res{}
 	exam_id, err := c.ParamsInt("id")
 	if err != nil {
 		s.App.HttpResponseBadQueryParams(c, fmt.Errorf("id param is required"))
 	}
-	var Exam model.Exam
-	result := s.DB.First(&Exam, exam_id)
-	if err := result.Error; err != nil {
+
+	reg := &model.Registration{}
+	err = s.DB.Where("account_id = ? AND exam_id = ?", GetAccountId(c), exam_id).First(reg).Error
+	if err != nil {
+		if err == gorm.ErrRecordNotFound {
+		} else {
+			return s.App.HttpResponseInternalServerErrorRequest(c, err)
+		}
+	} else {
+		res.Registration = reg
+	}
+
+	err = s.DB.Preload("Company").First(&res.Exam, exam_id).Error
+	if err != nil {
 		if err == gorm.ErrRecordNotFound {
 			return s.App.HttpResponseNotFound(c, err)
 		}
 		return s.App.HttpResponseInternalServerErrorRequest(c, err)
 	}
-	return s.App.HttpResponseOK(c, Exam)
+
+	return s.App.HttpResponseOK(c, res)
 }
 
 func (s *Server) CreateExam(c *fiber.Ctx) error {

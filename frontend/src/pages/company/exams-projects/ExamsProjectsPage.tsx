@@ -6,47 +6,50 @@ import { DataGrid, GridColDef } from '@mui/x-data-grid';
 import { Container, Link } from 'atoms';
 import useFetch from 'hooks/use-fetch';
 import LoadingSpinnerWrapper from 'utils/loading-spinner-wrapper';
-import { accountId } from 'services/auth';
+import { headers } from 'services/auth';
 import { examsProjectsBreadcrumbsPage } from 'components/common/breadcrumbsList';
 import { useAppDispatch } from 'store';
 import { uiActions } from 'store/ui-slice';
+import DeleteForeverModal from 'components/modals/DeleteModal';
+import axios from 'axios';
 
-const url = `${process.env.REACT_APP_API_URL}/api/v1/accounts/${accountId}/assessments/projects`;
+const url = `${process.env.REACT_APP_API_URL}/api/v1/exams`;
 
 const ExamsProjectsPage = () => {
   const dispatch = useAppDispatch();
   const [selected, setSelected] = useState<any[]>([]);
-  // const { data, error, loading, setData } = useFetch<any[]>(url, [
-  //   { id: 1, name: 'java' },
-  // ]);
+  const [open, setOpen] = useState(false);
+  const { data, error, loading, setData } = useFetch<any[]>(url, []);
 
-  const data = [{ id: 1, name: 'java' }];
-  const error = undefined;
-  const loading = false;
+  const onDeleteHandler = async () => {
+    try {
+      await axios({
+        url: `${url}/${selected[0]}`,
+        headers: headers,
+        method: 'DELETE',
+      });
+      console.log(selected);
+      const newData = data.filter((d: any) => d.id !== selected[0]);
+      setData(newData);
+    } catch (err) {
+      console.error(err);
+    }
+  };
 
   useEffect(() => {
     dispatch(uiActions.ChangeBreadcrumb(examsProjectsBreadcrumbsPage));
   }, [dispatch]);
 
   const columns: GridColDef[] = [
-    { field: 'name', headerName: 'Name', flex: 1 },
-    { field: 'type', headerName: 'Type' },
+    { field: 'name', headerName: 'Title', flex: 1 },
+    { field: 'passingScore', headerName: 'Passing score', flex: 1 },
+    { field: 'duration', headerName: 'Duration', flex: 1 },
     {
       field: 'action',
       headerName: 'Action',
       flex: 2,
       sortable: false,
       renderCell: (params) => {
-        const onDelete = async () => {
-          try {
-            // await deleteProjectAssessment(params.row.id);
-            const newData = data.filter((d: any) => d.id !== params.row.id);
-            // setData(newData);
-          } catch (err) {
-            console.error(err);
-          }
-        };
-
         return (
           <Stack direction='row' spacing={2}>
             <Link to={`${params.id}/questions`} decorated={false}>
@@ -59,7 +62,16 @@ const ExamsProjectsPage = () => {
                 Show applicants
               </Button>
             </Link>
-            <Button variant='outlined' size='small' onClick={onDelete}>
+            <Link to={`${params.id}/edit`} decorated={false}>
+              <Button variant='outlined' size='small'>
+                Edit
+              </Button>
+            </Link>
+            <Button
+              variant='outlined'
+              size='small'
+              onClick={() => setOpen(true)}
+            >
               Delete
             </Button>
           </Stack>
@@ -95,6 +107,11 @@ const ExamsProjectsPage = () => {
           />
         </LoadingSpinnerWrapper>
       </Grid>
+      <DeleteForeverModal
+        open={open}
+        deleteHandler={onDeleteHandler}
+        handleClose={() => setOpen(false)}
+      />
     </Container>
   );
 };

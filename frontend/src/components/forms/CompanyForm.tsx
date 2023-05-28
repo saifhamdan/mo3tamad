@@ -7,7 +7,7 @@ import { Button, Grid, TextField, Typography } from '@mui/material';
 import LoadingButton from '@mui/lab/LoadingButton';
 
 import SelectGroup from 'components/input/SelectGroup';
-import { headers, accountId } from 'services/auth';
+import { headers, companyId } from 'services/auth';
 
 // interface
 interface FormValues {
@@ -84,7 +84,7 @@ const CompanyForm: React.FC<{ id?: string }> = (props) => {
         await axios({
           url: `${
             process.env.REACT_APP_API_URL
-          }/api/v1/accounts/${accountId}/users/${props.id ? props.id : ''}`,
+          }/api/v1/accounts/${companyId}/users/${props.id ? props.id : ''}`,
           headers,
           method: 'POST',
           data,

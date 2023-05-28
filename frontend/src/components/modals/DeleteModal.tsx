@@ -4,7 +4,6 @@ interface Props {
   open: boolean;
   handleClose: () => void;
   deleteHandler: () => void;
-  item: any;
 }
 
 const DeleteForeverModal: React.FC<Props> = (props) => {
@@ -14,9 +13,7 @@ const DeleteForeverModal: React.FC<Props> = (props) => {
       closeHandler={props.handleClose}
       actionHandler={props.deleteHandler}
       headerText={'Delete forever'}
-      bodyText={`Are you sure you want to delete "${
-        props?.item?.name || props?.item?.desc
-      }"?`}
+      bodyText={`Are you sure you want to delete this item?`}
       confirmButtonText='delete'
       cancelButtonText='cancel'
     />

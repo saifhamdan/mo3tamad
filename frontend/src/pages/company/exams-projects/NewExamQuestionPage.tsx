@@ -2,14 +2,20 @@ import { Grid, Typography } from '@mui/material';
 import { Container } from 'atoms';
 import { examProjectQuestionNewBreadcrumbsPage } from 'components/common/breadcrumbsList';
 import QuestionForm from 'components/forms/QuestionForm';
+import useFetch from 'hooks/use-fetch';
 
 import { useEffect } from 'react';
+import { useParams } from 'react-router';
 import { useAppDispatch } from 'store';
 import { uiActions } from 'store/ui-slice';
 
 const NewExamQuestionPage = () => {
   const dispatch = useAppDispatch();
-  const data = {};
+  const { examId } = useParams();
+  const { data } = useFetch<any>(
+    `${process.env.REACT_APP_API_URL}/api/v1/exams/${examId}`,
+    null
+  );
 
   useEffect(() => {
     dispatch(

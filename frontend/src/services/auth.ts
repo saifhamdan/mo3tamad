@@ -1,7 +1,7 @@
 import axios from 'axios';
 import Cookies from 'js-cookie';
 
-import { ACCESS_TOKEN, COOKIE_ACCOUNT_ID } from 'constant/cookies';
+import { ACCESS_TOKEN, COOKIE_COMPANY_ID } from 'constant/cookies';
 import { httpMapper } from 'utils/http-mapper';
 
 export let headers = {
@@ -11,7 +11,7 @@ export let headers = {
   authorization: `Bearer ${Cookies.get(ACCESS_TOKEN)}`,
 };
 
-export let accountId = 1;
+export let companyId = 1;
 
 export const login = async (
   email: string,
@@ -26,7 +26,7 @@ export const login = async (
       },
     });
 
-    return httpMapper<LoginResponse>(res.data.data);
+    return res.data.data;
   } catch (err) {
     throw err;
   }
@@ -48,7 +48,7 @@ export const refreshToken = async () => {
 export const getUserPolicies = async (): Promise<CasbinPolicies> => {
   try {
     const res = await axios({
-      url: `${process.env.REACT_APP_API_URL}/api/v1/accounts/${accountId}/users/policies/ui`,
+      url: `${process.env.REACT_APP_API_URL}/api/v1/accounts/policies/ui`,
       method: 'GET',
       headers: headers,
     });
@@ -77,9 +77,8 @@ export const updateHeaders = (accessToken: string) => {
   };
 };
 
-export const updateAccountId = (id: number) => {
-  console.log(id);
-  accountId = id;
+export const updateCompanyId = (id: number) => {
+  companyId = id;
 };
 
 const basicAuth = (username: string, password: string): string => {

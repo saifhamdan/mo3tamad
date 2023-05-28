@@ -6,29 +6,32 @@ import * as Yup from 'yup';
 import { Grid, TextField, Typography } from '@mui/material';
 import LoadingButton from '@mui/lab/LoadingButton';
 
-import { headers, accountId } from 'services/auth';
+import { headers, companyId } from 'services/auth';
 
 // interface
 interface FormValues {
-  name: string;
+  title: string;
   desc: string;
+  passingScore: number;
   duration: number;
   axiosError: string;
 }
 
 // intial Form Values
 const initialValues = {
-  name: '',
+  title: '',
   desc: '',
-  duration: 1,
+  duration: 0,
+  passingScore: 0,
   axiosError: '',
 };
 
 // data Mapper
 const dataMapper = (data: any): FormValues => {
   return {
-    name: data.name,
+    title: data.name,
     desc: data.desc,
+    passingScore: data.passingScore,
     duration: data.duration,
     axiosError: '',
   };
@@ -36,8 +39,9 @@ const dataMapper = (data: any): FormValues => {
 
 // Validation Schema
 const examProjectValidationSchema = Yup.object().shape({
-  name: Yup.string().required("exam's name is required"),
+  title: Yup.string().required("exam's title is required"),
   desc: Yup.string().required("exam's description is required"),
+  passingScore: Yup.number().required("exam's passingScore is required"),
   duration: Yup.number().required("exam's duration is required"),
 });
 
@@ -54,19 +58,21 @@ const ExamProjectForm: React.FC<{ data?: any; id?: string }> = (props) => {
       setLoading(true);
       try {
         const data = {
-          name: values.name,
+          name: values.title,
+          passingScore: values.passingScore,
           desc: values.desc,
           duration: values.duration,
+          companyId,
         };
         await axios({
-          url: `${
-            process.env.REACT_APP_API_URL
-          }/api/v1/accounts/${accountId}/users/${props.id ? props.id : ''}`,
+          url: `${process.env.REACT_APP_API_URL}/api/v1/exams/${
+            props.id ? props.id : ''
+          }`,
           headers,
           method: isEditing ? 'PATCH' : 'POST',
           data,
         });
-        navigate('/admin/users');
+        navigate('/company/exams-projects');
       } catch (err: any) {
         state.setFieldError('axiosError', err?.message);
       }
@@ -79,13 +85,13 @@ const ExamProjectForm: React.FC<{ data?: any; id?: string }> = (props) => {
       <Grid item mt={mt} flexGrow={1} maxWidth={500}>
         <TextField
           variant='outlined'
-          label='name'
-          name='name'
-          value={formik.values.name}
+          label='title'
+          name='title'
+          value={formik.values.title}
           onChange={formik.handleChange}
           onBlur={formik.handleBlur}
-          error={formik.touched.name && !!formik.errors.name}
-          helperText={formik.touched.name && formik.errors.name}
+          error={formik.touched.title && !!formik.errors.title}
+          helperText={formik.touched.title && formik.errors.title}
           fullWidth
           required
         />
@@ -100,6 +106,22 @@ const ExamProjectForm: React.FC<{ data?: any; id?: string }> = (props) => {
           onBlur={formik.handleBlur}
           error={formik.touched.desc && !!formik.errors.desc}
           helperText={formik.touched.desc && formik.errors.desc}
+          fullWidth
+          required
+        />
+      </Grid>
+      <Grid item mt={mt} flexGrow={1} maxWidth={500}>
+        <TextField
+          variant='outlined'
+          label='passing score'
+          name='passingScore'
+          type='number'
+          InputProps={{ inputProps: { min: 1 } }}
+          value={formik.values.passingScore}
+          onChange={formik.handleChange}
+          onBlur={formik.handleBlur}
+          error={formik.touched.passingScore && !!formik.errors.passingScore}
+          helperText={formik.touched.passingScore && formik.errors.passingScore}
           fullWidth
           required
         />

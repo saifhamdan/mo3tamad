@@ -5,16 +5,7 @@ import Toolbar from '@mui/material/Toolbar';
 import MuiListItem from '@mui/material/ListItem';
 import ImageIcon from '@mui/icons-material/Image';
 
-import {
-  AssessmentIcon,
-  DashboardIcon,
-  GroupIcon,
-  GroupsIcon,
-  ManageUserIcon,
-  OrgIcon,
-  PeopleIcon,
-  PersonIcon,
-} from 'atoms/icons';
+import { AssessmentIcon, ManageUserIcon } from 'atoms/icons';
 import NestedListItem from './NestedListItem';
 import ListItem from './ListItem';
 import { Avatar, Divider, ListItemAvatar, ListItemText } from '@mui/material';
@@ -59,7 +50,7 @@ const Sidebar = (props: Props) => {
               <ImageIcon />
             </Avatar>
           </ListItemAvatar>
-          <ListItemText primary={user?.name} secondary={user?.org?.desc} />
+          <ListItemText primary={user?.name} secondary={user?.company?.name} />
         </MuiListItem>
         <Divider />
         {adminSidebar.map((item, i) =>

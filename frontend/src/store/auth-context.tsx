@@ -1,7 +1,7 @@
 import {
   ACCESS_TOKEN,
   CASBIN_POLICIES,
-  COOKIE_ACCOUNT_ID,
+  COOKIE_COMPANY_ID,
   LOGIN_DATA,
   USER,
 } from 'constant/cookies';
@@ -13,7 +13,7 @@ import {
   getUserPolicies,
   login,
   logout,
-  updateAccountId,
+  updateCompanyId,
   updateHeaders,
 } from 'services/auth';
 
@@ -58,24 +58,25 @@ const AuthContextProvider: React.FC<{ children: React.ReactNode }> = ({
       const d = new Date();
       d.setSeconds(d.getSeconds() + loginData.expiresIn);
       loginData.expiresIn = d.getTime();
-
+      console.log(loginData);
       updateHeaders(loginData.accessToken);
-      updateAccountId(loginData.accountId);
       const user = await getMyProfile();
       const policies = await getUserPolicies();
       Cookies.set(USER, JSON.stringify(user));
       Cookies.set(ACCESS_TOKEN, loginData.accessToken);
       Cookies.set(LOGIN_DATA, JSON.stringify(loginData));
       Cookies.set(CASBIN_POLICIES, JSON.stringify(policies));
-      Cookies.set(COOKIE_ACCOUNT_ID, loginData.accountId.toString());
+      Cookies.set(COOKIE_COMPANY_ID, user.companyId.toString());
 
+      updateCompanyId(user.companyId);
       setUser(user);
       setPolicies(policies);
       setAccessToken(loginData.accessToken);
       setAuth(true);
-      if (user.role.desc === 'user') navigate('/assessments/working');
-      if (user.role.desc === 'admin') navigate('/admin/dashboard');
+      if (user.role.desc === 'user') navigate('/');
+      if (user.role.desc === 'admin') navigate('/company/exams-projects');
     } catch (err) {
+      console.log(err);
       throw err;
     }
   };
@@ -95,18 +96,18 @@ const AuthContextProvider: React.FC<{ children: React.ReactNode }> = ({
       logout(loginData.sessionId);
     }
     updateHeaders('');
-    updateAccountId(0);
+    updateCompanyId(0);
     Cookies.remove(USER);
     Cookies.remove(LOGIN_DATA);
     Cookies.remove(ACCESS_TOKEN);
-    Cookies.remove(COOKIE_ACCOUNT_ID);
+    Cookies.remove(COOKIE_COMPANY_ID);
 
     setUser(null);
     setLoginData(null);
     setAccessToken(null);
     setPolicies(null);
     setAuth(false);
-    // navigate('/login');
+    navigate('/login');
   };
 
   const sessionTimeout = () => {
@@ -125,9 +126,9 @@ const AuthContextProvider: React.FC<{ children: React.ReactNode }> = ({
     const loginDataJSON = Cookies.get(LOGIN_DATA);
     const accessToken = Cookies.get(ACCESS_TOKEN);
     const policiesJSON = Cookies.get(CASBIN_POLICIES);
-    const accountId = Cookies.get(COOKIE_ACCOUNT_ID);
+    const companyId = Cookies.get(COOKIE_COMPANY_ID);
 
-    if (userJSON && loginDataJSON && accessToken && policiesJSON && accountId) {
+    if (userJSON && loginDataJSON && accessToken && policiesJSON && companyId) {
       const userInfo: User = JSON.parse(userJSON);
       const policies: CasbinPolicies = JSON.parse(policiesJSON);
       const loginData: LoginResponse = JSON.parse(loginDataJSON);
@@ -141,7 +142,7 @@ const AuthContextProvider: React.FC<{ children: React.ReactNode }> = ({
       }
 
       updateHeaders(loginData.accessToken);
-      updateAccountId(+accountId);
+      updateCompanyId(+companyId);
       setUser(userInfo);
       setPolicies(policies);
       setLoginData(loginData);

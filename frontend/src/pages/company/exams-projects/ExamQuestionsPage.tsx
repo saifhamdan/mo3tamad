@@ -2,21 +2,46 @@ import { useEffect, useState } from 'react';
 
 import { Button, Grid, Stack, Typography } from '@mui/material';
 import { DataGrid, GridColDef } from '@mui/x-data-grid';
-
 import { Container, Link } from 'atoms';
 import useFetch from 'hooks/use-fetch';
 import LoadingSpinnerWrapper from 'utils/loading-spinner-wrapper';
-import { accountId } from 'services/auth';
 import { examProjectQuestionsBreadcrumbsPage } from 'components/common/breadcrumbsList';
 import { useAppDispatch } from 'store';
 import { uiActions } from 'store/ui-slice';
-
-const url = `${process.env.REACT_APP_API_URL}/api/v1/accounts/${accountId}/assessments/projects`;
+import { useParams } from 'react-router';
+import DeleteForeverModal from 'components/modals/DeleteModal';
+import { headers } from 'services/auth';
+import axios from 'axios';
 
 const ExamQuestionsPage = () => {
+  let qsCounter = 1;
+  let qsMapper: any = {};
   const dispatch = useAppDispatch();
+  const { examId } = useParams();
   const [selected, setSelected] = useState<any[]>([]);
-  const { data, error, loading, setData } = useFetch<any[]>(url, []);
+  const { data, error, loading, setData } = useFetch<any>(
+    `${process.env.REACT_APP_API_URL}/api/v1/questions/byId/${examId}`,
+    {}
+  );
+  const [open, setOpen] = useState(false);
+
+  const onDeleteHandler = async () => {
+    try {
+      await axios({
+        url: `${process.env.REACT_APP_API_URL}/api/v1/questions/${selected[0]}`,
+        headers: headers,
+        method: 'DELETE',
+      });
+      const newData = { ...data };
+      newData.questions = [...newData.questions];
+      newData.questions = newData.questions.filter(
+        (d: any) => d.id !== selected[0]
+      );
+      setData(newData);
+    } catch (err) {
+      console.error(err);
+    }
+  };
 
   useEffect(() => {
     dispatch(
@@ -25,40 +50,36 @@ const ExamQuestionsPage = () => {
   }, [dispatch, data]);
 
   const columns: GridColDef[] = [
-    { field: 'name', headerName: 'Name', flex: 1 },
-    { field: 'type', headerName: 'Type' },
+    {
+      field: 'text',
+      headerName: 'Question',
+      valueGetter: (params) => {
+        if (!qsMapper[params.row.id]) {
+          qsMapper[params.row.id] = qsCounter;
+          qsCounter++;
+        }
+        return `Question: ${qsMapper[params.row.id]}`;
+      },
+      flex: 1,
+    },
     {
       field: 'action',
       headerName: 'Action',
       flex: 2,
       sortable: false,
       renderCell: (params) => {
-        const onDelete = async () => {
-          try {
-            // await deleteProjectAssessment(params.row.id);
-            const newData = data.filter((d: any) => d.id !== params.row.id);
-            setData(newData);
-          } catch (err) {
-            console.error(err);
-          }
-        };
-
         return (
           <Stack direction='row' spacing={2}>
-            <Link to={`${params.id}/results`} decorated={false}>
+            <Link to={`${params.id}/edit`} decorated={false}>
               <Button variant='outlined' size='small'>
-                Results
+                Edit
               </Button>
             </Link>
-            <Link to={`${params.id}/employees`} decorated={false}>
-              <Button variant='outlined' size='small'>
-                Show Employees
-              </Button>
-            </Link>
-            {/* <Button variant='outlined' size='small' onClick={onClick}>
-            Edit
-          </Button>*/}
-            <Button variant='outlined' size='small' onClick={onDelete}>
+            <Button
+              variant='outlined'
+              size='small'
+              onClick={() => setOpen(true)}
+            >
               Delete
             </Button>
           </Stack>
@@ -75,7 +96,7 @@ const ExamQuestionsPage = () => {
         </Grid>
         <Grid item>
           <Link
-            to={`/company/exams-projects/1/questions/new`}
+            to={`/company/exams-projects/${examId}/questions/new`}
             decorated={false}
           >
             <Button variant='contained'>New Questions</Button>
@@ -92,11 +113,16 @@ const ExamQuestionsPage = () => {
             }
             rowSelectionModel={selected}
             // loading={loading}
-            rows={data}
+            rows={data.questions ? data.questions : []}
             checkboxSelection
           />
         </LoadingSpinnerWrapper>
       </Grid>
+      <DeleteForeverModal
+        open={open}
+        deleteHandler={onDeleteHandler}
+        handleClose={() => setOpen(false)}
+      />
     </Container>
   );
 };

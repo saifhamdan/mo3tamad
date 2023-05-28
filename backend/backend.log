@@ -496,3 +496,1100 @@
 {"level":"fatal","ts":1685130917.4346266,"msg":"invalid transaction"}
 {"level":"info","ts":1685130946.4070127,"msg":"data seeded successfully"}
 {"level":"info","ts":1685130951.3385277,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"panic","ts":1685255401.1249995,"msg":"Error connecting to MYSQL DB: dial tcp: lookup mysql on 172.27.80.1:53: server misbehaving"}
+{"level":"info","ts":1685255410.9527817,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1685255548.536988,"msg":"data seeded successfully"}
+{"level":"info","ts":1685255553.3702712,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1685255560.1017914,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1685262860.246476,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"error","ts":1685262860.2567317,"msg":"missing Authorization header"}
+{"level":"info","ts":1685262860.270489,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"error","ts":1685262860.2705579,"msg":"missing Authorization header"}
+{"level":"info","ts":1685262863.392943,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"error","ts":1685262863.393099,"msg":"missing Authorization header"}
+{"level":"info","ts":1685262863.39429,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"error","ts":1685262863.3943536,"msg":"missing Authorization header"}
+{"level":"info","ts":1685262864.1448257,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"error","ts":1685262864.1449308,"msg":"missing Authorization header"}
+{"level":"info","ts":1685262864.1463766,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"error","ts":1685262864.1464605,"msg":"missing Authorization header"}
+{"level":"info","ts":1685262864.4327476,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"error","ts":1685262864.4328363,"msg":"missing Authorization header"}
+{"level":"info","ts":1685262864.4348636,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"error","ts":1685262864.4349985,"msg":"missing Authorization header"}
+{"level":"info","ts":1685262864.7115781,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"error","ts":1685262864.7116523,"msg":"missing Authorization header"}
+{"level":"info","ts":1685262864.7138317,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"error","ts":1685262864.7139204,"msg":"missing Authorization header"}
+{"level":"info","ts":1685262864.9899461,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"error","ts":1685262864.9900491,"msg":"missing Authorization header"}
+{"level":"info","ts":1685262864.9917023,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"error","ts":1685262864.991822,"msg":"missing Authorization header"}
+{"level":"info","ts":1685262867.6034367,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"error","ts":1685262867.6035388,"msg":"missing Authorization header"}
+{"level":"info","ts":1685262867.6065254,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"error","ts":1685262867.6066182,"msg":"missing Authorization header"}
+{"level":"info","ts":1685262868.1943684,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"error","ts":1685262868.1944528,"msg":"missing Authorization header"}
+{"level":"info","ts":1685262868.195375,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"error","ts":1685262868.1954439,"msg":"missing Authorization header"}
+{"level":"info","ts":1685262868.5370386,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"error","ts":1685262868.5371404,"msg":"missing Authorization header"}
+{"level":"info","ts":1685262868.5395463,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"error","ts":1685262868.5396585,"msg":"missing Authorization header"}
+{"level":"info","ts":1685262868.7048702,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"error","ts":1685262868.7049572,"msg":"missing Authorization header"}
+{"level":"info","ts":1685262868.7065034,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"error","ts":1685262868.7065747,"msg":"missing Authorization header"}
+{"level":"info","ts":1685262869.0487285,"msg":"127.0.0.1, user_session, /api/v1/accounts/1/users, GET, {}"}
+{"level":"error","ts":1685262869.0489464,"msg":"missing Authorization header"}
+{"level":"info","ts":1685262869.0498748,"msg":"127.0.0.1, user_session, /api/v1/accounts/1/users, GET, {}"}
+{"level":"error","ts":1685262869.0499413,"msg":"missing Authorization header"}
+{"level":"info","ts":1685262869.7985988,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"error","ts":1685262869.798691,"msg":"missing Authorization header"}
+{"level":"info","ts":1685262869.7999237,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"error","ts":1685262869.800025,"msg":"missing Authorization header"}
+{"level":"info","ts":1685262870.406203,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"error","ts":1685262870.4063027,"msg":"missing Authorization header"}
+{"level":"info","ts":1685262870.4077451,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"error","ts":1685262870.4078302,"msg":"missing Authorization header"}
+{"level":"info","ts":1685262870.7636583,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"error","ts":1685262870.7637496,"msg":"missing Authorization header"}
+{"level":"info","ts":1685262870.7646737,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"error","ts":1685262870.7647426,"msg":"missing Authorization header"}
+{"level":"info","ts":1685262871.5568554,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"error","ts":1685262871.556965,"msg":"missing Authorization header"}
+{"level":"info","ts":1685262871.5585332,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"error","ts":1685262871.5586245,"msg":"missing Authorization header"}
+{"level":"info","ts":1685262872.0284922,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"error","ts":1685262872.028583,"msg":"missing Authorization header"}
+{"level":"info","ts":1685262872.029832,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"error","ts":1685262872.029907,"msg":"missing Authorization header"}
+{"level":"info","ts":1685262872.3572493,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"error","ts":1685262872.3573475,"msg":"missing Authorization header"}
+{"level":"info","ts":1685262872.3590393,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"error","ts":1685262872.3591223,"msg":"missing Authorization header"}
+{"level":"info","ts":1685262951.4288821,"msg":"127.0.0.1, user_session, /auth/oauth/login, POST, {}"}
+{"level":"info","ts":1685262951.7377033,"msg":"127.0.0.1, user_session, /api/v1/accounts/undefined/users/me, GET, {}"}
+{"level":"info","ts":1685262969.161262,"msg":"127.0.0.1, user_session, /auth/oauth/login, POST, {}"}
+{"level":"info","ts":1685262969.319872,"msg":"127.0.0.1, user_session, /api/v1/accounts/undefined/users/me, GET, {}"}
+{"level":"info","ts":1685262970.1511116,"msg":"127.0.0.1, user_session, /auth/oauth/login, POST, {}"}
+{"level":"info","ts":1685262970.2253745,"msg":"127.0.0.1, user_session, /api/v1/accounts/undefined/users/me, GET, {}"}
+{"level":"info","ts":1685262976.513157,"msg":"127.0.0.1, user_session, /auth/oauth/login, POST, {}"}
+{"level":"info","ts":1685262976.5932465,"msg":"127.0.0.1, user_session, /api/v1/accounts/undefined/users/me, GET, {}"}
+{"level":"info","ts":1685263080.0524979,"msg":"127.0.0.1, user_session, /auth/oauth/login, POST, {}"}
+{"level":"info","ts":1685263080.1409187,"msg":"127.0.0.1, user_session, /api/v1/accounts/me, GET, {}"}
+{"level":"info","ts":1685263080.1528552,"msg":"127.0.0.1, user_session, /api/v1/accounts/undefined/users/policies/ui, GET, {}"}
+{"level":"info","ts":1685263084.0533075,"msg":"127.0.0.1, user_session, /auth/oauth/login, POST, {}"}
+{"level":"info","ts":1685263084.1347818,"msg":"127.0.0.1, user_session, /api/v1/accounts/me, GET, {}"}
+{"level":"info","ts":1685263084.1441581,"msg":"127.0.0.1, user_session, /api/v1/accounts/undefined/users/policies/ui, GET, {}"}
+{"level":"info","ts":1685263105.78253,"msg":"127.0.0.1, user_session, /auth/oauth/login, POST, {}"}
+{"level":"info","ts":1685263105.8588667,"msg":"127.0.0.1, user_session, /api/v1/accounts/me, GET, {}"}
+{"level":"info","ts":1685263105.8655367,"msg":"127.0.0.1, user_session, /api/v1/users/policies/ui, GET, {}"}
+{"level":"info","ts":1685263125.9629927,"msg":"127.0.0.1, user_session, /auth/oauth/login, POST, {}"}
+{"level":"info","ts":1685263126.0419157,"msg":"127.0.0.1, user_session, /api/v1/accounts/me, GET, {}"}
+{"level":"info","ts":1685263126.048854,"msg":"127.0.0.1, user_session, /api/v1/accounts/policies/ui, GET, {}"}
+{"level":"info","ts":1685263177.7363818,"msg":"127.0.0.1, user_session, /auth/oauth/login, POST, {}"}
+{"level":"info","ts":1685263178.0198917,"msg":"127.0.0.1, user_session, /api/v1/accounts/me, GET, {}"}
+{"level":"info","ts":1685263178.0270336,"msg":"127.0.0.1, user_session, /api/v1/accounts/policies/ui, GET, {}"}
+{"level":"info","ts":1685263186.0273097,"msg":"127.0.0.1, user_session, /auth/oauth/login, POST, {}"}
+{"level":"info","ts":1685263186.1110187,"msg":"127.0.0.1, user_session, /api/v1/accounts/me, GET, {}"}
+{"level":"info","ts":1685263186.1191115,"msg":"127.0.0.1, user_session, /api/v1/accounts/policies/ui, GET, {}"}
+{"level":"info","ts":1685263232.8727314,"msg":"127.0.0.1, user_session, /auth/oauth/login, POST, {}"}
+{"level":"info","ts":1685263232.9472458,"msg":"127.0.0.1, user_session, /api/v1/accounts/me, GET, {}"}
+{"level":"info","ts":1685263232.9549675,"msg":"127.0.0.1, user_session, /api/v1/accounts/policies/ui, GET, {}"}
+{"level":"info","ts":1685263281.7504249,"msg":"127.0.0.1, user_session, /auth/oauth/login, POST, {}"}
+{"level":"info","ts":1685263281.8274107,"msg":"127.0.0.1, user_session, /api/v1/accounts/me, GET, {}"}
+{"level":"info","ts":1685263281.836528,"msg":"127.0.0.1, user_session, /api/v1/accounts/policies/ui, GET, {}"}
+{"level":"info","ts":1685263288.9975116,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685263289.0105085,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685263303.309223,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685263303.3140798,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685263356.6211982,"msg":"127.0.0.1, user_session, /auth/oauth/logout/undefined, DELETE, {}"}
+{"level":"error","ts":1685263356.621331,"msg":"missing Authorization header"}
+{"level":"info","ts":1685263360.2181616,"msg":"127.0.0.1, user_session, /auth/oauth/login, POST, {}"}
+{"level":"info","ts":1685263360.291688,"msg":"127.0.0.1, user_session, /api/v1/accounts/me, GET, {}"}
+{"level":"info","ts":1685263360.2976828,"msg":"127.0.0.1, user_session, /api/v1/accounts/policies/ui, GET, {}"}
+{"level":"info","ts":1685263360.3384311,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685263360.3416958,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685263614.7085109,"msg":"127.0.0.1, user_session, /api/v1/accounts/1/users/, POST, {\"desc\":\"dqw\",\"duration\":212,\"passingScore\":2321,\"title\":\"fqwd\"}"}
+{"level":"info","ts":1685263654.7267122,"msg":"127.0.0.1, user_session, /api/v1/exams/, POST, {\"desc\":\"dqw\",\"duration\":212,\"passingScore\":2321,\"title\":\"fqwd\"}"}
+{"level":"error","ts":1685263654.7443697,"msg":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'date' at row 1"}
+{"level":"info","ts":1685263655.5486693,"msg":"127.0.0.1, user_session, /api/v1/exams/, POST, {\"desc\":\"dqw\",\"duration\":212,\"passingScore\":2321,\"title\":\"fqwd\"}"}
+{"level":"error","ts":1685263655.5521145,"msg":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'date' at row 1"}
+{"level":"info","ts":1685263663.6724448,"msg":"127.0.0.1, user_session, /api/v1/exams/, POST, {\"desc\":\"dqw\",\"duration\":212,\"passingScore\":2321,\"title\":\"fqwd\"}"}
+{"level":"error","ts":1685263663.676346,"msg":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'date' at row 1"}
+{"level":"info","ts":1685263707.9135673,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1685263718.0714993,"msg":"127.0.0.1, user_session, /api/v1/exams/, POST, {\"desc\":\"dqw\",\"duration\":212,\"passingScore\":2321,\"title\":\"fqwd\"}"}
+{"level":"info","ts":1685263731.7096624,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685263731.7142274,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685263821.2653363,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685263822.1091921,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685263822.1160977,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685263839.6497598,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685263856.5951405,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685263868.9620092,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685263868.9679155,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685263873.4292057,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685263873.432156,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685263952.5879498,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685264039.7480059,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685264039.7526135,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685264048.2799199,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685264048.2834358,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685264061.0640678,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685264061.0675368,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685264096.2555401,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685264096.2641928,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685264143.1347415,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685264158.0031867,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685264168.8096511,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685264168.8162217,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685264172.6443214,"msg":"127.0.0.1, user_session, /api/v1/exams, DELETE, {}"}
+{"level":"info","ts":1685264176.220879,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685264176.2244346,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685264182.6939137,"msg":"127.0.0.1, user_session, /api/v1/exams, DELETE, {}"}
+{"level":"info","ts":1685264200.3229418,"msg":"127.0.0.1, user_session, /api/v1/exams/1, DELETE, {}"}
+{"level":"error","ts":1685264200.3230395,"msg":"missing Authorization header"}
+{"level":"info","ts":1685264208.839499,"msg":"127.0.0.1, user_session, /auth/oauth/login, POST, {}"}
+{"level":"info","ts":1685264212.3330026,"msg":"127.0.0.1, user_session, /api/v1/exams/1, DELETE, {}"}
+{"level":"error","ts":1685264212.3337564,"msg":"expired or invalid token"}
+{"level":"info","ts":1685264223.0778668,"msg":"127.0.0.1, user_session, /auth/oauth/login, POST, {}"}
+{"level":"info","ts":1685264226.2444644,"msg":"127.0.0.1, user_session, /api/v1/exams/1, DELETE, {}"}
+{"level":"info","ts":1685264245.749363,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685264255.4233398,"msg":"127.0.0.1, user_session, /api/v1/exams/, POST, {\"desc\":\"123\",\"duration\":50,\"passingScore\":23,\"title\":\"test\"}"}
+{"level":"info","ts":1685264271.1408136,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685264271.1498036,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685264345.1535556,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685264345.1589658,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685264357.3110883,"msg":"127.0.0.1, user_session, /api/v1/exams, DELETE, {}"}
+{"level":"info","ts":1685264382.1911106,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685264382.1974154,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685264384.7906926,"msg":"127.0.0.1, user_session, /api/v1/exams/2, DELETE, {}"}
+{"level":"info","ts":1685264390.0099194,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685264390.0130827,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685264412.3578284,"msg":"127.0.0.1, user_session, /api/v1/exams/, POST, {\"desc\":\"dqew\",\"duration\":2412,\"passingScore\":3221,\"title\":\"dqw\"}"}
+{"level":"info","ts":1685264421.6699219,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685264421.6750643,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685264422.741523,"msg":"127.0.0.1, user_session, /api/v1/accounts/1/users, GET, {}"}
+{"level":"info","ts":1685264422.7444413,"msg":"127.0.0.1, user_session, /api/v1/accounts/1/users, GET, {}"}
+{"level":"info","ts":1685264440.0391483,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685264440.0486298,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685264443.8294303,"msg":"127.0.0.1, user_session, /api/v1/exams/undefined, DELETE, {}"}
+{"level":"error","ts":1685264443.8302624,"msg":"id param is required"}
+{"level":"info","ts":1685264494.1089365,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685264517.0213366,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685264517.0243347,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685264519.5509093,"msg":"127.0.0.1, user_session, /api/v1/exams/3, DELETE, {}"}
+{"level":"info","ts":1685264528.8372002,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685264531.6246667,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685264534.6317823,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685264534.6376472,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685264538.1733916,"msg":"127.0.0.1, user_session, /api/v1/exams/, POST, {\"desc\":\"dwqdqw\",\"duration\":12341,\"passingScore\":124,\"title\":\"dqw\"}"}
+{"level":"info","ts":1685264538.224459,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685264538.2276545,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685264554.238872,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685264580.777506,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685264580.781427,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685264617.2560878,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685264617.2591884,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685264622.714828,"msg":"127.0.0.1, user_session, /api/v1/exams/, POST, {\"desc\":\"e12\",\"duration\":312,\"passingScore\":123,\"title\":\"dqw\"}"}
+{"level":"info","ts":1685264622.767517,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685264622.7721305,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685264625.3976166,"msg":"127.0.0.1, user_session, /api/v1/exams/5, DELETE, {}"}
+{"level":"info","ts":1685264627.0691564,"msg":"127.0.0.1, user_session, /api/v1/exams/4, DELETE, {}"}
+{"level":"info","ts":1685264628.8180275,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685264628.820883,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685264638.0511267,"msg":"127.0.0.1, user_session, /api/v1/exams/, POST, {\"desc\":\"haha\",\"duration\":20,\"passingScore\":50,\"title\":\"ahah\"}"}
+{"level":"info","ts":1685264638.1177742,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685264638.1211288,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685264686.3713284,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685264686.3770416,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685264700.4767702,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685264729.4234746,"msg":"127.0.0.1, user_session, /api/v1/accounts/1/users/undefined, GET, {}"}
+{"level":"info","ts":1685264729.4302635,"msg":"127.0.0.1, user_session, /api/v1/accounts/1/users/undefined, GET, {}"}
+{"level":"info","ts":1685264771.5368912,"msg":"127.0.0.1, user_session, /api/v1/exmas/6, GET, {}"}
+{"level":"info","ts":1685264771.5412014,"msg":"127.0.0.1, user_session, /api/v1/exmas/6, GET, {}"}
+{"level":"info","ts":1685264773.1222942,"msg":"127.0.0.1, user_session, /api/v1/exams/6, GET, {}"}
+{"level":"info","ts":1685264773.138836,"msg":"127.0.0.1, user_session, /api/v1/exams/6, GET, {}"}
+{"level":"info","ts":1685264775.7819133,"msg":"127.0.0.1, user_session, /api/v1/exams%20%20/6, GET, {}"}
+{"level":"info","ts":1685264775.7864938,"msg":"127.0.0.1, user_session, /api/v1/exams%20%20/6, GET, {}"}
+{"level":"info","ts":1685264779.7325451,"msg":"127.0.0.1, user_session, /api/v1/exams%20%20/6, GET, {}"}
+{"level":"info","ts":1685264779.7569208,"msg":"127.0.0.1, user_session, /api/v1/exams%20%20/6, GET, {}"}
+{"level":"info","ts":1685264788.4088142,"msg":"127.0.0.1, user_session, /api/v1/exams%20%20/6, GET, {}"}
+{"level":"info","ts":1685264788.4138227,"msg":"127.0.0.1, user_session, /api/v1/exams%20%20/6, GET, {}"}
+{"level":"info","ts":1685264818.1467845,"msg":"127.0.0.1, user_session, /api/v1/exams%20%20/6, GET, {}"}
+{"level":"info","ts":1685264818.148698,"msg":"127.0.0.1, user_session, /api/v1/exams%20%20/6, GET, {}"}
+{"level":"info","ts":1685264825.0860856,"msg":"127.0.0.1, user_session, /api/v1/exams%20%20/6, GET, {}"}
+{"level":"info","ts":1685264825.0936904,"msg":"127.0.0.1, user_session, /api/v1/exams%20%20/6, GET, {}"}
+{"level":"info","ts":1685264842.8361223,"msg":"127.0.0.1, user_session, /api/v1/exams/6, GET, {}"}
+{"level":"info","ts":1685264842.8426375,"msg":"127.0.0.1, user_session, /api/v1/exams/6, GET, {}"}
+{"level":"info","ts":1685264856.187792,"msg":"127.0.0.1, user_session, /api/v1/exams/6, GET, {}"}
+{"level":"info","ts":1685264856.1913557,"msg":"127.0.0.1, user_session, /api/v1/exams/6, GET, {}"}
+{"level":"info","ts":1685264873.6416028,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1685264876.8749554,"msg":"127.0.0.1, user_session, /api/v1/exams/6, GET, {}"}
+{"level":"info","ts":1685264876.8789635,"msg":"127.0.0.1, user_session, /api/v1/exams/6, GET, {}"}
+{"level":"info","ts":1685264898.3492808,"msg":"127.0.0.1, user_session, /api/v1/exams/6, GET, {}"}
+{"level":"info","ts":1685264898.352195,"msg":"127.0.0.1, user_session, /api/v1/exams/6, GET, {}"}
+{"level":"info","ts":1685264913.8809912,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1685264916.1749668,"msg":"127.0.0.1, user_session, /api/v1/exams/6, GET, {}"}
+{"level":"info","ts":1685264916.1785696,"msg":"127.0.0.1, user_session, /api/v1/exams/6, GET, {}"}
+{"level":"info","ts":1685264917.757297,"msg":"127.0.0.1, user_session, /api/v1/exams/6, PATCH, {\"desc\":\"dqwdqwdqwdqw\",\"duration\":20,\"name\":\"ahah\",\"passingScore\":50}"}
+{"level":"info","ts":1685264917.8248742,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685264917.8290691,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685264919.1231856,"msg":"127.0.0.1, user_session, /api/v1/exams/6, GET, {}"}
+{"level":"info","ts":1685264919.1267493,"msg":"127.0.0.1, user_session, /api/v1/exams/6, GET, {}"}
+{"level":"info","ts":1685264921.6087327,"msg":"127.0.0.1, user_session, /api/v1/exams/6, PATCH, {\"desc\":\"dqwdqwdqwdqw\",\"duration\":20,\"name\":\"ahahdqww\",\"passingScore\":50}"}
+{"level":"info","ts":1685264921.670231,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685264921.6742394,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685264923.578873,"msg":"127.0.0.1, user_session, /api/v1/exams/6, GET, {}"}
+{"level":"info","ts":1685264923.582241,"msg":"127.0.0.1, user_session, /api/v1/exams/6, GET, {}"}
+{"level":"info","ts":1685264924.8659155,"msg":"127.0.0.1, user_session, /api/v1/exams/6, PATCH, {\"desc\":\"dqwdqwdqwdqw\",\"duration\":20,\"name\":\"ahahdqww\",\"passingScore\":50}"}
+{"level":"info","ts":1685264924.9087176,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685264924.9122493,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685265102.634278,"msg":"127.0.0.1, user_session, /api/v1/accounts/users, GET, {}"}
+{"level":"error","ts":1685265102.636031,"msg":"id param is required"}
+{"level":"info","ts":1685265102.6377423,"msg":"127.0.0.1, user_session, /api/v1/accounts/users, GET, {}"}
+{"level":"error","ts":1685265102.6386068,"msg":"id param is required"}
+{"level":"info","ts":1685265103.3376744,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685265103.3413634,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685265138.6432188,"msg":"127.0.0.1, user_session, /api/v1/accounts/users, GET, {}"}
+{"level":"error","ts":1685265138.6440597,"msg":"id param is required"}
+{"level":"info","ts":1685265138.6453822,"msg":"127.0.0.1, user_session, /api/v1/accounts/users, GET, {}"}
+{"level":"error","ts":1685265138.646189,"msg":"id param is required"}
+{"level":"info","ts":1685265166.8544753,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"info","ts":1685265166.8615828,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"info","ts":1685265188.1963756,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"info","ts":1685265188.2003548,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"info","ts":1685266104.0956187,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"info","ts":1685266104.1004663,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"info","ts":1685266106.9216533,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685266106.9245198,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685266107.504551,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"info","ts":1685266107.5082307,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"info","ts":1685267155.9620738,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685267155.9671674,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685267170.2185714,"msg":"127.0.0.1, user_session, /api/v1/accounts/1/assessments/projects, GET, {}"}
+{"level":"info","ts":1685267170.220642,"msg":"127.0.0.1, user_session, /api/v1/accounts/1/assessments/projects, GET, {}"}
+{"level":"info","ts":1685267256.5889392,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685267256.5928183,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"error","ts":1685267256.5929103,"msg":"missing Authorization header"}
+{"level":"info","ts":1685267258.420371,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"error","ts":1685267258.4205003,"msg":"missing Authorization header"}
+{"level":"info","ts":1685267258.4219968,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"error","ts":1685267258.4220803,"msg":"missing Authorization header"}
+{"level":"info","ts":1685267293.7835546,"msg":"127.0.0.1, user_session, /auth/oauth/login, POST, {}"}
+{"level":"info","ts":1685267293.8746197,"msg":"127.0.0.1, user_session, /api/v1/accounts/me, GET, {}"}
+{"level":"info","ts":1685267293.8860908,"msg":"127.0.0.1, user_session, /api/v1/accounts/policies/ui, GET, {}"}
+{"level":"info","ts":1685267293.9365406,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685267293.9395146,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685267297.1085322,"msg":"127.0.0.1, user_session, /api/v1/accounts/1/assessments/projects, GET, {}"}
+{"level":"info","ts":1685267297.1103354,"msg":"127.0.0.1, user_session, /api/v1/accounts/1/assessments/projects, GET, {}"}
+{"level":"info","ts":1685267300.8745396,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685267300.8778632,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685267304.111418,"msg":"127.0.0.1, user_session, /api/v1/accounts/1/assessments/projects, GET, {}"}
+{"level":"info","ts":1685267304.113224,"msg":"127.0.0.1, user_session, /api/v1/accounts/1/assessments/projects, GET, {}"}
+{"level":"info","ts":1685267335.1798947,"msg":"127.0.0.1, user_session, /api/v1/exams/projects, GET, {}"}
+{"level":"error","ts":1685267335.1811116,"msg":"id param is required"}
+{"level":"error","ts":1685267335.1845834,"msg":"record not found"}
+{"level":"info","ts":1685267335.18731,"msg":"127.0.0.1, user_session, /api/v1/exams/projects, GET, {}"}
+{"level":"error","ts":1685267335.1879883,"msg":"id param is required"}
+{"level":"error","ts":1685267335.1887803,"msg":"record not found"}
+{"level":"info","ts":1685267365.3067074,"msg":"127.0.0.1, user_session, /api/v1/questions/projects, GET, {}"}
+{"level":"error","ts":1685267365.3075364,"msg":"id param is required"}
+{"level":"error","ts":1685267365.3117151,"msg":"record not found"}
+{"level":"info","ts":1685267365.3132367,"msg":"127.0.0.1, user_session, /api/v1/questions/projects, GET, {}"}
+{"level":"error","ts":1685267365.314272,"msg":"id param is required"}
+{"level":"error","ts":1685267365.3153684,"msg":"record not found"}
+{"level":"info","ts":1685267392.3997118,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/6, GET, {}"}
+{"level":"info","ts":1685267392.4067667,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/6, GET, {}"}
+{"level":"info","ts":1685267403.4433186,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/6, GET, {}"}
+{"level":"info","ts":1685267411.2662268,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/6, GET, {}"}
+{"level":"info","ts":1685267423.1349368,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685267423.1548507,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685267427.2335033,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/6, GET, {}"}
+{"level":"info","ts":1685267427.2368584,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/6, GET, {}"}
+{"level":"info","ts":1685268513.8640978,"msg":"127.0.0.1, user_session, /api/v1/questions/byid/1, GET, {}"}
+{"level":"error","ts":1685268513.8642364,"msg":"missing Authorization header"}
+{"level":"info","ts":1685268518.2427268,"msg":"127.0.0.1, user_session, /api/v1/questions/byid/1, GET, {}"}
+{"level":"error","ts":1685268518.2428045,"msg":"missing Authorization header"}
+{"level":"info","ts":1685268527.945608,"msg":"127.0.0.1, user_session, /api/v1/questions/byid/1, GET, {}"}
+{"level":"error","ts":1685268527.9456801,"msg":"missing Authorization header"}
+{"level":"info","ts":1685268580.6301584,"msg":"127.0.0.1, user_session, /api/v1/questions/byid/1, GET, {}"}
+{"level":"info","ts":1685268590.606647,"msg":"127.0.0.1, user_session, /api/v1/questions/byid/6, GET, {}"}
+{"level":"info","ts":1685268710.956638,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/6, GET, {}"}
+{"level":"info","ts":1685268710.9627492,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/6, GET, {}"}
+{"level":"info","ts":1685268895.6046517,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1685268898.6855552,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/6, GET, {}"}
+{"level":"error","ts":1685268898.6874065,"msg":"Options: unsupported relations for schema Exam"}
+{"level":"info","ts":1685268898.6886306,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/6, GET, {}"}
+{"level":"error","ts":1685268898.6902912,"msg":"Options: unsupported relations for schema Exam"}
+{"level":"info","ts":1685268921.4532619,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/6, GET, {}"}
+{"level":"error","ts":1685268921.4549549,"msg":"Options: unsupported relations for schema Exam"}
+{"level":"info","ts":1685268921.4564712,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/6, GET, {}"}
+{"level":"error","ts":1685268921.4581628,"msg":"Options: unsupported relations for schema Exam"}
+{"level":"info","ts":1685268924.4700477,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/6, GET, {}"}
+{"level":"error","ts":1685268924.4715161,"msg":"Options: unsupported relations for schema Exam"}
+{"level":"info","ts":1685268924.4738379,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/6, GET, {}"}
+{"level":"error","ts":1685268924.4753313,"msg":"Options: unsupported relations for schema Exam"}
+{"level":"info","ts":1685268932.4567168,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/6, GET, {}"}
+{"level":"error","ts":1685268932.458742,"msg":"Options: unsupported relations for schema Exam"}
+{"level":"info","ts":1685268932.4617274,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/6, GET, {}"}
+{"level":"error","ts":1685268932.4634337,"msg":"Options: unsupported relations for schema Exam"}
+{"level":"info","ts":1685268944.795285,"msg":"127.0.0.1, user_session, /api/v1/questions/byid/6, GET, {}"}
+{"level":"error","ts":1685268944.796647,"msg":"Options: unsupported relations for schema Exam"}
+{"level":"info","ts":1685268963.0740433,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1685268983.4389672,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1685268987.564944,"msg":"127.0.0.1, user_session, /api/v1/questions/byid/6, GET, {}"}
+{"level":"info","ts":1685269009.104815,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1685269015.3838692,"msg":"127.0.0.1, user_session, /api/v1/questions/byid/6, GET, {}"}
+{"level":"info","ts":1685269042.7824357,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/6, GET, {}"}
+{"level":"info","ts":1685269042.812088,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/6, GET, {}"}
+{"level":"info","ts":1685269044.7408922,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/6, GET, {}"}
+{"level":"info","ts":1685269044.7465947,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/6, GET, {}"}
+{"level":"info","ts":1685269047.4122858,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/6, GET, {}"}
+{"level":"info","ts":1685269047.4159317,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/6, GET, {}"}
+{"level":"info","ts":1685272179.0080025,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1685272185.2242231,"msg":"127.0.0.1, user_session, /api/v1/questions/, POST, {\"examId\":6,\"options\":[{\"isCorrect\":true,\"text\":\"zoro\"},{\"isCorrect\":false,\"text\":\"sanji\"},{\"isCorrect\":false,\"text\":\"yamato\"}],\"text\":\"whoisthefuturepiratekingrighthand\"}"}
+{"level":"info","ts":1685272203.409004,"msg":"127.0.0.1, user_session, /api/v1/questions/byid/6, GET, {}"}
+{"level":"info","ts":1685272220.9320383,"msg":"127.0.0.1, user_session, /api/v1/questions/1, GET, {}"}
+{"level":"info","ts":1685272233.7831345,"msg":"127.0.0.1, user_session, /api/v1/questions/1, PATCH, {\"exam_id\":6,\"options\":[{\"is_correct\":false,\"option_text\":\"fsfewfshrgrdhergrwe\"},{\"is_correct\":true,\"option_text\":\"fsfewfswe\"},{\"is_correct\":true,\"option_text\":\"fsfewfswe\"}],\"text\":\"csffsfsss\"}"}
+{"level":"info","ts":1685272242.9589612,"msg":"127.0.0.1, user_session, /api/v1/questions/1, GET, {}"}
+{"level":"info","ts":1685272278.6809487,"msg":"127.0.0.1, user_session, /api/v1/questions/1, PATCH, {\"exam_id\":6,\"options\":[{\"isCorrect\":false,\"text\":\"fsfewfshrgrdhergrwe\"},{\"isCorrect\":true,\"text\":\"fsfewfswe\"},{\"isCorrect\":true,\"text\":\"fsfewfswe\"}],\"text\":\"csffsfsss\"}"}
+{"level":"info","ts":1685272580.5202432,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/undefined, GET, {}"}
+{"level":"error","ts":1685272580.5708733,"msg":"missing Authorization header"}
+{"level":"info","ts":1685272580.5719514,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/undefined, GET, {}"}
+{"level":"error","ts":1685272580.5720115,"msg":"missing Authorization header"}
+{"level":"info","ts":1685272584.4445624,"msg":"127.0.0.1, user_session, /auth/oauth/login, POST, {}"}
+{"level":"error","ts":1685272584.5022602,"msg":"incorrect password or email"}
+{"level":"info","ts":1685272586.5224404,"msg":"127.0.0.1, user_session, /auth/oauth/login, POST, {}"}
+{"level":"info","ts":1685272587.185261,"msg":"127.0.0.1, user_session, /api/v1/accounts/me, GET, {}"}
+{"level":"info","ts":1685272587.195305,"msg":"127.0.0.1, user_session, /api/v1/accounts/policies/ui, GET, {}"}
+{"level":"info","ts":1685272587.2937248,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685272587.3477924,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685272589.8692496,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/6, GET, {}"}
+{"level":"info","ts":1685272589.9133887,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/6, GET, {}"}
+{"level":"info","ts":1685272621.5955248,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/6, GET, {}"}
+{"level":"info","ts":1685272685.6235316,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/6, GET, {}"}
+{"level":"info","ts":1685272691.628829,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/6, GET, {}"}
+{"level":"info","ts":1685272715.7954724,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/6, GET, {}"}
+{"level":"info","ts":1685272742.3907223,"msg":"127.0.0.1, user_session, /api/v1/accounts/1/users/, POST, {\"examId\":\"1\",\"options\":[{\"isCorrect\":true,\"text\":\"u003cpu003ea7au003c/pu003e\"},{\"isCorrect\":false,\"text\":\"u003cpu003ewelcomeu003c/pu003e\"}],\"text\":\"u003cpu003ewelcomeu003c/pu003e\"}"}
+{"level":"info","ts":1685272757.3968,"msg":"127.0.0.1, user_session, /api/v1/questions/, POST, {\"examId\":\"1\",\"options\":[{\"isCorrect\":true,\"text\":\"u003cpu003ea7au003c/pu003e\"},{\"isCorrect\":false,\"text\":\"u003cpu003ewelcomeu003c/pu003e\"}],\"text\":\"u003cpu003ewelcomeu003c/pu003e\"}"}
+{"level":"error","ts":1685272757.3975472,"msg":"json: cannot unmarshal number \" into Go struct field Question.ExamId of type int"}
+{"level":"info","ts":1685272764.5408485,"msg":"127.0.0.1, user_session, /api/v1/questions/, POST, {\"examId\":\"1\",\"options\":[{\"isCorrect\":true,\"text\":\"u003cpu003ea7au003c/pu003e\"},{\"isCorrect\":false,\"text\":\"u003cpu003ewelcomeu003c/pu003e\"}],\"text\":\"u003cpu003ewelcomeu003c/pu003e\"}"}
+{"level":"error","ts":1685272764.5416844,"msg":"json: cannot unmarshal number \" into Go struct field Question.ExamId of type int"}
+{"level":"info","ts":1685272829.7592647,"msg":"127.0.0.1, user_session, /api/v1/questions/, POST, {\"examId\":\"1\",\"options\":[{\"isCorrect\":true,\"text\":\"u003cpu003ea7au003c/pu003e\"},{\"isCorrect\":false,\"text\":\"u003cpu003ewelcomeu003c/pu003e\"}],\"text\":\"u003cpu003ewelcomeu003c/pu003e\"}"}
+{"level":"error","ts":1685272829.7601774,"msg":"json: cannot unmarshal number \" into Go struct field Question.ExamId of type int"}
+{"level":"info","ts":1685272876.399325,"msg":"127.0.0.1, user_session, /api/v1/questions/, POST, {\"examId\":1,\"options\":[{\"isCorrect\":true,\"text\":\"u003cpu003ea7au003c/pu003e\"},{\"isCorrect\":false,\"text\":\"u003cpu003ewelcomeu003c/pu003e\"},{\"isCorrect\":false,\"text\":\"u003cpu003edqwdwu003c/pu003e\"}],\"text\":\"u003cpu003ewelcomeu003c/pu003e\"}"}
+{"level":"info","ts":1685272904.3044486,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685272904.3161604,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685272905.7087069,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/6, GET, {}"}
+{"level":"info","ts":1685272905.713447,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/6, GET, {}"}
+{"level":"info","ts":1685272922.5868192,"msg":"127.0.0.1, user_session, /api/v1/questions/byid/6, GET, {}"}
+{"level":"info","ts":1685272933.7578576,"msg":"127.0.0.1, user_session, /api/v1/questions/1, DELETE, {}"}
+{"level":"info","ts":1685273011.7741146,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1685273016.7446833,"msg":"127.0.0.1, user_session, /api/v1/questions/, POST, {\"examId\":6,\"options\":[{\"isCorrect\":true,\"text\":\"zoro\"},{\"isCorrect\":false,\"text\":\"sanji\"},{\"isCorrect\":false,\"text\":\"yamato\"}],\"text\":\"whoisthefuturepiratekingrighthand\"}"}
+{"level":"info","ts":1685273025.191547,"msg":"127.0.0.1, user_session, /api/v1/questions/3, DELETE, {}"}
+{"level":"info","ts":1685273036.0925355,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/6, GET, {}"}
+{"level":"info","ts":1685273036.0982401,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/6, GET, {}"}
+{"level":"info","ts":1685273043.6310756,"msg":"127.0.0.1, user_session, /api/v1/questions/, POST, {\"examId\":1,\"options\":[{\"isCorrect\":false,\"text\":\"u003cpu003edqwdqwdqwu003c/pu003e\"},{\"isCorrect\":false,\"text\":\"u003cpu003edqwdu003c/pu003e\"},{\"isCorrect\":false,\"text\":\"u003cpu003edqwdqwdwqu003c/pu003e\"}],\"text\":\"u003cpu003edqwdwu003c/pu003e\"}"}
+{"level":"info","ts":1685273043.7038739,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/1, GET, {}"}
+{"level":"error","ts":1685273043.7053177,"msg":"record not found"}
+{"level":"info","ts":1685273043.7065895,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/1, GET, {}"}
+{"level":"error","ts":1685273043.708208,"msg":"record not found"}
+{"level":"info","ts":1685273055.7732093,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/6, GET, {}"}
+{"level":"info","ts":1685273055.7766943,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/6, GET, {}"}
+{"level":"info","ts":1685273059.3809652,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/1, GET, {}"}
+{"level":"error","ts":1685273059.3825943,"msg":"record not found"}
+{"level":"info","ts":1685273059.384331,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/1, GET, {}"}
+{"level":"error","ts":1685273059.386541,"msg":"record not found"}
+{"level":"info","ts":1685273069.9714572,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/1, GET, {}"}
+{"level":"error","ts":1685273069.9730089,"msg":"record not found"}
+{"level":"info","ts":1685273069.9752727,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/1, GET, {}"}
+{"level":"error","ts":1685273069.9773161,"msg":"record not found"}
+{"level":"info","ts":1685273103.0995078,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/6, GET, {}"}
+{"level":"info","ts":1685273103.1061301,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/6, GET, {}"}
+{"level":"info","ts":1685273113.7381442,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/undefined, GET, {}"}
+{"level":"error","ts":1685273113.7389276,"msg":"id param is required"}
+{"level":"error","ts":1685273113.7399392,"msg":"record not found"}
+{"level":"info","ts":1685273113.7416906,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/undefined, GET, {}"}
+{"level":"error","ts":1685273113.7425044,"msg":"id param is required"}
+{"level":"error","ts":1685273113.7434535,"msg":"record not found"}
+{"level":"info","ts":1685273117.5982008,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/6, GET, {}"}
+{"level":"info","ts":1685273117.602512,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/6, GET, {}"}
+{"level":"info","ts":1685273122.5146408,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/6, GET, {}"}
+{"level":"info","ts":1685273122.519815,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/6, GET, {}"}
+{"level":"info","ts":1685273140.8590052,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/6, GET, {}"}
+{"level":"info","ts":1685273151.8594232,"msg":"127.0.0.1, user_session, /api/v1/questions/, POST, {\"examId\":6,\"options\":[{\"isCorrect\":true,\"text\":\"u003cpu003eqdwdqwu003c/pu003e\"},{\"isCorrect\":true,\"text\":\"u003cpu003edqwdu003c/pu003e\"}],\"text\":\"u003cpu003edqwdqwwqu003c/pu003e\"}"}
+{"level":"info","ts":1685273151.9256628,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/6, GET, {}"}
+{"level":"info","ts":1685273151.9303567,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/6, GET, {}"}
+{"level":"info","ts":1685273204.5698166,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/6, GET, {}"}
+{"level":"info","ts":1685273215.5498137,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/6, GET, {}"}
+{"level":"info","ts":1685273215.5567822,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/6, GET, {}"}
+{"level":"info","ts":1685273220.7792528,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/6, GET, {}"}
+{"level":"info","ts":1685273221.537919,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/6, GET, {}"}
+{"level":"info","ts":1685273221.543364,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/6, GET, {}"}
+{"level":"info","ts":1685273226.1626527,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/6, GET, {}"}
+{"level":"info","ts":1685273226.166952,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/6, GET, {}"}
+{"level":"info","ts":1685273281.4203665,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/6, GET, {}"}
+{"level":"info","ts":1685273291.2612183,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/6, GET, {}"}
+{"level":"info","ts":1685273316.8523908,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/6, GET, {}"}
+{"level":"info","ts":1685273320.9074202,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/6, GET, {}"}
+{"level":"info","ts":1685273320.911285,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/6, GET, {}"}
+{"level":"info","ts":1685273329.1429224,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/6, GET, {}"}
+{"level":"info","ts":1685273329.1464415,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/6, GET, {}"}
+{"level":"info","ts":1685273356.0727885,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/6, GET, {}"}
+{"level":"info","ts":1685273368.160946,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/6, GET, {}"}
+{"level":"info","ts":1685273371.8825326,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/6, GET, {}"}
+{"level":"info","ts":1685273378.4372091,"msg":"127.0.0.1, user_session, /api/v1/questions/, POST, {\"examId\":6,\"options\":[{\"isCorrect\":false,\"text\":\"u003cpu003edqwdwu003c/pu003e\"},{\"isCorrect\":false,\"text\":\"u003cpu003edqwu003c/pu003e\"}],\"text\":\"u003cpu003edwqqdqwu003c/pu003e\"}"}
+{"level":"info","ts":1685273378.5070674,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/6, GET, {}"}
+{"level":"info","ts":1685273378.510478,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/6, GET, {}"}
+{"level":"info","ts":1685273507.9194107,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/6, GET, {}"}
+{"level":"info","ts":1685273507.9246984,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/6, GET, {}"}
+{"level":"info","ts":1685273541.543219,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/6, GET, {}"}
+{"level":"info","ts":1685273541.5478988,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/6, GET, {}"}
+{"level":"info","ts":1685273547.8891041,"msg":"127.0.0.1, user_session, /api/v1/questions/1, GET, {}"}
+{"level":"error","ts":1685273547.891291,"msg":"record not found"}
+{"level":"info","ts":1685273551.4522383,"msg":"127.0.0.1, user_session, /api/v1/questions/byid/6, GET, {}"}
+{"level":"info","ts":1685273554.9020233,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/6, GET, {}"}
+{"level":"info","ts":1685273554.9054863,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/6, GET, {}"}
+{"level":"info","ts":1685273589.454537,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/6, GET, {}"}
+{"level":"info","ts":1685273591.4743726,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/6, GET, {}"}
+{"level":"info","ts":1685273591.4807904,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/6, GET, {}"}
+{"level":"info","ts":1685273595.9302065,"msg":"127.0.0.1, user_session, /api/v1/questions/6, DELETE, {}"}
+{"level":"info","ts":1685273597.807604,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/6, GET, {}"}
+{"level":"info","ts":1685273597.8128474,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/6, GET, {}"}
+{"level":"info","ts":1685273608.2092817,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/6, GET, {}"}
+{"level":"info","ts":1685273616.675883,"msg":"127.0.0.1, user_session, /api/v1/questions/5, DELETE, {}"}
+{"level":"info","ts":1685273659.2504544,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/6, GET, {}"}
+{"level":"info","ts":1685273661.622298,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/6, GET, {}"}
+{"level":"info","ts":1685273661.627164,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/6, GET, {}"}
+{"level":"info","ts":1685273664.5601654,"msg":"127.0.0.1, user_session, /api/v1/questions/, POST, {\"examId\":6,\"options\":[],\"text\":\"u003cpu003edqwdu003c/pu003e\"}"}
+{"level":"info","ts":1685273664.6284606,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/6, GET, {}"}
+{"level":"info","ts":1685273664.6336138,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/6, GET, {}"}
+{"level":"info","ts":1685273666.9154856,"msg":"127.0.0.1, user_session, /api/v1/questions/7, DELETE, {}"}
+{"level":"info","ts":1685273896.538229,"msg":"127.0.0.1, user_session, /api/v1/questions/, POST, {\"examId\":6,\"options\":[{\"isCorrect\":false,\"text\":\"u003cpu003edfwefewfwu003c/pu003e\"},{\"isCorrect\":false,\"text\":\"u003cpu003efewu003c/pu003e\"}],\"text\":\"u003cpu003edqwdwdu003c/pu003e\"}"}
+{"level":"info","ts":1685273896.5992944,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/6, GET, {}"}
+{"level":"info","ts":1685273896.6029117,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/6, GET, {}"}
+{"level":"info","ts":1685274000.7303813,"msg":"127.0.0.1, user_session, /api/v1/questions/, POST, {\"examId\":6,\"options\":[{\"isCorrect\":true,\"text\":\"u003cpu003edqwdu003c/pu003e\"},{\"isCorrect\":true,\"text\":\"u003cpu003edqwdqu003c/pu003e\"}],\"text\":\"u003cpu003edqwdqwu003c/pu003e\"}"}
+{"level":"info","ts":1685274000.8409822,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/6, GET, {}"}
+{"level":"info","ts":1685274000.8496745,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/6, GET, {}"}
+{"level":"info","ts":1685274122.2276707,"msg":"127.0.0.1, user_session, /api/v1/questions/byid/6, GET, {}"}
+{"level":"info","ts":1685274126.9356782,"msg":"127.0.0.1, user_session, /api/v1/questions/8, GET, {}"}
+{"level":"info","ts":1685274157.9644535,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/6, GET, {}"}
+{"level":"info","ts":1685274157.9692647,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/6, GET, {}"}
+{"level":"info","ts":1685274192.6244009,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/6, GET, {}"}
+{"level":"info","ts":1685274192.62867,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/6, GET, {}"}
+{"level":"info","ts":1685274193.4010797,"msg":"127.0.0.1, user_session, /api/v1/questions/8, GET, {}"}
+{"level":"info","ts":1685274193.4106421,"msg":"127.0.0.1, user_session, /api/v1/questions/8, GET, {}"}
+{"level":"info","ts":1685274229.6839895,"msg":"127.0.0.1, user_session, /api/v1/questions/8, GET, {}"}
+{"level":"info","ts":1685274229.687513,"msg":"127.0.0.1, user_session, /api/v1/questions/8, GET, {}"}
+{"level":"info","ts":1685274231.6945477,"msg":"127.0.0.1, user_session, /api/v1/questions/8, GET, {}"}
+{"level":"info","ts":1685274234.205521,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685274234.2219229,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685274236.725351,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685274236.7286036,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685274239.2288349,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/6, GET, {}"}
+{"level":"info","ts":1685274239.233488,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/6, GET, {}"}
+{"level":"info","ts":1685274241.6658888,"msg":"127.0.0.1, user_session, /api/v1/questions/8, GET, {}"}
+{"level":"info","ts":1685274241.671511,"msg":"127.0.0.1, user_session, /api/v1/questions/8, GET, {}"}
+{"level":"info","ts":1685274246.9330146,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685274246.935929,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685274247.973967,"msg":"127.0.0.1, user_session, /api/v1/questions/8, GET, {}"}
+{"level":"info","ts":1685274247.9779596,"msg":"127.0.0.1, user_session, /api/v1/questions/8, GET, {}"}
+{"level":"info","ts":1685274249.1742048,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/8, GET, {}"}
+{"level":"error","ts":1685274249.1762328,"msg":"record not found"}
+{"level":"info","ts":1685274249.177535,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/8, GET, {}"}
+{"level":"error","ts":1685274249.179232,"msg":"record not found"}
+{"level":"info","ts":1685274252.9141314,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/8, GET, {}"}
+{"level":"error","ts":1685274252.9155226,"msg":"record not found"}
+{"level":"info","ts":1685274252.91848,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/8, GET, {}"}
+{"level":"error","ts":1685274252.9200573,"msg":"record not found"}
+{"level":"info","ts":1685274259.3861737,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/6, GET, {}"}
+{"level":"info","ts":1685274259.390047,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/6, GET, {}"}
+{"level":"info","ts":1685274278.1156123,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/6, GET, {}"}
+{"level":"info","ts":1685274278.1197176,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/6, GET, {}"}
+{"level":"info","ts":1685274279.4844127,"msg":"127.0.0.1, user_session, /api/v1/questions/8, GET, {}"}
+{"level":"info","ts":1685274279.488173,"msg":"127.0.0.1, user_session, /api/v1/questions/8, GET, {}"}
+{"level":"info","ts":1685274280.4539657,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/6, GET, {}"}
+{"level":"info","ts":1685274280.4582844,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/6, GET, {}"}
+{"level":"info","ts":1685274281.7905846,"msg":"127.0.0.1, user_session, /api/v1/questions/8, GET, {}"}
+{"level":"info","ts":1685274281.7957103,"msg":"127.0.0.1, user_session, /api/v1/questions/8, GET, {}"}
+{"level":"info","ts":1685274282.6690636,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/6, GET, {}"}
+{"level":"info","ts":1685274282.6730652,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/6, GET, {}"}
+{"level":"info","ts":1685274292.6517475,"msg":"127.0.0.1, user_session, /api/v1/questions/9, DELETE, {}"}
+{"level":"info","ts":1685274297.2531056,"msg":"127.0.0.1, user_session, /api/v1/questions/, POST, {\"examId\":6,\"options\":[{\"isCorrect\":true,\"text\":\"u003cpu003edqwdwu003c/pu003e\"}],\"text\":\"u003cpu003edqwdwu003c/pu003e\"}"}
+{"level":"info","ts":1685274297.3077931,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/6, GET, {}"}
+{"level":"info","ts":1685274297.3121922,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/6, GET, {}"}
+{"level":"info","ts":1685274307.4605677,"msg":"127.0.0.1, user_session, /api/v1/questions/10, GET, {}"}
+{"level":"info","ts":1685274307.4646447,"msg":"127.0.0.1, user_session, /api/v1/questions/10, GET, {}"}
+{"level":"info","ts":1685274309.445723,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/6, GET, {}"}
+{"level":"info","ts":1685274309.450606,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/6, GET, {}"}
+{"level":"info","ts":1685274410.109375,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/undefined, GET, {}"}
+{"level":"error","ts":1685274410.11023,"msg":"id param is required"}
+{"level":"error","ts":1685274410.1112638,"msg":"record not found"}
+{"level":"info","ts":1685274410.1127422,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/undefined, GET, {}"}
+{"level":"error","ts":1685274410.1135435,"msg":"id param is required"}
+{"level":"error","ts":1685274410.1145554,"msg":"record not found"}
+{"level":"info","ts":1685274411.3616683,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/undefined, GET, {}"}
+{"level":"error","ts":1685274411.3625157,"msg":"id param is required"}
+{"level":"error","ts":1685274411.3636127,"msg":"record not found"}
+{"level":"info","ts":1685274411.365067,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/undefined, GET, {}"}
+{"level":"error","ts":1685274411.3658004,"msg":"id param is required"}
+{"level":"error","ts":1685274411.366765,"msg":"record not found"}
+{"level":"info","ts":1685274415.7654192,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685274415.7680743,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685274416.5190141,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685274416.5224116,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685274417.38256,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/6, GET, {}"}
+{"level":"info","ts":1685274417.3860676,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/6, GET, {}"}
+{"level":"info","ts":1685274442.3545582,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/undefined, GET, {}"}
+{"level":"error","ts":1685274442.3554301,"msg":"id param is required"}
+{"level":"error","ts":1685274442.3563795,"msg":"record not found"}
+{"level":"info","ts":1685274442.357854,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/undefined, GET, {}"}
+{"level":"error","ts":1685274442.3586287,"msg":"id param is required"}
+{"level":"error","ts":1685274442.359664,"msg":"record not found"}
+{"level":"info","ts":1685274458.8377526,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/undefined, GET, {}"}
+{"level":"error","ts":1685274458.8386202,"msg":"id param is required"}
+{"level":"error","ts":1685274458.8396375,"msg":"record not found"}
+{"level":"info","ts":1685274458.8412507,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/undefined, GET, {}"}
+{"level":"error","ts":1685274458.8420863,"msg":"id param is required"}
+{"level":"error","ts":1685274458.8430288,"msg":"record not found"}
+{"level":"info","ts":1685274512.4654887,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/undefined, GET, {}"}
+{"level":"error","ts":1685274512.4662762,"msg":"id param is required"}
+{"level":"error","ts":1685274512.4671512,"msg":"record not found"}
+{"level":"info","ts":1685274512.4695556,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/undefined, GET, {}"}
+{"level":"error","ts":1685274512.470238,"msg":"id param is required"}
+{"level":"error","ts":1685274512.471052,"msg":"record not found"}
+{"level":"info","ts":1685274518.4403527,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/undefined, GET, {}"}
+{"level":"error","ts":1685274518.4411685,"msg":"id param is required"}
+{"level":"error","ts":1685274518.4421055,"msg":"record not found"}
+{"level":"info","ts":1685274518.445007,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/undefined, GET, {}"}
+{"level":"error","ts":1685274518.445904,"msg":"id param is required"}
+{"level":"error","ts":1685274518.447075,"msg":"record not found"}
+{"level":"info","ts":1685274526.076001,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/undefined, GET, {}"}
+{"level":"error","ts":1685274526.077015,"msg":"id param is required"}
+{"level":"error","ts":1685274526.0780745,"msg":"record not found"}
+{"level":"info","ts":1685274526.0809393,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/undefined, GET, {}"}
+{"level":"error","ts":1685274526.0817091,"msg":"id param is required"}
+{"level":"error","ts":1685274526.0826554,"msg":"record not found"}
+{"level":"info","ts":1685274536.1243002,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/undefined, GET, {}"}
+{"level":"error","ts":1685274536.125112,"msg":"id param is required"}
+{"level":"error","ts":1685274536.126177,"msg":"record not found"}
+{"level":"info","ts":1685274536.1283042,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/undefined, GET, {}"}
+{"level":"error","ts":1685274536.1292644,"msg":"id param is required"}
+{"level":"error","ts":1685274536.1304646,"msg":"record not found"}
+{"level":"info","ts":1685274544.146224,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/undefined, GET, {}"}
+{"level":"error","ts":1685274544.1470013,"msg":"id param is required"}
+{"level":"error","ts":1685274544.1479108,"msg":"record not found"}
+{"level":"info","ts":1685274544.1492553,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/undefined, GET, {}"}
+{"level":"error","ts":1685274544.1500456,"msg":"id param is required"}
+{"level":"error","ts":1685274544.1509473,"msg":"record not found"}
+{"level":"info","ts":1685274553.3893948,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/undefined, GET, {}"}
+{"level":"error","ts":1685274553.3902047,"msg":"id param is required"}
+{"level":"error","ts":1685274553.3910503,"msg":"record not found"}
+{"level":"info","ts":1685274553.3922815,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/undefined, GET, {}"}
+{"level":"error","ts":1685274553.3929758,"msg":"id param is required"}
+{"level":"error","ts":1685274553.3938737,"msg":"record not found"}
+{"level":"info","ts":1685274555.74168,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/undefined, GET, {}"}
+{"level":"error","ts":1685274555.7432103,"msg":"id param is required"}
+{"level":"error","ts":1685274555.744461,"msg":"record not found"}
+{"level":"info","ts":1685274555.7484455,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/undefined, GET, {}"}
+{"level":"error","ts":1685274555.7491734,"msg":"id param is required"}
+{"level":"error","ts":1685274555.7500396,"msg":"record not found"}
+{"level":"info","ts":1685274558.0778172,"msg":"127.0.0.1, user_session, /api/v1/exams/6, GET, {}"}
+{"level":"info","ts":1685274558.0826705,"msg":"127.0.0.1, user_session, /api/v1/exams/6, GET, {}"}
+{"level":"info","ts":1685274559.673419,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/6, GET, {}"}
+{"level":"info","ts":1685274559.6770773,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/6, GET, {}"}
+{"level":"info","ts":1685274561.3926437,"msg":"127.0.0.1, user_session, /api/v1/exams/6, GET, {}"}
+{"level":"info","ts":1685274561.395491,"msg":"127.0.0.1, user_session, /api/v1/exams/6, GET, {}"}
+{"level":"info","ts":1685274562.0051608,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/6, GET, {}"}
+{"level":"info","ts":1685274562.0103352,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/6, GET, {}"}
+{"level":"info","ts":1685274562.927644,"msg":"127.0.0.1, user_session, /api/v1/questions/8, GET, {}"}
+{"level":"info","ts":1685274562.9327495,"msg":"127.0.0.1, user_session, /api/v1/questions/8, GET, {}"}
+{"level":"info","ts":1685274563.7201412,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/6, GET, {}"}
+{"level":"info","ts":1685274563.7240467,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/6, GET, {}"}
+{"level":"info","ts":1685274565.4056828,"msg":"127.0.0.1, user_session, /api/v1/questions/8, GET, {}"}
+{"level":"info","ts":1685274565.4120104,"msg":"127.0.0.1, user_session, /api/v1/questions/8, GET, {}"}
+{"level":"info","ts":1685274567.737457,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/6, GET, {}"}
+{"level":"info","ts":1685274567.7411978,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/6, GET, {}"}
+{"level":"info","ts":1685274569.125431,"msg":"127.0.0.1, user_session, /api/v1/questions/8, GET, {}"}
+{"level":"info","ts":1685274569.1319296,"msg":"127.0.0.1, user_session, /api/v1/questions/8, GET, {}"}
+{"level":"info","ts":1685274571.6605132,"msg":"127.0.0.1, user_session, /api/v1/questions/8, PATCH, {\"examId\":6,\"options\":[{\"isCorrect\":true,\"text\":\"u003cpu003edfwefewfwdqwdqwdwqdu003c/pu003e\"},{\"createdAt\":\"2023-05-28T14:38:16.541+03:00\",\"id\":24,\"questionId\":8,\"text\":\"u003cpu003efewu003c/pu003e\",\"updatedAt\":\"2023-05-28T14:38:16.541+03:00\"}],\"text\":\"u003cpu003edqwdwdu003c/pu003e\"}"}
+{"level":"info","ts":1685274571.721563,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/6, GET, {}"}
+{"level":"info","ts":1685274571.724925,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/6, GET, {}"}
+{"level":"info","ts":1685274572.5824192,"msg":"127.0.0.1, user_session, /api/v1/questions/8, GET, {}"}
+{"level":"info","ts":1685274572.586838,"msg":"127.0.0.1, user_session, /api/v1/questions/8, GET, {}"}
+{"level":"info","ts":1685274575.4939835,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/6, GET, {}"}
+{"level":"info","ts":1685274575.5005627,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/6, GET, {}"}
+{"level":"info","ts":1685274576.7558439,"msg":"127.0.0.1, user_session, /api/v1/questions/8, GET, {}"}
+{"level":"info","ts":1685274576.760909,"msg":"127.0.0.1, user_session, /api/v1/questions/8, GET, {}"}
+{"level":"info","ts":1685274579.3505356,"msg":"127.0.0.1, user_session, /api/v1/questions/8, PATCH, {\"examId\":6,\"options\":[{\"isCorrect\":true,\"text\":\"u003cpu003efewu003c/pu003e\"},{\"createdAt\":\"2023-05-28T14:49:31.677+03:00\",\"id\":28,\"isCorrect\":true,\"questionId\":8,\"text\":\"u003cpu003edfwefewfwdqwdqwdwqdu003c/pu003e\",\"updatedAt\":\"2023-05-28T14:49:31.677+03:00\"}],\"text\":\"u003cpu003edqwdwdu003c/pu003e\"}"}
+{"level":"info","ts":1685274579.4091697,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/6, GET, {}"}
+{"level":"info","ts":1685274579.4156928,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/6, GET, {}"}
+{"level":"info","ts":1685274580.3179097,"msg":"127.0.0.1, user_session, /api/v1/questions/8, GET, {}"}
+{"level":"info","ts":1685274580.3220408,"msg":"127.0.0.1, user_session, /api/v1/questions/8, GET, {}"}
+{"level":"info","ts":1685274581.7675228,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/6, GET, {}"}
+{"level":"info","ts":1685274581.7721841,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/6, GET, {}"}
+{"level":"info","ts":1685274624.7633147,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685274624.7726386,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685274642.1350648,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"info","ts":1685274642.1450696,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"info","ts":1685274642.952815,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685274642.9563344,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685274643.4387138,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"info","ts":1685274643.4427912,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"info","ts":1685274644.0136664,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685274644.0176642,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685274644.3352644,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"info","ts":1685274644.3393095,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"info","ts":1685274644.6352832,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685274644.638418,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685274644.9523222,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"info","ts":1685274644.9560885,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"info","ts":1685274645.8225048,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685274645.8259606,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685274646.5021217,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"info","ts":1685274646.5066416,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"info","ts":1685274652.1464021,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685274652.1492653,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685274660.8814883,"msg":"127.0.0.1, user_session, /api/v1/accounts/1/assessments/projects, GET, {}"}
+{"level":"info","ts":1685274660.883595,"msg":"127.0.0.1, user_session, /api/v1/accounts/1/assessments/projects, GET, {}"}
+{"level":"info","ts":1685274681.2099688,"msg":"127.0.0.1, user_session, /api/v1/accounts/1/assessments/projects, GET, {}"}
+{"level":"info","ts":1685274681.2217162,"msg":"127.0.0.1, user_session, /api/v1/accounts/1/assessments/projects, GET, {}"}
+{"level":"info","ts":1685274715.2258756,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685274715.2339249,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685274719.7235262,"msg":"127.0.0.1, user_session, /api/v1/exams/6, GET, {}"}
+{"level":"info","ts":1685274722.5831096,"msg":"127.0.0.1, user_session, /api/v1/exams/6, GET, {}"}
+{"level":"info","ts":1685274743.8475015,"msg":"127.0.0.1, user_session, /registration/byExam/1, GET, {}"}
+{"level":"info","ts":1685274829.5092218,"msg":"127.0.0.1, user_session, /api/v1/exams/6, GET, {}"}
+{"level":"info","ts":1685274830.2599318,"msg":"127.0.0.1, user_session, /api/v1/exams/6, GET, {}"}
+{"level":"info","ts":1685274830.2647831,"msg":"127.0.0.1, user_session, /api/v1/exams/6, GET, {}"}
+{"level":"info","ts":1685274859.5105112,"msg":"127.0.0.1, user_session, /api/v1/exams/6, GET, {}"}
+{"level":"info","ts":1685274861.294833,"msg":"127.0.0.1, user_session, /api/v1/exams/6, GET, {}"}
+{"level":"info","ts":1685274864.630912,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685274864.6343186,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685274866.40372,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/6, GET, {}"}
+{"level":"info","ts":1685274866.4071448,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/6, GET, {}"}
+{"level":"info","ts":1685274867.8094404,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685274867.8124723,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685274871.6371164,"msg":"127.0.0.1, user_session, /api/v1/exams/6, GET, {}"}
+{"level":"info","ts":1685274871.639978,"msg":"127.0.0.1, user_session, /api/v1/exams/6, GET, {}"}
+{"level":"info","ts":1685274876.280312,"msg":"127.0.0.1, user_session, /api/v1/exams/6, GET, {}"}
+{"level":"info","ts":1685274876.2838314,"msg":"127.0.0.1, user_session, /api/v1/exams/6, GET, {}"}
+{"level":"info","ts":1685274882.303895,"msg":"127.0.0.1, user_session, /api/v1/exams/6, GET, {}"}
+{"level":"info","ts":1685274882.307578,"msg":"127.0.0.1, user_session, /api/v1/exams/6, GET, {}"}
+{"level":"info","ts":1685274883.0851536,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685274883.089062,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685274905.662497,"msg":"127.0.0.1, user_session, /api/v1/exams/6, GET, {}"}
+{"level":"info","ts":1685274905.6665645,"msg":"127.0.0.1, user_session, /api/v1/exams/6, GET, {}"}
+{"level":"info","ts":1685274933.1269786,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1685275133.4661942,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1685275209.5756562,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1685275222.3027987,"msg":"127.0.0.1, user_session, /api/v1/exams/6, GET, {}"}
+{"level":"info","ts":1685275222.3068397,"msg":"127.0.0.1, user_session, /api/v1/exams/6, GET, {}"}
+{"level":"info","ts":1685275247.7616892,"msg":"127.0.0.1, user_session, /api/v1/registration/byExam/6, GET, {}"}
+{"level":"info","ts":1685275248.5935845,"msg":"127.0.0.1, user_session, /api/v1/registration/byExam/6, GET, {}"}
+{"level":"info","ts":1685275248.5972857,"msg":"127.0.0.1, user_session, /api/v1/registration/byExam/6, GET, {}"}
+{"level":"info","ts":1685275336.4827635,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685275359.0868945,"msg":"127.0.0.1, user_session, /api/v1/registration/1/6, POST, {\"isCheated\":false,\"status\":\"notyet\"}"}
+{"level":"error","ts":1685275359.0937896,"msg":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'start_time' at row 1"}
+{"level":"info","ts":1685275554.1753213,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1685275556.6195533,"msg":"127.0.0.1, user_session, /api/v1/registration/1/6, POST, {\"isCheated\":false,\"status\":\"notyet\"}"}
+{"level":"error","ts":1685275556.62687,"msg":"year is not in the range [1, 9999]: -1"}
+{"level":"info","ts":1685275678.2453034,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1685275682.91417,"msg":"127.0.0.1, user_session, /api/v1/registration/1/6, POST, {\"isCheated\":false,\"status\":\"notyet\"}"}
+{"level":"info","ts":1685275695.8058152,"msg":"127.0.0.1, user_session, /api/v1/registration/byExam/6, GET, {}"}
+{"level":"info","ts":1685275695.8116844,"msg":"127.0.0.1, user_session, /api/v1/registration/byExam/6, GET, {}"}
+{"level":"info","ts":1685275724.6745634,"msg":"127.0.0.1, user_session, /registration/byExam/1, GET, {}"}
+{"level":"info","ts":1685275739.0727782,"msg":"127.0.0.1, user_session, /api/v1/registration/byExam/1, GET, {}"}
+{"level":"info","ts":1685275745.1496394,"msg":"127.0.0.1, user_session, /api/v1/registration/byExam/6, GET, {}"}
+{"level":"info","ts":1685275767.6937404,"msg":"127.0.0.1, user_session, /api/v1/registration/byExam/6, GET, {}"}
+{"level":"info","ts":1685275899.8378158,"msg":"127.0.0.1, user_session, /api/v1/registration/byExam/6, GET, {}"}
+{"level":"info","ts":1685275909.021236,"msg":"127.0.0.1, user_session, /api/v1/registration/byExam/6, GET, {}"}
+{"level":"info","ts":1685275910.5152147,"msg":"127.0.0.1, user_session, /api/v1/registration/byExam/6, GET, {}"}
+{"level":"info","ts":1685275913.6766787,"msg":"127.0.0.1, user_session, /api/v1/registration/byExam/6, GET, {}"}
+{"level":"info","ts":1685275918.7212408,"msg":"127.0.0.1, user_session, /api/v1/registration/byExam/6, GET, {}"}
+{"level":"info","ts":1685275940.438429,"msg":"127.0.0.1, user_session, /api/v1/registration/byExam/6, GET, {}"}
+{"level":"info","ts":1685275947.4544663,"msg":"127.0.0.1, user_session, /api/v1/registration/byExam/6, GET, {}"}
+{"level":"info","ts":1685275952.9951332,"msg":"127.0.0.1, user_session, /api/v1/registration/byExam/6, GET, {}"}
+{"level":"info","ts":1685275955.2770493,"msg":"127.0.0.1, user_session, /api/v1/registration/byExam/6, GET, {}"}
+{"level":"info","ts":1685275955.2847605,"msg":"127.0.0.1, user_session, /api/v1/registration/byExam/6, GET, {}"}
+{"level":"info","ts":1685276020.3051827,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1685276029.1037266,"msg":"127.0.0.1, user_session, /api/v1/registration/byExam/6, GET, {}"}
+{"level":"info","ts":1685276060.30766,"msg":"127.0.0.1, user_session, /api/v1/registration/byExam/6, GET, {}"}
+{"level":"info","ts":1685276064.438165,"msg":"127.0.0.1, user_session, /api/v1/registration/byExam/6, GET, {}"}
+{"level":"info","ts":1685276071.6032703,"msg":"127.0.0.1, user_session, /api/v1/registration/byExam/6, GET, {}"}
+{"level":"info","ts":1685276075.4816332,"msg":"127.0.0.1, user_session, /api/v1/registration/byExam/6, GET, {}"}
+{"level":"info","ts":1685276077.154088,"msg":"127.0.0.1, user_session, /api/v1/registration/byExam/6, GET, {}"}
+{"level":"info","ts":1685276096.8863533,"msg":"127.0.0.1, user_session, /api/v1/registration/byExam/6, GET, {}"}
+{"level":"info","ts":1685276099.4059029,"msg":"127.0.0.1, user_session, /api/v1/registration/byExam/6, GET, {}"}
+{"level":"info","ts":1685276099.411577,"msg":"127.0.0.1, user_session, /api/v1/registration/byExam/6, GET, {}"}
+{"level":"info","ts":1685276104.8439393,"msg":"127.0.0.1, user_session, /api/v1/registration/byExam/6, GET, {}"}
+{"level":"info","ts":1685276171.8620677,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685276171.8671901,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685276175.9910402,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/6, GET, {}"}
+{"level":"info","ts":1685276175.9965596,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/6, GET, {}"}
+{"level":"info","ts":1685276178.2219274,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685276178.2252736,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685276179.0541239,"msg":"127.0.0.1, user_session, /api/v1/registration/byExam/6, GET, {}"}
+{"level":"info","ts":1685276179.058327,"msg":"127.0.0.1, user_session, /api/v1/registration/byExam/6, GET, {}"}
+{"level":"info","ts":1685276266.9628928,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685276266.9672246,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685276271.874256,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685276271.8779874,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685276275.6091123,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/6, GET, {}"}
+{"level":"info","ts":1685276275.612542,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/6, GET, {}"}
+{"level":"info","ts":1685276278.2058861,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685276278.2090461,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685276279.7608523,"msg":"127.0.0.1, user_session, /api/v1/registration/byExam/6, GET, {}"}
+{"level":"info","ts":1685276279.7686274,"msg":"127.0.0.1, user_session, /api/v1/registration/byExam/6, GET, {}"}
+{"level":"info","ts":1685276689.6660771,"msg":"127.0.0.1, user_session, /api/v1/registration/byExam/6, GET, {}"}
+{"level":"info","ts":1685276699.8087175,"msg":"127.0.0.1, user_session, /api/v1/registration/byExam/6, GET, {}"}
+{"level":"info","ts":1685276780.3491664,"msg":"127.0.0.1, user_session, /api/v1/registration/byExam/6, GET, {}"}
+{"level":"info","ts":1685276780.3549778,"msg":"127.0.0.1, user_session, /api/v1/registration/byExam/6, GET, {}"}
+{"level":"info","ts":1685276793.9572365,"msg":"127.0.0.1, user_session, /api/v1/registration/byExam/6, GET, {}"}
+{"level":"info","ts":1685276793.9635937,"msg":"127.0.0.1, user_session, /api/v1/registration/byExam/6, GET, {}"}
+{"level":"error","ts":1685276793.9636707,"msg":"missing Authorization header"}
+{"level":"info","ts":1685276797.3268003,"msg":"127.0.0.1, user_session, /auth/oauth/login, POST, {}"}
+{"level":"error","ts":1685276797.3287954,"msg":"incorrect password or email"}
+{"level":"info","ts":1685276799.437022,"msg":"127.0.0.1, user_session, /auth/oauth/login, POST, {}"}
+{"level":"info","ts":1685276799.5225978,"msg":"127.0.0.1, user_session, /api/v1/accounts/me, GET, {}"}
+{"level":"info","ts":1685276799.5328937,"msg":"127.0.0.1, user_session, /api/v1/accounts/policies/ui, GET, {}"}
+{"level":"info","ts":1685276799.5879333,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685276799.5908132,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685276811.4901435,"msg":"127.0.0.1, user_session, /api/v1/registration/byExam/6, GET, {}"}
+{"level":"info","ts":1685276811.4943793,"msg":"127.0.0.1, user_session, /api/v1/registration/byExam/6, GET, {}"}
+{"level":"info","ts":1685276916.7171955,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1685277116.1238453,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685277116.1283884,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685277127.7008734,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685277157.1474113,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685277157.151179,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685277172.9075844,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685277172.9102006,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685277424.211923,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685277424.216526,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685277434.5107548,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685277434.5138977,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685277435.5920582,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685277435.594562,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685277436.42754,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685277436.430339,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685277436.8685904,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685277436.8710227,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685277437.3575685,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685277437.3600457,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685277437.9416697,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685277437.9441557,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685277438.3277664,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685277438.3302321,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685277438.9634652,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685277438.9659564,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685277439.411963,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685277439.4146736,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685277439.8284693,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685277439.8313246,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685277440.350712,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685277440.3533273,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685277441.205298,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685277441.2078457,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685277501.766033,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1685277527.1797605,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685277530.5631208,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1685277532.6288779,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685277929.718872,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1685277957.3920195,"msg":"data seeded successfully"}
+{"level":"info","ts":1685277960.9951377,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1685277969.3709662,"msg":"127.0.0.1, user_session, /api/v1/accounts/me, GET, {}"}
+{"level":"info","ts":1685278206.1698558,"msg":"127.0.0.1, user_session, /auth/oauth/logout/undefined, DELETE, {}"}
+{"level":"error","ts":1685278206.1708815,"msg":"missing Authorization header"}
+{"level":"info","ts":1685278226.4638364,"msg":"127.0.0.1, user_session, /auth/oauth/login, POST, {}"}
+{"level":"info","ts":1685278227.5008078,"msg":"127.0.0.1, user_session, /api/v1/accounts/me, GET, {}"}
+{"level":"info","ts":1685278227.507213,"msg":"127.0.0.1, user_session, /api/v1/accounts/policies/ui, GET, {}"}
+{"level":"info","ts":1685278243.3963504,"msg":"127.0.0.1, user_session, /auth/oauth/login, POST, {}"}
+{"level":"info","ts":1685278244.1148868,"msg":"127.0.0.1, user_session, /api/v1/accounts/me, GET, {}"}
+{"level":"info","ts":1685278244.1220682,"msg":"127.0.0.1, user_session, /api/v1/accounts/policies/ui, GET, {}"}
+{"level":"info","ts":1685278266.8945239,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1685278279.242862,"msg":"127.0.0.1, user_session, /auth/oauth/login, POST, {}"}
+{"level":"info","ts":1685278279.820198,"msg":"127.0.0.1, user_session, /api/v1/accounts/me, GET, {}"}
+{"level":"info","ts":1685278279.8338602,"msg":"127.0.0.1, user_session, /api/v1/accounts/policies/ui, GET, {}"}
+{"level":"info","ts":1685278284.5839455,"msg":"127.0.0.1, user_session, /api/v1/accounts/me, GET, {}"}
+{"level":"info","ts":1685278345.6850076,"msg":"127.0.0.1, user_session, /auth/oauth/login, POST, {}"}
+{"level":"info","ts":1685278345.7638178,"msg":"127.0.0.1, user_session, /api/v1/accounts/me, GET, {}"}
+{"level":"info","ts":1685278345.7720883,"msg":"127.0.0.1, user_session, /api/v1/accounts/policies/ui, GET, {}"}
+{"level":"info","ts":1685278411.3045235,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1685278419.0241838,"msg":"127.0.0.1, user_session, /auth/oauth/login, POST, {}"}
+{"level":"info","ts":1685278419.1011994,"msg":"127.0.0.1, user_session, /api/v1/accounts/me, GET, {}"}
+{"level":"info","ts":1685278419.1095357,"msg":"127.0.0.1, user_session, /api/v1/accounts/policies/ui, GET, {}"}
+{"level":"info","ts":1685278419.1977642,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685278419.203442,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685278422.1089156,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"info","ts":1685278422.1154017,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"info","ts":1685278423.723246,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685278423.726438,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685278424.0975518,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"info","ts":1685278424.1018343,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"info","ts":1685278424.4729795,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685278424.475808,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685278425.4167078,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"info","ts":1685278425.4218202,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"info","ts":1685278425.728776,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685278425.7336853,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685278425.9723287,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"info","ts":1685278425.9764762,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"info","ts":1685278426.2691922,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685278426.2720764,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685278426.6305265,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"info","ts":1685278426.6355462,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"info","ts":1685278427.0758545,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685278427.0784469,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685278427.756116,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"info","ts":1685278427.7594628,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"info","ts":1685278428.1498854,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685278428.1535814,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685278491.0324519,"msg":"127.0.0.1, user_session, /api/v1/exams/, POST, {\"companyId\":0,\"desc\":\"verydqiwdijewfjf[iwk[f\",\"duration\":60,\"name\":\"newexam\",\"passingScore\":50}"}
+{"level":"info","ts":1685278491.0862575,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685278491.0890636,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685278492.7971146,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685278492.8017008,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685278499.5644832,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685278573.388382,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685278573.3930993,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685278577.5758133,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685278577.5811522,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685278579.502658,"msg":"127.0.0.1, user_session, /api/v1/exams/1, DELETE, {}"}
+{"level":"info","ts":1685278581.0854611,"msg":"127.0.0.1, user_session, /auth/oauth/logout/undefined, DELETE, {}"}
+{"level":"error","ts":1685278581.0855434,"msg":"missing Authorization header"}
+{"level":"info","ts":1685278584.221979,"msg":"127.0.0.1, user_session, /auth/oauth/login, POST, {}"}
+{"level":"error","ts":1685278584.2763798,"msg":"incorrect password or email"}
+{"level":"info","ts":1685278585.9983025,"msg":"127.0.0.1, user_session, /auth/oauth/login, POST, {}"}
+{"level":"info","ts":1685278586.0748386,"msg":"127.0.0.1, user_session, /api/v1/accounts/me, GET, {}"}
+{"level":"info","ts":1685278586.0824587,"msg":"127.0.0.1, user_session, /api/v1/accounts/policies/ui, GET, {}"}
+{"level":"info","ts":1685278586.1293619,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685278586.1330616,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685278594.0234056,"msg":"127.0.0.1, user_session, /api/v1/exams/, POST, {\"companyId\":1,\"desc\":\"ewqdfkewfEW\",\"duration\":50,\"name\":\"vererfger\",\"passingScore\":50}"}
+{"level":"info","ts":1685278594.0825164,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685278594.086307,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685278596.5103407,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685278600.3329167,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685278600.3372154,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685278633.5060122,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685278633.5103025,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685278694.609541,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685278694.6167212,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685278705.0732152,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685278705.076473,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685278717.1277983,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685278717.1328113,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685278718.7320597,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685278718.7363777,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685278736.7811975,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685278736.7855031,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685278746.7461104,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685278746.7516968,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685278777.1577842,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685278777.1648412,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685279418.3723958,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685279418.3779924,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685279419.6546733,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"info","ts":1685279419.6584103,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"info","ts":1685279428.3217607,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"info","ts":1685279428.3252063,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"info","ts":1685279428.6772153,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685279428.6805696,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685279429.3531346,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"info","ts":1685279429.357509,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"info","ts":1685279439.6034284,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685279439.607922,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685279442.4592185,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685279442.4626825,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685279727.975612,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685279727.9798143,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685279728.3528173,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"info","ts":1685279728.3569262,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"info","ts":1685279729.735191,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685279729.7401712,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685279730.1396685,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"info","ts":1685279730.143309,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"info","ts":1685279730.5576866,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685279730.5622091,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685279730.9443176,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"info","ts":1685279730.9484708,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"info","ts":1685279731.5362012,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685279731.5403767,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685279732.0249608,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"info","ts":1685279732.0289562,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"info","ts":1685279733.7298377,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685279733.734047,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685279734.936524,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"info","ts":1685279734.9413953,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"info","ts":1685279735.543941,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685279735.5484002,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685279735.9382606,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"info","ts":1685279735.942181,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"info","ts":1685279736.3364565,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685279736.3407447,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685279736.7132697,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"info","ts":1685279736.717146,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"info","ts":1685279737.3029318,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685279737.3090057,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685279737.6546926,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"info","ts":1685279737.6593208,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"info","ts":1685279738.039656,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685279738.043535,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685279738.337002,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"info","ts":1685279738.3411968,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"info","ts":1685279742.6069067,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685279742.6103115,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685279744.993456,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"info","ts":1685279744.9970574,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"info","ts":1685279751.4075527,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"info","ts":1685279751.4116492,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"info","ts":1685279752.7230074,"msg":"127.0.0.1, user_session, /api/v1/users/1, GET, {}"}
+{"level":"info","ts":1685279752.7253306,"msg":"127.0.0.1, user_session, /api/v1/users/1, GET, {}"}
+{"level":"info","ts":1685279755.1759088,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"info","ts":1685279755.1807375,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"info","ts":1685279757.6186337,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685279757.623552,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685279840.581932,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685279840.585947,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685279845.7003765,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685279845.7057683,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685279846.0453002,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"info","ts":1685279846.0490062,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"info","ts":1685279846.5833817,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685279846.588325,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685279846.9327757,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"info","ts":1685279846.9371622,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"info","ts":1685279847.3223052,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685279847.3266985,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685279848.363804,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685279848.3679082,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685280513.7029078,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1685280518.4269335,"msg":"127.0.0.1, user_session, /api/v1/exams/1, GET, {}"}
+{"level":"error","ts":1685280518.4276736,"msg":"invalid value, should be pointer to struct or slice"}
+{"level":"info","ts":1685280540.7319226,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1685280542.6739192,"msg":"127.0.0.1, user_session, /api/v1/exams/1, GET, {}"}
+{"level":"error","ts":1685280542.677161,"msg":"record not found"}
+{"level":"info","ts":1685280557.8002071,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685280562.5416682,"msg":"127.0.0.1, user_session, /api/v1/exams/2, GET, {}"}
+{"level":"info","ts":1685280725.2804592,"msg":"127.0.0.1, user_session, /api/v1/exams/2, GET, {}"}
+{"level":"info","ts":1685280725.2884145,"msg":"127.0.0.1, user_session, /api/v1/exams/2, GET, {}"}
+{"level":"info","ts":1685280726.8218853,"msg":"127.0.0.1, user_session, /api/v1/exams/2, GET, {}"}
+{"level":"info","ts":1685280748.7478395,"msg":"127.0.0.1, user_session, /api/v1/exams/2, GET, {}"}
+{"level":"info","ts":1685280760.3091435,"msg":"127.0.0.1, user_session, /api/v1/exams/2, GET, {}"}
+{"level":"info","ts":1685280777.501235,"msg":"127.0.0.1, user_session, /api/v1/exams/2, GET, {}"}
+{"level":"info","ts":1685280786.4092588,"msg":"127.0.0.1, user_session, /api/v1/exams/2, GET, {}"}
+{"level":"info","ts":1685280919.366144,"msg":"127.0.0.1, user_session, /api/v1/exams/2, GET, {}"}
+{"level":"info","ts":1685280919.3717296,"msg":"127.0.0.1, user_session, /api/v1/exams/2, GET, {}"}
+{"level":"info","ts":1685280926.2382836,"msg":"127.0.0.1, user_session, /api/v1/exams/2, GET, {}"}
+{"level":"info","ts":1685280926.2434475,"msg":"127.0.0.1, user_session, /api/v1/exams/2, GET, {}"}
+{"level":"info","ts":1685281022.3104787,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1685281024.400268,"msg":"127.0.0.1, user_session, /api/v1/exams/2, GET, {}"}
+{"level":"info","ts":1685281029.05783,"msg":"127.0.0.1, user_session, /api/v1/exams/2, GET, {}"}
+{"level":"info","ts":1685281029.5834486,"msg":"127.0.0.1, user_session, /api/v1/exams/2, GET, {}"}
+{"level":"info","ts":1685281032.6680732,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685281032.6761897,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685281047.9611747,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1685281072.6137872,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1685281076.387467,"msg":"127.0.0.1, user_session, /api/v1/exams/2, GET, {}"}
+{"level":"info","ts":1685281079.5499825,"msg":"127.0.0.1, user_session, /api/v1/exams/2, GET, {}"}
+{"level":"info","ts":1685281079.5547814,"msg":"127.0.0.1, user_session, /api/v1/exams/2, GET, {}"}
+{"level":"info","ts":1685281157.8350043,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1685281159.48427,"msg":"127.0.0.1, user_session, /api/v1/exams/2, GET, {}"}
+{"level":"info","ts":1685281692.89498,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1685281698.788288,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685281698.7935574,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685281700.49983,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/2, GET, {}"}
+{"level":"info","ts":1685281700.5064843,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/2, GET, {}"}
+{"level":"info","ts":1685281701.5730438,"msg":"127.0.0.1, user_session, /api/v1/exams/2, GET, {}"}
+{"level":"info","ts":1685281701.5794134,"msg":"127.0.0.1, user_session, /api/v1/exams/2, GET, {}"}
+{"level":"info","ts":1685281705.3699782,"msg":"127.0.0.1, user_session, /api/v1/questions/, POST, {\"examId\":2,\"options\":[{\"isCorrect\":true,\"text\":\"u003cpu003eqdwdwqqwu003c/pu003e\"}],\"text\":\"u003cpu003edqwdwqwqdqdwqdwu003c/pu003e\"}"}
+{"level":"info","ts":1685281705.4286232,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/2, GET, {}"}
+{"level":"info","ts":1685281705.4318972,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/2, GET, {}"}
+{"level":"info","ts":1685281706.3467126,"msg":"127.0.0.1, user_session, /api/v1/exams/2, GET, {}"}
+{"level":"info","ts":1685281706.351032,"msg":"127.0.0.1, user_session, /api/v1/exams/2, GET, {}"}
+{"level":"info","ts":1685281708.5044444,"msg":"127.0.0.1, user_session, /api/v1/questions/, POST, {\"examId\":2,\"options\":[{\"isCorrect\":false,\"text\":\"\"}],\"text\":\"u003cpu003edwdqwdwqu003c/pu003e\"}"}
+{"level":"info","ts":1685281708.5654278,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/2, GET, {}"}
+{"level":"info","ts":1685281708.56907,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/2, GET, {}"}
+{"level":"info","ts":1685281710.265323,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685281710.2686522,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685281712.6928046,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/2, GET, {}"}
+{"level":"info","ts":1685281712.6962953,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/2, GET, {}"}
+{"level":"info","ts":1685281714.5656157,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685281714.5690708,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685281715.5034986,"msg":"127.0.0.1, user_session, /api/v1/exams/2, GET, {}"}
+{"level":"info","ts":1685281715.5101914,"msg":"127.0.0.1, user_session, /api/v1/exams/2, GET, {}"}
+{"level":"info","ts":1685281730.9487839,"msg":"127.0.0.1, user_session, /api/v1/exams/2, GET, {}"}
+{"level":"info","ts":1685281732.427127,"msg":"127.0.0.1, user_session, /api/v1/exams/2, GET, {}"}
+{"level":"info","ts":1685281734.2583148,"msg":"127.0.0.1, user_session, /api/v1/exams/2, GET, {}"}
+{"level":"info","ts":1685281734.2623081,"msg":"127.0.0.1, user_session, /api/v1/exams/2, GET, {}"}
+{"level":"info","ts":1685281736.2696166,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685281736.2742677,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685281737.2721949,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685281737.2754967,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685281738.4941576,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/2, GET, {}"}
+{"level":"info","ts":1685281738.4973762,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/2, GET, {}"}
+{"level":"info","ts":1685281742.1034582,"msg":"127.0.0.1, user_session, /api/v1/questions/2, DELETE, {}"}
+{"level":"error","ts":1685281742.249322,"msg":"record not found"}
+{"level":"info","ts":1685281754.2398314,"msg":"127.0.0.1, user_session, /api/v1/questions/undefined, DELETE, {}"}
+{"level":"error","ts":1685281754.2406616,"msg":"id param is required"}
+{"level":"error","ts":1685281754.245197,"msg":"record not found"}
+{"level":"info","ts":1685281793.8960836,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/2, GET, {}"}
+{"level":"info","ts":1685281814.0851674,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/2, GET, {}"}
+{"level":"info","ts":1685281817.2276835,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/2, GET, {}"}
+{"level":"info","ts":1685281817.2331161,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/2, GET, {}"}
+{"level":"info","ts":1685281819.4718554,"msg":"127.0.0.1, user_session, /api/v1/exams/2, GET, {}"}
+{"level":"info","ts":1685281819.476265,"msg":"127.0.0.1, user_session, /api/v1/exams/2, GET, {}"}
+{"level":"info","ts":1685281825.5559814,"msg":"127.0.0.1, user_session, /api/v1/exams/2, GET, {}"}
+{"level":"info","ts":1685281825.5629306,"msg":"127.0.0.1, user_session, /api/v1/exams/2, GET, {}"}
+{"level":"info","ts":1685281829.0506706,"msg":"127.0.0.1, user_session, /api/v1/questions/, POST, {\"examId\":2,\"options\":[{\"isCorrect\":true,\"text\":\"u003cpu003eqwdqwdqdwu003c/pu003e\"}],\"text\":\"u003cpu003edqwqwdqwu003c/pu003e\"}"}
+{"level":"info","ts":1685281829.5237744,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/2, GET, {}"}
+{"level":"info","ts":1685281829.5269513,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/2, GET, {}"}
+{"level":"info","ts":1685281831.6001077,"msg":"127.0.0.1, user_session, /api/v1/questions/3, DELETE, {}"}
+{"level":"error","ts":1685281831.8741207,"msg":"record not found"}
+{"level":"info","ts":1685281837.4794173,"msg":"127.0.0.1, user_session, /api/v1/questions/undefined, DELETE, {}"}
+{"level":"error","ts":1685281837.480211,"msg":"id param is required"}
+{"level":"error","ts":1685281837.484564,"msg":"record not found"}
+{"level":"info","ts":1685281839.8629656,"msg":"127.0.0.1, user_session, /api/v1/questions/undefined, DELETE, {}"}
+{"level":"error","ts":1685281839.8638062,"msg":"id param is required"}
+{"level":"error","ts":1685281839.8675191,"msg":"record not found"}
+{"level":"info","ts":1685281843.8799376,"msg":"127.0.0.1, user_session, /api/v1/questions/undefined, DELETE, {}"}
+{"level":"error","ts":1685281843.880738,"msg":"id param is required"}
+{"level":"error","ts":1685281843.8847666,"msg":"record not found"}
+{"level":"info","ts":1685281844.5314515,"msg":"127.0.0.1, user_session, /api/v1/questions/3, GET, {}"}
+{"level":"error","ts":1685281844.5338955,"msg":"record not found"}
+{"level":"info","ts":1685281844.5363097,"msg":"127.0.0.1, user_session, /api/v1/questions/3, GET, {}"}
+{"level":"error","ts":1685281844.5388484,"msg":"record not found"}
+{"level":"info","ts":1685281852.743906,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685281852.7477112,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685281853.24019,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685281853.243859,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685281855.25666,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/2, GET, {}"}
+{"level":"info","ts":1685281855.264265,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/2, GET, {}"}
+{"level":"info","ts":1685281858.4596503,"msg":"127.0.0.1, user_session, /api/v1/exams/2, GET, {}"}
+{"level":"info","ts":1685281858.4639723,"msg":"127.0.0.1, user_session, /api/v1/exams/2, GET, {}"}
+{"level":"info","ts":1685281861.486734,"msg":"127.0.0.1, user_session, /api/v1/questions/, POST, {\"examId\":2,\"options\":[],\"text\":\"u003cpu003edqwdqwqwdwu003c/pu003e\"}"}
+{"level":"info","ts":1685281861.5583675,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/2, GET, {}"}
+{"level":"info","ts":1685281861.562641,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/2, GET, {}"}
+{"level":"info","ts":1685281865.3603077,"msg":"127.0.0.1, user_session, /api/v1/questions/4, DELETE, {}"}
+{"level":"error","ts":1685281865.3718195,"msg":"record not found"}
+{"level":"info","ts":1685281920.7664328,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/2, GET, {}"}
+{"level":"info","ts":1685281920.7736712,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/2, GET, {}"}
+{"level":"info","ts":1685281922.062869,"msg":"127.0.0.1, user_session, /api/v1/exams/2, GET, {}"}
+{"level":"info","ts":1685281922.066849,"msg":"127.0.0.1, user_session, /api/v1/exams/2, GET, {}"}
+{"level":"info","ts":1685281923.511801,"msg":"127.0.0.1, user_session, /api/v1/questions/, POST, {\"examId\":2,\"options\":[],\"text\":\"u003cpu003edqwdqwdwdwu003c/pu003e\"}"}
+{"level":"info","ts":1685281923.5803533,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/2, GET, {}"}
+{"level":"info","ts":1685281923.5841677,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/2, GET, {}"}
+{"level":"info","ts":1685281925.4073951,"msg":"127.0.0.1, user_session, /api/v1/questions/5, DELETE, {}"}
+{"level":"error","ts":1685281925.4216976,"msg":"record not found"}
+{"level":"info","ts":1685281928.779893,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/2, GET, {}"}
+{"level":"info","ts":1685281928.7849798,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/2, GET, {}"}
+{"level":"info","ts":1685281931.486818,"msg":"127.0.0.1, user_session, /api/v1/exams/2, GET, {}"}
+{"level":"info","ts":1685281931.491122,"msg":"127.0.0.1, user_session, /api/v1/exams/2, GET, {}"}
+{"level":"info","ts":1685281933.4549618,"msg":"127.0.0.1, user_session, /api/v1/questions/, POST, {\"examId\":2,\"options\":[],\"text\":\"u003cpu003edqwdqwdqwdqwqdwu003c/pu003e\"}"}
+{"level":"info","ts":1685281933.5151765,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/2, GET, {}"}
+{"level":"info","ts":1685281933.5187912,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/2, GET, {}"}
+{"level":"info","ts":1685281939.3840332,"msg":"127.0.0.1, user_session, /api/v1/questions/6, DELETE, {}"}
+{"level":"error","ts":1685281939.3961563,"msg":"record not found"}

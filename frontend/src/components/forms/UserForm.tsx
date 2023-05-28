@@ -6,7 +6,7 @@ import * as Yup from 'yup';
 import { Grid, TextField, Typography } from '@mui/material';
 import LoadingButton from '@mui/lab/LoadingButton';
 
-import { headers, accountId } from 'services/auth';
+import { headers, companyId } from 'services/auth';
 
 // interface
 interface FormValues {
@@ -36,6 +36,7 @@ const dataMapper = (data: User): FormValues => {
     mobile: data.mobile,
     password: '123',
     confirmPassword: '123',
+
     axiosError: '',
   };
 };
@@ -74,11 +75,12 @@ const UserForm: React.FC<{ data?: any; id?: string }> = (props) => {
           email: values.email,
           mobile: values.mobile,
           password: values.password,
+          companyId,
         };
         await axios({
           url: `${
             process.env.REACT_APP_API_URL
-          }/api/v1/accounts/${accountId}/users/${props.id ? props.id : ''}`,
+          }/api/v1/accounts/${companyId}/users/${props.id ? props.id : ''}`,
           headers,
           method: isEditing ? 'PATCH' : 'POST',
           data,

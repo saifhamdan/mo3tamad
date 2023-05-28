@@ -47,7 +47,7 @@ func (s *Server) GetMyProfile(c *fiber.Ctx) error {
 	user := c.Locals("client").(*oauth2.Config)
 
 	me := &model.Account{}
-	err := s.DB.Preload("Role").Omit("password").First(me, user.ClientId).Error
+	err := s.DB.Preload("Company").Preload("Role").Omit("password").First(me, user.ClientId).Error
 	if err != nil {
 		return s.App.HttpResponseInternalServerErrorRequest(c, err)
 	}

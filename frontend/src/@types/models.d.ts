@@ -16,5 +16,6 @@ interface User extends Model {
   active: bool;
   status: string;
   orgId: number;
-  org?: Org;
+  company?: any;
+  companyId: number;
 }

@@ -25,6 +25,7 @@ import ExamQuestionsPage from './company/exams-projects/ExamQuestionsPage';
 import ExamApplicantsPage from './company/exams-projects/ExamApplicantsPage';
 import NewExamQuestionPage from './company/exams-projects/NewExamQuestionPage';
 import EditExamQuestionPage from './company/exams-projects/EditExamQuestionPage';
+import StartExamPage from './exams/StartExamPage';
 
 const Index: React.FC<{}> = () => {
   const theme = useTheme();
@@ -38,8 +39,6 @@ const Index: React.FC<{}> = () => {
     setOpenMobileDrawer(!openMobileDrawer);
   };
 
-  const clientSidebar = pathname?.startsWith('/assessments');
-  const adminSidebar = pathname?.startsWith('/admin');
   const sidebarFlag = true;
 
   // temp
@@ -49,9 +48,9 @@ const Index: React.FC<{}> = () => {
       pathname.startsWith('/admin') &&
       !policies?.adminAll
     ) {
-      // navigate('/', { replace: true });
+      navigate('/', { replace: true });
     }
-  }, [policies?.adminAll, pathname]);
+  }, [policies?.adminAll, pathname, navigate, isAuth]);
 
   return (
     <div>
@@ -124,6 +123,10 @@ const Index: React.FC<{}> = () => {
                       element={<EditExamProjectPage />}
                     />
                     <Route
+                      path='/company/exams-projects/:examId/edit'
+                      element={<EditExamProjectPage />}
+                    />
+                    <Route
                       path='/company/exams-projects/:examId/questions'
                       element={<ExamQuestionsPage />}
                     />{' '}
@@ -156,6 +159,10 @@ const Index: React.FC<{}> = () => {
                     />
                     <Route path='/my-exams' element={<MyExamsPage />} />
                     <Route path='/exams/:examId' element={<ExamPage />} />
+                    <Route
+                      path='/exams/start/:examId'
+                      element={<StartExamPage />}
+                    />
                   </Routes>
                 </Box>
               </Grid>

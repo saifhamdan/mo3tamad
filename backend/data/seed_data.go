@@ -62,9 +62,22 @@ func main() {
 }
 
 func seedAccount(tx *gorm.DB) error {
+
+	company := &model.Company{
+		Name:         "oracle",
+		Desc:         "very well known company",
+		IsVerified:   true,
+		Phone_number: "0000",
+	}
+
+	err := tx.Create(company).Error
+	if err != nil {
+		return err
+	}
+
 	// 2. Get Role "Admin"
 	roleAdmin := &model.Role{Desc: authz.Roles_Admin}
-	err := tx.First(roleAdmin).Error
+	err = tx.First(roleAdmin).Error
 	if err != nil {
 		return err
 	}
@@ -75,13 +88,14 @@ func seedAccount(tx *gorm.DB) error {
 	}
 
 	adminAccount := &model.Account{
-		Name:     "admin",
-		Email:    "admin@company.com",
-		Mobile:   "060001",
-		Password: password,
-		RoleID:   roleAdmin.RoleId,
-		Active:   true,
-		Status:   "active",
+		Name:      "admin",
+		Email:     "admin@company.com",
+		Mobile:    "060001",
+		Password:  password,
+		RoleID:    roleAdmin.RoleId,
+		CompanyId: company.CompanyId,
+		Active:    true,
+		Status:    "active",
 	}
 	err = tx.Create(adminAccount).Error
 	if err != nil {

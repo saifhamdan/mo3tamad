@@ -53,7 +53,7 @@ const AccountMenu: React.FC<Props> = ({ anchorEl, open, closeHandler }) => {
               secondary={
                 <>
                   {user?.email}
-                  <div>{user?.org?.desc}</div>
+                  <div>{user?.company?.name}</div>
                 </>
               }
             />

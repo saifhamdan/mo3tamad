@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { headers, accountId } from 'services/auth';
+import { headers, companyId } from 'services/auth';
 import { httpMapper } from 'utils/http-mapper';
 
 interface FetchOptions {

@@ -19,7 +19,7 @@ export const ExamPaper = styled.a`
 
 const ExamCard: React.FC<any> = (props) => {
   return (
-    <Link to={`/exams/${props.slug}`}>
+    <Link to={`/exams/${props.id}`}>
       <ExamPaper>
         <Grid
           display='inline-flex'
@@ -50,9 +50,20 @@ const ExamCard: React.FC<any> = (props) => {
           </span>
           <Box p={1.5}>
             <Box mb={3} flexGrow={1}>
-              <Typography fontSize={22}>java certifcation exam</Typography>
-              <Typography color='gray'>
-                java certifcation exam blabla{' '}
+              <Typography fontSize={22}>{props.name}</Typography>
+              <Typography color='gray'>{props.desc}</Typography>
+              <Typography>
+                Created by
+                <Typography
+                  ml={1}
+                  color='primary'
+                  fontWeight='bold'
+                  component='span'
+                >
+                  <Link to='' color='primary'>
+                    {props.company.name}
+                  </Link>
+                </Typography>
               </Typography>
             </Box>
             <Box>

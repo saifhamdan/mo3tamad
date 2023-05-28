@@ -61,9 +61,6 @@ export const examProjectQuestionNewBreadcrumbsPage = (
 ): Breadcrumb[] =>
   examsProjectsBreadcrumbsPage.concat([
     {
-      label: data.desc,
-    },
-    {
       label: 'Questions list',
       path: `/company/exams-projects/${data?.id}/questions`,
     },
@@ -77,12 +74,12 @@ export const examProjectQuestionEditBreadcrumbsPage = (
   data: any
 ): Breadcrumb[] =>
   examsProjectsBreadcrumbsPage.concat([
-    {
-      label: data.desc,
-    },
+    // {
+    //   // label: data.desc,
+    // },
     {
       label: 'Questions list',
-      path: `/company/exams-projects/${data?.id}/questions`,
+      path: `/company/exams-projects/${data?.examId}/questions`,
     },
     {
       label: 'Edit',
@@ -93,9 +90,6 @@ export const examProjectQuestionEditBreadcrumbsPage = (
 // Exams Projects / ${Exams Project name} / Students
 export const examProjectApplicantsBreadcrumbsPage = (data: any): Breadcrumb[] =>
   examsProjectsBreadcrumbsPage.concat([
-    {
-      label: data.name,
-    },
     {
       label: 'Applicants list',
       path: `/company/exams-projects/${data.id}/applicants`,

@@ -12,8 +12,8 @@ type Registration struct {
 	Result         int       `gorm:"column:result" json:"result"`
 	Passed         bool      `gorm:"column:passed" json:"passed"`
 	Status         string    `gorm:"column:status" json:"status,omitempty"`
-	Account        *Account  `gorm:"foriegnKey:AccountId"`
-	Exam           *Exam     `gorm:"forigenKey:ExamId"`
-	//Trans         []Trans   `gorm:"forigenKey:RegistrationId"`
+	Account        Account   `gorm:"foriegnKey:AccountId" json:"account,omitempty"`
+	Exam           Exam      `gorm:"forigenKey:ExamId" json:"exam,omitempty"`
+	Trans          []Trans   `gorm:"forigenKey:RegistrationId"`
 	Model
 }

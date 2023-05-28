@@ -6,7 +6,6 @@ interface LoginResponse {
   expiresIn: number;
   sessionId: string;
   ipAddress: string;
-  accountId: number;
 }
 
 interface CasbinPolicies {

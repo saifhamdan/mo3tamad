@@ -6,5 +6,6 @@ type Company struct {
 	Desc         string `gorm:"column:desc" json:"desc,omitempty"`
 	IsVerified   bool   `gorm:"default:true;column:is_verified" json:"isVerified"`
 	Phone_number string `gorm:"column:phone_number" json:"phoneNumber,omitempty"`
+	Exams        []Exam `gorm:"forigenKey:CompanyId" json:"exams,omitempty"`
 	Model
 }

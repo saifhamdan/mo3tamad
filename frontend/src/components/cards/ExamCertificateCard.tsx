@@ -59,7 +59,7 @@ const ExamCertificateCard: React.FC<any> = (props) => {
             </Typography>
           </Box>
           <Box>
-            <Link to='/exam/start/:id'>
+            <Link to='/exams/start/:id'>
               <Button variant='contained'>Start</Button>
             </Link>
             <Link to='/certificate/:id'>

@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 
 import LoadingSpinnerWrapper from 'utils/loading-spinner-wrapper';
 import useFetch from 'hooks/use-fetch';
-import { accountId } from 'services/auth';
+import { companyId } from 'services/auth';
 import { Container } from 'atoms';
 import { useAppDispatch } from 'store';
 import { useEffect } from 'react';
@@ -13,16 +13,18 @@ import ExamProjectForm from 'components/forms/ExamProjectForm';
 
 const EditExamProjectPage = () => {
   const dispatch = useAppDispatch();
-  const { userId } = useParams();
+  const { examId } = useParams();
   const { data, loading, error } = useFetch<User>(
-    `${process.env.REACT_APP_API_URL}/api/v1/accounts/${accountId}/users/${userId}`,
+    `${process.env.REACT_APP_API_URL}/api/v1/exams/${examId}`,
     null
   );
 
   useEffect(() => {
-    dispatch(
-      uiActions.ChangeBreadcrumb(editExamProjectResultsBreadcrumbsPage(data))
-    );
+    if (data) {
+      dispatch(
+        uiActions.ChangeBreadcrumb(editExamProjectResultsBreadcrumbsPage(data))
+      );
+    }
   }, [dispatch, data]);
 
   return (
@@ -33,7 +35,7 @@ const EditExamProjectPage = () => {
         </Grid>
         <Grid item width={'100%'}>
           <LoadingSpinnerWrapper loading={loading} error={error}>
-            {data && <ExamProjectForm data={data} id={userId} />}
+            {data && <ExamProjectForm data={data} id={examId} />}
           </LoadingSpinnerWrapper>
         </Grid>
       </Grid>

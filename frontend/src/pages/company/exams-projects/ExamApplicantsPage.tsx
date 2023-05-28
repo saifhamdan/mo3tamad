@@ -6,16 +6,16 @@ import { DataGrid, GridColDef } from '@mui/x-data-grid';
 import { Container, Link } from 'atoms';
 import useFetch from 'hooks/use-fetch';
 import LoadingSpinnerWrapper from 'utils/loading-spinner-wrapper';
-import { accountId } from 'services/auth';
 import { examProjectApplicantsBreadcrumbsPage } from 'components/common/breadcrumbsList';
 import { useAppDispatch } from 'store';
 import { uiActions } from 'store/ui-slice';
-
-const url = `${process.env.REACT_APP_API_URL}/api/v1/accounts/${accountId}/assessments/projects`;
+import { useParams } from 'react-router';
 
 const ExamApplicantsPage = () => {
   const dispatch = useAppDispatch();
   const [selected, setSelected] = useState<any[]>([]);
+  const { examId } = useParams();
+  const url = `${process.env.REACT_APP_API_URL}/api/v1/registration/byExam/${examId}`;
   const { data, error, loading, setData } = useFetch<any[]>(url, []);
 
   useEffect(() => {
@@ -25,8 +25,16 @@ const ExamApplicantsPage = () => {
   }, [dispatch, data]);
 
   const columns: GridColDef[] = [
-    { field: 'name', headerName: 'Name', flex: 1 },
-    { field: 'type', headerName: 'Type' },
+    {
+      field: 'name',
+      headerName: 'Candidate name',
+      flex: 1,
+      valueGetter: (params) => params.row.account.name,
+    },
+    { field: 'status', headerName: 'Status', flex: 1 },
+    { field: 'passed', headerName: 'Passed', flex: 1 },
+    { field: 'isCheated', headerName: 'Cheated', flex: 1 },
+    { field: 'result', headerName: 'Result', flex: 1 },
     {
       field: 'action',
       headerName: 'Action',
@@ -45,21 +53,11 @@ const ExamApplicantsPage = () => {
 
         return (
           <Stack direction='row' spacing={2}>
-            <Link to={`${params.id}/results`} decorated={false}>
-              <Button variant='outlined' size='small'>
-                Results
-              </Button>
-            </Link>
-            <Link to={`${params.id}/employees`} decorated={false}>
-              <Button variant='outlined' size='small'>
-                Show Employees
-              </Button>
-            </Link>
-            {/* <Button variant='outlined' size='small' onClick={onClick}>
-            Edit
-          </Button>*/}
-            <Button variant='outlined' size='small' onClick={onDelete}>
-              Delete
+            <Button variant='outlined' size='small'>
+              Approve
+            </Button>
+            <Button variant='outlined' size='small'>
+              Decline
             </Button>
           </Stack>
         );
