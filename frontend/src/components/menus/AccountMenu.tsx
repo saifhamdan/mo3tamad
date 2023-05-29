@@ -13,7 +13,7 @@ import {
 } from '@mui/material';
 
 import { AuthContext } from 'store/auth-context';
-import { Menu } from 'atoms';
+import { Link, Menu } from 'atoms';
 import { ManageUserIcon } from 'atoms/icons';
 
 interface Props {
@@ -53,6 +53,7 @@ const AccountMenu: React.FC<Props> = ({ anchorEl, open, closeHandler }) => {
               secondary={
                 <>
                   {user?.email}
+                  <div>{user?.role?.desc}</div>
                   <div>{user?.company?.name}</div>
                 </>
               }
@@ -61,14 +62,16 @@ const AccountMenu: React.FC<Props> = ({ anchorEl, open, closeHandler }) => {
           </ListItem>
           <Divider />
           <MenuList>
-            <MenuItem>
-              <ListItemIcon>
-                <ManageUserIcon />
-              </ListItemIcon>
-              <Typography variant='body2' color='text.black'>
-                My profile
-              </Typography>
-            </MenuItem>
+            <Link to='/my-profile' decorated={false}>
+              <MenuItem>
+                <ListItemIcon>
+                  <ManageUserIcon />
+                </ListItemIcon>
+                <Typography variant='body2' color='text.black'>
+                  My profile
+                </Typography>
+              </MenuItem>
+            </Link>
           </MenuList>
           <ListItem
             dense={true}

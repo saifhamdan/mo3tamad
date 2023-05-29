@@ -50,7 +50,15 @@ const Sidebar = (props: Props) => {
               <ImageIcon />
             </Avatar>
           </ListItemAvatar>
-          <ListItemText primary={user?.name} secondary={user?.company?.name} />
+          <ListItemText
+            primary={user?.name}
+            secondary={
+              <div>
+                <div>{user?.role?.desc}</div>
+                <span>{user?.company?.name}</span>
+              </div>
+            }
+          />
         </MuiListItem>
         <Divider />
         {adminSidebar.map((item, i) =>

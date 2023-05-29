@@ -26,6 +26,7 @@ import ExamApplicantsPage from './company/exams-projects/ExamApplicantsPage';
 import NewExamQuestionPage from './company/exams-projects/NewExamQuestionPage';
 import EditExamQuestionPage from './company/exams-projects/EditExamQuestionPage';
 import StartExamPage from './exams/StartExamPage';
+import MyProfilePage from './my-profile/MyProfilePage';
 
 const Index: React.FC<{}> = () => {
   const theme = useTheme();
@@ -39,18 +40,25 @@ const Index: React.FC<{}> = () => {
     setOpenMobileDrawer(!openMobileDrawer);
   };
 
-  const sidebarFlag = true;
+  const sidebarFlag = pathname.startsWith('/company');
 
-  // temp
+  // protect company
+  useEffect(() => {
+    if (pathname.startsWith('/company') && !policies?.examsGetall) {
+      navigate('/', { replace: true });
+    }
+  }, [pathname, policies?.examsGetall, navigate]);
+
   useEffect(() => {
     if (
-      isAuth !== null &&
-      pathname.startsWith('/admin') &&
-      !policies?.adminAll
+      (pathname.startsWith('/my-exams') ||
+        pathname.startsWith('/certificate') ||
+        pathname.startsWith('/exams/start')) &&
+      !policies?.registerAll
     ) {
       navigate('/', { replace: true });
     }
-  }, [policies?.adminAll, pathname, navigate, isAuth]);
+  }, [pathname, policies?.registerAll, navigate]);
 
   return (
     <div>
@@ -103,7 +111,7 @@ const Index: React.FC<{}> = () => {
                   />
                 )}
                 <Box>
-                  {pathname.startsWith('/company') && <Breadcrumbs />}
+                  {sidebarFlag && <Breadcrumbs />}
                   <Routes>
                     {/* {public pages} */}
                     <Route path='/' element={<HomePage />} />
@@ -158,6 +166,7 @@ const Index: React.FC<{}> = () => {
                       element={<CertificatePage />}
                     />
                     <Route path='/my-exams' element={<MyExamsPage />} />
+                    <Route path='/my-profile' element={<MyProfilePage />} />
                     <Route path='/exams/:examId' element={<ExamPage />} />
                     <Route
                       path='/exams/start/:examId'

@@ -1,22 +1,25 @@
 import { Button, Grid, Stack, Typography } from '@mui/material';
 import { DataGrid, GridColDef } from '@mui/x-data-grid';
 import { Container, Link } from 'atoms';
-import { useEffect, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import useFetch from 'hooks/use-fetch';
 import LoadingSpinnerWrapper from 'utils/loading-spinner-wrapper';
 import DeleteForeverModal from 'components/modals/DeleteModal';
 import axios from 'axios';
-import { headers } from 'services/auth';
+import { companyId, headers } from 'services/auth';
 import { useAppDispatch } from 'store';
 import { uiActions } from 'store/ui-slice';
 import { usersBreadcrumbsPage } from 'components/common/breadcrumbsList';
-
-const url = `${process.env.REACT_APP_API_URL}/api/v1/accounts/`;
+import { AuthContext } from 'store/auth-context';
 
 const UsersPage = () => {
   const dispatch = useAppDispatch();
+  const { policies } = useContext(AuthContext);
   const [selected, setSelected] = useState<any[]>([]);
-  const { data, error, loading, setData } = useFetch<any[]>(url, []);
+  const { data, error, loading, setData } = useFetch<any[]>(
+    `${process.env.REACT_APP_API_URL}/api/v1/accounts/company/${companyId}`,
+    []
+  );
   const [open, setOpen] = useState(false);
 
   useEffect(() => {
@@ -25,10 +28,13 @@ const UsersPage = () => {
 
   const deleteHandler = async () => {
     try {
-      await axios(`${url}/${selected[0]}`, {
-        method: 'DELETE',
-        headers: headers,
-      });
+      await axios(
+        `${process.env.REACT_APP_API_URL}/api/v1/accounts/${selected[0]}`,
+        {
+          method: 'DELETE',
+          headers: headers,
+        }
+      );
       const newData = data.filter((i) => i.id !== selected[0]);
       setData(newData);
       setSelected([]);
@@ -61,14 +67,18 @@ const UsersPage = () => {
 
         return (
           <Stack direction='row' spacing={2}>
-            <Link to={`${params.id}/edit`} decorated={false}>
-              <Button variant='outlined' size='small'>
-                Edit
+            {policies?.usersUpdate && (
+              <Link to={`${params.id}/edit`} decorated={false}>
+                <Button variant='outlined' size='small'>
+                  Edit
+                </Button>
+              </Link>
+            )}
+            {policies?.usersDelete && (
+              <Button variant='outlined' size='small' onClick={onDelete}>
+                Delete
               </Button>
-            </Link>
-            <Button variant='outlined' size='small' onClick={onDelete}>
-              Delete
-            </Button>
+            )}
           </Stack>
         );
       },
@@ -81,11 +91,13 @@ const UsersPage = () => {
         <Grid item>
           <Typography variant='h5'>Users</Typography>
         </Grid>
-        <Grid item>
-          <Link to='/company/users/new' decorated={false}>
-            <Button variant='contained'>New User</Button>
-          </Link>
-        </Grid>
+        {policies?.usersCreate && (
+          <Grid item>
+            <Link to='/company/users/new' decorated={false}>
+              <Button variant='contained'>New User</Button>
+            </Link>
+          </Grid>
+        )}
       </Grid>
       <Grid mt={3} flexDirection='row-reverse' container></Grid>
       <Grid item height={500}>

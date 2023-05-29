@@ -1593,3 +1593,1399 @@
 {"level":"info","ts":1685281933.5187912,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/2, GET, {}"}
 {"level":"info","ts":1685281939.3840332,"msg":"127.0.0.1, user_session, /api/v1/questions/6, DELETE, {}"}
 {"level":"error","ts":1685281939.3961563,"msg":"record not found"}
+{"level":"info","ts":1685340541.0219696,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1685340631.392217,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685340631.3933415,"msg":"expired or invalid token"}
+{"level":"info","ts":1685340631.397371,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685340631.397443,"msg":"missing Authorization header"}
+{"level":"info","ts":1685340638.8446033,"msg":"127.0.0.1, user_session, /auth/oauth/login, POST, {}"}
+{"level":"error","ts":1685340638.9002075,"msg":"incorrect password or email"}
+{"level":"info","ts":1685340641.628409,"msg":"127.0.0.1, user_session, /auth/oauth/login, POST, {}"}
+{"level":"info","ts":1685340641.7023795,"msg":"127.0.0.1, user_session, /api/v1/accounts/me, GET, {}"}
+{"level":"info","ts":1685340641.7133782,"msg":"127.0.0.1, user_session, /api/v1/accounts/policies/ui, GET, {}"}
+{"level":"info","ts":1685340641.7613358,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685340641.7665727,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685340645.8728058,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685340645.8764136,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685340647.9234478,"msg":"127.0.0.1, user_session, /api/v1/exams/2, GET, {}"}
+{"level":"info","ts":1685340647.932694,"msg":"127.0.0.1, user_session, /api/v1/exams/2, GET, {}"}
+{"level":"info","ts":1685340653.176033,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685340653.1800292,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685340656.2638466,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"info","ts":1685340656.273052,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"info","ts":1685340660.6038322,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"info","ts":1685340660.6098073,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"info","ts":1685340661.3361812,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685340661.3400269,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685340844.128408,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685340844.1347558,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685340849.0019157,"msg":"127.0.0.1, user_session, /api/v1/exams/2, GET, {}"}
+{"level":"info","ts":1685340849.0059862,"msg":"127.0.0.1, user_session, /api/v1/exams/2, GET, {}"}
+{"level":"info","ts":1685340851.6826143,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685340851.687021,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685340854.4948723,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685340854.4984715,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685340855.2072227,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"info","ts":1685340855.210587,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"info","ts":1685340855.9848847,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685340855.988561,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685340856.6065273,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"info","ts":1685340856.6103852,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"info","ts":1685340857.247007,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685340857.2503111,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685340868.657317,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685340868.6618779,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685341050.0713444,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"info","ts":1685341050.075368,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"info","ts":1685341052.8053675,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"info","ts":1685341052.8103037,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"info","ts":1685341087.7215822,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685341087.7249532,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685341185.8637035,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"info","ts":1685341185.867184,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"info","ts":1685341192.30423,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685341192.3079627,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685341528.7598863,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"info","ts":1685341528.769988,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"info","ts":1685341532.7202399,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685341532.725163,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685341586.4386191,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"info","ts":1685341586.4423468,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"info","ts":1685342241.5361085,"msg":"127.0.0.1, user_session, /api/v1/roles, GET, {}"}
+{"level":"info","ts":1685342241.5730462,"msg":"127.0.0.1, user_session, /api/v1/roles, GET, {}"}
+{"level":"info","ts":1685342243.813232,"msg":"127.0.0.1, user_session, /api/v1/roles, GET, {}"}
+{"level":"info","ts":1685342243.8154855,"msg":"127.0.0.1, user_session, /api/v1/roles, GET, {}"}
+{"level":"info","ts":1685342265.3634508,"msg":"127.0.0.1, user_session, /api/v1/system/roles, GET, {}"}
+{"level":"info","ts":1685342265.3876436,"msg":"127.0.0.1, user_session, /api/v1/system/roles, GET, {}"}
+{"level":"info","ts":1685342266.0097003,"msg":"127.0.0.1, user_session, /api/v1/system/roles, GET, {}"}
+{"level":"info","ts":1685342266.0149598,"msg":"127.0.0.1, user_session, /api/v1/system/roles, GET, {}"}
+{"level":"info","ts":1685342308.9630837,"msg":"127.0.0.1, user_session, /api/v1/system/roles, GET, {}"}
+{"level":"info","ts":1685342308.9659111,"msg":"127.0.0.1, user_session, /api/v1/system/roles, GET, {}"}
+{"level":"info","ts":1685342411.8296356,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1685342416.6379452,"msg":"127.0.0.1, user_session, /api/v1/system/roles, GET, {}"}
+{"level":"error","ts":1685342416.6393824,"msg":"Error 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'desc != ?' at line 1"}
+{"level":"error","ts":1685342416.6394258,"msg":"Error 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'desc != ?' at line 1"}
+{"level":"info","ts":1685342416.6405115,"msg":"127.0.0.1, user_session, /api/v1/system/roles, GET, {}"}
+{"level":"error","ts":1685342416.6429427,"msg":"Error 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'desc != ?' at line 1"}
+{"level":"error","ts":1685342416.6430902,"msg":"Error 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'desc != ?' at line 1"}
+{"level":"info","ts":1685342417.974748,"msg":"127.0.0.1, user_session, /api/v1/system/roles, GET, {}"}
+{"level":"error","ts":1685342417.975991,"msg":"Error 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'desc != ?' at line 1"}
+{"level":"error","ts":1685342417.9760222,"msg":"Error 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'desc != ?' at line 1"}
+{"level":"info","ts":1685342417.9774425,"msg":"127.0.0.1, user_session, /api/v1/system/roles, GET, {}"}
+{"level":"error","ts":1685342417.9786916,"msg":"Error 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'desc != ?' at line 1"}
+{"level":"error","ts":1685342417.978746,"msg":"Error 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'desc != ?' at line 1"}
+{"level":"info","ts":1685342490.1632318,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1685342491.9729917,"msg":"127.0.0.1, user_session, /api/v1/system/roles, GET, {}"}
+{"level":"error","ts":1685342491.9752657,"msg":"Error 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'desc = ?' at line 1"}
+{"level":"error","ts":1685342491.975325,"msg":"Error 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'desc = ?' at line 1"}
+{"level":"info","ts":1685342491.9780502,"msg":"127.0.0.1, user_session, /api/v1/system/roles, GET, {}"}
+{"level":"error","ts":1685342491.9821172,"msg":"Error 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'desc = ?' at line 1"}
+{"level":"error","ts":1685342491.982198,"msg":"Error 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'desc = ?' at line 1"}
+{"level":"info","ts":1685342562.909639,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1685342564.7249618,"msg":"127.0.0.1, user_session, /api/v1/system/roles, GET, {}"}
+{"level":"info","ts":1685342564.7326877,"msg":"127.0.0.1, user_session, /api/v1/system/roles, GET, {}"}
+{"level":"info","ts":1685342570.1920333,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1685342584.119217,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1685342661.789932,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1685342713.1236928,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1685342729.5427606,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1685342733.9340482,"msg":"127.0.0.1, user_session, /api/v1/system/roles, GET, {}"}
+{"level":"info","ts":1685342733.9398677,"msg":"127.0.0.1, user_session, /api/v1/system/roles, GET, {}"}
+{"level":"info","ts":1685342776.9009626,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1685342783.694457,"msg":"data seeded successfully"}
+{"level":"info","ts":1685342790.2483418,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1685342793.515726,"msg":"127.0.0.1, user_session, /api/v1/system/roles, GET, {}"}
+{"level":"info","ts":1685342793.5208044,"msg":"127.0.0.1, user_session, /api/v1/system/roles, GET, {}"}
+{"level":"info","ts":1685342794.5708506,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685342794.5744715,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685342795.344553,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685342795.3485167,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685342796.0965536,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"info","ts":1685342796.1046345,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"info","ts":1685342796.6672175,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685342796.6701338,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685342797.3056254,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"info","ts":1685342797.308888,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"info","ts":1685342801.7409973,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685342801.7437587,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685342802.5584488,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"info","ts":1685342802.5635355,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"info","ts":1685342803.7002234,"msg":"127.0.0.1, user_session, /api/v1/system/roles, GET, {}"}
+{"level":"info","ts":1685342803.7025802,"msg":"127.0.0.1, user_session, /api/v1/system/roles, GET, {}"}
+{"level":"info","ts":1685342830.3185499,"msg":"127.0.0.1, user_session, /api/v1/users/, POST, {\"companyId\":1,\"email\":\"saif@company.com\",\"mobile\":\"0798726136\",\"name\":\"teacher-1\",\"password\":\"123\",\"roleId\":2}"}
+{"level":"info","ts":1685342852.76235,"msg":"127.0.0.1, user_session, /api/v1/accounts/, POST, {\"companyId\":1,\"email\":\"saif@company.com\",\"mobile\":\"0798726136\",\"name\":\"teacher-1\",\"password\":\"123\",\"roleId\":2}"}
+{"level":"info","ts":1685342852.8624315,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"info","ts":1685342852.871462,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"info","ts":1685342891.9357917,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"info","ts":1685342891.9402072,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"info","ts":1685342892.330729,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"info","ts":1685342892.3336668,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"info","ts":1685342919.5730617,"msg":"127.0.0.1, user_session, /api/v1/users/2, GET, {}"}
+{"level":"info","ts":1685342919.5779438,"msg":"127.0.0.1, user_session, /api/v1/users/2, GET, {}"}
+{"level":"info","ts":1685342922.855632,"msg":"127.0.0.1, user_session, /api/v1/users/2, GET, {}"}
+{"level":"info","ts":1685342922.8599584,"msg":"127.0.0.1, user_session, /api/v1/users/2, GET, {}"}
+{"level":"info","ts":1685342948.7627256,"msg":"127.0.0.1, user_session, /api/v1/users/2, GET, {}"}
+{"level":"info","ts":1685342948.766687,"msg":"127.0.0.1, user_session, /api/v1/users/2, GET, {}"}
+{"level":"info","ts":1685342951.2735193,"msg":"127.0.0.1, user_session, /api/v1/accounts/2, GET, {}"}
+{"level":"info","ts":1685342951.2795873,"msg":"127.0.0.1, user_session, /api/v1/accounts/2, GET, {}"}
+{"level":"info","ts":1685342965.4041,"msg":"127.0.0.1, user_session, /api/v1/accounts/2, GET, {}"}
+{"level":"info","ts":1685342965.4068835,"msg":"127.0.0.1, user_session, /api/v1/accounts/2, GET, {}"}
+{"level":"info","ts":1685342965.5417726,"msg":"127.0.0.1, user_session, /api/v1/system/roles, GET, {}"}
+{"level":"info","ts":1685342965.544607,"msg":"127.0.0.1, user_session, /api/v1/system/roles, GET, {}"}
+{"level":"info","ts":1685342968.3538876,"msg":"127.0.0.1, user_session, /api/v1/accounts/2, GET, {}"}
+{"level":"info","ts":1685342968.356236,"msg":"127.0.0.1, user_session, /api/v1/accounts/2, GET, {}"}
+{"level":"info","ts":1685342968.490819,"msg":"127.0.0.1, user_session, /api/v1/system/roles, GET, {}"}
+{"level":"info","ts":1685342968.4940956,"msg":"127.0.0.1, user_session, /api/v1/system/roles, GET, {}"}
+{"level":"info","ts":1685342969.8166316,"msg":"127.0.0.1, user_session, /api/v1/accounts/2, GET, {}"}
+{"level":"info","ts":1685342969.8209739,"msg":"127.0.0.1, user_session, /api/v1/accounts/2, GET, {}"}
+{"level":"info","ts":1685342969.8942118,"msg":"127.0.0.1, user_session, /api/v1/system/roles, GET, {}"}
+{"level":"info","ts":1685342969.899927,"msg":"127.0.0.1, user_session, /api/v1/system/roles, GET, {}"}
+{"level":"info","ts":1685342971.239396,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"info","ts":1685342971.2430878,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"info","ts":1685342972.5740027,"msg":"127.0.0.1, user_session, /api/v1/accounts/2, GET, {}"}
+{"level":"info","ts":1685342972.5769753,"msg":"127.0.0.1, user_session, /api/v1/accounts/2, GET, {}"}
+{"level":"info","ts":1685342972.6001074,"msg":"127.0.0.1, user_session, /api/v1/system/roles, GET, {}"}
+{"level":"info","ts":1685342972.6035852,"msg":"127.0.0.1, user_session, /api/v1/system/roles, GET, {}"}
+{"level":"info","ts":1685342973.306595,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"info","ts":1685342973.309693,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"info","ts":1685342974.0348344,"msg":"127.0.0.1, user_session, /api/v1/accounts/1, GET, {}"}
+{"level":"info","ts":1685342974.037992,"msg":"127.0.0.1, user_session, /api/v1/accounts/1, GET, {}"}
+{"level":"info","ts":1685342974.0553472,"msg":"127.0.0.1, user_session, /api/v1/system/roles, GET, {}"}
+{"level":"info","ts":1685342974.0576847,"msg":"127.0.0.1, user_session, /api/v1/system/roles, GET, {}"}
+{"level":"info","ts":1685342974.8467484,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"info","ts":1685342974.851364,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"info","ts":1685342991.7676003,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685342991.7720327,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685342994.9132698,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685342994.9164383,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685343040.8527513,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685343040.8608267,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685343052.3551953,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"info","ts":1685343052.358527,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"info","ts":1685343052.683793,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685343052.6861904,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685343056.4063303,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685343056.409955,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685343108.7824464,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685343108.786399,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685343109.2990153,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"info","ts":1685343109.304278,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"info","ts":1685343116.294883,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685343116.2982767,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685343918.9901834,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"info","ts":1685343919.006218,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"info","ts":1685343928.322505,"msg":"127.0.0.1, user_session, /api/v1/accounts/2, GET, {}"}
+{"level":"info","ts":1685343928.3275776,"msg":"127.0.0.1, user_session, /api/v1/accounts/2, GET, {}"}
+{"level":"info","ts":1685343928.351319,"msg":"127.0.0.1, user_session, /api/v1/system/roles, GET, {}"}
+{"level":"info","ts":1685343928.3545864,"msg":"127.0.0.1, user_session, /api/v1/system/roles, GET, {}"}
+{"level":"info","ts":1685343930.5830374,"msg":"127.0.0.1, user_session, /api/v1/accounts/2, PATCH, {\"companyId\":1,\"email\":\"saif@company.com\",\"mobile\":\"0798726136\",\"name\":\"teacher-1\",\"password\":\"123\",\"roleId\":2}"}
+{"level":"info","ts":1685343930.6347122,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"info","ts":1685343930.637417,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"info","ts":1685343932.2869766,"msg":"127.0.0.1, user_session, /api/v1/accounts/1, GET, {}"}
+{"level":"info","ts":1685343932.2904305,"msg":"127.0.0.1, user_session, /api/v1/accounts/1, GET, {}"}
+{"level":"info","ts":1685343932.306802,"msg":"127.0.0.1, user_session, /api/v1/system/roles, GET, {}"}
+{"level":"info","ts":1685343932.3090465,"msg":"127.0.0.1, user_session, /api/v1/system/roles, GET, {}"}
+{"level":"info","ts":1685343933.225469,"msg":"127.0.0.1, user_session, /api/v1/accounts/1, PATCH, {\"companyId\":1,\"email\":\"admin@company.com\",\"mobile\":\"060001\",\"name\":\"admin\",\"password\":\"123\",\"roleId\":1}"}
+{"level":"info","ts":1685343933.2608595,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"info","ts":1685343933.2652068,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"info","ts":1685343934.799952,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685343934.8034673,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685343937.344522,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685343937.3482075,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685343940.242301,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"info","ts":1685343940.2480643,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"info","ts":1685344018.8265102,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685344018.8333507,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685344035.8087263,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685344035.8108258,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685344036.1471896,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"info","ts":1685344036.1515043,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"info","ts":1685344042.8230102,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685344042.8266501,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685344044.514494,"msg":"127.0.0.1, user_session, /auth/oauth/logout/undefined, DELETE, {}"}
+{"level":"error","ts":1685344044.5145695,"msg":"missing Authorization header"}
+{"level":"info","ts":1685344054.0561676,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685344054.0562987,"msg":"missing Authorization header"}
+{"level":"info","ts":1685344054.0575213,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685344054.0576293,"msg":"missing Authorization header"}
+{"level":"info","ts":1685344069.3252032,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685344069.325314,"msg":"missing Authorization header"}
+{"level":"info","ts":1685344069.326749,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685344069.3269541,"msg":"missing Authorization header"}
+{"level":"info","ts":1685344076.23025,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685344076.2303493,"msg":"missing Authorization header"}
+{"level":"info","ts":1685344076.2318356,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685344076.2319195,"msg":"missing Authorization header"}
+{"level":"info","ts":1685344084.8759608,"msg":"127.0.0.1, user_session, /auth/oauth/login, POST, {}"}
+{"level":"info","ts":1685344084.9576004,"msg":"127.0.0.1, user_session, /api/v1/accounts/me, GET, {}"}
+{"level":"info","ts":1685344084.9662821,"msg":"127.0.0.1, user_session, /api/v1/accounts/policies/ui, GET, {}"}
+{"level":"info","ts":1685344086.4587111,"msg":"127.0.0.1, user_session, /auth/oauth/login, POST, {}"}
+{"level":"info","ts":1685344086.5333688,"msg":"127.0.0.1, user_session, /api/v1/accounts/me, GET, {}"}
+{"level":"info","ts":1685344086.5403495,"msg":"127.0.0.1, user_session, /api/v1/accounts/policies/ui, GET, {}"}
+{"level":"info","ts":1685344086.921732,"msg":"127.0.0.1, user_session, /auth/oauth/login, POST, {}"}
+{"level":"info","ts":1685344086.9964416,"msg":"127.0.0.1, user_session, /api/v1/accounts/me, GET, {}"}
+{"level":"info","ts":1685344087.00204,"msg":"127.0.0.1, user_session, /api/v1/accounts/policies/ui, GET, {}"}
+{"level":"info","ts":1685344087.258654,"msg":"127.0.0.1, user_session, /auth/oauth/login, POST, {}"}
+{"level":"info","ts":1685344087.330729,"msg":"127.0.0.1, user_session, /api/v1/accounts/me, GET, {}"}
+{"level":"info","ts":1685344087.3368568,"msg":"127.0.0.1, user_session, /api/v1/accounts/policies/ui, GET, {}"}
+{"level":"info","ts":1685344087.4988778,"msg":"127.0.0.1, user_session, /auth/oauth/login, POST, {}"}
+{"level":"info","ts":1685344087.569925,"msg":"127.0.0.1, user_session, /api/v1/accounts/me, GET, {}"}
+{"level":"info","ts":1685344087.5743337,"msg":"127.0.0.1, user_session, /api/v1/accounts/policies/ui, GET, {}"}
+{"level":"info","ts":1685344087.6741586,"msg":"127.0.0.1, user_session, /auth/oauth/login, POST, {}"}
+{"level":"info","ts":1685344087.74526,"msg":"127.0.0.1, user_session, /api/v1/accounts/me, GET, {}"}
+{"level":"info","ts":1685344087.7508304,"msg":"127.0.0.1, user_session, /api/v1/accounts/policies/ui, GET, {}"}
+{"level":"info","ts":1685344094.391464,"msg":"127.0.0.1, user_session, /auth/oauth/login, POST, {}"}
+{"level":"info","ts":1685344094.4691942,"msg":"127.0.0.1, user_session, /api/v1/accounts/me, GET, {}"}
+{"level":"info","ts":1685344094.4755719,"msg":"127.0.0.1, user_session, /api/v1/accounts/policies/ui, GET, {}"}
+{"level":"info","ts":1685344100.3354585,"msg":"127.0.0.1, user_session, /auth/oauth/login, POST, {}"}
+{"level":"info","ts":1685344100.4100657,"msg":"127.0.0.1, user_session, /api/v1/accounts/me, GET, {}"}
+{"level":"info","ts":1685344100.4202468,"msg":"127.0.0.1, user_session, /api/v1/accounts/policies/ui, GET, {}"}
+{"level":"info","ts":1685344101.366524,"msg":"127.0.0.1, user_session, /auth/oauth/login, POST, {}"}
+{"level":"info","ts":1685344101.4358478,"msg":"127.0.0.1, user_session, /api/v1/accounts/me, GET, {}"}
+{"level":"info","ts":1685344101.441328,"msg":"127.0.0.1, user_session, /api/v1/accounts/policies/ui, GET, {}"}
+{"level":"info","ts":1685344101.9575408,"msg":"127.0.0.1, user_session, /auth/oauth/login, POST, {}"}
+{"level":"info","ts":1685344102.0291348,"msg":"127.0.0.1, user_session, /api/v1/accounts/me, GET, {}"}
+{"level":"info","ts":1685344102.0361226,"msg":"127.0.0.1, user_session, /api/v1/accounts/policies/ui, GET, {}"}
+{"level":"info","ts":1685344102.2713223,"msg":"127.0.0.1, user_session, /auth/oauth/login, POST, {}"}
+{"level":"info","ts":1685344102.3408296,"msg":"127.0.0.1, user_session, /api/v1/accounts/me, GET, {}"}
+{"level":"info","ts":1685344102.3500686,"msg":"127.0.0.1, user_session, /api/v1/accounts/policies/ui, GET, {}"}
+{"level":"info","ts":1685344104.5648382,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685344104.5673063,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685344105.25225,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685344105.25463,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685344106.1994765,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685344106.2031736,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685344107.789536,"msg":"127.0.0.1, user_session, /auth/oauth/logout/undefined, DELETE, {}"}
+{"level":"error","ts":1685344107.7896132,"msg":"missing Authorization header"}
+{"level":"info","ts":1685344111.3291917,"msg":"127.0.0.1, user_session, /auth/oauth/login, POST, {}"}
+{"level":"error","ts":1685344111.3846016,"msg":"incorrect password or email"}
+{"level":"info","ts":1685344175.2182465,"msg":"127.0.0.1, user_session, /auth/oauth/login, POST, {}"}
+{"level":"info","ts":1685344175.2919478,"msg":"127.0.0.1, user_session, /api/v1/accounts/me, GET, {}"}
+{"level":"info","ts":1685344175.3002465,"msg":"127.0.0.1, user_session, /api/v1/accounts/policies/ui, GET, {}"}
+{"level":"info","ts":1685344175.3715904,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685344175.3753054,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685344280.2915888,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685344280.297822,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685344325.0867164,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"error","ts":1685344325.0875351,"msg":"unauthorized to access this resource"}
+{"level":"info","ts":1685344325.0897212,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"error","ts":1685344325.0905685,"msg":"unauthorized to access this resource"}
+{"level":"info","ts":1685344326.4372444,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685344326.439779,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685344327.0377765,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"error","ts":1685344327.038469,"msg":"unauthorized to access this resource"}
+{"level":"info","ts":1685344327.0402143,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"error","ts":1685344327.040972,"msg":"unauthorized to access this resource"}
+{"level":"info","ts":1685344327.4745886,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685344327.4775646,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685344328.0257158,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"error","ts":1685344328.0265121,"msg":"unauthorized to access this resource"}
+{"level":"info","ts":1685344328.027837,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"error","ts":1685344328.028648,"msg":"unauthorized to access this resource"}
+{"level":"info","ts":1685344328.5034657,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685344328.5064833,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685344329.0205557,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"error","ts":1685344329.0214388,"msg":"unauthorized to access this resource"}
+{"level":"info","ts":1685344329.0230637,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"error","ts":1685344329.0238738,"msg":"unauthorized to access this resource"}
+{"level":"info","ts":1685344329.5091712,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685344329.512721,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685344329.919612,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"error","ts":1685344329.9205952,"msg":"unauthorized to access this resource"}
+{"level":"info","ts":1685344329.9220245,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"error","ts":1685344329.922902,"msg":"unauthorized to access this resource"}
+{"level":"info","ts":1685344330.2874424,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685344330.2907412,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685344330.5893123,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"error","ts":1685344330.590108,"msg":"unauthorized to access this resource"}
+{"level":"info","ts":1685344330.5915475,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"error","ts":1685344330.5924537,"msg":"unauthorized to access this resource"}
+{"level":"info","ts":1685344331.2230172,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685344331.2263403,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685344331.5844347,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"error","ts":1685344331.5854273,"msg":"unauthorized to access this resource"}
+{"level":"info","ts":1685344331.5868676,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"error","ts":1685344331.5876994,"msg":"unauthorized to access this resource"}
+{"level":"info","ts":1685344332.0139177,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685344332.0177555,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685344332.360074,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"error","ts":1685344332.3610678,"msg":"unauthorized to access this resource"}
+{"level":"info","ts":1685344332.362955,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"error","ts":1685344332.3639193,"msg":"unauthorized to access this resource"}
+{"level":"info","ts":1685344334.3261795,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685344334.3293827,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685344335.087791,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"error","ts":1685344335.0886383,"msg":"unauthorized to access this resource"}
+{"level":"info","ts":1685344335.0901136,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"error","ts":1685344335.0909116,"msg":"unauthorized to access this resource"}
+{"level":"info","ts":1685344335.36442,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685344335.3682284,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685344335.63234,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"error","ts":1685344335.6332612,"msg":"unauthorized to access this resource"}
+{"level":"info","ts":1685344335.6345596,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"error","ts":1685344335.6353402,"msg":"unauthorized to access this resource"}
+{"level":"info","ts":1685344335.8949015,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685344335.8995557,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685344336.1678717,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"error","ts":1685344336.168799,"msg":"unauthorized to access this resource"}
+{"level":"info","ts":1685344336.17074,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"error","ts":1685344336.1715653,"msg":"unauthorized to access this resource"}
+{"level":"info","ts":1685344360.3871005,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"error","ts":1685344360.3879733,"msg":"unauthorized to access this resource"}
+{"level":"info","ts":1685344360.3903444,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"error","ts":1685344360.3911018,"msg":"unauthorized to access this resource"}
+{"level":"info","ts":1685344393.8893156,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"error","ts":1685344393.8900948,"msg":"unauthorized to access this resource"}
+{"level":"info","ts":1685344393.8912613,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"error","ts":1685344393.8918426,"msg":"unauthorized to access this resource"}
+{"level":"info","ts":1685344394.6962793,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685344394.6996388,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685344401.6658683,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"error","ts":1685344401.6665783,"msg":"unauthorized to access this resource"}
+{"level":"info","ts":1685344401.6676912,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"error","ts":1685344401.668391,"msg":"unauthorized to access this resource"}
+{"level":"info","ts":1685344402.1006486,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685344402.1034806,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685344402.4363306,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"error","ts":1685344402.437196,"msg":"unauthorized to access this resource"}
+{"level":"info","ts":1685344402.4385958,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"error","ts":1685344402.4393878,"msg":"unauthorized to access this resource"}
+{"level":"info","ts":1685344423.7005002,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685344423.7030337,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685344424.0270658,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"error","ts":1685344424.0279036,"msg":"unauthorized to access this resource"}
+{"level":"info","ts":1685344424.029172,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"error","ts":1685344424.030016,"msg":"unauthorized to access this resource"}
+{"level":"info","ts":1685344589.851516,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1685344592.670511,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"error","ts":1685344592.6727037,"msg":"unauthorized to access this resource"}
+{"level":"info","ts":1685344592.6740518,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"error","ts":1685344592.6760743,"msg":"unauthorized to access this resource"}
+{"level":"info","ts":1685344593.6271112,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685344593.6343498,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685344600.2880223,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"error","ts":1685344600.2889957,"msg":"unauthorized to access this resource"}
+{"level":"info","ts":1685344600.2900743,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"error","ts":1685344600.2907481,"msg":"unauthorized to access this resource"}
+{"level":"info","ts":1685344601.2338066,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685344601.2363813,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685344679.10184,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"error","ts":1685344679.1028569,"msg":"unauthorized to access this resource"}
+{"level":"info","ts":1685344679.1048522,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"error","ts":1685344679.1058695,"msg":"unauthorized to access this resource"}
+{"level":"info","ts":1685344679.5564454,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685344679.5602617,"msg":"127.0.0.1, user_session, /api/v1/exams, GET, {}"}
+{"level":"info","ts":1685344719.9123662,"msg":"127.0.0.1, user_session, /api/v1/exams/company/1, GET, {}"}
+{"level":"info","ts":1685344737.9013972,"msg":"127.0.0.1, user_session, /api/v1/exams/company/1, GET, {}"}
+{"level":"info","ts":1685344739.9030364,"msg":"127.0.0.1, user_session, /api/v1/exams/company/1, GET, {}"}
+{"level":"info","ts":1685344741.5119946,"msg":"127.0.0.1, user_session, /api/v1/exams/company/1, GET, {}"}
+{"level":"info","ts":1685344741.5157027,"msg":"127.0.0.1, user_session, /api/v1/exams/company/1, GET, {}"}
+{"level":"info","ts":1685344749.877435,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"error","ts":1685344749.8783367,"msg":"unauthorized to access this resource"}
+{"level":"info","ts":1685344749.8799655,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"error","ts":1685344749.8808854,"msg":"unauthorized to access this resource"}
+{"level":"info","ts":1685344751.2698936,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"error","ts":1685344751.2707303,"msg":"unauthorized to access this resource"}
+{"level":"info","ts":1685344751.2731123,"msg":"127.0.0.1, user_session, /api/v1/accounts/, GET, {}"}
+{"level":"error","ts":1685344751.2737472,"msg":"unauthorized to access this resource"}
+{"level":"info","ts":1685344783.53667,"msg":"127.0.0.1, user_session, /api/v1/accounts/1, GET, {}"}
+{"level":"error","ts":1685344783.53748,"msg":"unauthorized to access this resource"}
+{"level":"info","ts":1685344783.5407794,"msg":"127.0.0.1, user_session, /api/v1/accounts/1, GET, {}"}
+{"level":"error","ts":1685344783.5416067,"msg":"unauthorized to access this resource"}
+{"level":"info","ts":1685344795.4918978,"msg":"127.0.0.1, user_session, /api/v1/accounts/1, GET, {}"}
+{"level":"error","ts":1685344795.4927568,"msg":"unauthorized to access this resource"}
+{"level":"info","ts":1685344797.4074025,"msg":"127.0.0.1, user_session, /api/v1/accounts/1, GET, {}"}
+{"level":"error","ts":1685344797.4081697,"msg":"unauthorized to access this resource"}
+{"level":"info","ts":1685344797.4123318,"msg":"127.0.0.1, user_session, /api/v1/accounts/1, GET, {}"}
+{"level":"error","ts":1685344797.413376,"msg":"unauthorized to access this resource"}
+{"level":"fatal","ts":1685345954.2601154,"msg":"Error 1062 (23000): Duplicate entry 'admin@company.com' for key 'accounts.email'"}
+{"level":"fatal","ts":1685345985.42594,"msg":"Error 1062 (23000): Duplicate entry 'admin@company.com' for key 'accounts.email'"}
+{"level":"info","ts":1685346455.2537997,"msg":"data seeded successfully"}
+{"level":"info","ts":1685346498.7754896,"msg":"data seeded successfully"}
+{"level":"fatal","ts":1685346602.7322307,"msg":"Error 1062 (23000): Duplicate entry 'admin@company.com' for key 'accounts.email'"}
+{"level":"info","ts":1685346614.0252478,"msg":"data seeded successfully"}
+{"level":"info","ts":1685346775.8900194,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1685346789.3099537,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685346789.3206308,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685346789.8659797,"msg":"127.0.0.1, user_session, /api/v1/exams/company/1, GET, {}"}
+{"level":"info","ts":1685346789.868546,"msg":"127.0.0.1, user_session, /api/v1/exams/company/1, GET, {}"}
+{"level":"info","ts":1685346790.3236175,"msg":"127.0.0.1, user_session, /api/v1/accounts/1, GET, {}"}
+{"level":"error","ts":1685346790.3241975,"msg":"unauthorized to access this resource"}
+{"level":"info","ts":1685346790.3253558,"msg":"127.0.0.1, user_session, /api/v1/accounts/1, GET, {}"}
+{"level":"error","ts":1685346790.3260272,"msg":"unauthorized to access this resource"}
+{"level":"info","ts":1685346794.9750853,"msg":"127.0.0.1, user_session, /auth/oauth/logout/undefined, DELETE, {}"}
+{"level":"error","ts":1685346794.975163,"msg":"missing Authorization header"}
+{"level":"info","ts":1685346797.5299459,"msg":"127.0.0.1, user_session, /auth/oauth/login, POST, {}"}
+{"level":"error","ts":1685346797.531878,"msg":"incorrect password or email"}
+{"level":"info","ts":1685346799.2227917,"msg":"127.0.0.1, user_session, /auth/oauth/login, POST, {}"}
+{"level":"error","ts":1685346799.2238345,"msg":"incorrect password or email"}
+{"level":"info","ts":1685346799.7340825,"msg":"127.0.0.1, user_session, /auth/oauth/login, POST, {}"}
+{"level":"error","ts":1685346799.7350988,"msg":"incorrect password or email"}
+{"level":"info","ts":1685346800.0153594,"msg":"127.0.0.1, user_session, /auth/oauth/login, POST, {}"}
+{"level":"error","ts":1685346800.0163143,"msg":"incorrect password or email"}
+{"level":"info","ts":1685346802.7979047,"msg":"127.0.0.1, user_session, /auth/oauth/login, POST, {}"}
+{"level":"info","ts":1685346802.8753994,"msg":"127.0.0.1, user_session, /api/v1/accounts/me, GET, {}"}
+{"level":"info","ts":1685346802.883799,"msg":"127.0.0.1, user_session, /api/v1/accounts/policies/ui, GET, {}"}
+{"level":"info","ts":1685346802.927153,"msg":"127.0.0.1, user_session, /api/v1/exams/company/1, GET, {}"}
+{"level":"info","ts":1685346802.9291763,"msg":"127.0.0.1, user_session, /api/v1/exams/company/1, GET, {}"}
+{"level":"info","ts":1685346804.0315018,"msg":"127.0.0.1, user_session, /api/v1/accounts/1, GET, {}"}
+{"level":"info","ts":1685346804.0347183,"msg":"127.0.0.1, user_session, /api/v1/accounts/1, GET, {}"}
+{"level":"info","ts":1685346804.6320179,"msg":"127.0.0.1, user_session, /api/v1/exams/company/1, GET, {}"}
+{"level":"info","ts":1685346804.635878,"msg":"127.0.0.1, user_session, /api/v1/exams/company/1, GET, {}"}
+{"level":"info","ts":1685346805.0584924,"msg":"127.0.0.1, user_session, /api/v1/accounts/1, GET, {}"}
+{"level":"info","ts":1685346805.061874,"msg":"127.0.0.1, user_session, /api/v1/accounts/1, GET, {}"}
+{"level":"info","ts":1685346805.3890672,"msg":"127.0.0.1, user_session, /api/v1/exams/company/1, GET, {}"}
+{"level":"info","ts":1685346805.392204,"msg":"127.0.0.1, user_session, /api/v1/exams/company/1, GET, {}"}
+{"level":"info","ts":1685346806.9192996,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685346806.9226542,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685346812.5284257,"msg":"127.0.0.1, user_session, /auth/oauth/login, POST, {}"}
+{"level":"info","ts":1685346812.6000574,"msg":"127.0.0.1, user_session, /api/v1/accounts/me, GET, {}"}
+{"level":"info","ts":1685346812.605854,"msg":"127.0.0.1, user_session, /api/v1/accounts/policies/ui, GET, {}"}
+{"level":"info","ts":1685346812.6402931,"msg":"127.0.0.1, user_session, /api/v1/exams/company/1, GET, {}"}
+{"level":"info","ts":1685346812.6427617,"msg":"127.0.0.1, user_session, /api/v1/exams/company/1, GET, {}"}
+{"level":"info","ts":1685346813.697299,"msg":"127.0.0.1, user_session, /api/v1/accounts/1, GET, {}"}
+{"level":"info","ts":1685346813.7012208,"msg":"127.0.0.1, user_session, /api/v1/accounts/1, GET, {}"}
+{"level":"info","ts":1685346814.8050673,"msg":"127.0.0.1, user_session, /api/v1/system/roles, GET, {}"}
+{"level":"info","ts":1685346814.8080108,"msg":"127.0.0.1, user_session, /api/v1/system/roles, GET, {}"}
+{"level":"info","ts":1685346824.8688774,"msg":"127.0.0.1, user_session, /api/v1/accounts/, POST, {\"companyId\":1,\"email\":\"saif@company.com\",\"mobile\":\"0798726136\",\"name\":\"saif\",\"password\":\"123\",\"roleId\":2}"}
+{"level":"info","ts":1685346824.9521103,"msg":"127.0.0.1, user_session, /api/v1/accounts/1, GET, {}"}
+{"level":"info","ts":1685346824.9542239,"msg":"127.0.0.1, user_session, /api/v1/accounts/1, GET, {}"}
+{"level":"info","ts":1685346827.0197892,"msg":"127.0.0.1, user_session, /api/v1/exams/company/1, GET, {}"}
+{"level":"info","ts":1685346827.0231698,"msg":"127.0.0.1, user_session, /api/v1/exams/company/1, GET, {}"}
+{"level":"info","ts":1685346827.5287244,"msg":"127.0.0.1, user_session, /api/v1/accounts/1, GET, {}"}
+{"level":"info","ts":1685346827.5324943,"msg":"127.0.0.1, user_session, /api/v1/accounts/1, GET, {}"}
+{"level":"info","ts":1685346828.1858091,"msg":"127.0.0.1, user_session, /api/v1/exams/company/1, GET, {}"}
+{"level":"info","ts":1685346828.1894991,"msg":"127.0.0.1, user_session, /api/v1/exams/company/1, GET, {}"}
+{"level":"info","ts":1685346828.4737952,"msg":"127.0.0.1, user_session, /api/v1/accounts/1, GET, {}"}
+{"level":"info","ts":1685346828.4769876,"msg":"127.0.0.1, user_session, /api/v1/accounts/1, GET, {}"}
+{"level":"info","ts":1685346828.8298495,"msg":"127.0.0.1, user_session, /api/v1/exams/company/1, GET, {}"}
+{"level":"info","ts":1685346828.8338757,"msg":"127.0.0.1, user_session, /api/v1/exams/company/1, GET, {}"}
+{"level":"info","ts":1685346829.1230147,"msg":"127.0.0.1, user_session, /api/v1/accounts/1, GET, {}"}
+{"level":"info","ts":1685346829.1261232,"msg":"127.0.0.1, user_session, /api/v1/accounts/1, GET, {}"}
+{"level":"info","ts":1685346835.4289975,"msg":"127.0.0.1, user_session, /api/v1/accounts/1, GET, {}"}
+{"level":"info","ts":1685346835.4429538,"msg":"127.0.0.1, user_session, /api/v1/accounts/1, GET, {}"}
+{"level":"info","ts":1685346853.375219,"msg":"127.0.0.1, user_session, /api/v1/accounts/1, GET, {}"}
+{"level":"info","ts":1685346853.3912604,"msg":"127.0.0.1, user_session, /api/v1/accounts/1, GET, {}"}
+{"level":"info","ts":1685346867.8830838,"msg":"127.0.0.1, user_session, /api/v1/accounts/1, GET, {}"}
+{"level":"info","ts":1685346867.8873947,"msg":"127.0.0.1, user_session, /api/v1/accounts/1, GET, {}"}
+{"level":"info","ts":1685346898.0567732,"msg":"127.0.0.1, user_session, /api/v1/accounts/company/1, GET, {}"}
+{"level":"info","ts":1685346898.066191,"msg":"127.0.0.1, user_session, /api/v1/accounts/company/1, GET, {}"}
+{"level":"info","ts":1685346901.3470953,"msg":"127.0.0.1, user_session, /api/v1/exams/company/1, GET, {}"}
+{"level":"info","ts":1685346901.3507557,"msg":"127.0.0.1, user_session, /api/v1/exams/company/1, GET, {}"}
+{"level":"info","ts":1685346907.5029721,"msg":"127.0.0.1, user_session, /api/v1/exams/, POST, {\"companyId\":1,\"desc\":\"test\",\"duration\":50,\"name\":\"test\",\"passingScore\":50}"}
+{"level":"info","ts":1685346907.551369,"msg":"127.0.0.1, user_session, /api/v1/exams/company/1, GET, {}"}
+{"level":"info","ts":1685346907.5547507,"msg":"127.0.0.1, user_session, /api/v1/exams/company/1, GET, {}"}
+{"level":"info","ts":1685346908.7392015,"msg":"127.0.0.1, user_session, /api/v1/accounts/company/1, GET, {}"}
+{"level":"info","ts":1685346908.7423778,"msg":"127.0.0.1, user_session, /api/v1/accounts/company/1, GET, {}"}
+{"level":"info","ts":1685346911.0874522,"msg":"127.0.0.1, user_session, /auth/oauth/logout/undefined, DELETE, {}"}
+{"level":"error","ts":1685346911.087554,"msg":"missing Authorization header"}
+{"level":"info","ts":1685346912.6034403,"msg":"127.0.0.1, user_session, /auth/oauth/login, POST, {}"}
+{"level":"info","ts":1685346912.6743062,"msg":"127.0.0.1, user_session, /api/v1/accounts/me, GET, {}"}
+{"level":"info","ts":1685346912.6796572,"msg":"127.0.0.1, user_session, /api/v1/accounts/policies/ui, GET, {}"}
+{"level":"info","ts":1685346912.7151136,"msg":"127.0.0.1, user_session, /api/v1/exams/company/1, GET, {}"}
+{"level":"info","ts":1685346912.7196074,"msg":"127.0.0.1, user_session, /api/v1/exams/company/1, GET, {}"}
+{"level":"info","ts":1685346913.7634885,"msg":"127.0.0.1, user_session, /api/v1/accounts/company/1, GET, {}"}
+{"level":"info","ts":1685346913.7720387,"msg":"127.0.0.1, user_session, /api/v1/accounts/company/1, GET, {}"}
+{"level":"info","ts":1685346915.0665038,"msg":"127.0.0.1, user_session, /api/v1/system/roles, GET, {}"}
+{"level":"error","ts":1685346915.0672152,"msg":"unauthorized to access this resource"}
+{"level":"info","ts":1685346915.0681808,"msg":"127.0.0.1, user_session, /api/v1/system/roles, GET, {}"}
+{"level":"error","ts":1685346915.0688052,"msg":"unauthorized to access this resource"}
+{"level":"info","ts":1685346918.326852,"msg":"127.0.0.1, user_session, /api/v1/accounts/company/1, GET, {}"}
+{"level":"info","ts":1685346918.331348,"msg":"127.0.0.1, user_session, /api/v1/accounts/company/1, GET, {}"}
+{"level":"info","ts":1685347053.0947466,"msg":"127.0.0.1, user_session, /api/v1/accounts/company/1, GET, {}"}
+{"level":"info","ts":1685347053.0996504,"msg":"127.0.0.1, user_session, /api/v1/accounts/company/1, GET, {}"}
+{"level":"info","ts":1685347122.827131,"msg":"127.0.0.1, user_session, /api/v1/accounts/policies/ui, GET, {}"}
+{"level":"info","ts":1685347143.9264367,"msg":"127.0.0.1, user_session, /api/v1/accounts/company/1, GET, {}"}
+{"level":"info","ts":1685347143.9302979,"msg":"127.0.0.1, user_session, /api/v1/accounts/company/1, GET, {}"}
+{"level":"info","ts":1685347214.406069,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685347214.4113626,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685347214.9047623,"msg":"127.0.0.1, user_session, /api/v1/exams/company/1, GET, {}"}
+{"level":"info","ts":1685347214.9085417,"msg":"127.0.0.1, user_session, /api/v1/exams/company/1, GET, {}"}
+{"level":"info","ts":1685347215.6797118,"msg":"127.0.0.1, user_session, /api/v1/accounts/company/1, GET, {}"}
+{"level":"info","ts":1685347215.684948,"msg":"127.0.0.1, user_session, /api/v1/accounts/company/1, GET, {}"}
+{"level":"info","ts":1685347258.9998555,"msg":"127.0.0.1, user_session, /api/v1/accounts/company/1, GET, {}"}
+{"level":"info","ts":1685347259.006203,"msg":"127.0.0.1, user_session, /api/v1/accounts/company/1, GET, {}"}
+{"level":"info","ts":1685347281.4826453,"msg":"127.0.0.1, user_session, /api/v1/accounts/company/1, GET, {}"}
+{"level":"info","ts":1685347300.8855948,"msg":"127.0.0.1, user_session, /api/v1/accounts/company/1, GET, {}"}
+{"level":"info","ts":1685347313.8363628,"msg":"127.0.0.1, user_session, /api/v1/accounts/company/1, GET, {}"}
+{"level":"info","ts":1685347328.0080497,"msg":"127.0.0.1, user_session, /auth/oauth/logout/undefined, DELETE, {}"}
+{"level":"error","ts":1685347328.0081537,"msg":"missing Authorization header"}
+{"level":"info","ts":1685347330.990322,"msg":"127.0.0.1, user_session, /auth/oauth/login, POST, {}"}
+{"level":"error","ts":1685347331.0460699,"msg":"incorrect password or email"}
+{"level":"info","ts":1685347332.911524,"msg":"127.0.0.1, user_session, /auth/oauth/login, POST, {}"}
+{"level":"info","ts":1685347333.7112548,"msg":"127.0.0.1, user_session, /api/v1/accounts/me, GET, {}"}
+{"level":"info","ts":1685347333.7204103,"msg":"127.0.0.1, user_session, /api/v1/accounts/policies/ui, GET, {}"}
+{"level":"info","ts":1685347333.7636466,"msg":"127.0.0.1, user_session, /api/v1/exams/company/1, GET, {}"}
+{"level":"info","ts":1685347333.7696779,"msg":"127.0.0.1, user_session, /api/v1/exams/company/1, GET, {}"}
+{"level":"info","ts":1685347335.3039134,"msg":"127.0.0.1, user_session, /api/v1/accounts/company/1, GET, {}"}
+{"level":"info","ts":1685347335.3079631,"msg":"127.0.0.1, user_session, /api/v1/accounts/company/1, GET, {}"}
+{"level":"info","ts":1685347383.5498757,"msg":"127.0.0.1, user_session, /api/v1/accounts/company/1, GET, {}"}
+{"level":"info","ts":1685347383.5539286,"msg":"127.0.0.1, user_session, /api/v1/accounts/company/1, GET, {}"}
+{"level":"info","ts":1685347389.076376,"msg":"127.0.0.1, user_session, /api/v1/exams/company/1, GET, {}"}
+{"level":"info","ts":1685347389.0796826,"msg":"127.0.0.1, user_session, /api/v1/exams/company/1, GET, {}"}
+{"level":"info","ts":1685347471.1381106,"msg":"127.0.0.1, user_session, /api/v1/accounts/company/1, GET, {}"}
+{"level":"info","ts":1685347471.1410177,"msg":"127.0.0.1, user_session, /api/v1/accounts/company/1, GET, {}"}
+{"level":"info","ts":1685347471.4942129,"msg":"127.0.0.1, user_session, /api/v1/exams/company/1, GET, {}"}
+{"level":"info","ts":1685347471.4969878,"msg":"127.0.0.1, user_session, /api/v1/exams/company/1, GET, {}"}
+{"level":"info","ts":1685347472.411521,"msg":"127.0.0.1, user_session, /api/v1/accounts/company/1, GET, {}"}
+{"level":"info","ts":1685347472.415366,"msg":"127.0.0.1, user_session, /api/v1/accounts/company/1, GET, {}"}
+{"level":"info","ts":1685347507.235209,"msg":"127.0.0.1, user_session, /api/v1/exams/company/1, GET, {}"}
+{"level":"info","ts":1685347507.2389772,"msg":"127.0.0.1, user_session, /api/v1/exams/company/1, GET, {}"}
+{"level":"info","ts":1685347507.7798007,"msg":"127.0.0.1, user_session, /api/v1/accounts/company/1, GET, {}"}
+{"level":"info","ts":1685347507.7842364,"msg":"127.0.0.1, user_session, /api/v1/accounts/company/1, GET, {}"}
+{"level":"info","ts":1685347531.971314,"msg":"127.0.0.1, user_session, /auth/oauth/logout/undefined, DELETE, {}"}
+{"level":"error","ts":1685347531.9713998,"msg":"missing Authorization header"}
+{"level":"info","ts":1685347533.087369,"msg":"127.0.0.1, user_session, /auth/oauth/login, POST, {}"}
+{"level":"info","ts":1685347533.1579506,"msg":"127.0.0.1, user_session, /api/v1/accounts/me, GET, {}"}
+{"level":"info","ts":1685347533.163053,"msg":"127.0.0.1, user_session, /api/v1/accounts/policies/ui, GET, {}"}
+{"level":"info","ts":1685347533.1968756,"msg":"127.0.0.1, user_session, /api/v1/exams/company/1, GET, {}"}
+{"level":"info","ts":1685347533.2016828,"msg":"127.0.0.1, user_session, /api/v1/exams/company/1, GET, {}"}
+{"level":"info","ts":1685347534.147649,"msg":"127.0.0.1, user_session, /api/v1/accounts/company/1, GET, {}"}
+{"level":"info","ts":1685347534.1523137,"msg":"127.0.0.1, user_session, /api/v1/accounts/company/1, GET, {}"}
+{"level":"info","ts":1685347559.7915668,"msg":"127.0.0.1, user_session, /api/v1/exams/company/1, GET, {}"}
+{"level":"info","ts":1685347559.7952166,"msg":"127.0.0.1, user_session, /api/v1/exams/company/1, GET, {}"}
+{"level":"info","ts":1685347560.6028368,"msg":"127.0.0.1, user_session, /api/v1/accounts/company/1, GET, {}"}
+{"level":"info","ts":1685347560.6060002,"msg":"127.0.0.1, user_session, /api/v1/accounts/company/1, GET, {}"}
+{"level":"info","ts":1685347560.929093,"msg":"127.0.0.1, user_session, /api/v1/exams/company/1, GET, {}"}
+{"level":"info","ts":1685347560.9340253,"msg":"127.0.0.1, user_session, /api/v1/exams/company/1, GET, {}"}
+{"level":"info","ts":1685347561.4919736,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685347561.495415,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685347565.0340734,"msg":"127.0.0.1, user_session, /api/v1/accounts/company/1, GET, {}"}
+{"level":"info","ts":1685347565.0371296,"msg":"127.0.0.1, user_session, /api/v1/accounts/company/1, GET, {}"}
+{"level":"info","ts":1685347567.3604987,"msg":"127.0.0.1, user_session, /api/v1/exams/company/1, GET, {}"}
+{"level":"info","ts":1685347567.366224,"msg":"127.0.0.1, user_session, /api/v1/exams/company/1, GET, {}"}
+{"level":"info","ts":1685347572.3217723,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/1, GET, {}"}
+{"level":"info","ts":1685347572.3283575,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/1, GET, {}"}
+{"level":"info","ts":1685347573.4865456,"msg":"127.0.0.1, user_session, /api/v1/exams/1, GET, {}"}
+{"level":"info","ts":1685347573.4918056,"msg":"127.0.0.1, user_session, /api/v1/exams/1, GET, {}"}
+{"level":"info","ts":1685347587.58853,"msg":"127.0.0.1, user_session, /api/v1/questions/, POST, {\"examId\":1,\"options\":[{\"isCorrect\":true,\"text\":\"u003cpu003edqwdqwdu003c/pu003e\"},{\"isCorrect\":true,\"text\":\"u003cpu003edqwdu003c/pu003e\"},{\"isCorrect\":false,\"text\":\"\"}],\"text\":\"u003cpu003edwdwqdu003c/pu003e\"}"}
+{"level":"info","ts":1685347587.6372342,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/1, GET, {}"}
+{"level":"info","ts":1685347587.6411953,"msg":"127.0.0.1, user_session, /api/v1/questions/byId/1, GET, {}"}
+{"level":"info","ts":1685347608.944022,"msg":"127.0.0.1, user_session, /api/v1/accounts/company/1, GET, {}"}
+{"level":"info","ts":1685347608.9478064,"msg":"127.0.0.1, user_session, /api/v1/accounts/company/1, GET, {}"}
+{"level":"info","ts":1685347618.9188569,"msg":"127.0.0.1, user_session, /api/v1/exams/company/1, GET, {}"}
+{"level":"info","ts":1685347618.9227843,"msg":"127.0.0.1, user_session, /api/v1/exams/company/1, GET, {}"}
+{"level":"info","ts":1685347671.5757203,"msg":"127.0.0.1, user_session, /auth/oauth/login, POST, {}"}
+{"level":"info","ts":1685347673.9246132,"msg":"127.0.0.1, user_session, /api/v1/accounts/policies/ui, GET, {}"}
+{"level":"info","ts":1685347685.2834191,"msg":"127.0.0.1, user_session, /api/v1/accounts/company/1, GET, {}"}
+{"level":"info","ts":1685347685.289653,"msg":"127.0.0.1, user_session, /api/v1/accounts/company/1, GET, {}"}
+{"level":"info","ts":1685347686.8062732,"msg":"127.0.0.1, user_session, /api/v1/exams/company/1, GET, {}"}
+{"level":"info","ts":1685347686.809618,"msg":"127.0.0.1, user_session, /api/v1/exams/company/1, GET, {}"}
+{"level":"info","ts":1685347702.2398963,"msg":"127.0.0.1, user_session, /api/v1/accounts, POST, {}"}
+{"level":"error","ts":1685347702.2408557,"msg":"unauthorized to access this resource"}
+{"level":"info","ts":1685347717.6455984,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685347717.6528895,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685347718.4917321,"msg":"127.0.0.1, user_session, /api/v1/exams/company/1, GET, {}"}
+{"level":"info","ts":1685347718.4954717,"msg":"127.0.0.1, user_session, /api/v1/exams/company/1, GET, {}"}
+{"level":"info","ts":1685347718.755947,"msg":"127.0.0.1, user_session, /api/v1/accounts/company/1, GET, {}"}
+{"level":"info","ts":1685347718.7593658,"msg":"127.0.0.1, user_session, /api/v1/accounts/company/1, GET, {}"}
+{"level":"info","ts":1685347719.408476,"msg":"127.0.0.1, user_session, /api/v1/exams/company/1, GET, {}"}
+{"level":"info","ts":1685347719.412954,"msg":"127.0.0.1, user_session, /api/v1/exams/company/1, GET, {}"}
+{"level":"info","ts":1685347728.639874,"msg":"127.0.0.1, user_session, /api/v1/accounts/company/1, GET, {}"}
+{"level":"info","ts":1685347728.642796,"msg":"127.0.0.1, user_session, /api/v1/accounts/company/1, GET, {}"}
+{"level":"info","ts":1685347729.02826,"msg":"127.0.0.1, user_session, /api/v1/exams/company/1, GET, {}"}
+{"level":"info","ts":1685347729.0332901,"msg":"127.0.0.1, user_session, /api/v1/exams/company/1, GET, {}"}
+{"level":"info","ts":1685347732.472455,"msg":"127.0.0.1, user_session, /api/v1/accounts/company/1, GET, {}"}
+{"level":"info","ts":1685347732.4766593,"msg":"127.0.0.1, user_session, /api/v1/accounts/company/1, GET, {}"}
+{"level":"info","ts":1685347733.2173166,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685347733.222138,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685347733.953755,"msg":"127.0.0.1, user_session, /api/v1/exams/1, GET, {}"}
+{"level":"info","ts":1685347733.9597924,"msg":"127.0.0.1, user_session, /api/v1/exams/1, GET, {}"}
+{"level":"info","ts":1685347735.9148655,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685347735.9200706,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685347737.0066228,"msg":"127.0.0.1, user_session, /api/v1/exams/company/1, GET, {}"}
+{"level":"info","ts":1685347737.009632,"msg":"127.0.0.1, user_session, /api/v1/exams/company/1, GET, {}"}
+{"level":"info","ts":1685347738.1357841,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685347738.1405964,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685347738.9886153,"msg":"127.0.0.1, user_session, /api/v1/exams/1, GET, {}"}
+{"level":"info","ts":1685347738.9938054,"msg":"127.0.0.1, user_session, /api/v1/exams/1, GET, {}"}
+{"level":"info","ts":1685347912.6079807,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685347912.6139445,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685347913.508853,"msg":"127.0.0.1, user_session, /api/v1/exams/company/1, GET, {}"}
+{"level":"info","ts":1685347913.5123885,"msg":"127.0.0.1, user_session, /api/v1/exams/company/1, GET, {}"}
+{"level":"info","ts":1685347914.076503,"msg":"127.0.0.1, user_session, /api/v1/accounts/company/1, GET, {}"}
+{"level":"info","ts":1685347914.0808556,"msg":"127.0.0.1, user_session, /api/v1/accounts/company/1, GET, {}"}
+{"level":"info","ts":1685347914.5269253,"msg":"127.0.0.1, user_session, /api/v1/exams/company/1, GET, {}"}
+{"level":"info","ts":1685347914.5314612,"msg":"127.0.0.1, user_session, /api/v1/exams/company/1, GET, {}"}
+{"level":"info","ts":1685347914.831003,"msg":"127.0.0.1, user_session, /api/v1/accounts/company/1, GET, {}"}
+{"level":"info","ts":1685347914.8364196,"msg":"127.0.0.1, user_session, /api/v1/accounts/company/1, GET, {}"}
+{"level":"info","ts":1685347915.1108174,"msg":"127.0.0.1, user_session, /api/v1/exams/company/1, GET, {}"}
+{"level":"info","ts":1685347915.1147263,"msg":"127.0.0.1, user_session, /api/v1/exams/company/1, GET, {}"}
+{"level":"info","ts":1685347915.4088042,"msg":"127.0.0.1, user_session, /api/v1/accounts/company/1, GET, {}"}
+{"level":"info","ts":1685347915.4127295,"msg":"127.0.0.1, user_session, /api/v1/accounts/company/1, GET, {}"}
+{"level":"info","ts":1685347916.1264105,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685347916.1305032,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685347916.8399584,"msg":"127.0.0.1, user_session, /api/v1/exams/company/1, GET, {}"}
+{"level":"info","ts":1685347916.8440304,"msg":"127.0.0.1, user_session, /api/v1/exams/company/1, GET, {}"}
+{"level":"info","ts":1685347917.1439474,"msg":"127.0.0.1, user_session, /api/v1/accounts/company/1, GET, {}"}
+{"level":"info","ts":1685347917.1480277,"msg":"127.0.0.1, user_session, /api/v1/accounts/company/1, GET, {}"}
+{"level":"info","ts":1685347920.319903,"msg":"127.0.0.1, user_session, /api/v1/exams/company/1, GET, {}"}
+{"level":"info","ts":1685347920.3224697,"msg":"127.0.0.1, user_session, /api/v1/exams/company/1, GET, {}"}
+{"level":"info","ts":1685347921.367697,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685347921.372463,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685348812.9247413,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685348812.940529,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685348821.1439204,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685348821.1482444,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685348825.9274793,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685348825.9302843,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685349345.821662,"msg":"127.0.0.1, user_session, /api/v1/exams/company/1, GET, {}"}
+{"level":"info","ts":1685349345.8242042,"msg":"127.0.0.1, user_session, /api/v1/accounts/company/1, GET, {}"}
+{"level":"info","ts":1685349345.8344328,"msg":"127.0.0.1, user_session, /api/v1/exams/company/1, GET, {}"}
+{"level":"info","ts":1685349345.8515286,"msg":"127.0.0.1, user_session, /api/v1/accounts/company/1, GET, {}"}
+{"level":"info","ts":1685349346.1410527,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685349346.1455445,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685349346.906062,"msg":"127.0.0.1, user_session, /api/v1/exams/company/1, GET, {}"}
+{"level":"info","ts":1685349346.9095922,"msg":"127.0.0.1, user_session, /api/v1/exams/company/1, GET, {}"}
+{"level":"info","ts":1685349347.2388039,"msg":"127.0.0.1, user_session, /api/v1/accounts/company/1, GET, {}"}
+{"level":"info","ts":1685349347.2442162,"msg":"127.0.0.1, user_session, /api/v1/accounts/company/1, GET, {}"}
+{"level":"info","ts":1685349356.308384,"msg":"127.0.0.1, user_session, /api/v1/exams/company/1, GET, {}"}
+{"level":"info","ts":1685349356.3112845,"msg":"127.0.0.1, user_session, /api/v1/exams/company/1, GET, {}"}
+{"level":"info","ts":1685349357.396602,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685349357.4009461,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685349358.7342246,"msg":"127.0.0.1, user_session, /api/v1/exams/1, GET, {}"}
+{"level":"info","ts":1685349358.7407672,"msg":"127.0.0.1, user_session, /api/v1/exams/1, GET, {}"}
+{"level":"info","ts":1685349427.9540823,"msg":"127.0.0.1, user_session, /api/v1/exams/1, GET, {}"}
+{"level":"info","ts":1685349427.9581628,"msg":"127.0.0.1, user_session, /api/v1/exams/1, GET, {}"}
+{"level":"info","ts":1685349439.3986425,"msg":"127.0.0.1, user_session, /api/v1/exams/company/1, GET, {}"}
+{"level":"info","ts":1685349439.4036455,"msg":"127.0.0.1, user_session, /api/v1/exams/company/1, GET, {}"}
+{"level":"info","ts":1685349439.7187622,"msg":"127.0.0.1, user_session, /api/v1/accounts/company/1, GET, {}"}
+{"level":"info","ts":1685349439.724575,"msg":"127.0.0.1, user_session, /api/v1/accounts/company/1, GET, {}"}
+{"level":"info","ts":1685349440.1236444,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685349440.1294768,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685349441.7704513,"msg":"127.0.0.1, user_session, /auth/oauth/logout/undefined, DELETE, {}"}
+{"level":"error","ts":1685349441.7705529,"msg":"missing Authorization header"}
+{"level":"info","ts":1685349445.1854196,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685349445.185507,"msg":"missing Authorization header"}
+{"level":"info","ts":1685349445.1866717,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685349445.1867437,"msg":"missing Authorization header"}
+{"level":"info","ts":1685349513.9039016,"msg":"127.0.0.1, user_session, /auth/oauth/login, POST, {}"}
+{"level":"info","ts":1685349513.9787755,"msg":"127.0.0.1, user_session, /api/v1/accounts/me, GET, {}"}
+{"level":"info","ts":1685349513.9874156,"msg":"127.0.0.1, user_session, /api/v1/accounts/policies/ui, GET, {}"}
+{"level":"info","ts":1685349514.0242956,"msg":"127.0.0.1, user_session, /api/v1/exams/company/1, GET, {}"}
+{"level":"info","ts":1685349514.0287893,"msg":"127.0.0.1, user_session, /api/v1/exams/company/1, GET, {}"}
+{"level":"info","ts":1685349515.6554186,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685349515.6601331,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685349631.21877,"msg":"127.0.0.1, user_session, /api/v1/exams/1, GET, {}"}
+{"level":"info","ts":1685349631.2253592,"msg":"127.0.0.1, user_session, /api/v1/exams/1, GET, {}"}
+{"level":"info","ts":1685349633.4641018,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685349633.4714782,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685349687.919235,"msg":"127.0.0.1, user_session, /auth/oauth/login, POST, {}"}
+{"level":"info","ts":1685349688.0112243,"msg":"127.0.0.1, user_session, /api/v1/accounts/me, GET, {}"}
+{"level":"info","ts":1685349688.01765,"msg":"127.0.0.1, user_session, /api/v1/accounts/policies/ui, GET, {}"}
+{"level":"info","ts":1685349688.0553098,"msg":"127.0.0.1, user_session, /api/v1/exams/company/1, GET, {}"}
+{"level":"info","ts":1685349688.0589778,"msg":"127.0.0.1, user_session, /api/v1/exams/company/1, GET, {}"}
+{"level":"info","ts":1685349880.377184,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685349880.3862295,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685349881.5227225,"msg":"127.0.0.1, user_session, /api/v1/exams/1, GET, {}"}
+{"level":"info","ts":1685349881.5291262,"msg":"127.0.0.1, user_session, /api/v1/exams/1, GET, {}"}
+{"level":"info","ts":1685349884.4452639,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685349884.450314,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685349925.8881767,"msg":"127.0.0.1, user_session, /auth/oauth/login, POST, {}"}
+{"level":"error","ts":1685349925.9405487,"msg":"incorrect password or email"}
+{"level":"info","ts":1685349927.6145146,"msg":"127.0.0.1, user_session, /auth/oauth/login, POST, {}"}
+{"level":"info","ts":1685349927.6856766,"msg":"127.0.0.1, user_session, /api/v1/accounts/me, GET, {}"}
+{"level":"info","ts":1685349927.6922243,"msg":"127.0.0.1, user_session, /api/v1/accounts/policies/ui, GET, {}"}
+{"level":"info","ts":1685349927.728253,"msg":"127.0.0.1, user_session, /api/v1/exams/company/1, GET, {}"}
+{"level":"info","ts":1685349927.7321022,"msg":"127.0.0.1, user_session, /api/v1/exams/company/1, GET, {}"}
+{"level":"info","ts":1685350016.2282088,"msg":"127.0.0.1, user_session, /api/v1/system/roles, GET, {}"}
+{"level":"error","ts":1685350016.2283492,"msg":"missing Authorization header"}
+{"level":"info","ts":1685350016.229381,"msg":"127.0.0.1, user_session, /api/v1/system/roles, GET, {}"}
+{"level":"error","ts":1685350016.2294347,"msg":"missing Authorization header"}
+{"level":"info","ts":1685350018.789106,"msg":"127.0.0.1, user_session, /api/v1/system/roles, GET, {}"}
+{"level":"error","ts":1685350018.7891805,"msg":"missing Authorization header"}
+{"level":"info","ts":1685350018.790398,"msg":"127.0.0.1, user_session, /api/v1/system/roles, GET, {}"}
+{"level":"error","ts":1685350018.7904513,"msg":"missing Authorization header"}
+{"level":"info","ts":1685350130.3006718,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685350130.3008595,"msg":"missing Authorization header"}
+{"level":"info","ts":1685350130.303026,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685350130.3031785,"msg":"missing Authorization header"}
+{"level":"info","ts":1685350130.3862193,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685350130.3863657,"msg":"missing Authorization header"}
+{"level":"info","ts":1685350130.3883903,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685350130.3884997,"msg":"missing Authorization header"}
+{"level":"info","ts":1685350130.4605591,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685350130.4606616,"msg":"missing Authorization header"}
+{"level":"info","ts":1685350130.462416,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685350130.4625158,"msg":"missing Authorization header"}
+{"level":"info","ts":1685350130.5331879,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685350130.5333128,"msg":"missing Authorization header"}
+{"level":"info","ts":1685350130.5355513,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685350130.5356667,"msg":"missing Authorization header"}
+{"level":"info","ts":1685350130.6068032,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685350130.606924,"msg":"missing Authorization header"}
+{"level":"info","ts":1685350130.609247,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685350130.6093554,"msg":"missing Authorization header"}
+{"level":"info","ts":1685350130.6682365,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685350130.6683517,"msg":"missing Authorization header"}
+{"level":"info","ts":1685350130.6715617,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685350130.671693,"msg":"missing Authorization header"}
+{"level":"info","ts":1685350130.744386,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685350130.7445533,"msg":"missing Authorization header"}
+{"level":"info","ts":1685350130.751204,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685350130.7513397,"msg":"missing Authorization header"}
+{"level":"info","ts":1685350130.8256218,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685350130.825744,"msg":"missing Authorization header"}
+{"level":"info","ts":1685350130.8275485,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685350130.827661,"msg":"missing Authorization header"}
+{"level":"info","ts":1685350130.9431648,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685350130.9433231,"msg":"missing Authorization header"}
+{"level":"info","ts":1685350130.9459152,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685350130.9460306,"msg":"missing Authorization header"}
+{"level":"info","ts":1685350131.0170555,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685350131.017196,"msg":"missing Authorization header"}
+{"level":"info","ts":1685350131.0201163,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685350131.02023,"msg":"missing Authorization header"}
+{"level":"info","ts":1685350131.0794592,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685350131.079577,"msg":"missing Authorization header"}
+{"level":"info","ts":1685350131.083444,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685350131.0835674,"msg":"missing Authorization header"}
+{"level":"info","ts":1685350131.1417904,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685350131.1419532,"msg":"missing Authorization header"}
+{"level":"info","ts":1685350131.145982,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685350131.1461,"msg":"missing Authorization header"}
+{"level":"info","ts":1685350131.1969373,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685350131.1970565,"msg":"missing Authorization header"}
+{"level":"info","ts":1685350131.1995728,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685350131.1997015,"msg":"missing Authorization header"}
+{"level":"info","ts":1685350131.2622464,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685350131.26232,"msg":"missing Authorization header"}
+{"level":"info","ts":1685350131.2677898,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685350131.2679248,"msg":"missing Authorization header"}
+{"level":"info","ts":1685350131.3302124,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685350131.3303132,"msg":"missing Authorization header"}
+{"level":"info","ts":1685350131.3344486,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685350131.334584,"msg":"missing Authorization header"}
+{"level":"info","ts":1685350131.4001708,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685350131.40033,"msg":"missing Authorization header"}
+{"level":"info","ts":1685350131.4025218,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685350131.4026473,"msg":"missing Authorization header"}
+{"level":"info","ts":1685350131.4553578,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685350131.4554875,"msg":"missing Authorization header"}
+{"level":"info","ts":1685350131.4600735,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685350131.4601765,"msg":"missing Authorization header"}
+{"level":"info","ts":1685350131.5096211,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685350131.509705,"msg":"missing Authorization header"}
+{"level":"info","ts":1685350131.5113924,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685350131.511477,"msg":"missing Authorization header"}
+{"level":"info","ts":1685350131.5611331,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685350131.5612488,"msg":"missing Authorization header"}
+{"level":"info","ts":1685350131.5634434,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685350131.5635705,"msg":"missing Authorization header"}
+{"level":"info","ts":1685350131.6120915,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685350131.6121902,"msg":"missing Authorization header"}
+{"level":"info","ts":1685350131.6137118,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685350131.6138012,"msg":"missing Authorization header"}
+{"level":"info","ts":1685350131.6853793,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685350131.685506,"msg":"missing Authorization header"}
+{"level":"info","ts":1685350131.6873384,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685350131.6874716,"msg":"missing Authorization header"}
+{"level":"info","ts":1685350131.7614183,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685350131.76159,"msg":"missing Authorization header"}
+{"level":"info","ts":1685350131.7671778,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685350131.7673173,"msg":"missing Authorization header"}
+{"level":"info","ts":1685350131.8476899,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685350131.8478196,"msg":"missing Authorization header"}
+{"level":"info","ts":1685350131.8540044,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685350131.8541365,"msg":"missing Authorization header"}
+{"level":"info","ts":1685350131.9307144,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685350131.931037,"msg":"missing Authorization header"}
+{"level":"info","ts":1685350131.9374142,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685350131.9375472,"msg":"missing Authorization header"}
+{"level":"info","ts":1685350132.0427408,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685350132.0428984,"msg":"missing Authorization header"}
+{"level":"info","ts":1685350132.0537038,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685350132.0538566,"msg":"missing Authorization header"}
+{"level":"info","ts":1685350132.1012938,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685350132.1014113,"msg":"missing Authorization header"}
+{"level":"info","ts":1685350132.1033638,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685350132.1035202,"msg":"missing Authorization header"}
+{"level":"info","ts":1685350132.1678224,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685350132.1679592,"msg":"missing Authorization header"}
+{"level":"info","ts":1685350132.1728342,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685350132.1729674,"msg":"missing Authorization header"}
+{"level":"info","ts":1685350132.2264678,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685350132.2265856,"msg":"missing Authorization header"}
+{"level":"info","ts":1685350132.2283936,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685350132.2284768,"msg":"missing Authorization header"}
+{"level":"info","ts":1685350132.3203266,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685350132.32049,"msg":"missing Authorization header"}
+{"level":"info","ts":1685350132.3227417,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685350132.3228834,"msg":"missing Authorization header"}
+{"level":"info","ts":1685350132.4026313,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685350132.4027476,"msg":"missing Authorization header"}
+{"level":"info","ts":1685350132.405975,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685350132.4061065,"msg":"missing Authorization header"}
+{"level":"info","ts":1685350132.477171,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685350132.4779255,"msg":"missing Authorization header"}
+{"level":"info","ts":1685350132.4803107,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685350132.4804478,"msg":"missing Authorization header"}
+{"level":"info","ts":1685350132.528546,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685350132.5286484,"msg":"missing Authorization header"}
+{"level":"info","ts":1685350132.529984,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685350132.5300584,"msg":"missing Authorization header"}
+{"level":"info","ts":1685350132.6127489,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685350132.6129153,"msg":"missing Authorization header"}
+{"level":"info","ts":1685350132.6168103,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685350132.6169865,"msg":"missing Authorization header"}
+{"level":"info","ts":1685350132.6704292,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685350132.6705763,"msg":"missing Authorization header"}
+{"level":"info","ts":1685350132.6734736,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685350132.67365,"msg":"missing Authorization header"}
+{"level":"info","ts":1685350132.738699,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685350132.7388906,"msg":"missing Authorization header"}
+{"level":"info","ts":1685350132.7434711,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685350132.7436938,"msg":"missing Authorization header"}
+{"level":"info","ts":1685350132.8088484,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685350132.8089967,"msg":"missing Authorization header"}
+{"level":"info","ts":1685350132.817283,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685350132.817442,"msg":"missing Authorization header"}
+{"level":"info","ts":1685350132.896035,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685350132.8962045,"msg":"missing Authorization header"}
+{"level":"info","ts":1685350132.9031014,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685350132.9032364,"msg":"missing Authorization header"}
+{"level":"info","ts":1685350132.982878,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685350132.983271,"msg":"missing Authorization header"}
+{"level":"info","ts":1685350132.9917634,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685350132.991917,"msg":"missing Authorization header"}
+{"level":"info","ts":1685350133.0594964,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685350133.059643,"msg":"missing Authorization header"}
+{"level":"info","ts":1685350133.0664258,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685350133.0665953,"msg":"missing Authorization header"}
+{"level":"info","ts":1685350133.1718018,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685350133.1720405,"msg":"missing Authorization header"}
+{"level":"info","ts":1685350133.177029,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685350133.1771464,"msg":"missing Authorization header"}
+{"level":"info","ts":1685350133.273398,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685350133.2735417,"msg":"missing Authorization header"}
+{"level":"info","ts":1685350133.280388,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685350133.280614,"msg":"missing Authorization header"}
+{"level":"info","ts":1685350133.4153988,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685350133.4155772,"msg":"missing Authorization header"}
+{"level":"info","ts":1685350133.4191895,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685350133.419346,"msg":"missing Authorization header"}
+{"level":"info","ts":1685350133.5005872,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685350133.500707,"msg":"missing Authorization header"}
+{"level":"info","ts":1685350133.5049424,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685350133.505407,"msg":"missing Authorization header"}
+{"level":"info","ts":1685350133.5709338,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685350133.5710905,"msg":"missing Authorization header"}
+{"level":"info","ts":1685350133.5810392,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685350133.5811563,"msg":"missing Authorization header"}
+{"level":"info","ts":1685350133.6632671,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685350133.6633887,"msg":"missing Authorization header"}
+{"level":"info","ts":1685350133.6723034,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685350133.6724424,"msg":"missing Authorization header"}
+{"level":"info","ts":1685350133.7767653,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685350133.7769132,"msg":"missing Authorization header"}
+{"level":"info","ts":1685350133.7863398,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685350133.786474,"msg":"missing Authorization header"}
+{"level":"info","ts":1685350133.891122,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685350133.891278,"msg":"missing Authorization header"}
+{"level":"info","ts":1685350133.90296,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685350133.903113,"msg":"missing Authorization header"}
+{"level":"info","ts":1685350133.9860327,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685350133.9861472,"msg":"missing Authorization header"}
+{"level":"info","ts":1685350133.9920523,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685350133.9922628,"msg":"missing Authorization header"}
+{"level":"info","ts":1685350134.079833,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685350134.0799737,"msg":"missing Authorization header"}
+{"level":"info","ts":1685350134.0864277,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685350134.086568,"msg":"missing Authorization header"}
+{"level":"info","ts":1685350134.1729178,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685350134.173049,"msg":"missing Authorization header"}
+{"level":"info","ts":1685350134.1804037,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685350134.1805425,"msg":"missing Authorization header"}
+{"level":"info","ts":1685350134.3572853,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685350134.3574004,"msg":"missing Authorization header"}
+{"level":"info","ts":1685350134.3588471,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685350134.358963,"msg":"missing Authorization header"}
+{"level":"info","ts":1685350134.4792309,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685350134.4793575,"msg":"missing Authorization header"}
+{"level":"info","ts":1685350134.4866507,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685350134.486743,"msg":"missing Authorization header"}
+{"level":"info","ts":1685350134.6060627,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685350134.6061769,"msg":"missing Authorization header"}
+{"level":"info","ts":1685350134.613291,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685350134.6134114,"msg":"missing Authorization header"}
+{"level":"info","ts":1685350136.7864149,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685350136.787585,"msg":"expired or invalid token"}
+{"level":"info","ts":1685350136.7991655,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685350136.7992904,"msg":"missing Authorization header"}
+{"level":"info","ts":1685350852.393674,"msg":"127.0.0.1, user_session, /api/v1/system/roles, GET, {}"}
+{"level":"error","ts":1685350852.3937764,"msg":"missing Authorization header"}
+{"level":"info","ts":1685350852.3945482,"msg":"127.0.0.1, user_session, /api/v1/system/roles, GET, {}"}
+{"level":"error","ts":1685350852.3945985,"msg":"missing Authorization header"}
+{"level":"info","ts":1685350873.9053135,"msg":"127.0.0.1, user_session, /auth/oauth/login, POST, {}"}
+{"level":"info","ts":1685350873.9911122,"msg":"127.0.0.1, user_session, /api/v1/accounts/me, GET, {}"}
+{"level":"info","ts":1685350873.9968655,"msg":"127.0.0.1, user_session, /api/v1/accounts/policies/ui, GET, {}"}
+{"level":"info","ts":1685350874.0668416,"msg":"127.0.0.1, user_session, /api/v1/exams/company/1, GET, {}"}
+{"level":"info","ts":1685350874.0703378,"msg":"127.0.0.1, user_session, /api/v1/exams/company/1, GET, {}"}
+{"level":"info","ts":1685350875.307997,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685350875.3120275,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685350877.5728276,"msg":"127.0.0.1, user_session, /api/v1/exams/1, GET, {}"}
+{"level":"info","ts":1685350877.5798736,"msg":"127.0.0.1, user_session, /api/v1/exams/1, GET, {}"}
+{"level":"info","ts":1685350879.5568023,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685350879.5617592,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685350957.9050055,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685350957.9092278,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685351051.3466678,"msg":"127.0.0.1, user_session, /api/v1/system/roles, GET, {}"}
+{"level":"error","ts":1685351051.3467636,"msg":"missing Authorization header"}
+{"level":"info","ts":1685351051.347802,"msg":"127.0.0.1, user_session, /api/v1/system/roles, GET, {}"}
+{"level":"error","ts":1685351051.3478746,"msg":"missing Authorization header"}
+{"level":"info","ts":1685351055.7459536,"msg":"127.0.0.1, user_session, /api/v1/system/roles, GET, {}"}
+{"level":"error","ts":1685351055.7460263,"msg":"missing Authorization header"}
+{"level":"info","ts":1685351055.747241,"msg":"127.0.0.1, user_session, /api/v1/system/roles, GET, {}"}
+{"level":"error","ts":1685351055.7473097,"msg":"missing Authorization header"}
+{"level":"info","ts":1685351094.4204912,"msg":"127.0.0.1, user_session, /api/v1/system/roles, GET, {}"}
+{"level":"error","ts":1685351094.420792,"msg":"missing Authorization header"}
+{"level":"info","ts":1685351094.4227955,"msg":"127.0.0.1, user_session, /api/v1/system/roles, GET, {}"}
+{"level":"error","ts":1685351094.4229288,"msg":"missing Authorization header"}
+{"level":"info","ts":1685357453.2373016,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1685364405.6472318,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1685364640.5944343,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1685364806.80714,"msg":"127.0.0.1, user_session, /auth/oauth/signup, POST, {\"email\":\"saif2@company.com\",\"mobile\":\"12312\",\"name\":\"saifhamdan\",\"password\":\"123\"}"}
+{"level":"info","ts":1685364837.1113496,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685364837.1130385,"msg":"expired or invalid token"}
+{"level":"info","ts":1685364837.1158466,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685364837.1160178,"msg":"missing Authorization header"}
+{"level":"info","ts":1685364843.0919342,"msg":"127.0.0.1, user_session, /auth/oauth/login, POST, {}"}
+{"level":"info","ts":1685364843.1680346,"msg":"127.0.0.1, user_session, /api/v1/accounts/me, GET, {}"}
+{"level":"info","ts":1685364843.175553,"msg":"127.0.0.1, user_session, /api/v1/accounts/policies/ui, GET, {}"}
+{"level":"info","ts":1685364862.3767397,"msg":"127.0.0.1, user_session, /auth/oauth/login, POST, {}"}
+{"level":"info","ts":1685364862.4536517,"msg":"127.0.0.1, user_session, /api/v1/accounts/me, GET, {}"}
+{"level":"info","ts":1685364862.4623508,"msg":"127.0.0.1, user_session, /api/v1/accounts/policies/ui, GET, {}"}
+{"level":"info","ts":1685364881.8784485,"msg":"127.0.0.1, user_session, /auth/oauth/login, POST, {}"}
+{"level":"info","ts":1685364881.96204,"msg":"127.0.0.1, user_session, /api/v1/accounts/me, GET, {}"}
+{"level":"info","ts":1685364881.9688234,"msg":"127.0.0.1, user_session, /api/v1/accounts/policies/ui, GET, {}"}
+{"level":"info","ts":1685364882.0620303,"msg":"127.0.0.1, user_session, /api/v1/exams/company/1, GET, {}"}
+{"level":"info","ts":1685364882.0686643,"msg":"127.0.0.1, user_session, /api/v1/exams/company/1, GET, {}"}
+{"level":"info","ts":1685364892.3269954,"msg":"127.0.0.1, user_session, /auth/oauth/login, POST, {}"}
+{"level":"info","ts":1685364892.3974786,"msg":"127.0.0.1, user_session, /api/v1/accounts/me, GET, {}"}
+{"level":"info","ts":1685364892.402616,"msg":"127.0.0.1, user_session, /api/v1/accounts/policies/ui, GET, {}"}
+{"level":"info","ts":1685364900.85652,"msg":"127.0.0.1, user_session, /auth/oauth/login, POST, {}"}
+{"level":"info","ts":1685364900.943129,"msg":"127.0.0.1, user_session, /api/v1/accounts/me, GET, {}"}
+{"level":"info","ts":1685364900.9514458,"msg":"127.0.0.1, user_session, /api/v1/accounts/policies/ui, GET, {}"}
+{"level":"info","ts":1685364958.6404908,"msg":"127.0.0.1, user_session, /auth/oauth/login, POST, {}"}
+{"level":"info","ts":1685364958.7195067,"msg":"127.0.0.1, user_session, /api/v1/accounts/me, GET, {}"}
+{"level":"info","ts":1685364958.7268362,"msg":"127.0.0.1, user_session, /api/v1/accounts/policies/ui, GET, {}"}
+{"level":"info","ts":1685364998.0577915,"msg":"127.0.0.1, user_session, /auth/oauth/login, POST, {}"}
+{"level":"info","ts":1685364998.129485,"msg":"127.0.0.1, user_session, /api/v1/accounts/me, GET, {}"}
+{"level":"info","ts":1685364998.1359441,"msg":"127.0.0.1, user_session, /api/v1/accounts/policies/ui, GET, {}"}
+{"level":"info","ts":1685365012.9862206,"msg":"127.0.0.1, user_session, /auth/oauth/login, POST, {}"}
+{"level":"info","ts":1685365013.0615797,"msg":"127.0.0.1, user_session, /api/v1/accounts/me, GET, {}"}
+{"level":"info","ts":1685365013.0691445,"msg":"127.0.0.1, user_session, /api/v1/accounts/policies/ui, GET, {}"}
+{"level":"info","ts":1685365013.1322787,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685365013.135413,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685365027.4267714,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685365027.431343,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685365031.5918415,"msg":"127.0.0.1, user_session, /api/v1/system/roles, GET, {}"}
+{"level":"error","ts":1685365031.591948,"msg":"missing Authorization header"}
+{"level":"info","ts":1685365031.5928216,"msg":"127.0.0.1, user_session, /api/v1/system/roles, GET, {}"}
+{"level":"error","ts":1685365031.5928757,"msg":"missing Authorization header"}
+{"level":"info","ts":1685365203.1794991,"msg":"127.0.0.1, user_session, /auth/oauth/signup, POST, {\"companyId\":0,\"email\":\"laith@company.com\",\"mobile\":\"123\",\"name\":\"laith\",\"password\":\"123\"}"}
+{"level":"info","ts":1685365203.4201245,"msg":"127.0.0.1, user_session, /api/v1/accounts/company/0, GET, {}"}
+{"level":"error","ts":1685365203.4202006,"msg":"missing Authorization header"}
+{"level":"info","ts":1685365203.4247496,"msg":"127.0.0.1, user_session, /api/v1/accounts/company/0, GET, {}"}
+{"level":"error","ts":1685365203.4248362,"msg":"missing Authorization header"}
+{"level":"info","ts":1685365212.4811227,"msg":"127.0.0.1, user_session, /auth/oauth/login, POST, {}"}
+{"level":"info","ts":1685365212.553518,"msg":"127.0.0.1, user_session, /api/v1/accounts/me, GET, {}"}
+{"level":"info","ts":1685365212.5600932,"msg":"127.0.0.1, user_session, /api/v1/accounts/policies/ui, GET, {}"}
+{"level":"info","ts":1685365212.5857825,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685365212.5891256,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685365303.995505,"msg":"127.0.0.1, user_session, /auth/oauth/signup, POST, {\"companyId\":0,\"email\":\"saif2@company.com\",\"mobile\":\"0798726136\",\"name\":\"SaifHamdan\",\"password\":\"123\"}"}
+{"level":"error","ts":1685365304.0525517,"msg":"Error 1062 (23000): Duplicate entry 'saif2@company.com' for key 'accounts.email'"}
+{"level":"info","ts":1685365310.4968925,"msg":"127.0.0.1, user_session, /auth/oauth/signup, POST, {\"companyId\":0,\"email\":\"saif23@company.com\",\"mobile\":\"0798726136\",\"name\":\"SaifHamdan\",\"password\":\"123\"}"}
+{"level":"info","ts":1685365310.5717988,"msg":"127.0.0.1, user_session, /auth/oauth/login, POST, {}"}
+{"level":"info","ts":1685365310.6522317,"msg":"127.0.0.1, user_session, /api/v1/accounts/me, GET, {}"}
+{"level":"info","ts":1685365310.658191,"msg":"127.0.0.1, user_session, /api/v1/accounts/policies/ui, GET, {}"}
+{"level":"info","ts":1685365310.684539,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685365310.6890035,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685365758.4789774,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1685366226.8866704,"msg":"127.0.0.1, user_session, /auth/oauth/signup/company, POST, {\"account\":{\"email\":\"adel@company.com\",\"mobile\":\"123\",\"name\":\"adel\",\"password\":\"123\"},\"company\":{\"desc\":\"vertex\",\"mobile\":\"123\",\"name\":\"hybridsolutions\"}}"}
+{"level":"error","ts":1685366226.9698331,"msg":"something went wrong"}
+{"level":"info","ts":1685366240.915202,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1685366243.7641032,"msg":"127.0.0.1, user_session, /auth/oauth/signup/company, POST, {\"account\":{\"email\":\"adel@company.com\",\"mobile\":\"123\",\"name\":\"adel\",\"password\":\"123\"},\"company\":{\"desc\":\"vertex\",\"mobile\":\"123\",\"name\":\"hybridsolutions\"}}"}
+{"level":"info","ts":1685366243.8641386,"msg":"127.0.0.1, user_session, /auth/oauth/login, POST, {}"}
+{"level":"info","ts":1685366243.9423654,"msg":"127.0.0.1, user_session, /api/v1/accounts/me, GET, {}"}
+{"level":"info","ts":1685366243.9521663,"msg":"127.0.0.1, user_session, /api/v1/accounts/policies/ui, GET, {}"}
+{"level":"info","ts":1685366244.0714648,"msg":"127.0.0.1, user_session, /api/v1/exams/company/3, GET, {}"}
+{"level":"info","ts":1685366244.0770288,"msg":"127.0.0.1, user_session, /api/v1/exams/company/3, GET, {}"}
+{"level":"info","ts":1685366253.5043383,"msg":"127.0.0.1, user_session, /api/v1/accounts/company/3, GET, {}"}
+{"level":"info","ts":1685366253.5109608,"msg":"127.0.0.1, user_session, /api/v1/accounts/company/3, GET, {}"}
+{"level":"info","ts":1685366255.0161264,"msg":"127.0.0.1, user_session, /api/v1/exams/company/3, GET, {}"}
+{"level":"info","ts":1685366255.0194805,"msg":"127.0.0.1, user_session, /api/v1/exams/company/3, GET, {}"}
+{"level":"info","ts":1685366274.7886753,"msg":"127.0.0.1, user_session, /auth/oauth/login, POST, {}"}
+{"level":"info","ts":1685366274.8629668,"msg":"127.0.0.1, user_session, /api/v1/accounts/me, GET, {}"}
+{"level":"info","ts":1685366274.8692403,"msg":"127.0.0.1, user_session, /api/v1/accounts/policies/ui, GET, {}"}
+{"level":"info","ts":1685366274.9102786,"msg":"127.0.0.1, user_session, /api/v1/exams/company/3, GET, {}"}
+{"level":"info","ts":1685366274.9149506,"msg":"127.0.0.1, user_session, /api/v1/exams/company/3, GET, {}"}
+{"level":"info","ts":1685366316.8566532,"msg":"127.0.0.1, user_session, /api/v1/exams/company/1, GET, {}"}
+{"level":"info","ts":1685366316.8653398,"msg":"127.0.0.1, user_session, /api/v1/exams/company/1, GET, {}"}
+{"level":"info","ts":1685366317.0522282,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685366317.0562546,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685366356.6617262,"msg":"127.0.0.1, user_session, /auth/oauth/logout/undefined, DELETE, {}"}
+{"level":"error","ts":1685366356.6618178,"msg":"missing Authorization header"}
+{"level":"info","ts":1685366359.5593948,"msg":"127.0.0.1, user_session, /auth/oauth/login, POST, {}"}
+{"level":"info","ts":1685366360.3808076,"msg":"127.0.0.1, user_session, /api/v1/accounts/me, GET, {}"}
+{"level":"info","ts":1685366360.3990428,"msg":"127.0.0.1, user_session, /api/v1/accounts/policies/ui, GET, {}"}
+{"level":"info","ts":1685366360.458207,"msg":"127.0.0.1, user_session, /api/v1/exams/company/3, GET, {}"}
+{"level":"info","ts":1685366360.464515,"msg":"127.0.0.1, user_session, /api/v1/exams/company/3, GET, {}"}
+{"level":"info","ts":1685366440.7437794,"msg":"127.0.0.1, user_session, /auth/oauth/login, POST, {}"}
+{"level":"info","ts":1685366451.8566766,"msg":"127.0.0.1, user_session, /api/v1/accounts/me, GET, {}"}
+{"level":"info","ts":1685366461.2889185,"msg":"127.0.0.1, user_session, /api/v1/exams/company/1, GET, {}"}
+{"level":"info","ts":1685366461.296504,"msg":"127.0.0.1, user_session, /api/v1/exams/company/1, GET, {}"}
+{"level":"info","ts":1685366461.4149568,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685366461.4177718,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685366471.088091,"msg":"127.0.0.1, user_session, /api/v1/exams/company/1, GET, {}"}
+{"level":"info","ts":1685366471.0919955,"msg":"127.0.0.1, user_session, /api/v1/exams/company/1, GET, {}"}
+{"level":"info","ts":1685366471.1810138,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685366471.1841815,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685366477.0887756,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685366477.0922062,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685366479.1974564,"msg":"127.0.0.1, user_session, /auth/oauth/logout/undefined, DELETE, {}"}
+{"level":"error","ts":1685366479.1975875,"msg":"missing Authorization header"}
+{"level":"info","ts":1685366482.4228187,"msg":"127.0.0.1, user_session, /auth/oauth/login, POST, {}"}
+{"level":"info","ts":1685366482.4934297,"msg":"127.0.0.1, user_session, /api/v1/accounts/me, GET, {}"}
+{"level":"info","ts":1685366482.4990275,"msg":"127.0.0.1, user_session, /api/v1/accounts/policies/ui, GET, {}"}
+{"level":"info","ts":1685366482.5341022,"msg":"127.0.0.1, user_session, /api/v1/exams/company/3, GET, {}"}
+{"level":"info","ts":1685366482.5369627,"msg":"127.0.0.1, user_session, /api/v1/exams/company/3, GET, {}"}
+{"level":"info","ts":1685366485.6455078,"msg":"127.0.0.1, user_session, /api/v1/exams/company/1, GET, {}"}
+{"level":"info","ts":1685366485.649435,"msg":"127.0.0.1, user_session, /api/v1/exams/company/1, GET, {}"}
+{"level":"info","ts":1685366485.7343554,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685366485.737495,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685366549.2002058,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685366549.2048898,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685366549.8922703,"msg":"127.0.0.1, user_session, /api/v1/exams/company/3, GET, {}"}
+{"level":"info","ts":1685366549.8980322,"msg":"127.0.0.1, user_session, /api/v1/exams/company/3, GET, {}"}
+{"level":"info","ts":1685366554.726756,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685366554.7309358,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685366555.5205874,"msg":"127.0.0.1, user_session, /api/v1/exams/company/3, GET, {}"}
+{"level":"info","ts":1685366555.523296,"msg":"127.0.0.1, user_session, /api/v1/exams/company/3, GET, {}"}
+{"level":"info","ts":1685366557.1623816,"msg":"127.0.0.1, user_session, /api/v1/accounts/company/3, GET, {}"}
+{"level":"info","ts":1685366557.1659298,"msg":"127.0.0.1, user_session, /api/v1/accounts/company/3, GET, {}"}
+{"level":"info","ts":1685366557.7439764,"msg":"127.0.0.1, user_session, /api/v1/exams/company/3, GET, {}"}
+{"level":"info","ts":1685366557.7482316,"msg":"127.0.0.1, user_session, /api/v1/exams/company/3, GET, {}"}
+{"level":"info","ts":1685366585.87294,"msg":"127.0.0.1, user_session, /api/v1/exams/company/3, GET, {}"}
+{"level":"info","ts":1685366585.8788784,"msg":"127.0.0.1, user_session, /api/v1/exams/company/3, GET, {}"}
+{"level":"info","ts":1685366592.3692677,"msg":"127.0.0.1, user_session, /api/v1/exams/company/1, GET, {}"}
+{"level":"info","ts":1685366592.3859735,"msg":"127.0.0.1, user_session, /api/v1/exams/company/1, GET, {}"}
+{"level":"info","ts":1685366592.5844607,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685366592.5846195,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685366594.5484922,"msg":"127.0.0.1, user_session, /api/v1/exams/company/3, GET, {}"}
+{"level":"info","ts":1685366594.5519683,"msg":"127.0.0.1, user_session, /api/v1/exams/company/3, GET, {}"}
+{"level":"info","ts":1685366626.8974051,"msg":"127.0.0.1, user_session, /api/v1/accounts/company/3, GET, {}"}
+{"level":"info","ts":1685366626.9203057,"msg":"127.0.0.1, user_session, /api/v1/accounts/company/3, GET, {}"}
+{"level":"info","ts":1685366627.7272341,"msg":"127.0.0.1, user_session, /api/v1/exams/company/3, GET, {}"}
+{"level":"info","ts":1685366627.7330863,"msg":"127.0.0.1, user_session, /api/v1/exams/company/3, GET, {}"}
+{"level":"info","ts":1685366648.3080962,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1685366651.1029475,"msg":"127.0.0.1, user_session, /api/v1/exams/company/1, GET, {}"}
+{"level":"info","ts":1685366651.103169,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685366651.113299,"msg":"127.0.0.1, user_session, /api/v1/exams/company/1, GET, {}"}
+{"level":"info","ts":1685366651.117105,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685366652.9714189,"msg":"127.0.0.1, user_session, /api/v1/exams/company/3, GET, {}"}
+{"level":"info","ts":1685366652.9767637,"msg":"127.0.0.1, user_session, /api/v1/exams/company/3, GET, {}"}
+{"level":"info","ts":1685366656.81254,"msg":"127.0.0.1, user_session, /api/v1/accounts/company/3, GET, {}"}
+{"level":"info","ts":1685366656.8175704,"msg":"127.0.0.1, user_session, /api/v1/accounts/company/3, GET, {}"}
+{"level":"info","ts":1685366657.462316,"msg":"127.0.0.1, user_session, /api/v1/exams/company/3, GET, {}"}
+{"level":"info","ts":1685366657.4656618,"msg":"127.0.0.1, user_session, /api/v1/exams/company/3, GET, {}"}
+{"level":"info","ts":1685366657.8635385,"msg":"127.0.0.1, user_session, /api/v1/accounts/company/3, GET, {}"}
+{"level":"info","ts":1685366657.8668797,"msg":"127.0.0.1, user_session, /api/v1/accounts/company/3, GET, {}"}
+{"level":"info","ts":1685366658.2895627,"msg":"127.0.0.1, user_session, /api/v1/exams/company/3, GET, {}"}
+{"level":"info","ts":1685366658.2935774,"msg":"127.0.0.1, user_session, /api/v1/exams/company/3, GET, {}"}
+{"level":"info","ts":1685366658.7182217,"msg":"127.0.0.1, user_session, /api/v1/accounts/company/3, GET, {}"}
+{"level":"info","ts":1685366658.721312,"msg":"127.0.0.1, user_session, /api/v1/accounts/company/3, GET, {}"}
+{"level":"info","ts":1685366659.1804047,"msg":"127.0.0.1, user_session, /api/v1/exams/company/3, GET, {}"}
+{"level":"info","ts":1685366659.1832187,"msg":"127.0.0.1, user_session, /api/v1/exams/company/3, GET, {}"}
+{"level":"info","ts":1685366660.2371998,"msg":"127.0.0.1, user_session, /api/v1/accounts/company/3, GET, {}"}
+{"level":"info","ts":1685366660.241586,"msg":"127.0.0.1, user_session, /api/v1/accounts/company/3, GET, {}"}
+{"level":"info","ts":1685366660.5731359,"msg":"127.0.0.1, user_session, /api/v1/exams/company/3, GET, {}"}
+{"level":"info","ts":1685366660.5773947,"msg":"127.0.0.1, user_session, /api/v1/exams/company/3, GET, {}"}
+{"level":"info","ts":1685366660.8669708,"msg":"127.0.0.1, user_session, /api/v1/accounts/company/3, GET, {}"}
+{"level":"info","ts":1685366660.8701622,"msg":"127.0.0.1, user_session, /api/v1/accounts/company/3, GET, {}"}
+{"level":"info","ts":1685366661.2446554,"msg":"127.0.0.1, user_session, /api/v1/exams/company/3, GET, {}"}
+{"level":"info","ts":1685366661.2476723,"msg":"127.0.0.1, user_session, /api/v1/exams/company/3, GET, {}"}
+{"level":"info","ts":1685366661.5632904,"msg":"127.0.0.1, user_session, /api/v1/accounts/company/3, GET, {}"}
+{"level":"info","ts":1685366661.5663688,"msg":"127.0.0.1, user_session, /api/v1/accounts/company/3, GET, {}"}
+{"level":"info","ts":1685366661.950283,"msg":"127.0.0.1, user_session, /api/v1/exams/company/3, GET, {}"}
+{"level":"info","ts":1685366661.9533055,"msg":"127.0.0.1, user_session, /api/v1/exams/company/3, GET, {}"}
+{"level":"info","ts":1685366662.2946906,"msg":"127.0.0.1, user_session, /api/v1/accounts/company/3, GET, {}"}
+{"level":"info","ts":1685366662.2979395,"msg":"127.0.0.1, user_session, /api/v1/accounts/company/3, GET, {}"}
+{"level":"info","ts":1685366662.6984804,"msg":"127.0.0.1, user_session, /api/v1/exams/company/3, GET, {}"}
+{"level":"info","ts":1685366662.701917,"msg":"127.0.0.1, user_session, /api/v1/exams/company/3, GET, {}"}
+{"level":"info","ts":1685366663.081303,"msg":"127.0.0.1, user_session, /api/v1/accounts/company/3, GET, {}"}
+{"level":"info","ts":1685366663.084785,"msg":"127.0.0.1, user_session, /api/v1/accounts/company/3, GET, {}"}
+{"level":"info","ts":1685366663.6138306,"msg":"127.0.0.1, user_session, /api/v1/exams/company/3, GET, {}"}
+{"level":"info","ts":1685366663.6168108,"msg":"127.0.0.1, user_session, /api/v1/exams/company/3, GET, {}"}
+{"level":"info","ts":1685366664.8437436,"msg":"127.0.0.1, user_session, /api/v1/exams/company/1, GET, {}"}
+{"level":"info","ts":1685366664.8516936,"msg":"127.0.0.1, user_session, /api/v1/exams/company/1, GET, {}"}
+{"level":"info","ts":1685366664.9864993,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685366664.9905345,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685366666.2353666,"msg":"127.0.0.1, user_session, /api/v1/exams/company/3, GET, {}"}
+{"level":"info","ts":1685366666.2382863,"msg":"127.0.0.1, user_session, /api/v1/exams/company/3, GET, {}"}
+{"level":"info","ts":1685366705.7525382,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1685366707.6741772,"msg":"127.0.0.1, user_session, /api/v1/exams/company/1, GET, {}"}
+{"level":"info","ts":1685366707.6784081,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685366707.6842775,"msg":"127.0.0.1, user_session, /api/v1/exams/company/1, GET, {}"}
+{"level":"info","ts":1685366707.6939876,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685366708.8899775,"msg":"127.0.0.1, user_session, /api/v1/exams/company/3, GET, {}"}
+{"level":"info","ts":1685366708.8941827,"msg":"127.0.0.1, user_session, /api/v1/exams/company/3, GET, {}"}
+{"level":"info","ts":1685366710.7270455,"msg":"127.0.0.1, user_session, /api/v1/accounts/company/3, GET, {}"}
+{"level":"info","ts":1685366710.7352095,"msg":"127.0.0.1, user_session, /api/v1/accounts/company/3, GET, {}"}
+{"level":"info","ts":1685366711.6506956,"msg":"127.0.0.1, user_session, /api/v1/exams/company/3, GET, {}"}
+{"level":"info","ts":1685366711.6534202,"msg":"127.0.0.1, user_session, /api/v1/exams/company/3, GET, {}"}
+{"level":"info","ts":1685366712.4994862,"msg":"127.0.0.1, user_session, /api/v1/accounts/company/3, GET, {}"}
+{"level":"info","ts":1685366712.5052457,"msg":"127.0.0.1, user_session, /api/v1/accounts/company/3, GET, {}"}
+{"level":"info","ts":1685366713.1308208,"msg":"127.0.0.1, user_session, /api/v1/exams/company/3, GET, {}"}
+{"level":"info","ts":1685366713.1341083,"msg":"127.0.0.1, user_session, /api/v1/exams/company/3, GET, {}"}
+{"level":"info","ts":1685366718.164477,"msg":"127.0.0.1, user_session, /auth/oauth/logout/undefined, DELETE, {}"}
+{"level":"error","ts":1685366718.1645753,"msg":"missing Authorization header"}
+{"level":"info","ts":1685366725.6199439,"msg":"127.0.0.1, user_session, /auth/oauth/login, POST, {}"}
+{"level":"info","ts":1685366725.7009602,"msg":"127.0.0.1, user_session, /api/v1/accounts/me, GET, {}"}
+{"level":"info","ts":1685366725.70954,"msg":"127.0.0.1, user_session, /api/v1/accounts/policies/ui, GET, {}"}
+{"level":"info","ts":1685366725.7490723,"msg":"127.0.0.1, user_session, /api/v1/exams/company/1, GET, {}"}
+{"level":"info","ts":1685366725.7519484,"msg":"127.0.0.1, user_session, /api/v1/exams/company/1, GET, {}"}
+{"level":"info","ts":1685366744.6779041,"msg":"127.0.0.1, user_session, /auth/oauth/login, POST, {}"}
+{"level":"info","ts":1685366744.7630663,"msg":"127.0.0.1, user_session, /api/v1/accounts/me, GET, {}"}
+{"level":"info","ts":1685366744.768712,"msg":"127.0.0.1, user_session, /api/v1/accounts/policies/ui, GET, {}"}
+{"level":"info","ts":1685366744.815781,"msg":"127.0.0.1, user_session, /api/v1/exams/company/3, GET, {}"}
+{"level":"info","ts":1685366744.8182325,"msg":"127.0.0.1, user_session, /api/v1/exams/company/3, GET, {}"}
+{"level":"info","ts":1685366790.4468615,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685366790.452578,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685366850.532976,"msg":"127.0.0.1, user_session, /api/v1/exams/company/3, GET, {}"}
+{"level":"info","ts":1685366850.5355792,"msg":"127.0.0.1, user_session, /api/v1/exams/company/3, GET, {}"}
+{"level":"info","ts":1685366884.5181487,"msg":"127.0.0.1, user_session, /api/v1/accounts/company/3, GET, {}"}
+{"level":"info","ts":1685366884.5218272,"msg":"127.0.0.1, user_session, /api/v1/accounts/company/3, GET, {}"}
+{"level":"info","ts":1685366884.8561232,"msg":"127.0.0.1, user_session, /api/v1/exams/company/3, GET, {}"}
+{"level":"info","ts":1685366884.859364,"msg":"127.0.0.1, user_session, /api/v1/exams/company/3, GET, {}"}
+{"level":"info","ts":1685366885.4324338,"msg":"127.0.0.1, user_session, /api/v1/accounts/company/3, GET, {}"}
+{"level":"info","ts":1685366885.4354265,"msg":"127.0.0.1, user_session, /api/v1/accounts/company/3, GET, {}"}
+{"level":"info","ts":1685366964.07796,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685366964.0832489,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685366965.8483815,"msg":"127.0.0.1, user_session, /api/v1/exams/company/3, GET, {}"}
+{"level":"info","ts":1685366965.8504734,"msg":"127.0.0.1, user_session, /api/v1/exams/company/3, GET, {}"}
+{"level":"info","ts":1685367007.1256046,"msg":"127.0.0.1, user_session, /api/v1/accounts/company/3, GET, {}"}
+{"level":"info","ts":1685367007.1307285,"msg":"127.0.0.1, user_session, /api/v1/accounts/company/3, GET, {}"}
+{"level":"info","ts":1685367008.0406764,"msg":"127.0.0.1, user_session, /api/v1/exams/company/3, GET, {}"}
+{"level":"info","ts":1685367008.0437279,"msg":"127.0.0.1, user_session, /api/v1/exams/company/3, GET, {}"}
+{"level":"info","ts":1685367008.488897,"msg":"127.0.0.1, user_session, /api/v1/accounts/company/3, GET, {}"}
+{"level":"info","ts":1685367008.4934978,"msg":"127.0.0.1, user_session, /api/v1/accounts/company/3, GET, {}"}
+{"level":"info","ts":1685367009.0008519,"msg":"127.0.0.1, user_session, /api/v1/exams/company/3, GET, {}"}
+{"level":"info","ts":1685367009.0045457,"msg":"127.0.0.1, user_session, /api/v1/exams/company/3, GET, {}"}
+{"level":"info","ts":1685367010.079619,"msg":"127.0.0.1, user_session, /api/v1/accounts/company/3, GET, {}"}
+{"level":"info","ts":1685367010.083384,"msg":"127.0.0.1, user_session, /api/v1/accounts/company/3, GET, {}"}
+{"level":"info","ts":1685367010.4223025,"msg":"127.0.0.1, user_session, /api/v1/exams/company/3, GET, {}"}
+{"level":"info","ts":1685367010.4264507,"msg":"127.0.0.1, user_session, /api/v1/exams/company/3, GET, {}"}
+{"level":"info","ts":1685367010.7876222,"msg":"127.0.0.1, user_session, /api/v1/accounts/company/3, GET, {}"}
+{"level":"info","ts":1685367010.795413,"msg":"127.0.0.1, user_session, /api/v1/accounts/company/3, GET, {}"}
+{"level":"info","ts":1685367011.1124427,"msg":"127.0.0.1, user_session, /api/v1/exams/company/3, GET, {}"}
+{"level":"info","ts":1685367011.1151779,"msg":"127.0.0.1, user_session, /api/v1/exams/company/3, GET, {}"}
+{"level":"info","ts":1685367011.429893,"msg":"127.0.0.1, user_session, /api/v1/accounts/company/3, GET, {}"}
+{"level":"info","ts":1685367011.4334826,"msg":"127.0.0.1, user_session, /api/v1/accounts/company/3, GET, {}"}
+{"level":"info","ts":1685367011.8149407,"msg":"127.0.0.1, user_session, /api/v1/exams/company/3, GET, {}"}
+{"level":"info","ts":1685367011.8180056,"msg":"127.0.0.1, user_session, /api/v1/exams/company/3, GET, {}"}
+{"level":"info","ts":1685367012.8509364,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685367012.8555615,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685367013.8455815,"msg":"127.0.0.1, user_session, /api/v1/exams/1, GET, {}"}
+{"level":"info","ts":1685367013.8541276,"msg":"127.0.0.1, user_session, /api/v1/exams/1, GET, {}"}
+{"level":"info","ts":1685367016.879466,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685367016.8841374,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685367022.1995196,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685367022.1996272,"msg":"missing Authorization header"}
+{"level":"info","ts":1685367022.2012343,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685367022.2013476,"msg":"missing Authorization header"}
+{"level":"info","ts":1685367023.5421562,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685367023.5422919,"msg":"missing Authorization header"}
+{"level":"info","ts":1685367023.5444765,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685367023.5445886,"msg":"missing Authorization header"}
+{"level":"info","ts":1685367023.9801524,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685367023.9802704,"msg":"missing Authorization header"}
+{"level":"info","ts":1685367023.9815793,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685367023.9816833,"msg":"missing Authorization header"}
+{"level":"info","ts":1685367024.324398,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685367024.3245537,"msg":"missing Authorization header"}
+{"level":"info","ts":1685367024.326728,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685367024.3269987,"msg":"missing Authorization header"}
+{"level":"info","ts":1685367024.5965853,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685367024.5967052,"msg":"missing Authorization header"}
+{"level":"info","ts":1685367024.5987175,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685367024.5988326,"msg":"missing Authorization header"}
+{"level":"info","ts":1685367024.7641191,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685367024.7642262,"msg":"missing Authorization header"}
+{"level":"info","ts":1685367024.7656233,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685367024.765756,"msg":"missing Authorization header"}
+{"level":"info","ts":1685367024.9242356,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685367024.924358,"msg":"missing Authorization header"}
+{"level":"info","ts":1685367024.9262755,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685367024.926398,"msg":"missing Authorization header"}
+{"level":"info","ts":1685367025.070859,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685367025.0710254,"msg":"missing Authorization header"}
+{"level":"info","ts":1685367025.0724142,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685367025.072498,"msg":"missing Authorization header"}
+{"level":"info","ts":1685367025.2136195,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685367025.2137246,"msg":"missing Authorization header"}
+{"level":"info","ts":1685367025.215205,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685367025.2152927,"msg":"missing Authorization header"}
+{"level":"info","ts":1685367025.5781922,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685367025.5782902,"msg":"missing Authorization header"}
+{"level":"info","ts":1685367025.5794673,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685367025.5795522,"msg":"missing Authorization header"}
+{"level":"info","ts":1685367025.8786116,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685367025.878753,"msg":"missing Authorization header"}
+{"level":"info","ts":1685367025.880688,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685367025.880803,"msg":"missing Authorization header"}
+{"level":"info","ts":1685367026.1962883,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685367026.1963735,"msg":"missing Authorization header"}
+{"level":"info","ts":1685367026.1978955,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685367026.1980233,"msg":"missing Authorization header"}
+{"level":"info","ts":1685367026.4769359,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685367026.4770417,"msg":"missing Authorization header"}
+{"level":"info","ts":1685367026.478724,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685367026.4788318,"msg":"missing Authorization header"}
+{"level":"info","ts":1685367026.8442647,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685367026.8443663,"msg":"missing Authorization header"}
+{"level":"info","ts":1685367026.845554,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685367026.845645,"msg":"missing Authorization header"}
+{"level":"info","ts":1685367027.1625361,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685367027.162637,"msg":"missing Authorization header"}
+{"level":"info","ts":1685367027.163884,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"error","ts":1685367027.1639729,"msg":"missing Authorization header"}
+{"level":"info","ts":1685367029.9550178,"msg":"127.0.0.1, user_session, /auth/oauth/login, POST, {}"}
+{"level":"error","ts":1685367030.0087786,"msg":"incorrect password or email"}
+{"level":"info","ts":1685367031.6967354,"msg":"127.0.0.1, user_session, /auth/oauth/login, POST, {}"}
+{"level":"info","ts":1685367031.7761242,"msg":"127.0.0.1, user_session, /api/v1/accounts/me, GET, {}"}
+{"level":"info","ts":1685367031.7826405,"msg":"127.0.0.1, user_session, /api/v1/accounts/policies/ui, GET, {}"}
+{"level":"info","ts":1685367031.827365,"msg":"127.0.0.1, user_session, /api/v1/exams/company/1, GET, {}"}
+{"level":"info","ts":1685367031.8321464,"msg":"127.0.0.1, user_session, /api/v1/exams/company/1, GET, {}"}
+{"level":"info","ts":1685367033.70469,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685367033.709666,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685367034.7804825,"msg":"127.0.0.1, user_session, /api/v1/exams/1, GET, {}"}
+{"level":"info","ts":1685367034.7868218,"msg":"127.0.0.1, user_session, /api/v1/exams/1, GET, {}"}
+{"level":"info","ts":1685367061.8964844,"msg":"127.0.0.1, user_session, /api/v1/exams/1, GET, {}"}
+{"level":"info","ts":1685367065.264906,"msg":"127.0.0.1, user_session, /api/v1/exams/1, GET, {}"}
+{"level":"info","ts":1685367065.268682,"msg":"127.0.0.1, user_session, /api/v1/exams/1, GET, {}"}
+{"level":"info","ts":1685367072.338201,"msg":"127.0.0.1, user_session, /api/v1/exams/1, GET, {}"}
+{"level":"info","ts":1685367072.343172,"msg":"127.0.0.1, user_session, /api/v1/exams/1, GET, {}"}
+{"level":"info","ts":1685367075.4615605,"msg":"127.0.0.1, user_session, /auth/oauth/logout/undefined, DELETE, {}"}
+{"level":"error","ts":1685367075.4616446,"msg":"missing Authorization header"}
+{"level":"info","ts":1685367077.042102,"msg":"127.0.0.1, user_session, /auth/oauth/login, POST, {}"}
+{"level":"info","ts":1685367077.1144586,"msg":"127.0.0.1, user_session, /api/v1/accounts/me, GET, {}"}
+{"level":"info","ts":1685367077.1201832,"msg":"127.0.0.1, user_session, /api/v1/accounts/policies/ui, GET, {}"}
+{"level":"info","ts":1685367077.180039,"msg":"127.0.0.1, user_session, /api/v1/exams/company/1, GET, {}"}
+{"level":"info","ts":1685367077.183196,"msg":"127.0.0.1, user_session, /api/v1/exams/company/1, GET, {}"}
+{"level":"info","ts":1685367081.8503518,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685367081.8538342,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685367089.2060268,"msg":"127.0.0.1, user_session, /auth/oauth/login, POST, {}"}
+{"level":"error","ts":1685367089.2619448,"msg":"incorrect password or email"}
+{"level":"info","ts":1685367091.440689,"msg":"127.0.0.1, user_session, /auth/oauth/login, POST, {}"}
+{"level":"info","ts":1685367091.5139527,"msg":"127.0.0.1, user_session, /api/v1/accounts/me, GET, {}"}
+{"level":"info","ts":1685367091.5189214,"msg":"127.0.0.1, user_session, /api/v1/accounts/policies/ui, GET, {}"}
+{"level":"info","ts":1685367091.5482934,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685367091.5527005,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685367093.2292998,"msg":"127.0.0.1, user_session, /api/v1/exams/1, GET, {}"}
+{"level":"info","ts":1685367093.2352452,"msg":"127.0.0.1, user_session, /api/v1/exams/1, GET, {}"}
+{"level":"info","ts":1685367094.93399,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685367094.9386122,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685367149.8062549,"msg":"127.0.0.1, user_session, /api/v1/exams/1, GET, {}"}
+{"level":"info","ts":1685367149.8133104,"msg":"127.0.0.1, user_session, /api/v1/exams/1, GET, {}"}
+{"level":"info","ts":1685367370.5892985,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685367370.5944126,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685367607.5263085,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685367607.6407,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685367611.2914913,"msg":"127.0.0.1, user_session, /api/v1/accounts/4, GET, {}"}
+{"level":"error","ts":1685367611.2924128,"msg":"unauthorized to access this resource"}
+{"level":"info","ts":1685367611.2943172,"msg":"127.0.0.1, user_session, /api/v1/accounts/4, GET, {}"}
+{"level":"error","ts":1685367611.295159,"msg":"unauthorized to access this resource"}
+{"level":"info","ts":1685367639.7123573,"msg":"127.0.0.1, user_session, /api/v1/accounts/me, GET, {}"}
+{"level":"info","ts":1685367647.502137,"msg":"127.0.0.1, user_session, /api/v1/accounts/me, GET, {}"}
+{"level":"info","ts":1685367647.5069704,"msg":"127.0.0.1, user_session, /api/v1/accounts/me, GET, {}"}
+{"level":"info","ts":1685367665.129948,"msg":"127.0.0.1, user_session, /api/v1/accounts/me, GET, {}"}
+{"level":"info","ts":1685367665.1339724,"msg":"127.0.0.1, user_session, /api/v1/accounts/me, GET, {}"}
+{"level":"info","ts":1685367665.1876624,"msg":"127.0.0.1, user_session, /api/v1/system/roles, GET, {}"}
+{"level":"error","ts":1685367665.1883397,"msg":"unauthorized to access this resource"}
+{"level":"info","ts":1685367665.1892087,"msg":"127.0.0.1, user_session, /api/v1/system/roles, GET, {}"}
+{"level":"error","ts":1685367665.189864,"msg":"unauthorized to access this resource"}
+{"level":"info","ts":1685367668.5375519,"msg":"127.0.0.1, user_session, /api/v1/accounts/me, GET, {}"}
+{"level":"info","ts":1685367668.5408092,"msg":"127.0.0.1, user_session, /api/v1/accounts/me, GET, {}"}
+{"level":"info","ts":1685367668.6178265,"msg":"127.0.0.1, user_session, /api/v1/system/roles, GET, {}"}
+{"level":"error","ts":1685367668.6185193,"msg":"unauthorized to access this resource"}
+{"level":"info","ts":1685367668.6195405,"msg":"127.0.0.1, user_session, /api/v1/system/roles, GET, {}"}
+{"level":"error","ts":1685367668.6201735,"msg":"unauthorized to access this resource"}
+{"level":"info","ts":1685367727.429585,"msg":"127.0.0.1, user_session, /api/v1/accounts/me, GET, {}"}
+{"level":"info","ts":1685367727.4332721,"msg":"127.0.0.1, user_session, /api/v1/accounts/me, GET, {}"}
+{"level":"info","ts":1685367727.5280259,"msg":"127.0.0.1, user_session, /api/v1/system/roles, GET, {}"}
+{"level":"error","ts":1685367727.529769,"msg":"unauthorized to access this resource"}
+{"level":"info","ts":1685367727.5334992,"msg":"127.0.0.1, user_session, /api/v1/system/roles, GET, {}"}
+{"level":"error","ts":1685367727.5349355,"msg":"unauthorized to access this resource"}
+{"level":"info","ts":1685367737.2591565,"msg":"127.0.0.1, user_session, /api/v1/accounts/me, GET, {}"}
+{"level":"info","ts":1685367737.2632341,"msg":"127.0.0.1, user_session, /api/v1/accounts/me, GET, {}"}
+{"level":"info","ts":1685367737.3166072,"msg":"127.0.0.1, user_session, /api/v1/system/roles, GET, {}"}
+{"level":"error","ts":1685367737.3175168,"msg":"unauthorized to access this resource"}
+{"level":"info","ts":1685367737.31918,"msg":"127.0.0.1, user_session, /api/v1/system/roles, GET, {}"}
+{"level":"error","ts":1685367737.3201158,"msg":"unauthorized to access this resource"}
+{"level":"info","ts":1685367757.2664037,"msg":"127.0.0.1, user_session, /api/v1/accounts/me, GET, {}"}
+{"level":"info","ts":1685367757.2698417,"msg":"127.0.0.1, user_session, /api/v1/accounts/me, GET, {}"}
+{"level":"info","ts":1685367762.1060002,"msg":"127.0.0.1, user_session, /api/v1/accounts/me, GET, {}"}
+{"level":"info","ts":1685367762.1101203,"msg":"127.0.0.1, user_session, /api/v1/accounts/me, GET, {}"}
+{"level":"info","ts":1685367762.1494908,"msg":"127.0.0.1, user_session, /api/v1/system/roles, GET, {}"}
+{"level":"error","ts":1685367762.1501377,"msg":"unauthorized to access this resource"}
+{"level":"info","ts":1685367762.151048,"msg":"127.0.0.1, user_session, /api/v1/system/roles, GET, {}"}
+{"level":"error","ts":1685367762.151644,"msg":"unauthorized to access this resource"}
+{"level":"info","ts":1685367763.4898012,"msg":"127.0.0.1, user_session, /api/v1/accounts/me, GET, {}"}
+{"level":"info","ts":1685367763.4928243,"msg":"127.0.0.1, user_session, /api/v1/accounts/me, GET, {}"}
+{"level":"info","ts":1685367763.5562508,"msg":"127.0.0.1, user_session, /api/v1/system/roles, GET, {}"}
+{"level":"error","ts":1685367763.5569189,"msg":"unauthorized to access this resource"}
+{"level":"info","ts":1685367763.5582168,"msg":"127.0.0.1, user_session, /api/v1/system/roles, GET, {}"}
+{"level":"error","ts":1685367763.5591516,"msg":"unauthorized to access this resource"}
+{"level":"info","ts":1685367774.8763463,"msg":"127.0.0.1, user_session, /api/v1/accounts/me, GET, {}"}
+{"level":"info","ts":1685367774.8798482,"msg":"127.0.0.1, user_session, /api/v1/accounts/me, GET, {}"}
+{"level":"info","ts":1685367779.5627778,"msg":"127.0.0.1, user_session, /api/v1/accounts/4, PATCH, {\"companyId\":null,\"email\":\"laith@company.com\",\"mobile\":\"123\",\"name\":\"laithdasd\",\"password\":\"123\",\"roleId\":3}"}
+{"level":"error","ts":1685367779.5638173,"msg":"unauthorized to access this resource"}
+{"level":"info","ts":1685367848.81949,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685367848.8246758,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685367852.4053755,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685367852.409289,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685367855.4919393,"msg":"127.0.0.1, user_session, /api/v1/accounts/me, GET, {}"}
+{"level":"info","ts":1685367855.4967866,"msg":"127.0.0.1, user_session, /api/v1/accounts/me, GET, {}"}
+{"level":"info","ts":1685367861.4573603,"msg":"127.0.0.1, user_session, /api/v1/accounts/me, GET, {}"}
+{"level":"info","ts":1685367885.6055675,"msg":"127.0.0.1, user_session, /api/v1/accounts/me, GET, {}"}
+{"level":"info","ts":1685367889.5514934,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685367889.55575,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685367892.3227916,"msg":"127.0.0.1, user_session, /api/v1/accounts/me, GET, {}"}
+{"level":"info","ts":1685367892.3288584,"msg":"127.0.0.1, user_session, /api/v1/accounts/me, GET, {}"}
+{"level":"info","ts":1685367920.786539,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685367920.7935476,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685367936.8847363,"msg":"127.0.0.1, user_session, /api/v1/accounts/me, GET, {}"}
+{"level":"info","ts":1685367936.8886905,"msg":"127.0.0.1, user_session, /api/v1/accounts/me, GET, {}"}
+{"level":"info","ts":1685367940.3232157,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685367940.3280976,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685367942.686567,"msg":"127.0.0.1, user_session, /api/v1/accounts/me, GET, {}"}
+{"level":"info","ts":1685367942.6909893,"msg":"127.0.0.1, user_session, /api/v1/accounts/me, GET, {}"}
+{"level":"info","ts":1685367950.359437,"msg":"127.0.0.1, user_session, /api/v1/accounts/me, GET, {}"}
+{"level":"info","ts":1685367951.4318037,"msg":"127.0.0.1, user_session, /api/v1/accounts/me, GET, {}"}
+{"level":"info","ts":1685367951.4347484,"msg":"127.0.0.1, user_session, /api/v1/accounts/me, GET, {}"}
+{"level":"info","ts":1685367954.7620437,"msg":"127.0.0.1, user_session, /api/v1/accounts/me, GET, {}"}
+{"level":"info","ts":1685367954.7660596,"msg":"127.0.0.1, user_session, /api/v1/accounts/me, GET, {}"}
+{"level":"info","ts":1685367955.7712295,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685367955.7748048,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685367957.3631155,"msg":"127.0.0.1, user_session, /api/v1/accounts/me, GET, {}"}
+{"level":"info","ts":1685367957.3663862,"msg":"127.0.0.1, user_session, /api/v1/accounts/me, GET, {}"}
+{"level":"info","ts":1685368433.1192765,"msg":"127.0.0.1, user_session, /api/v1/accounts/me, GET, {}"}
+{"level":"info","ts":1685368438.4652157,"msg":"127.0.0.1, user_session, /api/v1/accounts/me, GET, {}"}
+{"level":"info","ts":1685368438.468185,"msg":"127.0.0.1, user_session, /api/v1/accounts/me, GET, {}"}
+{"level":"info","ts":1685368439.7594452,"msg":"127.0.0.1, user_session, /api/v1/accounts/me, PATCH, {\"email\":\"laith@company.com\",\"mobile\":\"123\",\"name\":\"laithdasdas\"}"}
+{"level":"error","ts":1685368439.7602217,"msg":"unauthorized to access this resource"}
+{"level":"info","ts":1685368440.9964807,"msg":"127.0.0.1, user_session, /api/v1/accounts/me, PATCH, {\"email\":\"laith@company.com\",\"mobile\":\"123\",\"name\":\"laithdasdas\"}"}
+{"level":"error","ts":1685368440.9972882,"msg":"unauthorized to access this resource"}
+{"level":"info","ts":1685368449.5763292,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1685368451.5915396,"msg":"127.0.0.1, user_session, /api/v1/accounts/me, PATCH, {\"email\":\"laith@company.com\",\"mobile\":\"123\",\"name\":\"laithdasdas\"}"}
+{"level":"info","ts":1685368451.711117,"msg":"127.0.0.1, user_session, /api/v1/accounts/company/NaN, GET, {}"}
+{"level":"error","ts":1685368451.712448,"msg":"unauthorized to access this resource"}
+{"level":"info","ts":1685368451.713876,"msg":"127.0.0.1, user_session, /api/v1/accounts/company/NaN, GET, {}"}
+{"level":"error","ts":1685368451.7147534,"msg":"unauthorized to access this resource"}
+{"level":"info","ts":1685368451.813967,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685368451.8200872,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
+{"level":"info","ts":1685368454.2722075,"msg":"127.0.0.1, user_session, /api/v1/accounts/me, GET, {}"}
+{"level":"info","ts":1685368454.2765307,"msg":"127.0.0.1, user_session, /api/v1/accounts/me, GET, {}"}
+{"level":"info","ts":1685368463.7975955,"msg":"127.0.0.1, user_session, /api/v1/accounts/me, PATCH, {\"email\":\"laith@company.com\",\"mobile\":\"123\",\"name\":\"laithdasdasdqwd\"}"}
+{"level":"info","ts":1685368515.6362863,"msg":"127.0.0.1, user_session, /api/v1/accounts/me, PATCH, {\"email\":\"laith@company.com\",\"mobile\":\"123\",\"name\":\"laithdasdas\"}"}

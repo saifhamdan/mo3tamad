@@ -1,21 +1,13 @@
-import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import React, { useContext, useState } from 'react';
+
 import axios from 'axios';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
 import { Button, Grid, TextField, Typography } from '@mui/material';
 import LoadingButton from '@mui/lab/LoadingButton';
 
-import SelectGroup from 'components/input/SelectGroup';
-import { headers, companyId } from 'services/auth';
-
-// interface
-interface FormValues {
-  name: string;
-  desc: string;
-  mobile: string;
-  axiosError: string;
-}
+import { headers } from 'services/auth';
+import { AuthContext } from 'store/auth-context';
 
 // intial Form Values
 const initialValues = {
@@ -53,15 +45,14 @@ const userValidationSchema = Yup.object().shape({
   confirmPassword: Yup.string()
     .oneOf([Yup.ref('password')], 'Passwords must match')
     .required('user must has a password'),
-  roleId: Yup.number().required('a user should belong to a role'),
 });
 
 const mt = 3;
-const CompanyForm: React.FC<{ id?: string }> = (props) => {
+const CompanyForm: React.FC = () => {
   const [loading, setLoading] = useState(false);
   const [steps, setSteps] = useState(0);
+  const { loginHandler } = useContext(AuthContext);
 
-  const navigate = useNavigate();
   const formik = useFormik({
     initialValues: initialValues,
     validationSchema: companyValidationSchema,
@@ -77,19 +68,25 @@ const CompanyForm: React.FC<{ id?: string }> = (props) => {
       setLoading(true);
       try {
         const data = {
-          name: values.name,
-          //  desc: values.desc,
-          mobile: values.mobile,
+          company: {
+            name: formik.values.name,
+            desc: formik.values.desc,
+            phoneNumber: formik.values.mobile,
+          },
+          account: {
+            name: values.name,
+            email: values.email,
+            mobile: values.mobile,
+            password: values.password,
+          },
         };
         await axios({
-          url: `${
-            process.env.REACT_APP_API_URL
-          }/api/v1/accounts/${companyId}/users/${props.id ? props.id : ''}`,
+          url: `${process.env.REACT_APP_API_URL}/auth/oauth/signup/company`,
           headers,
           method: 'POST',
           data,
         });
-        navigate('/admin/users');
+        await loginHandler(values.email, values.password);
       } catch (err: any) {
         state.setFieldError('axiosError', err?.message);
       }
@@ -98,9 +95,9 @@ const CompanyForm: React.FC<{ id?: string }> = (props) => {
   });
 
   return (
-    <form onSubmit={formik.handleSubmit}>
+    <div>
       {steps === 0 && (
-        <div>
+        <form onSubmit={formik.handleSubmit}>
           <Grid item mt={mt} flexGrow={1} maxWidth={500}>
             <TextField
               variant='outlined'
@@ -143,20 +140,25 @@ const CompanyForm: React.FC<{ id?: string }> = (props) => {
               required
             />
           </Grid>
-        </div>
+          <Grid mt={mt} item width={'100%'}>
+            <Button variant='contained' size='large' type='submit'>
+              Continue
+            </Button>
+          </Grid>
+        </form>
       )}
       {steps === 1 && (
-        <div>
+        <form onSubmit={formikUser.handleSubmit}>
           <Grid item mt={mt} flexGrow={1} maxWidth={500}>
             <TextField
               variant='outlined'
               label='name'
               name='name'
-              value={formik.values.name}
-              onChange={formik.handleChange}
-              onBlur={formik.handleBlur}
-              error={formik.touched.name && !!formik.errors.name}
-              helperText={formik.touched.name && formik.errors.name}
+              value={formikUser.values.name}
+              onChange={formikUser.handleChange}
+              onBlur={formikUser.handleBlur}
+              error={formikUser.touched.name && !!formikUser.errors.name}
+              helperText={formikUser.touched.name && formikUser.errors.name}
               fullWidth
               required
             />
@@ -232,22 +234,7 @@ const CompanyForm: React.FC<{ id?: string }> = (props) => {
               required
             />
           </Grid>
-        </div>
-      )}
-      <Grid item mt={mt} width={'100%'}>
-        {formik.errors.axiosError && (
-          <Typography color='error'>{formik.errors.axiosError}</Typography>
-        )}
-      </Grid>
-      <Grid item width={'100%'}>
-        {steps === 0 && (
-          <Button variant='contained' size='large' type='submit'>
-            Continue
-          </Button>
-        )}
-
-        {steps === 1 && (
-          <>
+          <Grid mt={mt} item width='100%'>
             <Button
               sx={{ mr: 1 }}
               variant='contained'
@@ -264,10 +251,15 @@ const CompanyForm: React.FC<{ id?: string }> = (props) => {
             >
               {'Create'}
             </LoadingButton>
-          </>
+          </Grid>
+        </form>
+      )}
+      <Grid item mt={mt} width={'100%'}>
+        {formik.errors.axiosError && (
+          <Typography color='error'>{formik.errors.axiosError}</Typography>
         )}
       </Grid>
-    </form>
+    </div>
   );
 };
 

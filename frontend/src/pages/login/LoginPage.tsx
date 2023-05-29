@@ -131,6 +131,14 @@ const LoginPage = () => {
             <Box mb={2}>
               <Typography textAlign='center' variant='body2'>
                 <span>
+                  don't have account?{' '}
+                  <Link to={'/signup'}>{'Create account'}</Link>
+                </span>
+              </Typography>
+            </Box>
+            <Box mb={2}>
+              <Typography textAlign='center' variant='body2'>
+                <span>
                   <Link to={'/forgot-password'}>{'Forgot Password?'}</Link>
                 </span>
               </Typography>

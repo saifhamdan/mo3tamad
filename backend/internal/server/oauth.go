@@ -145,6 +145,161 @@ func (s *Server) Logout(c *fiber.Ctx) error {
 	return s.App.HttpResponseUnauthorized(c, fmt.Errorf("missing Authorization header"))
 }
 
+func (s *Server) Signup(c *fiber.Ctx) error {
+	account := &model.Account{}
+
+	err := c.BodyParser(account)
+	if err != nil {
+		return s.App.HttpResponseBadRequest(c, err)
+	}
+
+	pw, err := oauth2.EncryptPassword(account.Password)
+	if err != nil {
+		return s.App.HttpResponseBadRequest(c, fmt.Errorf("no password found"))
+	}
+	account.CompanyId = 0
+	account.Password = pw
+	account.Active = true
+	account.Status = "active"
+	// get Role
+	role := &model.Role{}
+	err = s.DB.Where("`desc` = ?", "user").First(role).Error
+	if err != nil {
+		return s.App.HttpResponseInternalServerErrorRequest(c, fmt.Errorf("something went wrong"))
+	}
+	account.RoleID = role.RoleId
+
+	tx := s.DB.Begin()
+	err = tx.Create(account).Error
+	if err != nil {
+		tx.Rollback()
+		return s.App.HttpResponseBadRequest(c, err)
+	}
+
+	cfg := &oauth2.Config{
+		ClientName:     account.Name,
+		Email:          account.Email,
+		Username:       "",
+		Scope:          role.Desc,
+		ClientId:       account.AccountId,
+		ClientSecretId: "",
+		IpAddress:      c.IP(),
+	}
+
+	ctx := context.Background()
+	token, err := s.OAuth2.PasswordCredentialsToken(ctx, cfg)
+	if err != nil {
+		return s.App.HttpResponseInternalServerErrorRequest(c, fiber.ErrInternalServerError)
+	}
+
+	// make a session
+	session := &model.Session{
+		AccountId: cfg.ClientId,
+		IpAddress: c.IP(),
+	}
+	err = s.StoreSession(session)
+	if err != nil {
+		tx.Rollback()
+		return s.App.HttpResponseInternalServerErrorRequest(c, fiber.ErrInternalServerError)
+	}
+
+	type LoginResponse struct {
+		*model.Token
+		*model.Session
+	}
+
+	res := &LoginResponse{
+		Token:   token,
+		Session: session,
+	}
+
+	tx.Commit()
+
+	return s.App.HttpResponseCreated(c, res)
+}
+
+func (s *Server) SignupCompany(c *fiber.Ctx) error {
+	type SignupRequest struct {
+		Company *model.Company `json:"company"`
+		Account *model.Account `json:"account"`
+	}
+	body := &SignupRequest{}
+	err := c.BodyParser(body)
+	if err != nil {
+		return s.App.HttpResponseBadRequest(c, err)
+	}
+
+	tx := s.DB.Begin()
+	err = tx.Create(&body.Company).Error
+	if err != nil {
+		tx.Rollback()
+		return s.App.HttpResponseBadRequest(c, err)
+	}
+
+	pw, err := oauth2.EncryptPassword(body.Account.Password)
+	if err != nil {
+		return s.App.HttpResponseBadRequest(c, fmt.Errorf("no password found"))
+	}
+
+	body.Account.CompanyId = body.Company.CompanyId
+	body.Account.Password = pw
+	body.Account.Active = true
+	body.Account.Status = "active"
+	// get Role
+	role := &model.Role{}
+	err = s.DB.Where("`desc` = ?", "admin").First(role).Error
+	if err != nil {
+		return s.App.HttpResponseInternalServerErrorRequest(c, fmt.Errorf("something went wrong"))
+	}
+	body.Account.RoleID = role.RoleId
+
+	err = tx.Create(&body.Account).Error
+	if err != nil {
+		tx.Rollback()
+		return s.App.HttpResponseBadRequest(c, err)
+	}
+
+	cfg := &oauth2.Config{
+		ClientName:     body.Account.Name,
+		Email:          body.Account.Email,
+		Username:       "",
+		Scope:          role.Desc,
+		ClientId:       body.Account.AccountId,
+		ClientSecretId: "",
+		IpAddress:      c.IP(),
+	}
+
+	ctx := context.Background()
+	token, err := s.OAuth2.PasswordCredentialsToken(ctx, cfg)
+	if err != nil {
+		return s.App.HttpResponseInternalServerErrorRequest(c, fiber.ErrInternalServerError)
+	}
+
+	// make a session
+	session := &model.Session{
+		AccountId: cfg.ClientId,
+		IpAddress: c.IP(),
+	}
+	err = s.StoreSession(session)
+	if err != nil {
+		tx.Rollback()
+		return s.App.HttpResponseInternalServerErrorRequest(c, fiber.ErrInternalServerError)
+	}
+
+	type LoginResponse struct {
+		*model.Token
+		*model.Session
+	}
+
+	res := &LoginResponse{
+		Token:   token,
+		Session: session,
+	}
+
+	tx.Commit()
+	return s.App.HttpResponseCreated(c, res)
+}
+
 // func (o *Server) Token(c *fiber.Ctx) error {
 // 	type Query struct {
 // 		// Token Type, currently one type is available

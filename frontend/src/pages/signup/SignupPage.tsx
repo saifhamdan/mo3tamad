@@ -1,25 +1,16 @@
 import { ArrowBack } from '@mui/icons-material';
 import {
-  Box,
-  Button,
   Divider,
   Grid,
   IconButton,
   Paper,
-  Stepper,
   Tooltip,
   Typography,
 } from '@mui/material';
 import { BusinessIcon, PersonIcon } from 'atoms/icons';
 import CompanyForm from 'components/forms/CompanyForm';
-import UserForm from 'components/forms/UserForm';
+import SignupForm from 'components/forms/SignupForm';
 import React, { useState } from 'react';
-
-const steps = [
-  'Select campaign settings',
-  'Create an ad group',
-  'Create an ad',
-];
 
 const SelectSignupType: React.FC<{ activeSteps: (st: number) => void }> = ({
   activeSteps,
@@ -88,7 +79,7 @@ const SignupPage = () => {
         {steps === 0 && <SelectSignupType activeSteps={activeSteps} />}
         {steps === 1 && (
           <Grid item>
-            <UserForm />
+            <SignupForm />
           </Grid>
         )}
         {steps === 2 && (

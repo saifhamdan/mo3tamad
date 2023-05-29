@@ -9,11 +9,16 @@ interface LoginResponse {
 }
 
 interface CasbinPolicies {
-  adminAll: boolean;
-  assessmentsCreate: boolean;
-  assessmentsDelete: true;
-  assessmentsGetall: boolean;
-  assessmentsUpdate: boolean;
-  systemAll: boolean;
-  userAll: boolean;
+  adminAll: true;
+  examsCreate: true;
+  examsDelete: true;
+  examsGet: true;
+  examsGetall: true;
+  examsUpdate: true;
+  registerAll: false;
+  usersCreate: true;
+  usersDelete: true;
+  usersGet: true;
+  usersGetall: true;
+  usersUpdate: true;
 }

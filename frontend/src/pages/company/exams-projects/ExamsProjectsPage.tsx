@@ -6,25 +6,26 @@ import { DataGrid, GridColDef } from '@mui/x-data-grid';
 import { Container, Link } from 'atoms';
 import useFetch from 'hooks/use-fetch';
 import LoadingSpinnerWrapper from 'utils/loading-spinner-wrapper';
-import { headers } from 'services/auth';
+import { companyId, headers } from 'services/auth';
 import { examsProjectsBreadcrumbsPage } from 'components/common/breadcrumbsList';
 import { useAppDispatch } from 'store';
 import { uiActions } from 'store/ui-slice';
 import DeleteForeverModal from 'components/modals/DeleteModal';
 import axios from 'axios';
 
-const url = `${process.env.REACT_APP_API_URL}/api/v1/exams`;
-
 const ExamsProjectsPage = () => {
   const dispatch = useAppDispatch();
   const [selected, setSelected] = useState<any[]>([]);
   const [open, setOpen] = useState(false);
-  const { data, error, loading, setData } = useFetch<any[]>(url, []);
+  const { data, error, loading, setData } = useFetch<any[]>(
+    `${process.env.REACT_APP_API_URL}/api/v1/exams/company/${companyId}`,
+    []
+  );
 
   const onDeleteHandler = async () => {
     try {
       await axios({
-        url: `${url}/${selected[0]}`,
+        url: `${process.env.REACT_APP_API_URL}/api/v1/exams/${selected[0]}`,
         headers: headers,
         method: 'DELETE',
       });

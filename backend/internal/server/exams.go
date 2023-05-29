@@ -14,7 +14,21 @@ func (s *Server) GetAllExams(c *fiber.Ctx) error {
 	if err != nil {
 		return s.App.HttpResponseInternalServerErrorRequest(c, err)
 	}
-	return s.App.HttpResponseOK(c, exams)
+	return s.App.HttpResponseOK(c, &exams)
+}
+
+func (s *Server) GetAllExamsByCompanyId(c *fiber.Ctx) error {
+	companyId, err := c.ParamsInt("companyId")
+	if err != nil {
+		return s.App.HttpResponseBadQueryParams(c, fmt.Errorf("companyId param is required"))
+	}
+
+	exams := []model.Exam{}
+	err = s.DB.Where("company_id = ?", companyId).Preload("Company").Find(&exams).Error
+	if err != nil {
+		return s.App.HttpResponseInternalServerErrorRequest(c, err)
+	}
+	return s.App.HttpResponseOK(c, &exams)
 }
 
 func (s *Server) GetExam(c *fiber.Ctx) error {

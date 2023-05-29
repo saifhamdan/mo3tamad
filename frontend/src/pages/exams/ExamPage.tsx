@@ -2,10 +2,13 @@ import { Box, Button, Grid, Paper, Typography } from '@mui/material';
 import { Container, Link } from 'atoms';
 import { QuizIcon, TimeIcon } from 'atoms/icons';
 import useFetch from 'hooks/use-fetch';
+import { useContext } from 'react';
 import { useParams } from 'react-router';
+import { AuthContext } from 'store/auth-context';
 import LoadingSpinnerWrapper from 'utils/loading-spinner-wrapper';
 
 const ExamPage = () => {
+  const { policies } = useContext(AuthContext);
   const { examId } = useParams();
   const { data, loading, error } = useFetch<any>(
     `${process.env.REACT_APP_API_URL}/api/v1/exams/${examId}`,
@@ -79,8 +82,14 @@ const ExamPage = () => {
                         <Typography ml={1}>{data.duration} Minutes</Typography>
                       </Box>
                     </Grid>
+
                     <Grid item>
-                      <Button size='large' fullWidth variant='contained'>
+                      <Button
+                        disabled={!policies?.registerAll}
+                        size='large'
+                        fullWidth
+                        variant='contained'
+                      >
                         Register
                       </Button>
                     </Grid>

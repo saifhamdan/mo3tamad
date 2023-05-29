@@ -56,7 +56,7 @@ type UpdatePolicyRequest struct {
 // @Router 		 /api/v1/system/roles [get]
 func (s *Server) GetAllRoles(c *fiber.Ctx) error {
 	roles := []model.Role{}
-	err := s.DB.Find(&roles).Error
+	err := s.DB.Where("`desc` != ?", "user").Find(&roles).Error
 	if err != nil {
 		s.Log.Logger.Error(err.Error())
 		return s.App.HttpResponseInternalServerErrorRequest(c, err)

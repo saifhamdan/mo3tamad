@@ -10,6 +10,7 @@ import React, { useState, createContext, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { getMyProfile } from 'services/users';
 import {
+  companyId,
   getUserPolicies,
   login,
   logout,
@@ -66,15 +67,17 @@ const AuthContextProvider: React.FC<{ children: React.ReactNode }> = ({
       Cookies.set(ACCESS_TOKEN, loginData.accessToken);
       Cookies.set(LOGIN_DATA, JSON.stringify(loginData));
       Cookies.set(CASBIN_POLICIES, JSON.stringify(policies));
-      Cookies.set(COOKIE_COMPANY_ID, user.companyId.toString());
+      Cookies.set(COOKIE_COMPANY_ID, user?.companyId?.toString());
 
-      updateCompanyId(user.companyId);
+      updateCompanyId(user?.companyId);
+      console.log(companyId);
       setUser(user);
       setPolicies(policies);
       setAccessToken(loginData.accessToken);
       setAuth(true);
-      if (user.role.desc === 'user') navigate('/');
-      if (user.role.desc === 'admin') navigate('/company/exams-projects');
+      if (user.role.desc === 'admin' || user.role.desc === 'assistant')
+        navigate('/company/exams-projects');
+      else navigate('/');
     } catch (err) {
       console.log(err);
       throw err;

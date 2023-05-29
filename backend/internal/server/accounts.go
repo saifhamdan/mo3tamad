@@ -23,6 +23,25 @@ func (s *Server) GetAllAccounts(c *fiber.Ctx) error {
 	return s.App.HttpResponseOK(c, accounts)
 }
 
+func (s *Server) GetAllAccountsByCompanyId(c *fiber.Ctx) error {
+	companyId, err := c.ParamsInt("companyId")
+	if err != nil {
+		return s.App.HttpResponseBadQueryParams(c, fmt.Errorf("companyId param is required"))
+	}
+
+	accounts := []model.Account{}
+	err = s.DB.Model(&model.Account{}).
+		Where("company_id = ?", companyId).
+		Preload("Role").
+		Omit("password").
+		Find(&accounts).Error
+	if err != nil {
+		return s.App.HttpResponseInternalServerErrorRequest(c, err)
+	}
+
+	return s.App.HttpResponseOK(c, accounts)
+}
+
 func (s *Server) GetAccount(c *fiber.Ctx) error {
 	accountID, err := c.ParamsInt("id")
 	if err != nil {
@@ -44,7 +63,7 @@ func (s *Server) GetAccount(c *fiber.Ctx) error {
 }
 
 func (s *Server) GetMyProfile(c *fiber.Ctx) error {
-	user := c.Locals("client").(*oauth2.Config)
+	user := GetUserCfg(c)
 
 	me := &model.Account{}
 	err := s.DB.Preload("Company").Preload("Role").Omit("password").First(me, user.ClientId).Error
@@ -53,6 +72,34 @@ func (s *Server) GetMyProfile(c *fiber.Ctx) error {
 	}
 
 	me.Password = ""
+
+	return s.App.HttpResponseOK(c, me)
+}
+
+func (s *Server) UpdateMyProfile(c *fiber.Ctx) error {
+	user := GetUserCfg(c)
+
+	me := &model.Account{}
+	err := s.DB.Preload("Company").Preload("Role").Omit("password").First(me, user.ClientId).Error
+	if err != nil {
+		return s.App.HttpResponseInternalServerErrorRequest(c, err)
+	}
+
+	pw := me.Password
+	companyId := me.CompanyId
+
+	err = c.BodyParser(me)
+	if err != nil {
+		return s.App.HttpResponseBadRequest(c, err)
+	}
+
+	me.Password = pw
+	me.CompanyId = companyId
+
+	err = s.DB.Save(me).Error
+	if err != nil {
+		return s.App.HttpResponseInternalServerErrorRequest(c, err)
+	}
 
 	return s.App.HttpResponseOK(c, me)
 }
@@ -70,6 +117,8 @@ func (s *Server) CreateAccount(c *fiber.Ctx) error {
 		return s.App.HttpResponseBadRequest(c, fmt.Errorf("no password found"))
 	}
 	account.Password = pw
+	account.Active = true
+	account.Status = "active"
 
 	err = s.DB.Create(account).Error
 	if err != nil {
@@ -99,6 +148,7 @@ func (s *Server) UpdateAccount(c *fiber.Ctx) error {
 	s.DB.First(account, accountID)
 
 	pw := account.Password
+	companyId := account.CompanyId
 
 	err = c.BodyParser(account)
 	if err != nil {
@@ -107,6 +157,7 @@ func (s *Server) UpdateAccount(c *fiber.Ctx) error {
 
 	// keep the old password because this is not a place change passwords
 	account.Password = pw
+	account.CompanyId = companyId
 
 	s.DB.Save(account)
 

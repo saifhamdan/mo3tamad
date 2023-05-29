@@ -13,22 +13,6 @@ import AccountMenu from './menus/AccountMenu';
 import logoPath from 'assets/img/mo3tamad_logo.png';
 import { Button } from '@mui/material';
 
-const pages = [
-  // {
-  //   label: 'Home',
-  //   path: '/',
-  // },
-  // {
-  //   label: 'Assessments',
-  //   path: 'assessments/view/working',
-  // },
-  // {
-  //   label: 'Login',
-  //   path: '/login',
-  // },
-];
-const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
-
 interface Props {
   isMobile: boolean;
   toggleMobileDrawerHandler: () => void;
@@ -36,7 +20,7 @@ interface Props {
 
 const Header = (props: Props) => {
   const { toggleMobileDrawerHandler } = props;
-  const { isAuth } = useContext(AuthContext);
+  const { isAuth, policies } = useContext(AuthContext);
 
   return (
     <AppBar
@@ -104,20 +88,6 @@ const Header = (props: Props) => {
 
           {!isAuth && (
             <>
-              <Link to='/my-exams' decorated={false}>
-                <Button
-                  sx={{
-                    mr: 1,
-                    width: 'max-content',
-                    backgroundColor: 'black',
-                    color: 'white',
-                  }}
-                  variant='contained'
-                  color='info'
-                >
-                  MY exams
-                </Button>
-              </Link>
               <Link to='/login' decorated={false}>
                 <Button
                   sx={{
@@ -149,26 +119,60 @@ const Header = (props: Props) => {
           )}
 
           {isAuth && (
-            <MenuWrapper>
-              {(props) => (
-                <Box sx={{ flexGrow: 0 }}>
-                  <Tooltip title='Account Settings'>
-                    <IconButton
-                      size='large'
-                      color='inherit'
-                      onClick={props.onOpen}
-                    >
-                      <PersonIcon />
-                    </IconButton>
-                  </Tooltip>
-                  <AccountMenu
-                    open={props.open}
-                    anchorEl={props.anchorEl}
-                    closeHandler={props.onClose}
-                  />
-                </Box>
+            <>
+              {policies?.examsGetall && (
+                <Link to='/company/exams-projects' decorated={false}>
+                  <Button
+                    sx={{
+                      mr: 1,
+                      width: 'max-content',
+                      backgroundColor: 'black',
+                      color: 'white',
+                    }}
+                    variant='contained'
+                    color='info'
+                  >
+                    Dashboard
+                  </Button>
+                </Link>
               )}
-            </MenuWrapper>
+              {policies?.registerAll && (
+                <Link to='/my-exams' decorated={false}>
+                  <Button
+                    sx={{
+                      mr: 1,
+                      width: 'max-content',
+                      backgroundColor: 'black',
+                      color: 'white',
+                    }}
+                    variant='contained'
+                    color='info'
+                  >
+                    MY exams
+                  </Button>
+                </Link>
+              )}
+              <MenuWrapper>
+                {(props) => (
+                  <Box sx={{ flexGrow: 0 }}>
+                    <Tooltip title='Account Settings'>
+                      <IconButton
+                        size='large'
+                        color='inherit'
+                        onClick={props.onOpen}
+                      >
+                        <PersonIcon />
+                      </IconButton>
+                    </Tooltip>
+                    <AccountMenu
+                      open={props.open}
+                      anchorEl={props.anchorEl}
+                      closeHandler={props.onClose}
+                    />
+                  </Box>
+                )}
+              </MenuWrapper>
+            </>
           )}
         </Toolbar>
       </Container>

@@ -19,6 +19,8 @@ func (s *Server) Register() {
 	//************************ AUTH Routes *******************************
 	oauthRoutes := s.App.Group("auth/oauth")
 	oauthRoutes.Post("/login", s.Middleware.BasicAuthParser, s.Login)
+	oauthRoutes.Post("/signup", s.Signup)
+	oauthRoutes.Post("/signup/company", s.SignupCompany)
 	oauthRoutes.Delete("/logout/:session_id", s.Logout)
 	oauthRoutes.Post("/refresh/token", s.RefreshToken)
 
@@ -56,22 +58,25 @@ func (s *Server) Register() {
 	// Accounts
 	accountsRoutes := v1.Group("/accounts")
 	accountsRoutes.Get("/", s.Middleware.Authorization(authz.Admin), s.GetAllAccounts)
+	accountsRoutes.Get("/company/:companyId", s.Middleware.Authorization(authz.GetUsers), s.GetAllAccountsByCompanyId)
 	accountsRoutes.Get("/me", s.GetMyProfile)
+	accountsRoutes.Patch("/me", s.UpdateMyProfile)
 	// this is an exeption because we need every account to be able to access it
 	accountsRoutes.Get("/policies/ui", s.GetAllPoliciesRoleUI)
-	accountsRoutes.Get("/:id", s.Middleware.Authorization(authz.Admin), s.GetAccount)
-	accountsRoutes.Post("/", s.Middleware.Authorization(authz.Admin), s.CreateAccount)
-	accountsRoutes.Delete("/:id", s.Middleware.Authorization(authz.Admin), s.DeleteAccount)
-	accountsRoutes.Patch("/:id", s.Middleware.Authorization(authz.Admin), s.UpdateAccount)
+	accountsRoutes.Get("/:id", s.Middleware.Authorization(authz.GetUser), s.GetAccount)
+	accountsRoutes.Post("/", s.Middleware.Authorization(authz.CreateUser), s.CreateAccount)
+	accountsRoutes.Delete("/:id", s.Middleware.Authorization(authz.DeleteUser), s.DeleteAccount)
+	accountsRoutes.Patch("/:id", s.Middleware.Authorization(authz.UpdateUser), s.UpdateAccount)
 
 	// Companies
 	//Exams
 	examsRoutes := v1.Group("/exams")
 	examsRoutes.Get("/", s.GetAllExams)
+	examsRoutes.Get("/company/:companyId", s.Middleware.Authorization(authz.GetExams), s.GetAllExamsByCompanyId)
 	examsRoutes.Get("/:id", s.GetExam)
-	examsRoutes.Post("/", s.CreateExam)
-	examsRoutes.Delete("/:id", s.DeleteExam)
-	examsRoutes.Patch("/:id", s.UpdateExam)
+	examsRoutes.Post("/", s.Middleware.Authorization(authz.CreateExam), s.CreateExam)
+	examsRoutes.Delete("/:id", s.Middleware.Authorization(authz.DeleteExam), s.DeleteExam)
+	examsRoutes.Patch("/:id", s.Middleware.Authorization(authz.UpdateExam), s.UpdateExam)
 
 	questionRoutes := v1.Group("/questions")
 	questionRoutes.Get("/", s.GetAllQuestions)
@@ -82,10 +87,10 @@ func (s *Server) Register() {
 	questionRoutes.Patch("/:id", s.UpdateQuestion)
 
 	registrationRoutes := v1.Group("/registration")
-	registrationRoutes.Post("/:account_id/:exam_id", s.CreateRegister)
-	registrationRoutes.Patch("/:id/start", s.StartedExam)
-	registrationRoutes.Patch("/:id/finish", s.FinishedExam)
-	registrationRoutes.Patch("/:id/cheat", s.UserCheated)
+	registrationRoutes.Post("/:account_id/:exam_id", s.Middleware.Authorization(authz.Register), s.CreateRegister)
+	registrationRoutes.Patch("/:id/start", s.Middleware.Authorization(authz.Register), s.StartedExam)
+	registrationRoutes.Patch("/:id/finish", s.Middleware.Authorization(authz.Register), s.FinishedExam)
+	registrationRoutes.Patch("/:id/cheat", s.Middleware.Authorization(authz.Register), s.UserCheated)
 	registrationRoutes.Get("/byUser/:id", s.GetRegByUserId)
 	registrationRoutes.Get("/byExam/:id", s.GetRegByExamId)
 	registrationRoutes.Delete("/:id", s.DeleteRegistration)
