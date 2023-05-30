@@ -87,11 +87,11 @@ func (s *Server) Register() {
 	questionRoutes.Patch("/:id", s.UpdateQuestion)
 
 	registrationRoutes := v1.Group("/registration")
-	registrationRoutes.Post("/:account_id/:exam_id", s.Middleware.Authorization(authz.Register), s.CreateRegister)
+	registrationRoutes.Get("/my-exams", s.GetRegByUserId)
 	registrationRoutes.Patch("/:id/start", s.Middleware.Authorization(authz.Register), s.StartedExam)
 	registrationRoutes.Patch("/:id/finish", s.Middleware.Authorization(authz.Register), s.FinishedExam)
 	registrationRoutes.Patch("/:id/cheat", s.Middleware.Authorization(authz.Register), s.UserCheated)
-	registrationRoutes.Get("/byUser/:id", s.GetRegByUserId)
+	registrationRoutes.Post("/:account_id/:exam_id", s.Middleware.Authorization(authz.Register), s.CreateRegister)
 	registrationRoutes.Get("/byExam/:id", s.GetRegByExamId)
 	registrationRoutes.Delete("/:id", s.DeleteRegistration)
 

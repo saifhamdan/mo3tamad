@@ -27,6 +27,7 @@ import NewExamQuestionPage from './company/exams-projects/NewExamQuestionPage';
 import EditExamQuestionPage from './company/exams-projects/EditExamQuestionPage';
 import StartExamPage from './exams/StartExamPage';
 import MyProfilePage from './my-profile/MyProfilePage';
+import CompanyProfilePage from './company/profile/CompanyProfile';
 
 const Index: React.FC<{}> = () => {
   const theme = useTheme();
@@ -44,13 +45,18 @@ const Index: React.FC<{}> = () => {
 
   // protect company
   useEffect(() => {
-    if (pathname.startsWith('/company') && !policies?.examsGetall) {
+    if (
+      isAuth !== null &&
+      pathname.startsWith('/company') &&
+      !policies?.examsGetall
+    ) {
       navigate('/', { replace: true });
     }
-  }, [pathname, policies?.examsGetall, navigate]);
+  }, [isAuth, pathname, policies?.examsGetall, navigate]);
 
   useEffect(() => {
     if (
+      isAuth !== null &&
       (pathname.startsWith('/my-exams') ||
         pathname.startsWith('/certificate') ||
         pathname.startsWith('/exams/start')) &&
@@ -58,7 +64,7 @@ const Index: React.FC<{}> = () => {
     ) {
       navigate('/', { replace: true });
     }
-  }, [pathname, policies?.registerAll, navigate]);
+  }, [isAuth, pathname, policies?.registerAll, navigate]);
 
   return (
     <div>
@@ -121,6 +127,10 @@ const Index: React.FC<{}> = () => {
                     <Route
                       path='/company/exams-projects'
                       element={<ExamsProjectsPage />}
+                    />
+                    <Route
+                      path='/company/profile'
+                      element={<CompanyProfilePage />}
                     />
                     <Route
                       path='/company/exams-projects/new'

@@ -20,3 +20,4 @@ export { default as SearchIcon } from '@mui/icons-material/SearchRounded';
 export { default as QuizIcon } from '@mui/icons-material/Quiz';
 export { default as TimeIcon } from '@mui/icons-material/QueryBuilder';
 export { default as DownloadIcon } from '@mui/icons-material/Download';
+export { default as ScoreIcon } from '@mui/icons-material/SportsScore';

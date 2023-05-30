@@ -8,7 +8,7 @@ import {
   Typography,
 } from '@mui/material';
 import { BusinessIcon, PersonIcon } from 'atoms/icons';
-import CompanyForm from 'components/forms/CompanyForm';
+import SignupCompanyForm from 'components/forms/SignupCompanyForm';
 import SignupForm from 'components/forms/SignupForm';
 import React, { useState } from 'react';
 
@@ -84,7 +84,7 @@ const SignupPage = () => {
         )}
         {steps === 2 && (
           <Grid item>
-            <CompanyForm />
+            <SignupCompanyForm />
           </Grid>
         )}
         {steps === 3 && <Grid item></Grid>}

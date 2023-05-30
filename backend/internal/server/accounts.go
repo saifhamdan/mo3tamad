@@ -80,7 +80,7 @@ func (s *Server) UpdateMyProfile(c *fiber.Ctx) error {
 	user := GetUserCfg(c)
 
 	me := &model.Account{}
-	err := s.DB.Preload("Company").Preload("Role").Omit("password").First(me, user.ClientId).Error
+	err := s.DB.First(me, user.ClientId).Error
 	if err != nil {
 		return s.App.HttpResponseInternalServerErrorRequest(c, err)
 	}
@@ -95,8 +95,8 @@ func (s *Server) UpdateMyProfile(c *fiber.Ctx) error {
 
 	me.Password = pw
 	me.CompanyId = companyId
-
 	err = s.DB.Save(me).Error
+
 	if err != nil {
 		return s.App.HttpResponseInternalServerErrorRequest(c, err)
 	}
@@ -145,7 +145,10 @@ func (s *Server) UpdateAccount(c *fiber.Ctx) error {
 		return s.App.HttpResponseBadQueryParams(c, fmt.Errorf("id param is required"))
 	}
 	account := &model.Account{}
-	s.DB.First(account, accountID)
+	err = s.DB.First(account, accountID).Error
+	if err != nil {
+		return s.App.HttpResponseInternalServerErrorRequest(c, err)
+	}
 
 	pw := account.Password
 	companyId := account.CompanyId

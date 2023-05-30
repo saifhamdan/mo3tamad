@@ -5,7 +5,7 @@ import Toolbar from '@mui/material/Toolbar';
 import MuiListItem from '@mui/material/ListItem';
 import ImageIcon from '@mui/icons-material/Image';
 
-import { AssessmentIcon, ManageUserIcon } from 'atoms/icons';
+import { AssessmentIcon, ManageUserIcon, OrgIcon } from 'atoms/icons';
 import NestedListItem from './NestedListItem';
 import ListItem from './ListItem';
 import { Avatar, Divider, ListItemAvatar, ListItemText } from '@mui/material';
@@ -33,6 +33,13 @@ const adminSidebar = [
     label: 'Users',
     icon: <ManageUserIcon />,
     path: '/company/users',
+    nestedList: [],
+  },
+  {
+    nested: false,
+    label: 'Company Profile',
+    icon: <OrgIcon />,
+    path: '/company/profile',
     nestedList: [],
   },
 ];

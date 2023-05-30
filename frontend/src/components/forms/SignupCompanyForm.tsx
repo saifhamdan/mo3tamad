@@ -48,7 +48,7 @@ const userValidationSchema = Yup.object().shape({
 });
 
 const mt = 3;
-const CompanyForm: React.FC = () => {
+const SignupCompanyForm: React.FC = () => {
   const [loading, setLoading] = useState(false);
   const [steps, setSteps] = useState(0);
   const { loginHandler } = useContext(AuthContext);
@@ -263,4 +263,4 @@ const CompanyForm: React.FC = () => {
   );
 };
 
-export default CompanyForm;
+export default SignupCompanyForm;

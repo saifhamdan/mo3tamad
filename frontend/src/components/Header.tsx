@@ -7,7 +7,12 @@ import Container from '@mui/material/Container';
 import Tooltip from '@mui/material/Tooltip';
 
 import { Link, MenuWrapper } from 'atoms';
-import { PersonIcon, MenuIcon } from 'atoms/icons';
+import {
+  PersonIcon,
+  MenuIcon,
+  DashboardIcon,
+  AssessmentIcon,
+} from 'atoms/icons';
 import { AuthContext } from 'store/auth-context';
 import AccountMenu from './menus/AccountMenu';
 import logoPath from 'assets/img/mo3tamad_logo.png';
@@ -122,34 +127,20 @@ const Header = (props: Props) => {
             <>
               {policies?.examsGetall && (
                 <Link to='/company/exams-projects' decorated={false}>
-                  <Button
-                    sx={{
-                      mr: 1,
-                      width: 'max-content',
-                      backgroundColor: 'black',
-                      color: 'white',
-                    }}
-                    variant='contained'
-                    color='info'
-                  >
-                    Dashboard
-                  </Button>
+                  <Tooltip title='Dashboard'>
+                    <IconButton size='large' color='inherit'>
+                      <DashboardIcon />
+                    </IconButton>
+                  </Tooltip>
                 </Link>
               )}
               {policies?.registerAll && (
                 <Link to='/my-exams' decorated={false}>
-                  <Button
-                    sx={{
-                      mr: 1,
-                      width: 'max-content',
-                      backgroundColor: 'black',
-                      color: 'white',
-                    }}
-                    variant='contained'
-                    color='info'
-                  >
-                    MY exams
-                  </Button>
+                  <Tooltip title='My Exams'>
+                    <IconButton size='large' color='inherit'>
+                      <AssessmentIcon />
+                    </IconButton>
+                  </Tooltip>
                 </Link>
               )}
               <MenuWrapper>

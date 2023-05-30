@@ -1,19 +1,36 @@
 import { Box, Button, Grid, Paper, Typography } from '@mui/material';
 import { Container, Link } from 'atoms';
-import { QuizIcon, TimeIcon } from 'atoms/icons';
+import { QuizIcon, ScoreIcon, TimeIcon } from 'atoms/icons';
+import axios from 'axios';
 import useFetch from 'hooks/use-fetch';
 import { useContext } from 'react';
-import { useParams } from 'react-router';
+import { useNavigate, useParams } from 'react-router';
+import { headers } from 'services/auth';
 import { AuthContext } from 'store/auth-context';
 import LoadingSpinnerWrapper from 'utils/loading-spinner-wrapper';
 
 const ExamPage = () => {
-  const { policies } = useContext(AuthContext);
   const { examId } = useParams();
+  const navigate = useNavigate();
+  const { policies, user } = useContext(AuthContext);
   const { data, loading, error } = useFetch<any>(
     `${process.env.REACT_APP_API_URL}/api/v1/exams/${examId}`,
     {}
   );
+
+  const registerHandler = async () => {
+    try {
+      await axios({
+        url: `${process.env.REACT_APP_API_URL}/api/v1/registration/${user?.id}/${examId}`,
+        headers: headers,
+        method: 'POST',
+      });
+      navigate('/my-exams');
+    } catch (err: any) {
+      console.error(err);
+    }
+  };
+
   return (
     <LoadingSpinnerWrapper loading={loading} error={error}>
       {data.id && (
@@ -69,29 +86,47 @@ const ExamPage = () => {
                       <Typography mb={1} fontWeight='bold'>
                         General Information:
                       </Typography>
-
                       <Box mb={1} display='flex'>
                         <QuizIcon />
                         <Typography ml={1}>
-                          {' '}
                           {data.questionsCount} Questions
                         </Typography>
                       </Box>
-                      <Box display='flex'>
+                      <Box mb={1} display='flex'>
                         <TimeIcon />
                         <Typography ml={1}>{data.duration} Minutes</Typography>
+                      </Box>
+                      <Box display='flex'>
+                        <ScoreIcon />
+                        <Typography ml={1}>
+                          {data.passingScore}% Passing score
+                        </Typography>
                       </Box>
                     </Grid>
 
                     <Grid item>
-                      <Button
-                        disabled={!policies?.registerAll}
-                        size='large'
-                        fullWidth
-                        variant='contained'
-                      >
-                        Register
-                      </Button>
+                      {!data?.registration && (
+                        <Button
+                          disabled={!policies?.registerAll}
+                          size='large'
+                          fullWidth
+                          variant='contained'
+                          onClick={registerHandler}
+                        >
+                          Register
+                        </Button>
+                      )}
+                      {data?.registration?.status === 'not-started' && (
+                        <Button
+                          disabled={true}
+                          size='large'
+                          fullWidth
+                          variant='contained'
+                          // onClick={registerHandler}
+                        >
+                          Registered
+                        </Button>
+                      )}
                     </Grid>
                   </Grid>
                 </Paper>

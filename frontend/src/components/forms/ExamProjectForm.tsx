@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
-import { Grid, TextField, Typography } from '@mui/material';
+import { FormHelperText, Grid, TextField, Typography } from '@mui/material';
 import LoadingButton from '@mui/lab/LoadingButton';
 
 import { headers, companyId } from 'services/auth';
@@ -116,7 +116,7 @@ const ExamProjectForm: React.FC<{ data?: any; id?: string }> = (props) => {
           label='passing score'
           name='passingScore'
           type='number'
-          InputProps={{ inputProps: { min: 1 } }}
+          InputProps={{ inputProps: { min: 1, max: 100 } }}
           value={formik.values.passingScore}
           onChange={formik.handleChange}
           onBlur={formik.handleBlur}
@@ -141,6 +141,7 @@ const ExamProjectForm: React.FC<{ data?: any; id?: string }> = (props) => {
           fullWidth
           required
         />
+        <FormHelperText>note: duration is counted in minutes</FormHelperText>
       </Grid>
       <Grid item mt={mt} width={'100%'}>
         {formik.errors.axiosError && (

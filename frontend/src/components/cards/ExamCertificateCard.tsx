@@ -1,6 +1,9 @@
 import styled from '@emotion/styled';
 import { Grid, Box, Button, Typography } from '@mui/material';
 import { Link } from 'atoms';
+import axios from 'axios';
+import { useNavigate } from 'react-router';
+import { headers } from 'services/auth';
 
 export const ExamPaper = styled.div`
   max-width: 100%;
@@ -10,7 +13,31 @@ export const ExamPaper = styled.div`
   /* cursor: alias; */
 `;
 
+const statusMapper: any = {
+  'not-started': 'Not started',
+  started: 'Started',
+  passed: 'Passed',
+  cheated: 'Cheated',
+  'not-passed': 'Failed',
+  'waiting-approval': 'Waiting approval',
+};
+
 const ExamCertificateCard: React.FC<any> = (props) => {
+  const navigate = useNavigate();
+
+  const startExamHandler = async () => {
+    try {
+      await axios({
+        url: `${process.env.REACT_APP_API_URL}/api/v1/registration/${props.id}/start`,
+        method: 'PATCH',
+        headers,
+      });
+      navigate(`/exams/start/${props.id}`);
+    } catch (err) {
+      console.error(err);
+    }
+  };
+
   return (
     <ExamPaper>
       <Grid
@@ -27,7 +54,7 @@ const ExamCertificateCard: React.FC<any> = (props) => {
         >
           <img
             src={'https://picsum.photos/200/300'}
-            alt={`${props.name} thumbnail`}
+            alt={`${props.exam.name} thumbnail`}
             draggable={false}
             height={200}
             placeholder='blur'
@@ -43,28 +70,44 @@ const ExamCertificateCard: React.FC<any> = (props) => {
         <Box p={1.5}>
           <Box mb={3} flexGrow={1}>
             <Typography mb={1} fontSize={22}>
-              java certifcation exam
+              {props.exam.name}
             </Typography>
             <Typography>
-              score{' '}
+              score:{' '}
               <Typography component='span' fontWeight='bold'>
-                50%
+                {props.score ? props.score : 0}%
               </Typography>
             </Typography>
             <Typography>
-              status{' '}
+              status:{' '}
               <Typography component='span' fontWeight='bold'>
-                passed
+                {statusMapper[props.status]}
               </Typography>
             </Typography>
           </Box>
           <Box>
-            <Link to='/exams/start/:id'>
-              <Button variant='contained'>Start</Button>
-            </Link>
-            <Link to='/certificate/:id'>
-              <Button variant='contained'>Get Certificate</Button>
-            </Link>
+            {props.status === 'not-started' && (
+              <Button variant='contained' onClick={startExamHandler}>
+                Start
+              </Button>
+            )}
+            {props.status === 'started' && (
+              <Link to='/exams/start/:id'>
+                <Button variant='contained'>Continue</Button>
+              </Link>
+            )}
+            {props.status === 'passed' && (
+              <Link to='/certificate/:id'>
+                <Button variant='contained'>Get Certificate</Button>
+              </Link>
+            )}
+            {(props.status === 'not-passed' ||
+              props.status === 'waiting-approval' ||
+              props.status === 'cheated') && (
+              <Button variant='contained' disabled>
+                Get Certificate
+              </Button>
+            )}
           </Box>
         </Box>
       </Grid>

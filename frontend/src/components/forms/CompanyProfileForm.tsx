@@ -1,72 +1,63 @@
-import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import React, { useContext, useState } from 'react';
+
 import axios from 'axios';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
 import { Grid, TextField, Typography } from '@mui/material';
-import LoadingButton from '@mui/lab/LoadingButton';
 
 import { headers } from 'services/auth';
+import { LoadingButton } from '@mui/lab';
+import { AuthContext } from 'store/auth-context';
 
 // interface
 interface FormValues {
   name: string;
-  email: string;
-  mobile: string;
-
+  desc: string;
+  mobile: number;
   axiosError: string;
 }
 
-// intial Form Values
-const initialValues = {
-  name: '',
-  email: '',
-  mobile: '',
-
-  axiosError: '',
-};
-
 // data Mapper
-const dataMapper = (data: User): FormValues => {
+const dataMapper = (data: any): FormValues => {
   return {
     name: data.name,
-    email: data.email,
-    mobile: data.mobile,
+    desc: data.desc,
+    mobile: data.phoneNumber,
     axiosError: '',
   };
 };
 
 // Validation Schema
-const userValidationSchema = Yup.object().shape({
-  name: Yup.string().required("user's name is required"),
-  email: Yup.string()
-    .email('must be a valid email')
-    .required("user's email is required"),
-  mobile: Yup.string(),
+const companyValidationSchema = Yup.object().shape({
+  name: Yup.string().required("company's name is required"),
+  desc: Yup.string().required("company's description is required"),
+  mobile: Yup.string().required("company's mobile is required "),
 });
 
 const mt = 3;
-const MyProfileForm: React.FC<{ data?: any }> = (props) => {
-  const isEditing = !!props.data;
+const CompanyProfileForm: React.FC<{ data: any; id: number }> = (props) => {
+  const { policies } = useContext(AuthContext);
   const [loading, setLoading] = useState(false);
   const [message, setMessage] = useState('');
+
   const formik = useFormik({
-    initialValues: isEditing ? dataMapper(props.data) : initialValues,
-    validationSchema: userValidationSchema,
+    initialValues: dataMapper(props.data),
+    validationSchema: companyValidationSchema,
     onSubmit: async (values, state) => {
       setLoading(true);
       try {
         const data = {
-          name: values.name,
-          email: values.email,
-          mobile: values.mobile,
+          name: formik.values.name,
+          desc: formik.values.desc,
+          phoneNumber: formik.values.mobile,
         };
         await axios({
-          url: `${process.env.REACT_APP_API_URL}/api/v1/accounts/me`,
+          url: `${process.env.REACT_APP_API_URL}/api/v1/company/${props.id}`,
           headers,
           method: 'PATCH',
           data,
         });
+
         setMessage('Saved Successfully');
         setTimeout(() => {
           setMessage('');
@@ -83,13 +74,14 @@ const MyProfileForm: React.FC<{ data?: any }> = (props) => {
       <Grid item mt={mt} flexGrow={1} maxWidth={500}>
         <TextField
           variant='outlined'
-          label='name'
+          label='company name'
           name='name'
           value={formik.values.name}
           onChange={formik.handleChange}
           onBlur={formik.handleBlur}
           error={formik.touched.name && !!formik.errors.name}
           helperText={formik.touched.name && formik.errors.name}
+          disabled={!policies?.adminAll}
           fullWidth
           required
         />
@@ -97,13 +89,14 @@ const MyProfileForm: React.FC<{ data?: any }> = (props) => {
       <Grid item mt={mt} flexGrow={1} maxWidth={500}>
         <TextField
           variant='outlined'
-          label='Email'
-          name='email'
-          value={formik.values.email}
+          label='company description'
+          name='desc'
+          value={formik.values.desc}
           onChange={formik.handleChange}
           onBlur={formik.handleBlur}
-          error={formik.touched.email && !!formik.errors.email}
-          helperText={formik.touched.email && formik.errors.email}
+          error={formik.touched.desc && !!formik.errors.desc}
+          helperText={formik.touched.desc && formik.errors.desc}
+          disabled={!policies?.adminAll}
           fullWidth
           required
         />
@@ -111,7 +104,7 @@ const MyProfileForm: React.FC<{ data?: any }> = (props) => {
       <Grid item mt={mt} flexGrow={1} maxWidth={500}>
         <TextField
           variant='outlined'
-          label='mobile'
+          label='company mobile'
           name='mobile'
           value={formik.values.mobile}
           onChange={formik.handleChange}
@@ -119,10 +112,11 @@ const MyProfileForm: React.FC<{ data?: any }> = (props) => {
           error={formik.touched.mobile && !!formik.errors.mobile}
           helperText={formik.touched.mobile && formik.errors.mobile}
           fullWidth
+          disabled={!policies?.adminAll}
+          required
         />
       </Grid>
-
-      <Grid item mt={mt} width={'100%'}>
+      <Grid mt={mt} item width={'100%'}>
         {formik.errors.axiosError && (
           <Typography mb={1} color='error'>
             {formik.errors.axiosError}
@@ -140,12 +134,13 @@ const MyProfileForm: React.FC<{ data?: any }> = (props) => {
           variant='contained'
           size='large'
           type='submit'
+          disabled={!policies?.adminAll}
         >
-          {isEditing ? 'Save' : 'Create'}
+          Save
         </LoadingButton>
       </Grid>
     </form>
   );
 };
 
-export default MyProfileForm;
+export default CompanyProfileForm;

@@ -124,3 +124,14 @@ export const editUsersBreadcrumbsPage = (data: any): Breadcrumb[] =>
       path: `/company/users/${data?.id}/results`,
     },
   ]);
+
+// Company Profile
+export const companyProfileBreadcrumbsPage = (data: any): Breadcrumb[] => [
+  {
+    label: data.name,
+  },
+  {
+    label: 'Company Profile',
+    path: `/company/profile`,
+  },
+];
