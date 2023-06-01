@@ -34,7 +34,7 @@ const ExamCard: React.FC<any> = (props) => {
             }}
           >
             <img
-              src={'https://picsum.photos/200/300'}
+              src={`${process.env.REACT_APP_API_URL}/thumbnails/${props.thumbnailUrl}`}
               alt={`${props.name} thumbnail`}
               draggable={false}
               height={200}

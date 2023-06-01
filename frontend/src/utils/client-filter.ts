@@ -65,11 +65,12 @@ const clientFilter: any = (
       } else if (typeof row[column] === 'object') {
         return Object.entries(row[column]).some(
           (entry: any) =>
-            entry[1].toString().toLowerCase().indexOf(search.toLowerCase()) > -1
+            entry[1]?.toString().toLowerCase().indexOf(search.toLowerCase()) >
+            -1
         );
       } else
         return (
-          row[column].toString().toLowerCase().indexOf(search.toLowerCase()) >
+          row[column]?.toString().toLowerCase().indexOf(search.toLowerCase()) >
           -1
         );
     })

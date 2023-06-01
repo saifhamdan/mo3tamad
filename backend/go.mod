@@ -5,6 +5,7 @@ go 1.20
 require (
 	github.com/casbin/casbin/v2 v2.68.0
 	github.com/casbin/gorm-adapter/v3 v3.16.1
+	github.com/disintegration/imaging v1.6.2
 	github.com/go-playground/validator/v10 v10.12.0
 	github.com/go-redis/redis/v8 v8.11.5
 	github.com/goccy/go-json v0.10.2
@@ -68,8 +69,9 @@ require (
 	github.com/valyala/tcplisten v1.0.0 // indirect
 	go.uber.org/atomic v1.9.0 // indirect
 	go.uber.org/multierr v1.8.0 // indirect
+	golang.org/x/image v0.7.0 // indirect
 	golang.org/x/sys v0.6.0 // indirect
-	golang.org/x/text v0.8.0 // indirect
+	golang.org/x/text v0.9.0 // indirect
 	gopkg.in/ini.v1 v1.67.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 	gorm.io/driver/postgres v1.4.4 // indirect

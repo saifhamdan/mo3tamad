@@ -107,4 +107,7 @@ func (s *Server) Register() {
 	transRoutes.Post("/:transId/answer", s.UserAnswerd)
 	//transRoutes.Get("/:id",s.GetUserAnswers)
 
+	// thumbnails
+	s.App.Get("/thumbnails/:thumbnailUrl", s.GetThumbnail)
+
 }

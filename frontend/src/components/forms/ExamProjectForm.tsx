@@ -14,6 +14,8 @@ interface FormValues {
   desc: string;
   passingScore: number;
   duration: number;
+  thumbnailUrl: '';
+  thumbnail: any;
   axiosError: string;
 }
 
@@ -21,6 +23,8 @@ interface FormValues {
 const initialValues = {
   title: '',
   desc: '',
+  thumbnailUrl: '',
+  thumbnail: null,
   duration: 0,
   passingScore: 0,
   axiosError: '',
@@ -33,6 +37,10 @@ const dataMapper = (data: any): FormValues => {
     desc: data.desc,
     passingScore: data.passingScore,
     duration: data.duration,
+    thumbnailUrl: data.thumbnailUrl,
+    thumbnail: {
+      name: data.thumbnailUrl,
+    },
     axiosError: '',
   };
 };
@@ -43,6 +51,13 @@ const examProjectValidationSchema = Yup.object().shape({
   desc: Yup.string().required("exam's description is required"),
   passingScore: Yup.number().required("exam's passingScore is required"),
   duration: Yup.number().required("exam's duration is required"),
+  thumbnail: Yup.mixed().test(
+    'thumbnail',
+    "exam's thumbnail is required",
+    (value: any) => {
+      return !!value.name;
+    }
+  ),
 });
 
 const mt = 3;
@@ -57,20 +72,22 @@ const ExamProjectForm: React.FC<{ data?: any; id?: string }> = (props) => {
     onSubmit: async (values, state) => {
       setLoading(true);
       try {
-        const data = {
-          name: values.title,
-          passingScore: values.passingScore,
-          desc: values.desc,
-          duration: values.duration,
-          companyId,
-        };
+        console.log(values);
+        const fd = new FormData();
+        fd.append('name', values.title);
+        fd.append('desc', values.desc);
+        fd.append('passingScore', values.passingScore.toString());
+        fd.append('duration', values.duration.toString());
+        fd.append('companyId', companyId.toString());
+        fd.append('thumbnail', values.thumbnail);
+
         await axios({
           url: `${process.env.REACT_APP_API_URL}/api/v1/exams/${
             props.id ? props.id : ''
           }`,
           headers,
           method: isEditing ? 'PATCH' : 'POST',
-          data,
+          data: fd,
         });
         navigate('/company/exams-projects');
       } catch (err: any) {
@@ -85,6 +102,28 @@ const ExamProjectForm: React.FC<{ data?: any; id?: string }> = (props) => {
       <Grid item mt={mt} flexGrow={1} maxWidth={500}>
         <TextField
           variant='outlined'
+          name='thumbnail'
+          onChange={(e: any) => {
+            console.log(e.target.files[0]);
+            formik.setFieldValue('thumbnail', e.target.files[0]);
+          }}
+          onBlur={formik.handleBlur}
+          error={formik.touched.thumbnail && !!formik.errors.thumbnail}
+          helperText={
+            formik.touched.thumbnail && formik.errors.thumbnail?.toString()
+          }
+          fullWidth
+          type='file'
+        />
+        {formik.values.thumbnail && (
+          <Typography>
+            thumbnail {formik.values.thumbnail?.name}.webp
+          </Typography>
+        )}
+      </Grid>
+      <Grid item mt={mt} flexGrow={1} maxWidth={500}>
+        <TextField
+          variant='outlined'
           label='title'
           name='title'
           value={formik.values.title}
@@ -93,7 +132,6 @@ const ExamProjectForm: React.FC<{ data?: any; id?: string }> = (props) => {
           error={formik.touched.title && !!formik.errors.title}
           helperText={formik.touched.title && formik.errors.title}
           fullWidth
-          required
         />
       </Grid>
       <Grid item mt={mt} flexGrow={1} maxWidth={500}>
@@ -107,7 +145,6 @@ const ExamProjectForm: React.FC<{ data?: any; id?: string }> = (props) => {
           error={formik.touched.desc && !!formik.errors.desc}
           helperText={formik.touched.desc && formik.errors.desc}
           fullWidth
-          required
         />
       </Grid>
       <Grid item mt={mt} flexGrow={1} maxWidth={500}>
@@ -123,7 +160,6 @@ const ExamProjectForm: React.FC<{ data?: any; id?: string }> = (props) => {
           error={formik.touched.passingScore && !!formik.errors.passingScore}
           helperText={formik.touched.passingScore && formik.errors.passingScore}
           fullWidth
-          required
         />
       </Grid>
       <Grid item mt={mt} flexGrow={1} maxWidth={500}>
@@ -139,7 +175,6 @@ const ExamProjectForm: React.FC<{ data?: any; id?: string }> = (props) => {
           error={formik.touched.duration && !!formik.errors.duration}
           helperText={formik.touched.duration && formik.errors.duration}
           fullWidth
-          required
         />
         <FormHelperText>note: duration is counted in minutes</FormHelperText>
       </Grid>

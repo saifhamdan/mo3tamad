@@ -6,6 +6,7 @@ import (
 	"mo3tamad/pkg/authz"
 	"mo3tamad/pkg/cache"
 	"mo3tamad/pkg/db"
+	"mo3tamad/pkg/email"
 	"mo3tamad/pkg/logger"
 	"mo3tamad/pkg/oauth2"
 	"mo3tamad/pkg/redis"
@@ -82,6 +83,11 @@ func Run() {
 	if err != nil {
 		fmt.Printf("Error loading resources: %v", err)
 		panic(0)
+	}
+
+	err = email.SendEmail([]string{"saifhamdan15@gmail.com"}, "Hiiiii")
+	if err != nil {
+		fmt.Print(err)
 	}
 
 	server := server.NewServer(log, cfg, DBSess.DB, cacheClient, validate, authzObj, oauth2)

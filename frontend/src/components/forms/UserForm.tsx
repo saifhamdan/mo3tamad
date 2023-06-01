@@ -112,7 +112,6 @@ const UserForm: React.FC<{ data?: any; id?: string; noRole?: boolean }> = (
           error={formik.touched.name && !!formik.errors.name}
           helperText={formik.touched.name && formik.errors.name}
           fullWidth
-          required
         />
       </Grid>
       <Grid item mt={mt} flexGrow={1} maxWidth={500}>
@@ -126,7 +125,6 @@ const UserForm: React.FC<{ data?: any; id?: string; noRole?: boolean }> = (
           error={formik.touched.email && !!formik.errors.email}
           helperText={formik.touched.email && formik.errors.email}
           fullWidth
-          required
         />
       </Grid>
       <Grid item mt={mt} flexGrow={1} maxWidth={500}>

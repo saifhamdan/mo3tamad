@@ -5,8 +5,9 @@ import "time"
 type Exam struct {
 	ExamID           int            `gorm:"primaryKey;autoIncrement:true;column:id" json:"id,omitempty"`
 	Duration         time.Duration  `gorm:"column:duration" json:"duration,omitempty"`
-	Title            string         `gorm:"column:title" json:"name,omitempty"`
-	Description      string         `gorm:"column:escription" json:"desc,omitempty"`
+	Title            string         `gorm:"column:title" form:"name" json:"name,omitempty"`
+	Description      string         `gorm:"column:escription" form:"desc" json:"desc,omitempty"`
+	ThumbnailUrl     string         `gorm:"column:thumbnail_url" json:"thumbnailUrl,omitempty"`
 	CertificationUrl string         `gorm:"column:certification_url" json:"certificationUrl,omitempty"`
 	PassingScore     int            `gorm:"column:passing_score" json:"passingScore,omitempty"`
 	CompanyId        int            `gorm:"column:company_id" json:"companyId,omitempty"`

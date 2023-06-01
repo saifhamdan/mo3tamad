@@ -17,6 +17,7 @@ const HomePage = () => {
     `${process.env.REACT_APP_API_URL}/api/v1/exams/`,
     []
   );
+  console.log(data);
   const {
     filter,
     page,

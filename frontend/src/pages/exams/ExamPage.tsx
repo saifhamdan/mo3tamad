@@ -71,7 +71,7 @@ const ExamPage = () => {
               <Grid position={'absolute'} right={16} item>
                 <Paper elevation={6} style={{ width: 350, height: 500 }}>
                   <img
-                    src={'https://picsum.photos/350/300'}
+                    src={`${process.env.REACT_APP_API_URL}/thumbnails/${data?.thumbnailUrl}`}
                     width={'350'}
                     height={'300'}
                     alt='exam cover'

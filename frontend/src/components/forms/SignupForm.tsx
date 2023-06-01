@@ -78,7 +78,6 @@ const SignupForm: React.FC = () => {
           error={formik.touched.name && !!formik.errors.name}
           helperText={formik.touched.name && formik.errors.name}
           fullWidth
-          required
         />
       </Grid>
       <Grid item mt={mt} flexGrow={1} maxWidth={500}>
@@ -92,7 +91,6 @@ const SignupForm: React.FC = () => {
           error={formik.touched.email && !!formik.errors.email}
           helperText={formik.touched.email && formik.errors.email}
           fullWidth
-          required
         />
       </Grid>
       <Grid item mt={mt} flexGrow={1} maxWidth={500}>
@@ -122,7 +120,6 @@ const SignupForm: React.FC = () => {
           error={formik.touched.password && !!formik.errors.password}
           helperText={formik.touched.password && formik.errors.password}
           fullWidth
-          required
         />
       </Grid>
 
@@ -143,7 +140,6 @@ const SignupForm: React.FC = () => {
             formik.touched.confirmPassword && formik.errors.confirmPassword
           }
           fullWidth
-          required
         />
       </Grid>
 

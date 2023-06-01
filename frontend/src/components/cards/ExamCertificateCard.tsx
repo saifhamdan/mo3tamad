@@ -35,7 +35,7 @@ const ExamCertificateCard: React.FC<any> = (props) => {
           }}
         >
           <img
-            src={'https://picsum.photos/200/300'}
+            src={`${process.env.REACT_APP_API_URL}/thumbnails/${props.exam.thumbnailUrl}`}
             alt={`${props.exam.name} thumbnail`}
             draggable={false}
             height={200}

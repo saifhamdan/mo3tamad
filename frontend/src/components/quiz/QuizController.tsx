@@ -47,6 +47,11 @@ const QuizController: React.FC<{ quiz: any }> = ({ quiz }) => {
     } else {
       setIsFullScreen(true);
     }
+    // if (!window.screenLeft && !window.screenX) {
+    //   setIsFullScreen(false);
+    // } else {
+    //   setIsFullScreen(true);
+    // }
   };
 
   useEffect(() => {

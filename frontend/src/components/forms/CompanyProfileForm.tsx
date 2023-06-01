@@ -83,7 +83,6 @@ const CompanyProfileForm: React.FC<{ data: any; id: number }> = (props) => {
           helperText={formik.touched.name && formik.errors.name}
           disabled={!policies?.adminAll}
           fullWidth
-          required
         />
       </Grid>
       <Grid item mt={mt} flexGrow={1} maxWidth={500}>
@@ -98,7 +97,6 @@ const CompanyProfileForm: React.FC<{ data: any; id: number }> = (props) => {
           helperText={formik.touched.desc && formik.errors.desc}
           disabled={!policies?.adminAll}
           fullWidth
-          required
         />
       </Grid>
       <Grid item mt={mt} flexGrow={1} maxWidth={500}>
@@ -113,7 +111,6 @@ const CompanyProfileForm: React.FC<{ data: any; id: number }> = (props) => {
           helperText={formik.touched.mobile && formik.errors.mobile}
           fullWidth
           disabled={!policies?.adminAll}
-          required
         />
       </Grid>
       <Grid mt={mt} item width={'100%'}>
