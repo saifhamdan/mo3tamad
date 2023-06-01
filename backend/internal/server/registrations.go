@@ -8,6 +8,15 @@ import (
 	"github.com/gofiber/fiber/v2"
 )
 
+const (
+	EXAM_STATUS_PASSED           = "passed"
+	EXAM_STATUS_NOT_PASSED       = "not-passed"
+	EXAM_STATUS_CHEATED          = "cheated"
+	EXAM_STATUS_STARTED          = "started"
+	EXAM_STATUS_NOT_STARTED      = "not-started"
+	EXAM_STATUS_WAITING_APPROVAL = "waiting-approval"
+)
+
 func (s *Server) CreateRegister(c *fiber.Ctx) error {
 	registration := &model.Registration{}
 	accountId, _ := c.ParamsInt("account_id")
@@ -59,6 +68,10 @@ func (s *Server) StartedExam(c *fiber.Ctx) error {
 	if err := s.DB.Preload("Exam").First(registration, registrationId).Error; err != nil {
 		return s.App.HttpResponseNotFound(c, fmt.Errorf("registiration not found"))
 	}
+	registration.Status = calculateRegStatus(registration)
+	if registration.Status != EXAM_STATUS_NOT_STARTED {
+		return s.App.HttpResponseForbidden(c, fmt.Errorf("the exam has started or your time is up"))
+	}
 
 	currentTime := time.Now()
 	dd := registration.Exam.Duration * time.Minute
@@ -71,19 +84,46 @@ func (s *Server) StartedExam(c *fiber.Ctx) error {
 	if err != nil {
 		return s.App.HttpResponseInternalServerErrorRequest(c, err)
 	}
-	return s.App.HttpResponseNoContent(c)
+	return s.App.HttpResponseOK(c, registration)
 }
 
 func (s *Server) FinishedExam(c *fiber.Ctx) error {
 	registration := &model.Registration{}
 	registrationId, _ := c.ParamsInt("id")
 
-	if err := s.DB.Where("id=?", registrationId).First(registration).Error; err != nil {
+	if err := s.DB.Preload("Exam").Preload("Trans.Question.Options").First(registration, registrationId).Error; err != nil {
 		return s.App.HttpResponseNotFound(c, fmt.Errorf("registiration not found"))
 	}
+
+	registration.Status = calculateRegStatus(registration)
+	if registration.Status != EXAM_STATUS_STARTED {
+		return s.App.HttpResponseForbidden(c, fmt.Errorf("the exam has not started yet or the exam is finished"))
+	}
+
 	currentTime := time.Now()
 	registration.FinishedAt = &currentTime
 	registration.Status = calculateRegStatus(registration)
+
+	mark := 0
+	for _, t := range registration.Trans {
+		for _, o := range t.Question.Options {
+			if o.OptionId == t.AnswerId {
+				if o.IsCorrect {
+					mark++
+				} else {
+					break
+				}
+			}
+		}
+	}
+
+	registration.Result = (mark / len(registration.Trans)) * 100
+	if registration.Result <= registration.Exam.PassingScore {
+		registration.Passed = false
+		registration.IsConsidered = true
+	}
+	fmt.Println(registration.Result)
+
 	err := s.DB.Save(registration).Error
 	if err != nil {
 		return s.App.HttpResponseInternalServerErrorRequest(c, err)
@@ -95,9 +135,15 @@ func (s *Server) UserCheated(c *fiber.Ctx) error {
 	registration := &model.Registration{}
 	registrationId, _ := c.ParamsInt("id")
 
-	if err := s.DB.Where("id=?", registrationId).First(registration).Error; err != nil {
+	if err := s.DB.First(registration, registrationId).Error; err != nil {
 		return s.App.HttpResponseNotFound(c, fmt.Errorf("registiration not found"))
 	}
+
+	registration.Status = calculateRegStatus(registration)
+	if registration.Status != EXAM_STATUS_STARTED {
+		return s.App.HttpResponseForbidden(c, fmt.Errorf("the exam has not started yet or the exam is finished"))
+	}
+
 	registration.IsCheated = true
 	registration.Status = calculateRegStatus(registration)
 	s.DB.Save(registration)
@@ -119,6 +165,23 @@ func (s *Server) GetRegByUserId(c *fiber.Ctx) error {
 
 	return s.App.HttpResponseOK(c, registration)
 }
+
+func (s *Server) GetRegistration(c *fiber.Ctx) error {
+	regId, _ := c.ParamsInt("id")
+	registration := &model.Registration{}
+	if err := s.DB.Preload("Exam").Preload("Trans.Question.Options").First(&registration, regId).Error; err != nil {
+		return s.App.HttpResponseInternalServerErrorRequest(c, err)
+	}
+
+	registration.Status = calculateRegStatus(registration)
+
+	if registration.Status != EXAM_STATUS_STARTED && registration.Status != EXAM_STATUS_NOT_STARTED {
+		return s.App.HttpResponseForbidden(c, fmt.Errorf("the exam has not started yet or your time is up"))
+	}
+
+	return s.App.HttpResponseOK(c, registration)
+}
+
 func (s *Server) GetRegByExamId(c *fiber.Ctx) error {
 	examId, _ := c.ParamsInt("id")
 	registration := []*model.Registration{}
@@ -132,6 +195,7 @@ func (s *Server) GetRegByExamId(c *fiber.Ctx) error {
 
 	return s.App.HttpResponseOK(c, registration)
 }
+
 func (s *Server) DeleteRegistration(c *fiber.Ctx) error {
 	registration_id, err := c.ParamsInt("id")
 	if err != nil {
@@ -146,20 +210,17 @@ func calculateRegStatus(reg *model.Registration) string {
 	timeNow := time.Now().UnixNano()
 	switch {
 	case reg.Passed:
-		return "passed"
+		return EXAM_STATUS_PASSED
 	case !reg.Passed && reg.IsConsidered:
-		return "not-passed"
+		return EXAM_STATUS_NOT_PASSED
 	case reg.IsCheated:
-		return "cheated"
+		return EXAM_STATUS_CHEATED
+	case reg.FinishedAt != nil && !reg.IsConsidered:
+		return EXAM_STATUS_WAITING_APPROVAL
 	case reg.StartTime == nil && reg.EndTime == nil:
-		return "not-started"
+		return EXAM_STATUS_NOT_STARTED
 	case timeNow >= reg.StartTime.UnixNano() && timeNow <= reg.EndTime.UnixNano():
-		return "started"
-	case timeNow >= reg.EndTime.UnixNano() && !reg.IsConsidered:
-		if reg.FinishedAt == nil {
-			reg.FinishedAt = reg.EndTime
-		}
-		return "waiting-approval"
+		return EXAM_STATUS_STARTED
 	default:
 		return ""
 	}

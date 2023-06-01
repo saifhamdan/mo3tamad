@@ -58,7 +58,7 @@ const LoginPage = () => {
       justifyContent={'center'}
       height={'100vh'}
     >
-      <Paper>
+      <Paper elevation={4}>
         <Box width={400} p={2}>
           <Box mb={2} px={2} textAlign={'center'}>
             <img src={logoPath} alt='mo3tamad logo' width={200} />

@@ -1,33 +1,22 @@
 import { Box, Typography, Button } from '@mui/material';
+import { Link } from 'atoms';
 
-interface Props {
-  currectAnswers: number;
-  questionsLength: number;
-  resetQuizHandler: () => void;
-  showQuizAnswersHandler: () => void;
-}
+interface Props {}
 
 const FinishQuiz: React.FC<Props> = (props) => {
   return (
     <Box mb={3}>
       <Box mb={1}>
         <Typography>
-          Grade: <strong>{props.currectAnswers}</strong> out{' '}
-          {props.questionsLength} (
-          <strong>
-            {((props.currectAnswers / props.questionsLength) * 100).toFixed(2)}
-          </strong>
-          %)
+          You have finished the exam your applicant will be reviewed shortly
         </Typography>
       </Box>
       <Box>
-        <Button
-          variant='contained'
-          onClick={props.resetQuizHandler}
-          style={{ marginRight: 8 }}
-        >
-          Reset Quiz
-        </Button>
+        <Link to='/my-exams' decorated={false}>
+          <Button variant='contained' style={{ marginRight: 8 }}>
+            Back to My exams page
+          </Button>
+        </Link>
       </Box>
     </Box>
   );

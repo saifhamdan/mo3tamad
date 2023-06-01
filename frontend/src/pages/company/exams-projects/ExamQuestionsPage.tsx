@@ -64,7 +64,7 @@ const ExamQuestionsPage = () => {
     },
     {
       field: 'action',
-      headerName: 'Action',
+      headerName: 'Actions',
       flex: 2,
       sortable: false,
       renderCell: (params) => {

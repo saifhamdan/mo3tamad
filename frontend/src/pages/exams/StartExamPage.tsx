@@ -1,38 +1,24 @@
 import { Paper, Typography } from '@mui/material';
 import { Container } from 'atoms';
 import QuizController from 'components/quiz/QuizController';
+import useFetch from 'hooks/use-fetch';
 import { useEffect, useState } from 'react';
+import { useParams } from 'react-router';
+import LoadingSpinnerWrapper from 'utils/loading-spinner-wrapper';
 
 const StartExamPage = () => {
-  const [isCheated, setIsCheated] = useState(false);
-  const data = {
-    name: 'quiz data',
-    questions: [
-      {
-        desc: '12312',
-        options: [],
-      },
-      {
-        desc: '3123',
-      },
-    ],
-  };
-
-  useEffect(() => {
-    if (!window.screenTop && !window.screenY) {
-    } else {
-      setIsCheated(true);
-    }
-  }, [window.screenTop, window.screenY]);
+  const { registerId } = useParams();
+  const { data, loading, error } = useFetch<any>(
+    `${process.env.REACT_APP_API_URL}/api/v1/registration/${registerId}`,
+    {}
+  );
 
   return (
     <Container>
-      <Paper elevation={4} sx={{ p: 4, my: 3 }}>
-        <Typography variant='h4' mb={3}>
-          {data.name}
-        </Typography>
-        <div>cheated? {isCheated ? 'true' : 'false'}</div>
-        <QuizController quiz={data} />
+      <Paper elevation={4} sx={{ p: 2, my: 3 }}>
+        <LoadingSpinnerWrapper loading={loading} error={error}>
+          {data.id && <QuizController quiz={data} />}
+        </LoadingSpinnerWrapper>
       </Paper>
     </Container>
   );

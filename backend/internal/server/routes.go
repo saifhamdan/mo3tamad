@@ -88,12 +88,13 @@ func (s *Server) Register() {
 
 	registrationRoutes := v1.Group("/registration")
 	registrationRoutes.Get("/my-exams", s.GetRegByUserId)
+	registrationRoutes.Get("/:id", s.GetRegistration)
+	registrationRoutes.Get("/byExam/:id", s.GetRegByExamId)
+	registrationRoutes.Delete("/:id", s.DeleteRegistration)
 	registrationRoutes.Patch("/:id/start", s.Middleware.Authorization(authz.Register), s.StartedExam)
 	registrationRoutes.Patch("/:id/finish", s.Middleware.Authorization(authz.Register), s.FinishedExam)
 	registrationRoutes.Patch("/:id/cheat", s.Middleware.Authorization(authz.Register), s.UserCheated)
 	registrationRoutes.Post("/:account_id/:exam_id", s.Middleware.Authorization(authz.Register), s.CreateRegister)
-	registrationRoutes.Get("/byExam/:id", s.GetRegByExamId)
-	registrationRoutes.Delete("/:id", s.DeleteRegistration)
 
 	companyRoutes := v1.Group("/company")
 	companyRoutes.Get("/", s.GetAllCompanies)
@@ -103,7 +104,7 @@ func (s *Server) Register() {
 	companyRoutes.Patch("/:id", s.UpdateCompany)
 
 	transRoutes := v1.Group("/trans")
-	transRoutes.Post("/:id/answer", s.UserAnswerd)
+	transRoutes.Post("/:transId/answer", s.UserAnswerd)
 	//transRoutes.Get("/:id",s.GetUserAnswers)
 
 }

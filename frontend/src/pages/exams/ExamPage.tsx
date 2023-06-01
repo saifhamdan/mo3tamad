@@ -116,7 +116,7 @@ const ExamPage = () => {
                           Register
                         </Button>
                       )}
-                      {data?.registration?.status === 'not-started' && (
+                      {data?.registration?.id && (
                         <Button
                           disabled={true}
                           size='large'

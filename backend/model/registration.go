@@ -16,6 +16,6 @@ type Registration struct {
 	Status         string     `gorm:"column:status" json:"status,omitempty"`
 	Account        Account    `gorm:"foriegnKey:AccountId" json:"account,omitempty"`
 	Exam           Exam       `gorm:"forigenKey:ExamId" json:"exam,omitempty"`
-	Trans          []Trans    `gorm:"forigenKey:RegistrationId"`
+	Trans          []Trans    `gorm:"forigenKey:RegistrationId" json:"trans,omitempty"`
 	Model
 }

@@ -33,11 +33,11 @@ interface Props {
 
 const QuizNavigation: React.FC<Props> = (props) => {
   return (
-    <Box bgcolor={'#2fbad915'} p={2}>
+    <Box bgcolor={'#faecdf'} p={2}>
       <Box mb={1}>
         <Grid container justifyContent='space-between'>
           <Grid item>
-            <Typography>Quiz Navigation</Typography>
+            <Typography>Exam Navigation</Typography>
           </Grid>
           {props.duration && (
             <Grid item>
@@ -49,8 +49,6 @@ const QuizNavigation: React.FC<Props> = (props) => {
       <NavigateWrapper>
         {props.questions &&
           props.questions.map((qs, index) => {
-            let color = qs.value || qs.values.length > 0 ? qs.isCorrect : null;
-
             return (
               <QuestionNavigate
                 key={index}
@@ -62,7 +60,7 @@ const QuizNavigation: React.FC<Props> = (props) => {
               >
                 <NavigateNumber>{index + 1}</NavigateNumber>
                 <NavigateColor
-                  bgcolor={color ? '#555' : undefined}
+                  bgcolor={qs.answerId ? '#555' : undefined}
                 ></NavigateColor>
               </QuestionNavigate>
             );

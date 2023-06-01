@@ -11,16 +11,15 @@ const QuestionNumberBox = styled(Box)`
 
 interface Props {
   courseName: string;
-  question: any;
+  trans: any;
   currentQuestion: number;
   duration?: string;
   questions?: any[];
-  showAnswers?: boolean;
   matches: boolean;
   index?: number;
   finishQuizHandler?: () => void | undefined;
   changeQuestionHandler?: (index: number) => void | undefined;
-  answerHandler?: (opId: string) => void | undefined;
+  answerHandler?: (opId: string) => Promise<void> | undefined;
 }
 
 const Question: React.FC<Props> = (props) => {
@@ -44,9 +43,7 @@ const Question: React.FC<Props> = (props) => {
               <Typography component='span' variant='subtitle1'>
                 Question{' '}
                 <Typography component='span' fontWeight={500} fontSize={17}>
-                  {props.showAnswers
-                    ? typeof props.index !== 'undefined' && props.index + 1
-                    : props.currentQuestion + 1}
+                  {props.currentQuestion + 1}
                 </Typography>
               </Typography>
               <Typography component='div' variant='subtitle1'>
@@ -56,41 +53,39 @@ const Question: React.FC<Props> = (props) => {
           </Grid>
           <Grid item flexGrow={1}>
             <Box>
-              <Box bgcolor={'#2fbad915'} p={2} mb={2}>
+              <Box bgcolor={'#faecdf'} p={2} mb={2}>
                 <Box mb={1}>
                   <div
                     dangerouslySetInnerHTML={{
-                      __html: props.question.body,
+                      __html: props.trans.question.text,
                     }}
                   />
                 </Box>
                 <Box mb={3}></Box>
                 <Box pl={1}>
-                  {props.question.answerCount <= 1 && (
-                    <Options
-                      options={props.question.options}
-                      showAnswers={props.showAnswers}
-                      value={props.question.value}
-                      answerHandler={props.answerHandler}
-                    />
-                  )}
+                  {/* {props.transquestion.answerCount <= 1 && ( */}
+                  <Options
+                    options={props.trans.question.options}
+                    answerId={props.trans.answerId}
+                    answerHandler={props.answerHandler}
+                  />
+                  {/* )} */}
                 </Box>
               </Box>
-              {!props.showAnswers && (
-                <Box>
-                  <QuestionActions
-                    currentQuestion={props.currentQuestion}
-                    questionsLength={questionsLength}
-                    finishQuizHandler={props.finishQuizHandler}
-                    changeQuestionHandler={props.changeQuestionHandler}
-                  />
-                </Box>
-              )}
+
+              <Box>
+                <QuestionActions
+                  currentQuestion={props.currentQuestion}
+                  questionsLength={questionsLength}
+                  finishQuizHandler={props.finishQuizHandler}
+                  changeQuestionHandler={props.changeQuestionHandler}
+                />
+              </Box>
             </Box>
           </Grid>
         </Grid>
       </Grid>
-      {!props.showAnswers && !props.matches && (
+      {!props.matches && (
         <Grid item width={300} ml={2}>
           <Box mb={3}>
             <QuizNavigation

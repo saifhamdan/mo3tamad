@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useTimer } from 'react-timer-hook';
 import { Box, Typography, useMediaQuery } from '@mui/material';
 
@@ -6,19 +6,15 @@ import QuizNavigation from './QuizNavigation';
 import FinishQuiz from './FinishQuiz';
 import StartQuiz from './StartQuiz';
 import Question from './questions/Question';
+import axios from 'axios';
+import { headers } from 'services/auth';
+import { useParams } from 'react-router';
+import CheatModal from 'components/modals/CheatModal';
+import ConfirmationModal from 'components/modals/ConfirmationModal';
 
-const questionsMapper = (questions: any[]): any[] => {
-  return questions.map((qs) => ({
-    ...qs,
-    value: '',
-    values: [],
-    isCorrect: 'grey',
-  }));
-};
+const getTime = (duration: string) => {
+  let time = new Date(duration);
 
-const getTime = (duration: number) => {
-  let time = new Date();
-  time.setMinutes(time.getMinutes() + duration);
   return time;
 };
 
@@ -34,148 +30,174 @@ const nicerDuration = (hours: number, minutes: number, seconds: number) => {
 };
 
 const QuizController: React.FC<{ quiz: any }> = ({ quiz }) => {
+  const { registerId } = useParams();
+  const [isFullScreen, setIsFullScreen] = useState(
+    !(!window.screenTop && !window.screenY)
+  );
+  const [confirmFinish, setConfirmFinish] = useState(false);
+  const [confirmStart, setConfirmStart] = useState(false);
   const [quizStatus, setQuizStatus] = useState('');
   const [currQuestion, setCurrQuestion] = useState(0);
-  const [grade, setGrade] = useState(0);
-  const [questions, setQuestions] = useState(questionsMapper(quiz.questions));
+  const [trans, setTrans] = useState(quiz.trans);
   const matches = useMediaQuery('(max-width: 1150px)');
 
-  const startQuizHandler = () => {
-    if (questions.length > 0) {
-      restart(getTime(quiz.duration));
+  const handleResize = () => {
+    if (!window.screenTop && !window.screenY) {
+      setIsFullScreen(false);
+    } else {
+      setIsFullScreen(true);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+  const continueQuizHandler = () => {
+    if (trans.length > 0) {
       setCurrQuestion(0);
-      setQuestions(questionsMapper(quiz.questions));
-      setGrade(0);
       setQuizStatus('start');
     }
   };
 
-  const finishQuizHandler = () => {
-    const newQuestions = [...questions];
-    let calcGrade = 0;
-    questions.forEach((qs, qsIndex) => {
-      if (qs.value) {
-        qs.options.forEach((op: any) => {
-          if (op.isAnswer) {
-            if (op._id === qs.value) {
-              ++calcGrade;
-              newQuestions[qsIndex].isCorrect = 'green';
-            } else newQuestions[qsIndex].isCorrect = 'red';
-          }
-        });
-      } else if (qs.values.length > 0) {
-        let qsGrade = 0;
-        qs.options.forEach((op: any) => {
-          if (qs.values.includes(op._id)) {
-            if (op.isAnswer) {
-              qsGrade += 1 / qs.answerCount;
-              if (newQuestions[qsIndex].isCorrect !== 'grey')
-                newQuestions[qsIndex].isCorrect = 'green';
-              else newQuestions[qsIndex].isCorrect = 'yellow';
-            } else {
-              qsGrade -= 1 / qs.answerCount;
-              if (newQuestions[qsIndex].isCorrect === 'grey')
-                newQuestions[qsIndex].isCorrect = 'red';
-              else newQuestions[qsIndex].isCorrect = 'yellow';
-            }
-          }
-        });
-        calcGrade += qsGrade > 0 ? qsGrade : 0;
+  const startQuizHandler = async () => {
+    try {
+      const res = await axios({
+        url: `${process.env.REACT_APP_API_URL}/api/v1/registration/${registerId}/start`,
+        method: 'PATCH',
+        headers,
+      });
+      if (trans.length > 0) {
+        restart(getTime(res.data.data.endTime));
+        setCurrQuestion(0);
+        setQuizStatus('start');
       }
-    });
-    pause();
-    setCurrQuestion(0);
-    setQuestions(newQuestions);
-    setGrade(calcGrade);
-    setQuizStatus('finish');
+    } catch (err) {
+      // alert(err);
+    }
   };
 
-  const showQuizAnswersHandler = () => {
-    if (quizStatus === 'finish') setQuizStatus('show');
-    else if (quizStatus === 'show') setQuizStatus('finish');
+  const finishQuizHandler = async () => {
+    try {
+      await axios({
+        url: `${process.env.REACT_APP_API_URL}/api/v1/registration/${registerId}/finish`,
+        method: 'PATCH',
+        headers,
+      });
+      pause();
+      setCurrQuestion(0);
+      setQuizStatus('finish');
+    } catch (err) {
+      // alert(err);
+    }
   };
 
   const changeQuestionHandler = (index: number) => {
     setCurrQuestion(index);
-    const qs = document.getElementById(`question-${index - 1}`);
-    if (qs) qs.scrollIntoView();
   };
 
-  const answerHandler = (ans: any) => {
-    const newAnswers = [...questions];
+  const answerHandler = async (ans: any) => {
+    try {
+      const newAnswers = [...trans];
 
-    if (newAnswers[currQuestion].answerCount <= 1)
-      newAnswers[currQuestion].value = ans;
-    else newAnswers[currQuestion].values = ans;
-    setQuestions(newAnswers);
+      newAnswers[currQuestion].answerId = ans;
+      setTrans(newAnswers);
+      await axios({
+        url: `${process.env.REACT_APP_API_URL}/api/v1/trans/${newAnswers[currQuestion].id}/answer?answerId=${ans}`,
+        method: 'Post',
+        headers,
+      });
+    } catch (err) {
+      // alert(err);
+    }
   };
 
   const { hours, minutes, seconds, restart, pause } = useTimer({
-    autoStart: false,
-    expiryTimestamp: getTime(quiz.duration),
+    autoStart: quiz.status === 'started',
+    expiryTimestamp: getTime(quiz.endTime),
     onExpire: finishQuizHandler,
   });
-  const duration = nicerDuration(hours, minutes, seconds);
 
-  const questionsLength = questions.length;
+  const duration = nicerDuration(hours, minutes, seconds);
+  console.log(isFullScreen);
+  const transLength = trans.length;
   return (
     <Box height='100%' id='quiz'>
-      <Box mb={3}>
-        <Typography>{quiz.name}</Typography>
+      <Box
+        sx={{
+          backgroundColor: '#e77917',
+          p: 2,
+          borderRadius: 1,
+        }}
+        mb={3}
+      >
+        <Typography variant='h5'>{quiz.exam.name}</Typography>
       </Box>
-      {(quizStatus === 'show' || (quizStatus === 'start' && matches)) && (
+      {quizStatus === 'start' && matches && (
         <Box mb={3} width='100%'>
           <QuizNavigation
             duration={quizStatus === 'start' ? duration : undefined}
-            questions={questions}
+            questions={trans}
             currentQuestion={currQuestion}
-            showAnswers={quizStatus === 'show'}
             changeQuestionHandler={changeQuestionHandler}
           />
         </Box>
       )}
       {quizStatus === '' && (
         <StartQuiz
-          name={quiz.name}
-          duration={quiz.duration}
-          questionsCount={questionsLength}
-          startQuizHandler={startQuizHandler}
+          status={quiz.status}
+          name={quiz.exam.name}
+          duration={
+            quiz.status === 'not-started' ? quiz.exam.duration : duration
+          }
+          isFullScreen={isFullScreen}
+          questionsCount={transLength}
+          startQuizHandler={() => setConfirmStart(true)}
+          continueQuizHandler={continueQuizHandler}
         />
       )}
       {quizStatus === 'start' && (
         <Question
           matches={matches}
           duration={duration}
-          questions={questions}
-          courseName={quiz.course.slug}
+          questions={trans}
+          courseName={quiz.exam.name}
           currentQuestion={currQuestion}
-          question={questions[currQuestion]}
+          trans={trans[currQuestion]}
           answerHandler={answerHandler}
-          finishQuizHandler={finishQuizHandler}
+          finishQuizHandler={() => setConfirmFinish(true)}
           changeQuestionHandler={changeQuestionHandler}
         />
       )}
-      {(quizStatus === 'finish' || quizStatus === 'show') && (
-        <FinishQuiz
-          currectAnswers={grade}
-          questionsLength={questionsLength}
-          resetQuizHandler={startQuizHandler}
-          showQuizAnswersHandler={showQuizAnswersHandler}
+      {!isFullScreen && quizStatus && (
+        <CheatModal
+          open
+          registerId={quiz.id}
+          closeHandler={() => setIsFullScreen(false)}
         />
       )}
-      {quizStatus === 'show' &&
-        questions.map((qs, index) => (
-          <Box id={`question-${index}`} key={index} mb={2}>
-            <Question
-              showAnswers
-              index={index}
-              question={qs}
-              matches={matches}
-              courseName={quiz.course.slug}
-              currentQuestion={currQuestion}
-            />
-          </Box>
-        ))}
+      <ConfirmationModal
+        open={confirmFinish}
+        actionHandler={finishQuizHandler}
+        headerText='Confirm Finish'
+        cancelButtonText='cancel'
+        confirmButtonText='finish'
+        closeHandler={() => setConfirmFinish(false)}
+        bodyText='are you sure you want to finish exam?'
+      />
+      <ConfirmationModal
+        open={confirmStart}
+        actionHandler={startQuizHandler}
+        headerText='Confirm Start'
+        cancelButtonText='cancel'
+        confirmButtonText='start'
+        closeHandler={() => setConfirmStart(false)}
+        bodyText='are you sure you want to start the exam now?'
+      />
+      {quizStatus === 'finish' && <FinishQuiz />}
     </Box>
   );
 };

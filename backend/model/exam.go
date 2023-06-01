@@ -14,5 +14,6 @@ type Exam struct {
 	QuestionsCount   int            `gorm:"column:questions_count" json:"questionsCount"`
 	Questions        []Question     `gorm:"forigenKey:ExamId" json:"questions"`
 	Registrations    []Registration `gorm:"forigenKey:ExamId" json:"registrations,omitempty"`
+	Comments         []Comment      `gorm:"forigenKey:ExamId" json:"comments,omitempty"`
 	Model
 }

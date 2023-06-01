@@ -1,9 +1,6 @@
 import styled from '@emotion/styled';
 import { Grid, Box, Button, Typography } from '@mui/material';
 import { Link } from 'atoms';
-import axios from 'axios';
-import { useNavigate } from 'react-router';
-import { headers } from 'services/auth';
 
 export const ExamPaper = styled.div`
   max-width: 100%;
@@ -23,21 +20,6 @@ const statusMapper: any = {
 };
 
 const ExamCertificateCard: React.FC<any> = (props) => {
-  const navigate = useNavigate();
-
-  const startExamHandler = async () => {
-    try {
-      await axios({
-        url: `${process.env.REACT_APP_API_URL}/api/v1/registration/${props.id}/start`,
-        method: 'PATCH',
-        headers,
-      });
-      navigate(`/exams/start/${props.id}`);
-    } catch (err) {
-      console.error(err);
-    }
-  };
-
   return (
     <ExamPaper>
       <Grid
@@ -75,7 +57,7 @@ const ExamCertificateCard: React.FC<any> = (props) => {
             <Typography>
               score:{' '}
               <Typography component='span' fontWeight='bold'>
-                {props.score ? props.score : 0}%
+                {props.result && props.isConsidered ? props.result : 0}%
               </Typography>
             </Typography>
             <Typography>
@@ -87,12 +69,12 @@ const ExamCertificateCard: React.FC<any> = (props) => {
           </Box>
           <Box>
             {props.status === 'not-started' && (
-              <Button variant='contained' onClick={startExamHandler}>
-                Start
-              </Button>
+              <Link to={`/exams/start/${props.id}`}>
+                <Button variant='contained'>Start</Button>
+              </Link>
             )}
             {props.status === 'started' && (
-              <Link to='/exams/start/:id'>
+              <Link to={`/exams/start/${props.id}`}>
                 <Button variant='contained'>Continue</Button>
               </Link>
             )}

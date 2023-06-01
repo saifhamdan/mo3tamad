@@ -13,5 +13,6 @@ type Account struct {
 	CompanyId     int            `gorm:"column:company_id" json:"companyId,omitempty"`
 	Company       Company        `json:"company,omitempty"`
 	Registrations []Registration `gorm:"forigenKey:AccountId" json:"registrations,omitempty"`
+	Comments      []Comment      `gorm:"forigenKey:AccountId" json:"comments,omitempty"`
 	Model
 }

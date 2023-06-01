@@ -56,7 +56,7 @@ const UsersPage = () => {
     { field: 'active', headerName: 'Active', flex: 1 },
     {
       field: 'action',
-      headerName: 'Action',
+      headerName: 'Actions',
       flex: 1,
       sortable: false,
       renderCell: (params) => {

@@ -3,18 +3,21 @@ import { useEffect, useState } from 'react';
 import { Button, Grid, Stack, Typography } from '@mui/material';
 import { DataGrid, GridColDef } from '@mui/x-data-grid';
 
-import { Container, Link } from 'atoms';
+import { Container } from 'atoms';
 import useFetch from 'hooks/use-fetch';
 import LoadingSpinnerWrapper from 'utils/loading-spinner-wrapper';
 import { examProjectApplicantsBreadcrumbsPage } from 'components/common/breadcrumbsList';
 import { useAppDispatch } from 'store';
 import { uiActions } from 'store/ui-slice';
 import { useParams } from 'react-router';
+import ConfirmationModal from 'components/modals/ConfirmationModal';
 
 const ExamApplicantsPage = () => {
+  const { examId } = useParams();
   const dispatch = useAppDispatch();
   const [selected, setSelected] = useState<any[]>([]);
-  const { examId } = useParams();
+  const [confirmApprove, setConfirmApprove] = useState(false);
+  const [confirmDecline, setConfirmDecline] = useState(false);
   const url = `${process.env.REACT_APP_API_URL}/api/v1/registration/byExam/${examId}`;
   const { data, error, loading, setData } = useFetch<any[]>(url, []);
 
@@ -23,6 +26,20 @@ const ExamApplicantsPage = () => {
       uiActions.ChangeBreadcrumb(examProjectApplicantsBreadcrumbsPage(data))
     );
   }, [dispatch, data]);
+
+  const declineHandler = async () => {
+    try {
+    } catch (err) {
+      console.error(err);
+    }
+  };
+
+  const approveHandler = async () => {
+    try {
+    } catch (err) {
+      console.error(err);
+    }
+  };
 
   const columns: GridColDef[] = [
     {
@@ -37,29 +54,29 @@ const ExamApplicantsPage = () => {
     { field: 'result', headerName: 'Result', flex: 1 },
     {
       field: 'action',
-      headerName: 'Action',
+      headerName: 'Actions',
       flex: 2,
       sortable: false,
       renderCell: (params) => {
-        const onDelete = async () => {
-          try {
-            // await deleteProjectAssessment(params.row.id);
-            const newData = data.filter((d: any) => d.id !== params.row.id);
-            setData(newData);
-          } catch (err) {
-            console.error(err);
-          }
-        };
-
         return (
-          <Stack direction='row' spacing={2}>
-            <Button variant='outlined' size='small'>
-              Approve
-            </Button>
-            <Button variant='outlined' size='small'>
-              Decline
-            </Button>
-          </Stack>
+          params.row.status === 'waiting-approval' && (
+            <Stack direction='row' spacing={2}>
+              <Button
+                variant='outlined'
+                size='small'
+                onClick={() => setConfirmApprove(true)}
+              >
+                Approve
+              </Button>
+              <Button
+                variant='outlined'
+                size='small'
+                onClick={() => setConfirmDecline(true)}
+              >
+                Decline
+              </Button>
+            </Stack>
+          )
         );
       },
     },
@@ -87,6 +104,25 @@ const ExamApplicantsPage = () => {
           />
         </LoadingSpinnerWrapper>
       </Grid>
+
+      <ConfirmationModal
+        open={confirmApprove}
+        actionHandler={approveHandler}
+        headerText='Confirm Approval'
+        cancelButtonText='cancel'
+        confirmButtonText='approve'
+        closeHandler={() => setConfirmApprove(false)}
+        bodyText={`are you sure you want to apporve this applicant?`}
+      />
+      <ConfirmationModal
+        open={confirmDecline}
+        actionHandler={declineHandler}
+        headerText='Confirm Decline'
+        cancelButtonText='cancel'
+        confirmButtonText='decline'
+        closeHandler={() => setConfirmDecline(false)}
+        bodyText={`are you sure you want to decline this applicant?`}
+      />
     </Container>
   );
 };

@@ -47,7 +47,7 @@ const ExamsProjectsPage = () => {
     { field: 'duration', headerName: 'Duration', flex: 1 },
     {
       field: 'action',
-      headerName: 'Action',
+      headerName: 'Actions',
       flex: 2,
       sortable: false,
       renderCell: (params) => {

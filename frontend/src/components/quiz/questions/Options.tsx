@@ -10,22 +10,16 @@ import {
 
 interface Props {
   options: any[];
-  value: string | undefined;
-  showAnswers?: boolean;
+  answerId: string | undefined;
   answerHandler?: (opId: string) => void;
 }
 
-const Options: React.FC<Props> = ({
-  options,
-  value,
-  showAnswers,
-  answerHandler,
-}) => {
+const Options: React.FC<Props> = ({ options, answerId, answerHandler }) => {
   return (
     <Box>
       <FormControl>
         <RadioGroup
-          value={value}
+          value={answerId}
           onChange={(e) => {
             if (answerHandler) answerHandler(e.target.value);
           }}
@@ -33,14 +27,12 @@ const Options: React.FC<Props> = ({
           {options.map((op, index) => (
             <Fragment key={index}>
               <FormControlLabel
-                value={op._id}
-                disabled={showAnswers}
+                value={op.id}
                 label={
                   <Grid container justifyItems='baseline'>
-                    {`${String.fromCharCode(97 + index)}.`}
                     <div
                       dangerouslySetInnerHTML={{
-                        __html: op.body,
+                        __html: op.text,
                       }}
                     />
                   </Grid>
