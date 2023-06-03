@@ -10,7 +10,7 @@ import (
 
 func (s *Server) GetAllExams(c *fiber.Ctx) error {
 	exams := []model.Exam{}
-	err := s.DB.Preload("Company").Find(&exams).Error
+	err := s.DB.Preload("Company").Preload("Categories").Preload("Level").Find(&exams).Error
 	if err != nil {
 		return s.App.HttpResponseInternalServerErrorRequest(c, err)
 	}
@@ -53,7 +53,7 @@ func (s *Server) GetExam(c *fiber.Ctx) error {
 		res.Registration = reg
 	}
 
-	err = s.DB.Preload("Company").First(&res.Exam, exam_id).Error
+	err = s.DB.Preload("Company").Preload("Comments").Preload("Categories").Preload("Level").First(&res.Exam, exam_id).Error
 	if err != nil {
 		if err == gorm.ErrRecordNotFound {
 			return s.App.HttpResponseNotFound(c, err)
@@ -92,6 +92,7 @@ func (s *Server) UpdateExam(c *fiber.Ctx) error {
 		s.App.HttpResponseBadQueryParams(c, fmt.Errorf("id param is required"))
 	}
 	exam := &model.Exam{}
+	s.DB.Where("id=?", exam_id).Delete(&model.Category{})
 	s.DB.First(exam, exam_id)
 	err = c.BodyParser(exam)
 	if err != nil {

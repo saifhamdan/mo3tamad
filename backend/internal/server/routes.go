@@ -107,4 +107,16 @@ func (s *Server) Register() {
 	transRoutes.Post("/:transId/answer", s.UserAnswerd)
 	//transRoutes.Get("/:id",s.GetUserAnswers)
 
+	commentRoutes := v1.Group("/comment")
+	commentRoutes.Get("/", s.GetAllComments)
+	commentRoutes.Post("/", s.CreateComment)
+	commentRoutes.Patch("/:id", s.UpdateComment)
+	commentRoutes.Delete("/:id", s.DeleteComment)
+
+	categoryRoutes := v1.Group("/category")
+	categoryRoutes.Get("/", s.GetAllCategories)
+
+	levelRoutes := v1.Group("/level")
+	levelRoutes.Get("/", s.GetAllLevels)
+
 }
