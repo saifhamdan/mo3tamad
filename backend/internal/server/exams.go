@@ -51,7 +51,7 @@ func (s *Server) GetExam(c *fiber.Ctx) error {
 	}
 
 	reg := &model.Registration{}
-	err = s.DB.Where("account_id = ? AND exam_id = ?", GetAccountId(c), exam_id).First(reg).Error
+	err = s.DB.Where("account_id = ? AND exam_id = ?", GetAccountId(c), exam_id).Preload("Account").First(reg).Error
 	if err != nil {
 		if err == gorm.ErrRecordNotFound {
 		} else {
@@ -106,9 +106,31 @@ func (s *Server) CreateExam(c *fiber.Ctx) error {
 func (s *Server) DeleteExam(c *fiber.Ctx) error {
 	exam_id, err := c.ParamsInt("id")
 	if err != nil {
-		s.App.HttpResponseBadQueryParams(c, fmt.Errorf("id param is required"))
+		return s.App.HttpResponseBadQueryParams(c, fmt.Errorf("id param is required"))
 	}
-	s.DB.Delete(&model.Exam{}, exam_id)
+
+	tx := s.DB.Begin()
+
+	exam := &model.Exam{}
+	err = tx.First(exam, exam_id).Error
+	if err != nil {
+		tx.Rollback()
+		return s.App.HttpResponseInternalServerErrorRequest(c, err)
+	}
+
+	err = tx.Delete(exam, exam_id).Error
+	if err != nil {
+		tx.Rollback()
+		return s.App.HttpResponseInternalServerErrorRequest(c, err)
+	}
+
+	err = os.Remove(fmt.Sprintf("public/uploads/thumbnails/%s.webp", exam.ThumbnailUrl))
+	if err != nil {
+		tx.Rollback()
+		return s.App.HttpResponseInternalServerErrorRequest(c, err)
+	}
+
+	tx.Commit()
 	return s.App.HttpResponseNoContent(c)
 }
 

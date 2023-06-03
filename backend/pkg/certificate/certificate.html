@@ -1,0 +1,99 @@
+<html>
+  <head>
+    <style type="text/css">
+      body,
+      html {
+        margin: 0;
+        padding: 0px;
+      }
+
+      body {
+        color: black;
+        display: table;
+        font-family: Georgia, serif;
+        font-size: 70px;
+        text-align: center;
+        padding: 10px;
+      }
+      .container {
+        border: 20px solid #e77a2b;
+        width: 1980px;
+        height: 1275px;
+        display: table-cell;
+        vertical-align: middle;
+        position: relative;
+        padding: 20px;
+      }
+      .logo {
+        color: #e77a2b;
+      }
+
+      .marquee {
+        color: rgb(73, 73, 73);
+        font-size: 48px;
+        margin: 20px;
+      }
+      .assignment {
+        color: rgb(73, 73, 73);
+        margin: 20px;
+        font-size: 48px;
+      }
+      .person {
+        font-size: 60px;
+        margin: 20px auto;
+        position: relative;
+        font-family: 'Times New Roman', Times, serif;
+        width: 100%;
+      }
+
+      .reason {
+        color: rgb(73, 73, 73);
+        margin: 20px;
+        font-size: 60px;
+      }
+      strong {
+        color: black;
+      }
+      .small {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 30px;
+        text-align: left;
+        color: rgb(29, 29, 29);
+      }
+      .small-container {
+        bottom: 20px;
+        position: absolute;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo">
+        <img
+          src="/home/saif/projects/mo3tamad/backend/public/system/mo3tamed.png"
+          width="700"
+        />
+      </div>
+
+      <!-- <div class="marquee">Certificate of Completion</div> -->
+
+      <div class="assignment" style="margin-top: 80px">
+        This certificate is presented to
+      </div>
+
+      <div class="person">{{name}}</div>
+
+      <div class="reason">
+        For successfully completed the <strong>{{exam}}</strong> exam
+      </div>
+      <div class="reason">By: <strong>{{company}}</strong></div>
+      <div style="height: 32px"></div>
+      <div class="small-container">
+        <div class="small" style="margin-bottom: 5px">
+          Grade <strong>{{grade}}</strong>
+        </div>
+        <div class="small">Date <strong>{{date}}</strong></div>
+      </div>
+    </div>
+  </body>
+</html>

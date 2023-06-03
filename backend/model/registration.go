@@ -11,6 +11,8 @@ type Registration struct {
 	FinishedAt     *time.Time `gorm:"column:finished_at" json:"finishedAt"`
 	IsCheated      bool       `gorm:"column:is_cheated" json:"isCheated"`
 	IsConsidered   bool       `gorm:"column:is_considered" json:"isConsidered"`
+	CertificateUrl string     `gorm:"column:certificate_url" json:"certificateUrl"`
+	IssuedAt       *time.Time `gorm:"column:issued_at" json:"issuedAt"`
 	Passed         bool       `gorm:"column:passed" json:"passed"`
 	Result         int        `gorm:"column:result" json:"result"`
 	Status         string     `gorm:"column:status" json:"status,omitempty"`

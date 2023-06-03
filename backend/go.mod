@@ -3,6 +3,7 @@ module mo3tamad
 go 1.20
 
 require (
+	github.com/SebastiaanKlippert/go-wkhtmltopdf v1.9.0
 	github.com/casbin/casbin/v2 v2.68.0
 	github.com/casbin/gorm-adapter/v3 v3.16.1
 	github.com/disintegration/imaging v1.6.2

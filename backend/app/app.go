@@ -78,14 +78,7 @@ func Run() {
 	// OAuth2
 	oauth2 := oauth2.NewOAuth2(cacheClient, DBSess.DB, cfg)
 
-	// load resources
-	err = authzObj.SeedAuthz(DBSess.DB)
-	if err != nil {
-		fmt.Printf("Error loading resources: %v", err)
-		panic(0)
-	}
-
-	err = email.SendEmail([]string{"saifhamdan15@gmail.com"}, "Hiiiii")
+	err = email.SendEmail([]string{"saifhamdan15@gmail.com"}, "Exam Applicant", "Hiiiii")
 	if err != nil {
 		fmt.Print(err)
 	}

@@ -3,6 +3,9 @@ package server
 import (
 	"fmt"
 	"mo3tamad/model"
+	"mo3tamad/pkg/certificate"
+	"mo3tamad/pkg/email"
+	"mo3tamad/pkg/shortuuid"
 	"time"
 
 	"github.com/gofiber/fiber/v2"
@@ -150,6 +153,82 @@ func (s *Server) UserCheated(c *fiber.Ctx) error {
 	return s.App.HttpResponseOK(c, registration)
 }
 
+func (s *Server) ApproveApplicant(c *fiber.Ctx) error {
+	registration_id, err := c.ParamsInt("id")
+	if err != nil {
+		s.App.HttpResponseBadQueryParams(c, fmt.Errorf("id param is required"))
+	}
+
+	reg := &model.Registration{}
+	err = s.DB.Preload("Account").Preload("Exam.Company").First(reg, registration_id).Error
+	if err != nil {
+		return s.App.HttpResponseInternalServerErrorRequest(c, err)
+	}
+
+	currentTime := time.Now()
+	reg.Passed = true
+	reg.IsConsidered = true
+	reg.Status = calculateRegStatus(reg)
+	reg.CertificateUrl = shortuuid.New()
+	reg.IssuedAt = &currentTime
+
+	tx := s.DB.Begin()
+	err = tx.Save(reg).Error
+	if err != nil {
+		tx.Rollback()
+		return s.App.HttpResponseInternalServerErrorRequest(c, err)
+	}
+
+	err = certificate.GenerateCertificate(reg.CertificateUrl, reg.Account.Name, reg.Exam.Company.Name, reg.Exam.Title, reg.Result, reg.IssuedAt)
+	if err != nil {
+		tx.Rollback()
+		return s.App.HttpResponseInternalServerErrorRequest(c, err)
+	}
+
+	err = email.ApproveEmail([]string{reg.Account.Email}, reg.Account.Name, reg.Exam.Company.Name, reg.Exam.Title, reg.CertificateUrl, reg.ExamId, reg.Result, reg.IssuedAt)
+	if err != nil {
+		tx.Rollback()
+		certificate.DeleteCertificate(reg.CertificateUrl)
+		return s.App.HttpResponseInternalServerErrorRequest(c, err)
+	}
+
+	tx.Commit()
+	return s.App.HttpResponseOK(c, reg)
+}
+
+func (s *Server) DeclineApplicant(c *fiber.Ctx) error {
+	registration_id, err := c.ParamsInt("id")
+	if err != nil {
+		s.App.HttpResponseBadQueryParams(c, fmt.Errorf("id param is required"))
+	}
+
+	reg := &model.Registration{}
+	err = s.DB.Preload("Account").Preload("Exam.Company").First(reg, registration_id).Error
+	if err != nil {
+		return s.App.HttpResponseInternalServerErrorRequest(c, err)
+	}
+
+	reg.Passed = false
+	reg.IsConsidered = true
+	reg.Status = calculateRegStatus(reg)
+
+	tx := s.DB.Begin()
+	err = tx.Save(reg).Error
+	if err != nil {
+		tx.Rollback()
+		return s.App.HttpResponseInternalServerErrorRequest(c, err)
+	}
+
+	err = email.DeclineEmail([]string{reg.Account.Email}, reg.Account.Name, reg.Exam.Company.Name, reg.Exam.Title, reg.Exam.Company.Phone_number)
+	if err != nil {
+		tx.Rollback()
+		return s.App.HttpResponseInternalServerErrorRequest(c, err)
+	}
+
+	tx.Commit()
+	return s.App.HttpResponseOK(c, reg)
+}
+
 func (s *Server) GetRegByUserId(c *fiber.Ctx) error {
 
 	userId := GetAccountId(c)
@@ -199,7 +278,7 @@ func (s *Server) GetRegByExamId(c *fiber.Ctx) error {
 func (s *Server) DeleteRegistration(c *fiber.Ctx) error {
 	registration_id, err := c.ParamsInt("id")
 	if err != nil {
-		s.App.HttpResponseBadQueryParams(c, fmt.Errorf("id param is required"))
+		return s.App.HttpResponseBadQueryParams(c, fmt.Errorf("id param is required"))
 	}
 
 	s.DB.Delete(&model.Registration{}, registration_id)
@@ -224,4 +303,16 @@ func calculateRegStatus(reg *model.Registration) string {
 	default:
 		return ""
 	}
+}
+
+func (s *Server) GetCertificate(c *fiber.Ctx) error {
+	certUrl := c.Params("certUrl")
+
+	certType := c.Query("type")
+
+	if certType != "pdf" && certType != "png" {
+		return s.App.HttpResponseBadQueryParams(c, fmt.Errorf("type is img and pdf only"))
+	}
+
+	return c.Download(fmt.Sprintf("public/certificates/%s.%s", certUrl, certType))
 }

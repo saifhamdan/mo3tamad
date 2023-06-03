@@ -92,6 +92,8 @@ func (s *Server) Register() {
 	registrationRoutes.Get("/byExam/:id", s.GetRegByExamId)
 	registrationRoutes.Delete("/:id", s.DeleteRegistration)
 	registrationRoutes.Patch("/:id/start", s.Middleware.Authorization(authz.Register), s.StartedExam)
+	registrationRoutes.Patch("/:id/approve", s.Middleware.Authorization(authz.CreateExam), s.ApproveApplicant)
+	registrationRoutes.Patch("/:id/decline", s.Middleware.Authorization(authz.CreateExam), s.DeclineApplicant)
 	registrationRoutes.Patch("/:id/finish", s.Middleware.Authorization(authz.Register), s.FinishedExam)
 	registrationRoutes.Patch("/:id/cheat", s.Middleware.Authorization(authz.Register), s.UserCheated)
 	registrationRoutes.Post("/:account_id/:exam_id", s.Middleware.Authorization(authz.Register), s.CreateRegister)
@@ -109,5 +111,6 @@ func (s *Server) Register() {
 
 	// thumbnails
 	s.App.Get("/thumbnails/:thumbnailUrl", s.GetThumbnail)
+	s.App.Get("/certificates/:certUrl", s.GetCertificate)
 
 }
