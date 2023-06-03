@@ -113,4 +113,19 @@ func (s *Server) Register() {
 	s.App.Get("/thumbnails/:thumbnailUrl", s.GetThumbnail)
 	s.App.Get("/certificates/:certUrl", s.GetCertificate)
 
+	// comments
+	commentRoutes := v1.Group("/comment")
+	commentRoutes.Get("/", s.GetAllComments)
+	commentRoutes.Post("/", s.CreateComment)
+	commentRoutes.Patch("/:id", s.UpdateComment)
+	commentRoutes.Delete("/:id", s.DeleteComment)
+
+	// categories
+	categoryRoutes := v1.Group("/category")
+	categoryRoutes.Get("/", s.GetAllCategories)
+
+	// levels
+	levelRoutes := v1.Group("/level")
+	levelRoutes.Get("/", s.GetAllLevels)
+
 }

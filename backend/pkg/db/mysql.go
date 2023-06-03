@@ -71,6 +71,15 @@ func Migrate(db *gorm.DB) error {
 	if err := db.AutoMigrate(&model.Trans{}); err != nil {
 		return err
 	}
+	if err := db.AutoMigrate(&model.Category{}); err != nil {
+		return err
+	}
+	if err := db.AutoMigrate(&model.Comment{}); err != nil {
+		return err
+	}
+	if err := db.AutoMigrate(&model.Level{}); err != nil {
+		return err
+	}
 
 	// OAuth
 	if err := db.AutoMigrate(&model.Session{}); err != nil {

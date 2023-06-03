@@ -4665,6 +4665,7 @@
 {"level":"info","ts":1685636054.7150242,"msg":"127.0.0.1, user_session, /api/v1/exams/, GET, {}"}
 {"level":"info","ts":1685636055.1790805,"msg":"127.0.0.1, user_session, /api/v1/exams/1, GET, {}"}
 {"level":"info","ts":1685636055.1825614,"msg":"127.0.0.1, user_session, /api/v1/exams/1, GET, {}"}
+<<<<<<< HEAD
 {"level":"info","ts":1685636322.0947325,"msg":"Connected to redis 0.0.0.0:6379"}
 {"level":"info","ts":1685636326.2928023,"msg":"127.0.0.1, user_session, /auth/oauth/login, POST, {}"}
 {"level":"info","ts":1685636326.3846736,"msg":"127.0.0.1, user_session, /api/v1/accounts/me, GET, {}"}
@@ -5705,3 +5706,34 @@
 {"level":"info","ts":1685806049.0608058,"msg":"127.0.0.1, user_session, /api/v1/registration/byExam/3, GET, {}"}
 {"level":"info","ts":1685806050.7153497,"msg":"127.0.0.1, user_session, /api/v1/registration/3/decline, PATCH, {}"}
 {"level":"info","ts":1685807421.1898518,"msg":"127.0.0.1, user_session, /certificates/ji3qwZNtZzDspVTvwDB7ps, GET, {}"}
+=======
+{"level":"panic","ts":1685651224.7400033,"msg":"Error connecting to MYSQL DB: dial tcp: lookup mysql on 172.17.176.1:53: no such host"}
+{"level":"panic","ts":1685651251.0032933,"msg":"Error connecting to MYSQL DB: dial tcp: lookup mysql on 172.17.176.1:53: no such host"}
+{"level":"panic","ts":1685651261.535195,"msg":"Error connecting to MYSQL DB: driver: bad connection"}
+{"level":"panic","ts":1685651304.8626382,"msg":"Error in mirgrating: Error 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ',`created_at` datetime(3) NULL,`updated_at` datetime(3) NULL,`created_by` bigint' at line 1"}
+{"level":"info","ts":1685651316.2439198,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1685651355.1982715,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1685651444.3579645,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1685651743.6605415,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1685651771.605533,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"panic","ts":1685651901.802426,"msg":"Error in mirgrating: Error 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ',`created_at` datetime(3) NULL,`updated_at` datetime(3) NULL,`created_by` bigint' at line 1"}
+{"level":"info","ts":1685651964.664392,"msg":"data seeded successfully"}
+{"level":"panic","ts":1685651995.5967999,"msg":"Error in mirgrating: Error 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1"}
+{"level":"panic","ts":1685672839.9427874,"msg":"Error in mirgrating: Error 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1"}
+{"level":"panic","ts":1685672852.1724465,"msg":"Error in mirgrating: Error 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1"}
+{"level":"panic","ts":1685673034.4991124,"msg":"Error in mirgrating: Error 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1"}
+{"level":"panic","ts":1685673081.9434488,"msg":"Error in mirgrating: Error 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1"}
+{"level":"panic","ts":1685673111.5566661,"msg":"Error in mirgrating: Error 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ',`created_at` datetime(3) NULL,`updated_at` datetime(3) NULL,`created_by` bigint' at line 1"}
+{"level":"panic","ts":1685707183.215295,"msg":"Error in mirgrating: Error 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ',`created_at` datetime(3) NULL,`updated_at` datetime(3) NULL,`created_by` bigint' at line 1"}
+{"level":"panic","ts":1685707211.3806875,"msg":"Error in mirgrating: Error 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ',`created_at` datetime(3) NULL,`updated_at` datetime(3) NULL,`created_by` bigint' at line 1"}
+{"level":"panic","ts":1685707251.961046,"msg":"Error in mirgrating: Error 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ',`created_at` datetime(3) NULL,`updated_at` datetime(3) NULL,`created_by` bigint' at line 1"}
+{"level":"panic","ts":1685707406.1004167,"msg":"Error in mirgrating: invalid field found for struct mo3tamad/model.Category's field Exams: define a valid foreign key for relations or implement the Valuer/Scanner interface"}
+{"level":"panic","ts":1685707428.5502915,"msg":"Error in mirgrating: invalid field found for struct mo3tamad/model.Exam's field Categories: define a valid foreign key for relations or implement the Valuer/Scanner interface"}
+{"level":"info","ts":1685707440.9081113,"msg":"data seeded successfully"}
+{"level":"info","ts":1685711266.477757,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1685711406.3174946,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1685711771.8811429,"msg":"127.0.0.1, user_session, /api/v1/exams/, POST, {\"categories\":[{\"desc\":\"gtrhrhyhyt\"},{\"desc\":\"saaaaa\"}],\"certificationUrl\":\"go.comgergg\",\"companyId\":1,\"date\":\"2018-09-22T12:42:31Z\",\"description\":\"csfexam12zain\",\"duration\":12,\"levelId\":1,\"passingScore\":33,\"title\":\"cs12\"}"}
+{"level":"info","ts":1685711796.7091742,"msg":"127.0.0.1, user_session, /api/v1/exams/1, GET, {}"}
+{"level":"info","ts":1685711822.768328,"msg":"Connected to redis 0.0.0.0:6379"}
+{"level":"info","ts":1685711841.5058749,"msg":"127.0.0.1, user_session, /api/v1/exams/, POST, {\"categories\":[{\"desc\":\"gtrhrhyhyt\"},{\"desc\":\"saaaaa\"}],\"certificationUrl\":\"go.comgergg\",\"companyId\":1,\"date\":\"2018-09-22T12:42:31Z\",\"description\":\"csfexam12zain\",\"duration\":12,\"levelId\":1,\"passingScore\":33,\"title\":\"cs12\"}"}
+>>>>>>> origin/comments
