@@ -140,15 +140,10 @@ func (s *Server) UpdateExam(c *fiber.Ctx) error {
 		s.App.HttpResponseBadQueryParams(c, fmt.Errorf("id param is required"))
 	}
 	exam := &model.Exam{}
-<<<<<<< HEAD
 	err = s.DB.First(exam, exam_id).Error
 	if err != nil {
 		return s.App.HttpResponseNotFound(c, err)
 	}
-=======
-	s.DB.Where("id=?", exam_id).Delete(&model.Category{})
-	s.DB.First(exam, exam_id)
->>>>>>> origin/comments
 	err = c.BodyParser(exam)
 	if err != nil {
 		return s.App.HttpResponseBadRequest(c, err)
