@@ -18,23 +18,18 @@ import { ManageUserIcon } from 'atoms/icons';
 
 interface Props {
   open: boolean;
+  certificateUrl: string;
   anchorEl: HTMLElement | null;
   closeHandler: () => void;
 }
 
 const CertificateDownloadMenu: React.FC<Props> = ({
   anchorEl,
+  certificateUrl,
   open,
   closeHandler,
 }) => {
-  const { user, logoutHandler: logoutHandlerAuth } = useContext(AuthContext);
   const navigate = useNavigate();
-
-  const logoutHandler = () => {
-    closeHandler();
-    logoutHandlerAuth();
-    navigate('/login');
-  };
 
   return (
     <Menu open={open} anchorEl={anchorEl} onClose={closeHandler} autoClose>
@@ -43,10 +38,18 @@ const CertificateDownloadMenu: React.FC<Props> = ({
           Choose the format
         </Typography>
 
-        <Button sx={{ mr: 2 }} variant='outlined'>
-          .png
-        </Button>
-        <Button variant='outlined'>.pdf</Button>
+        <a
+          href={`${process.env.REACT_APP_API_URL}/certificates/${certificateUrl}?type=png`}
+        >
+          <Button sx={{ mr: 2 }} variant='outlined'>
+            .png
+          </Button>
+        </a>
+        <a
+          href={`${process.env.REACT_APP_API_URL}/certificates/${certificateUrl}?type=pdf`}
+        >
+          <Button variant='outlined'>.pdf</Button>
+        </a>
       </Box>
     </Menu>
   );

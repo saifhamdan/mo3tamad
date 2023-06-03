@@ -172,7 +172,7 @@ const Index: React.FC<{}> = () => {
                     />
                     {/* {student pages} */}
                     <Route
-                      path='/certificate/:registerId'
+                      path='/certificate/:examId'
                       element={<CertificatePage />}
                     />
                     <Route path='/my-exams' element={<MyExamsPage />} />

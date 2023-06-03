@@ -11,6 +11,8 @@ import { useAppDispatch } from 'store';
 import { uiActions } from 'store/ui-slice';
 import { useParams } from 'react-router';
 import ConfirmationModal from 'components/modals/ConfirmationModal';
+import axios from 'axios';
+import { headers } from 'services/auth';
 
 const ExamApplicantsPage = () => {
   const { examId } = useParams();
@@ -29,6 +31,15 @@ const ExamApplicantsPage = () => {
 
   const declineHandler = async () => {
     try {
+      const res = await axios({
+        url: `${process.env.REACT_APP_API_URL}/api/v1/registration/${selected[0]}/decline`,
+        method: 'PATCH',
+        headers,
+      });
+      const newData = [...data];
+      const index = newData.findIndex((a) => a.id === res.data.data.id);
+      newData[index] = res.data.data;
+      setData(newData);
     } catch (err) {
       console.error(err);
     }
@@ -36,6 +47,15 @@ const ExamApplicantsPage = () => {
 
   const approveHandler = async () => {
     try {
+      const res = await axios({
+        url: `${process.env.REACT_APP_API_URL}/api/v1/registration/${selected[0]}/approve`,
+        method: 'PATCH',
+        headers,
+      });
+      const newData = [...data];
+      const index = newData.findIndex((a) => a.id === res.data.data.id);
+      newData[index] = res.data.data;
+      setData(newData);
     } catch (err) {
       console.error(err);
     }

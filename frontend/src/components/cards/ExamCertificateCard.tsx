@@ -79,7 +79,7 @@ const ExamCertificateCard: React.FC<any> = (props) => {
               </Link>
             )}
             {props.status === 'passed' && (
-              <Link to='/certificate/:id'>
+              <Link to={`/certificate/${props.exam.id}`}>
                 <Button variant='contained'>Get Certificate</Button>
               </Link>
             )}
