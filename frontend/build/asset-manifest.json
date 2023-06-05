@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.00fc2129.css",
-    "main.js": "/static/js/main.211d0cf7.js",
+    "main.js": "/static/js/main.660cc509.js",
     "static/media/mo3tamad_logo.png": "/static/media/mo3tamad_logo.59615adbdb2024285f92.png",
     "index.html": "/index.html",
     "main.00fc2129.css.map": "/static/css/main.00fc2129.css.map",
-    "main.211d0cf7.js.map": "/static/js/main.211d0cf7.js.map"
+    "main.660cc509.js.map": "/static/js/main.660cc509.js.map"
   },
   "entrypoints": [
     "static/css/main.00fc2129.css",
-    "static/js/main.211d0cf7.js"
+    "static/js/main.660cc509.js"
   ]
 }

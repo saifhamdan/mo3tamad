@@ -47,7 +47,7 @@ export const editExamProjectResultsBreadcrumbsPage = (
 export const examProjectQuestionsBreadcrumbsPage = (data: any): Breadcrumb[] =>
   examsProjectsBreadcrumbsPage.concat([
     {
-      label: data.desc,
+      label: data.name,
     },
     {
       label: 'Questions list',
