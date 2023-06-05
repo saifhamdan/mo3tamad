@@ -248,7 +248,7 @@ func (s *Server) GetRegByUserId(c *fiber.Ctx) error {
 func (s *Server) GetRegistration(c *fiber.Ctx) error {
 	regId, _ := c.ParamsInt("id")
 	registration := &model.Registration{}
-	if err := s.DB.Preload("Exam.Categoires").Preload("Exam.Level").Preload("Trans.Question.Options").First(&registration, regId).Error; err != nil {
+	if err := s.DB.Preload("Exam.Categories").Preload("Exam.Level").Preload("Trans.Question.Options").First(&registration, regId).Error; err != nil {
 		return s.App.HttpResponseInternalServerErrorRequest(c, err)
 	}
 

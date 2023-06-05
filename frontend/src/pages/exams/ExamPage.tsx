@@ -34,6 +34,9 @@ const ExamPage = () => {
 
   const addComment = (comment: any) => {
     const newData = { ...data };
+    if (newData.comments === null) {
+      newData.comments = [];
+    }
     newData.comments.push(comment);
     setData(newData);
   };
@@ -51,6 +54,8 @@ const ExamPage = () => {
     newData.comments[index] = comment;
     setData(newData);
   };
+
+  console.log(user?.id);
 
   return (
     <LoadingSpinnerWrapper loading={loading} error={error}>
@@ -198,7 +203,8 @@ const ExamPage = () => {
                       accountName={c.account.name}
                       examId={data.id}
                       text={c.desc}
-                      isEdit={user?.id === c.accountId}
+                      disabled={user?.id !== c.accountId}
+                      isEdit
                       removeComment={removeComment}
                       updateComment={updateComment}
                     />

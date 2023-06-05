@@ -11,7 +11,7 @@ interface Props {
   accountId: number;
   examId: number;
   isEdit: boolean;
-
+  disabled?: boolean;
   addComment?: (comment: any) => void;
   updateComment?: (comment: any) => void;
   removeComment?: (commentId: number) => void;
@@ -35,6 +35,7 @@ const Comment: React.FC<Props> = (props) => {
           accountId: props.accountId,
         },
       });
+      console.log(props.isEdit);
       if (props.isEdit) {
         if (props.updateComment) {
           props.updateComment(res.data.data);
@@ -63,10 +64,10 @@ const Comment: React.FC<Props> = (props) => {
       console.error(err);
     }
   };
-
+  console.log(editor, props.disabled);
   return (
     <Box my={1}>
-      {editor && (
+      {editor && !props.disabled && (
         <>
           <TextField
             fullWidth
@@ -106,28 +107,32 @@ const Comment: React.FC<Props> = (props) => {
             {props.accountName} commented:
           </Typography>
           <Typography>{value}</Typography>
-          <Typography
-            variant='button'
-            component='span'
-            mr={1}
-            sx={{
-              cursor: 'pointer',
-            }}
-            onClick={() => setEditor(true)}
-          >
-            Edit
-          </Typography>
-          <Typography
-            variant='button'
-            component='span'
-            color='red'
-            sx={{
-              cursor: 'pointer',
-            }}
-            onClick={removeComment}
-          >
-            Delete
-          </Typography>
+          {!props.disabled && (
+            <>
+              <Typography
+                variant='button'
+                component='span'
+                mr={1}
+                sx={{
+                  cursor: 'pointer',
+                }}
+                onClick={() => setEditor(true)}
+              >
+                Edit
+              </Typography>
+              <Typography
+                variant='button'
+                component='span'
+                color='red'
+                sx={{
+                  cursor: 'pointer',
+                }}
+                onClick={removeComment}
+              >
+                Delete
+              </Typography>
+            </>
+          )}
         </Box>
       )}
     </Box>

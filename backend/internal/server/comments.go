@@ -22,10 +22,17 @@ func (s *Server) CreateComment(c *fiber.Ctx) error {
 	if err != nil {
 		return s.App.HttpResponseBadRequest(c, err)
 	}
-	err = s.DB.Create(comment).Preload("Account").Error
+	err = s.DB.Create(comment).Error
 	if err != nil {
 		return s.App.HttpResponseBadRequest(c, err)
 	}
+
+	err = s.DB.Preload("Account").First(comment, comment.CommentId).Error
+	if err != nil {
+		return s.App.HttpResponseInternalServerErrorRequest(c, err)
+	}
+
+	fmt.Println("Acc", comment.Account.AccountId)
 	return s.App.HttpResponseCreated(c, comment)
 }
 
@@ -40,7 +47,16 @@ func (s *Server) UpdateComment(c *fiber.Ctx) error {
 	if err != nil {
 		return s.App.HttpResponseBadRequest(c, err)
 	}
-	s.DB.Save(comment).Preload("Account")
+	err = s.DB.Save(comment).Error
+	if err != nil {
+		return s.App.HttpResponseBadRequest(c, err)
+	}
+
+	err = s.DB.Preload("Account").First(comment, comment.CommentId).Error
+	if err != nil {
+		return s.App.HttpResponseInternalServerErrorRequest(c, err)
+	}
+
 	return s.App.HttpResponseCreated(c, comment)
 }
 
