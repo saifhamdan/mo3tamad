@@ -18,6 +18,6 @@ type Exam struct {
 	Questions        []Question     `gorm:"forigenKey:ExamId" json:"questions"`
 	Registrations    []Registration `gorm:"forigenKey:ExamId" json:"registrations,omitempty"`
 	Comments         []Comment      `gorm:"forigenKey:ExamId" json:"comments,omitempty"`
-	Categories       []*Category    `gorm:"many2many:exam_categories;"`
+	Categories       []*Category    `gorm:"many2many:exam_categories;" json:"categories"`
 	Model
 }

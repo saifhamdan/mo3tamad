@@ -22,7 +22,7 @@ func (s *Server) CreateComment(c *fiber.Ctx) error {
 	if err != nil {
 		return s.App.HttpResponseBadRequest(c, err)
 	}
-	err = s.DB.Create(comment).Error
+	err = s.DB.Create(comment).Preload("Account").Error
 	if err != nil {
 		return s.App.HttpResponseBadRequest(c, err)
 	}
@@ -40,7 +40,7 @@ func (s *Server) UpdateComment(c *fiber.Ctx) error {
 	if err != nil {
 		return s.App.HttpResponseBadRequest(c, err)
 	}
-	s.DB.Save(comment)
+	s.DB.Save(comment).Preload("Account")
 	return s.App.HttpResponseCreated(c, comment)
 }
 

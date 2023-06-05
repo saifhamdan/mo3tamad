@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import { Grid, Box, Button, Typography } from '@mui/material';
+import { Grid, Box, Button, Typography, Chip } from '@mui/material';
 
 import { Link } from 'atoms';
 
@@ -64,6 +64,18 @@ const ExamCard: React.FC<any> = (props) => {
                     {props.company.name}
                   </Link>
                 </Typography>
+                {props.categories && (
+                  <Box my={1}>
+                    {props.categories.map((c: any) => (
+                      <Chip key={c.id} label={c.desc} sx={{ mr: 0.5 }} />
+                    ))}
+                  </Box>
+                )}
+                {props.level && (
+                  <Typography color='gray'>
+                    level: {props.level.desc}
+                  </Typography>
+                )}
               </Typography>
             </Box>
             <Box>

@@ -10,6 +10,8 @@ import (
 	"mo3tamad/model"
 	"mo3tamad/pkg/shortuuid"
 	"os"
+	"strconv"
+	"strings"
 
 	"github.com/disintegration/imaging"
 	"github.com/gofiber/fiber/v2"
@@ -61,7 +63,7 @@ func (s *Server) GetExam(c *fiber.Ctx) error {
 		res.Registration = reg
 	}
 
-	err = s.DB.Preload("Company").Preload("Comments").Preload("Categories").Preload("Level").First(&res.Exam, exam_id).Error
+	err = s.DB.Preload("Company").Preload("Comments.Account").Preload("Categories").Preload("Level").First(&res.Exam, exam_id).Error
 	if err != nil {
 		if err == gorm.ErrRecordNotFound {
 			return s.App.HttpResponseNotFound(c, err)
@@ -72,17 +74,30 @@ func (s *Server) GetExam(c *fiber.Ctx) error {
 	return s.App.HttpResponseOK(c, res)
 }
 
+type ExamProj struct {
+	*model.Exam
+	CategoriesIds string `form:"categoiresIds"`
+}
+
 func (s *Server) CreateExam(c *fiber.Ctx) error {
-	exam := &model.Exam{}
+	exam := &ExamProj{}
 	err := c.BodyParser(exam)
 	if err != nil {
 		return s.App.HttpResponseBadRequest(c, err)
 	}
 
+	cat := strings.Split(exam.CategoriesIds, ",")
+	for i := range cat {
+		c, _ := strconv.Atoi(cat[i])
+		exam.Exam.Categories = append(exam.Exam.Categories, &model.Category{
+			CategoryId: c,
+		})
+	}
+
 	exam.ThumbnailUrl = shortuuid.New()
 
 	tx := s.DB.Begin()
-	err = tx.Create(exam).Error
+	err = tx.Create(exam.Exam).Error
 	if err != nil {
 		tx.Rollback()
 		return s.App.HttpResponseBadRequest(c, err)
@@ -100,7 +115,7 @@ func (s *Server) CreateExam(c *fiber.Ctx) error {
 	}
 
 	tx.Commit()
-	return s.App.HttpResponseCreated(c, exam)
+	return s.App.HttpResponseCreated(c, exam.Exam)
 }
 
 func (s *Server) DeleteExam(c *fiber.Ctx) error {
@@ -139,32 +154,44 @@ func (s *Server) UpdateExam(c *fiber.Ctx) error {
 	if err != nil {
 		s.App.HttpResponseBadQueryParams(c, fmt.Errorf("id param is required"))
 	}
-	exam := &model.Exam{}
-	err = s.DB.First(exam, exam_id).Error
+	exam := &ExamProj{}
+	exam1 := &model.Exam{}
+	err = s.DB.First(exam1, exam_id).Error
 	if err != nil {
 		return s.App.HttpResponseNotFound(c, err)
 	}
+	exam.Exam = exam1
 	err = c.BodyParser(exam)
 	if err != nil {
 		return s.App.HttpResponseBadRequest(c, err)
 	}
 
+	cat := strings.Split(exam.CategoriesIds, ",")
+	for i := range cat {
+		c, _ := strconv.Atoi(cat[i])
+		exam.Exam.Categories = append(exam.Exam.Categories, &model.Category{
+			CategoryId: c,
+		})
+	}
+
 	tx := s.DB.Begin()
-	err = tx.Save(exam).Error
+	err = tx.Save(exam.Exam).Error
 	if err != nil {
 		tx.Rollback()
 		return s.App.HttpResponseInternalServerErrorRequest(c, err)
 	}
 
 	thumbnail, _ := c.FormFile("thumbnail")
-	err = storeThumbnail(exam.ThumbnailUrl, thumbnail)
-	if err != nil {
-		tx.Rollback()
-		return s.App.HttpResponseInternalServerErrorRequest(c, err)
+	if thumbnail != nil {
+		err = storeThumbnail(exam.ThumbnailUrl, thumbnail)
+		if err != nil {
+			tx.Rollback()
+			return s.App.HttpResponseInternalServerErrorRequest(c, err)
+		}
 	}
 
 	tx.Commit()
-	return s.App.HttpResponseCreated(c, exam)
+	return s.App.HttpResponseCreated(c, exam.Exam)
 }
 
 func storeThumbnail(thumbnailUrl string, thumbnail *multipart.FileHeader) error {

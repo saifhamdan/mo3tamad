@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import { Grid, Box, Button, Typography } from '@mui/material';
+import { Grid, Box, Button, Typography, Chip } from '@mui/material';
 import { Link } from 'atoms';
 
 export const ExamPaper = styled.div`
@@ -66,6 +66,18 @@ const ExamCertificateCard: React.FC<any> = (props) => {
                 {statusMapper[props.status]}
               </Typography>
             </Typography>
+            {props.exam.categories && (
+              <Box my={1}>
+                {props.exam.categories.map((c: any) => (
+                  <Chip key={c.id} label={c.desc} sx={{ mr: 0.5 }} />
+                ))}
+              </Box>
+            )}
+            {props.exam.level && (
+              <Typography color='gray'>
+                level: {props.exam.level.desc}
+              </Typography>
+            )}
           </Box>
           <Box>
             {props.status === 'not-started' && (

@@ -51,6 +51,12 @@ func main() {
 		log.Logger.Fatal(err)
 	}
 
+	err = seedCategoiresAndLevels(tx)
+	if err != nil {
+		tx.Rollback()
+		log.Logger.Fatal(err)
+	}
+
 	err = seedAccount(tx)
 	if err != nil {
 		tx.Rollback()
@@ -98,6 +104,21 @@ func seedAccount(tx *gorm.DB) error {
 		Status:    "active",
 	}
 	err = tx.Create(adminAccount).Error
+	if err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func seedCategoiresAndLevels(tx *gorm.DB) error {
+
+	err := tx.Create(&Categories).Error
+	if err != nil {
+		return err
+
+	}
+	err = tx.Create(&Levels).Error
 	if err != nil {
 		return err
 	}

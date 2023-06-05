@@ -21,14 +21,15 @@ const SelectGroup: React.FC<Props> = (props) => {
     error: fetchError,
   } = useFetch<any[]>(props.url, null, {});
 
-  let selected = null;
+  let selected = multiple ? [] : null;
+
   if (data?.length > 0) {
-    if (value?.length && typeof value === 'object') {
+    if (value?.length && typeof value === 'object' && value.length > 0) {
       selected = value.map((id: number | string) => {
         return data.find((i) => i.id === id);
       });
     } else {
-      if (value) selected = data.find((i) => i.id === value);
+      if (value > 0) selected = data.find((i) => i.id === value);
     }
   }
 

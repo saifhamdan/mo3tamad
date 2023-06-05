@@ -7,6 +7,7 @@ import { FormHelperText, Grid, TextField, Typography } from '@mui/material';
 import LoadingButton from '@mui/lab/LoadingButton';
 
 import { headers, companyId } from 'services/auth';
+import SelectGroup from 'components/input/SelectGroup';
 
 // interface
 interface FormValues {
@@ -16,6 +17,8 @@ interface FormValues {
   duration: number;
   thumbnailUrl: '';
   thumbnail: any;
+  categories: number[];
+  levelId: number;
   axiosError: string;
 }
 
@@ -27,6 +30,8 @@ const initialValues = {
   thumbnail: null,
   duration: 0,
   passingScore: 0,
+  categories: [],
+  levelId: 0,
   axiosError: '',
 };
 
@@ -41,6 +46,11 @@ const dataMapper = (data: any): FormValues => {
     thumbnail: {
       name: data.thumbnailUrl,
     },
+    categories:
+      data.categories && data.categories.length > 0
+        ? data.categories.map((c: any) => c.id)
+        : [],
+    levelId: data.levelId,
     axiosError: '',
   };
 };
@@ -79,6 +89,8 @@ const ExamProjectForm: React.FC<{ data?: any; id?: string }> = (props) => {
         fd.append('passingScore', values.passingScore.toString());
         fd.append('duration', values.duration.toString());
         fd.append('companyId', companyId.toString());
+        fd.append('categoiresIds', values.categories.toString());
+        fd.append('levelId', values.levelId.toString());
         fd.append('thumbnail', values.thumbnail);
 
         await axios({
@@ -177,6 +189,36 @@ const ExamProjectForm: React.FC<{ data?: any; id?: string }> = (props) => {
           fullWidth
         />
         <FormHelperText>note: duration is counted in minutes</FormHelperText>
+      </Grid>
+      <Grid item mt={mt} flexGrow={1} maxWidth={500}>
+        <SelectGroup
+          name='categories'
+          label='Category'
+          dispalyFieldName='desc'
+          error=''
+          value={formik.values.categories}
+          url={`${process.env.REACT_APP_API_URL}/api/v1/category`}
+          selectHandler={(items: any) => {
+            const mapper = items.map((i: any) => i.id);
+            formik.setFieldValue('categories', [...mapper]);
+          }}
+          onBlur={formik.handleBlur}
+          multiple={true}
+        />
+      </Grid>
+      <Grid item mt={mt} flexGrow={1} maxWidth={500}>
+        <SelectGroup
+          name='levelId'
+          label='Level'
+          dispalyFieldName='desc'
+          error=''
+          value={formik.values.levelId}
+          url={`${process.env.REACT_APP_API_URL}/api/v1/level`}
+          selectHandler={(item: any) => {
+            formik.setFieldValue('levelId', item.id);
+          }}
+          onBlur={formik.handleBlur}
+        />
       </Grid>
       <Grid item mt={mt} width={'100%'}>
         {formik.errors.axiosError && (
