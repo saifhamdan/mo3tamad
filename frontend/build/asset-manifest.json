@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/static/css/main.00fc2129.css",
+    "main.js": "/static/js/main.e8472876.js",
+    "static/media/mo3tamad_logo.png": "/static/media/mo3tamad_logo.59615adbdb2024285f92.png",
+    "index.html": "/index.html",
+    "main.00fc2129.css.map": "/static/css/main.00fc2129.css.map",
+    "main.e8472876.js.map": "/static/js/main.e8472876.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.00fc2129.css",
+    "static/js/main.e8472876.js"
+  ]
+}
