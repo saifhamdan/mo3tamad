@@ -34,7 +34,8 @@ const ExamPage = () => {
 
   const addComment = (comment: any) => {
     const newData = { ...data };
-    if (newData.comments === null) {
+
+    if (!newData.comments) {
       newData.comments = [];
     }
     newData.comments.push(comment);
@@ -43,7 +44,8 @@ const ExamPage = () => {
 
   const removeComment = (commentId: number) => {
     const newData = { ...data };
-    const index = newData.comments.find((c: any) => c.id === commentId);
+    const index = newData.comments.findIndex((c: any) => c.id === commentId);
+
     newData.comments.splice(index, 1);
     setData(newData);
   };
@@ -55,7 +57,7 @@ const ExamPage = () => {
     setData(newData);
   };
 
-  console.log(user?.id);
+  console.log(data.comments);
 
   return (
     <LoadingSpinnerWrapper loading={loading} error={error}>
@@ -197,7 +199,7 @@ const ExamPage = () => {
                 {data.comments &&
                   data.comments.map((c: any, i: number) => (
                     <Comment
-                      key={i}
+                      key={c.id}
                       commentId={c.id}
                       accountId={user?.id ? user.id : 0}
                       accountName={c.account.name}

@@ -35,7 +35,6 @@ const Comment: React.FC<Props> = (props) => {
           accountId: props.accountId,
         },
       });
-      console.log(props.isEdit);
       if (props.isEdit) {
         if (props.updateComment) {
           props.updateComment(res.data.data);
