@@ -1,4 +1,9 @@
-FROM golang:alpine AS builder
+FROM golang:latest
+
+RUN apt-get update && apt-get install -y \
+    wget \
+    poppler-utils \
+    wkhtmltopdf
 
 WORKDIR /app
 
@@ -12,5 +17,7 @@ COPY . ./
 RUN go build cmd/main.go
 
 EXPOSE 5000 
+
+ENV XDG_RUNTIME_DIR=/tmp/runtime-root
 
 CMD ["./main"]
