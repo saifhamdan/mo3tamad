@@ -1,0 +1,34 @@
+[
+  {
+    "desc": "admin",
+    "type": "api",
+    "actions": [{ "desc": "all" }]
+  },
+  {
+    "desc": "users",
+    "type": "api",
+    "actions": [
+      { "desc": "getall" },
+      { "desc": "get" },
+      { "desc": "create" },
+      { "desc": "update" },
+      { "desc": "delete" }
+    ]
+  },
+  {
+    "desc": "exams",
+    "type": "api",
+    "actions": [
+      { "desc": "getall" },
+      { "desc": "get" },
+      { "desc": "create" },
+      { "desc": "update" },
+      { "desc": "delete" }
+    ]
+  },
+  {
+    "desc": "register",
+    "type": "api",
+    "actions": [{ "desc": "all" }]
+  }
+]
